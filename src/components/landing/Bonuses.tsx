@@ -14,7 +14,7 @@ const Bonuses = () => {
   const imageMap = new Map(PlaceHolderImages.map(img => [img.id, img]));
 
   return (
-    <section className="py-20 lg:py-32 bg-brand-gold">
+    <section className="py-20 lg:py-32 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-5xl font-extrabold text-brand-dark-blue mb-4">
