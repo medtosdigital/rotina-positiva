@@ -13,40 +13,44 @@ const Hero = () => {
           clipPath: 'polygon(0 0, 100% 0, 100% 80%, 0 100%)',
         }}
       ></div>
-      <div className="relative container mx-auto grid lg:grid-cols-2 items-center min-h-[80vh] lg:min-h-[95vh] py-20 lg:py-0 px-6">
-        <div className="text-white z-10 text-center lg:text-left">
-          <h1 className="text-3xl md:text-5xl font-bold !leading-tight tracking-tight mb-4 text-brand-dark-blue">
-            Faça seu filho{' '}
-            <span className="bg-brand-dark-blue text-brand-gold px-4 py-1 rounded-lg inline-block">
-              OBEDECER
-            </span>{' '}
-            sem brigar, sem gritar e sem ameaças —{' '}
-            <span className="bg-brand-dark-blue text-brand-gold px-4 py-1 rounded-lg inline-block whitespace-nowrap">
-              em apenas 24 horas.
-            </span>
-          </h1>
-          <p className="text-lg md:text-xl lg:text-2xl mb-8 text-brand-dark-blue/80">
-            Criança obedece quando sente que está jogando — não quando está sendo mandada.
-          </p>
-          <Button
-            size="lg"
-            className="bg-brand-orange hover:bg-brand-orange/90 text-primary-foreground text-lg md:text-xl font-bold py-8 px-10 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300"
-          >
-            QUERO O ROTINA MÁGICA AGORA
-          </Button>
+      <div className="relative container mx-auto flex flex-col items-center justify-center min-h-[80vh] lg:min-h-[95vh] py-20 lg:py-0 px-6">
+        <div className="grid lg:grid-cols-2 items-center gap-8 w-full">
+            <div className="text-white z-10 text-center lg:text-left">
+              <h1 className="text-3xl md:text-5xl font-bold !leading-tight tracking-tight mb-4 text-brand-dark-blue">
+                Faça seu filho{' '}
+                <span className="bg-brand-dark-blue text-brand-gold px-4 py-1 rounded-lg inline-block">
+                  OBEDECER
+                </span>{' '}
+                sem brigar, sem gritar e sem ameaças —{' '}
+                <span className="bg-brand-dark-blue text-brand-gold px-4 py-1 rounded-lg inline-block whitespace-nowrap">
+                  em apenas 24 horas.
+                </span>
+              </h1>
+              <p className="text-lg md:text-xl lg:text-2xl mb-8 text-brand-dark-blue/80">
+                Criança obedece quando sente que está jogando — não quando está sendo mandada.
+              </p>
+            </div>
+            <div className="relative mt-12 lg:mt-0 h-64 lg:h-auto">
+              {heroImage && (
+                <Image
+                  src={heroImage.imageUrl}
+                  alt={heroImage.description}
+                  width={800}
+                  height={600}
+                  data-ai-hint={heroImage.imageHint}
+                  className="object-contain w-full h-full rounded-2xl shadow-2xl"
+                  priority
+                />
+              )}
+            </div>
         </div>
-        <div className="relative mt-12 lg:mt-0 h-64 lg:h-auto">
-          {heroImage && (
-            <Image
-              src={heroImage.imageUrl}
-              alt={heroImage.description}
-              width={800}
-              height={600}
-              data-ai-hint={heroImage.imageHint}
-              className="object-contain w-full h-full rounded-2xl shadow-2xl"
-              priority
-            />
-          )}
+        <div className="mt-8 z-10 w-full flex justify-center">
+            <Button
+              size="lg"
+              className="bg-brand-orange hover:bg-brand-orange/90 text-primary-foreground text-lg md:text-xl font-bold py-8 px-10 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300 w-full max-w-md lg:max-w-none"
+            >
+              QUERO O ROTINA MÁGICA AGORA
+            </Button>
         </div>
       </div>
     </section>
