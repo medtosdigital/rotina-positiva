@@ -23,18 +23,18 @@ const FinalCta = () => {
           )}
 
           <h2 className="text-4xl md:text-6xl font-extrabold !leading-tight mb-8">
-            Transforme a rotina do seu filho ainda HOJE.
+            Você está a 1 clique de transformar a rotina do seu filho.
           </h2>
 
           <Button
             size="lg"
-            className="bg-white hover:bg-gray-100 text-brand-orange text-xl md:text-2xl font-bold py-8 px-16 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300"
+            className="bg-white hover:bg-gray-100 text-brand-orange text-xl md:text-2xl font-bold py-8 px-16 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 animate-pulse"
           >
-            EU QUERO O ROTINA MÁGICA
+            SIM! EU QUERO TRANSFORMAR MINHA CASA!
           </Button>
 
           <div className="mt-12 flex justify-center items-center">
-             <Card className="bg-white/20 rounded-xl p-4 flex items-center gap-4 max-w-md shadow-lg">
+             <div className="bg-white/20 rounded-xl p-4 flex items-center gap-4 max-w-md shadow-lg">
                 {testimonial && (
                     <Image
                         src={testimonial.imageUrl}
@@ -42,26 +42,21 @@ const FinalCta = () => {
                         width={80}
                         height={80}
                         data-ai-hint={testimonial.imageHint}
-                        className="rounded-full object-cover"
+                        className="rounded-full object-cover border-2 border-white"
                     />
                 )}
                 <div className="text-left">
-                    <p className="text-sm">"Melhor investimento que fiz pela minha família."</p>
+                    <p className="text-sm italic">"Melhor investimento que fiz pela paz da minha família. Funcionou no primeiro dia!"</p>
                     <div className="flex text-yellow-300 mt-1">
                         {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-current" />)}
                     </div>
                 </div>
-             </Card>
+             </div>
           </div>
         </div>
       </div>
     </section>
   );
 };
-
-// Dummy Card component to avoid import error if not available
-const Card = ({ className, children }: { className?: string; children: React.ReactNode }) => (
-    <div className={className}>{children}</div>
-);
 
 export default FinalCta;

@@ -84,7 +84,7 @@ const Hero = () => {
                <div className="mt-8 z-10 w-full flex justify-center">
                     <Button
                     size="lg"
-                    className="bg-brand-orange hover:bg-brand-orange/90 text-primary-foreground text-lg md:text-xl font-bold py-8 px-10 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300 w-full max-w-md lg:w-auto"
+                    className="bg-brand-orange hover:bg-brand-orange/90 text-primary-foreground text-lg md:text-xl font-bold py-8 px-10 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300 w-full max-w-md lg:w-auto animate-pulse"
                     >
                     QUERO O ROTINA MÁGICA AGORA
                     </Button>

@@ -13,10 +13,10 @@ const ProductShowcase = () => {
   ].filter(img => img !== undefined) as any[];
 
   const features = [
-    "Transforme tarefas em missões divertidas.",
-    "Crie cooperação sem estresse.",
-    "Ensine responsabilidade e organização.",
-    "Ganhe mais tempo livre e paz de espírito."
+    "Transforme tarefas chatas em missões divertidas.",
+    "Crie uma cultura de cooperação sem estresse.",
+    "Ensine responsabilidade e organização desde cedo.",
+    "Ganhe mais tempo livre e paz de espírito para você."
   ];
 
   return (
@@ -24,10 +24,10 @@ const ProductShowcase = () => {
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-5xl font-extrabold text-brand-dark-blue mb-4">
-            Conheça o <span className="text-brand-turquoise">ROTINA MÁGICA</span>
+            Apresentando o <span className="text-brand-turquoise">ROTINA MÁGICA</span>
           </h2>
           <p className="text-lg md:text-xl text-gray-600">
-            O método baseado em jogo visual que faz seu filho cooperar por vontade própria.
+            A arma secreta para pais que querem filhos obedientes, responsáveis e felizes.
           </p>
         </div>
 
@@ -71,7 +71,7 @@ const ProductShowcase = () => {
               {features.map((feature, index) => (
                 <li key={index} className="flex items-center">
                   <CheckCircle2 className="h-6 w-6 text-brand-green-water mr-3 flex-shrink-0" />
-                  <span className="text-gray-700">{feature}</span>
+                  <span className="text-gray-700 font-medium">{feature}</span>
                 </li>
               ))}
             </ul>
