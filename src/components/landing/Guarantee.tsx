@@ -13,7 +13,7 @@ const Guarantee = () => {
             <div className="inline-block bg-brand-gold p-4 rounded-full mb-6 shadow-lg">
                 <ShieldCheck className="w-12 h-12 text-brand-dark-blue" />
             </div>
-            <h2 className="text-3xl md:text-5xl font-bold text-brand-dark-blue mb-4">
+            <h2 className="text-3xl md:text-5xl font-extrabold text-brand-dark-blue mb-4">
               Garantia INCONDICIONAL de 7 dias.
             </h2>
             <p className="text-lg text-gray-600 mb-6">

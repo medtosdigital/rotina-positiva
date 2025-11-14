@@ -32,7 +32,7 @@ const PainPoints = () => {
   return (
     <section className="py-20 lg:py-32 bg-brand-gold">
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl md:text-5xl font-bold text-center text-brand-dark-blue mb-12">
+        <h2 className="text-3xl md:text-5xl font-extrabold text-center text-brand-dark-blue mb-12">
           Se sua casa virou um campo de batalha…{' '}
           <span className="text-brand-orange">você precisa ver ISSO.</span>
         </h2>

@@ -44,7 +44,7 @@ const Testimonials = () => {
     <section className="py-20 lg:py-32 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-brand-dark-blue mb-4">
+          <h2 className="text-3xl md:text-5xl font-extrabold text-brand-dark-blue mb-4">
             Mães reais... <span className="text-brand-turquoise">resultados reais.</span>
           </h2>
         </div>

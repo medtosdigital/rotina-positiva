@@ -20,7 +20,7 @@ const WhatsInside = () => {
     <section className="py-20 lg:py-32 bg-brand-orange text-white">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-4xl md:text-5xl font-extrabold mb-4">
             Toda a rotina da sua casa organizada como um <span className="underline decoration-wavy decoration-white">JOGO</span>.
           </h2>
         </div>

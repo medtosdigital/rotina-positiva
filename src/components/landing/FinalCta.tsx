@@ -22,7 +22,7 @@ const FinalCta = () => {
             />
           )}
 
-          <h2 className="text-4xl md:text-6xl font-bold !leading-tight mb-8">
+          <h2 className="text-4xl md:text-6xl font-extrabold !leading-tight mb-8">
             Transforme a rotina do seu filho ainda HOJE.
           </h2>
 

@@ -17,7 +17,7 @@ const Bonuses = () => {
     <section className="py-20 lg:py-32 bg-brand-gold">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-brand-dark-blue mb-4">
+          <h2 className="text-3xl md:text-5xl font-extrabold text-brand-dark-blue mb-4">
             Presentes especiais que deixam tudo <span className="text-brand-orange underline decoration-wavy">AINDA mais fácil</span>.
           </h2>
           <p className="text-lg md:text-xl text-brand-dark-blue/80">Ao garantir seu acesso hoje, você também leva de presente:</p>

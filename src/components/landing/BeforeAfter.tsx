@@ -29,7 +29,7 @@ const BeforeAfter = () => {
     <section className="py-20 lg:py-32 bg-brand-green-water">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-brand-dark-blue mb-4">
+          <h2 className="text-3xl md:text-5xl font-extrabold text-brand-dark-blue mb-4">
             Você vai sentir a diferença nas <span className="bg-brand-gold px-2 rounded-lg">PRIMEIRAS 24 horas</span>.
           </h2>
         </div>

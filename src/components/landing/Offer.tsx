@@ -12,7 +12,7 @@ const Offer = () => {
     <section className="py-20 lg:py-24 bg-brand-dark-blue text-white">
       <div className="container mx-auto px-6 text-center">
         <p className="text-xl md:text-2xl mb-2 text-gray-300">OFERTA ESPECIAL DE LANÇAMENTO</p>
-        <h2 className="text-4xl md:text-6xl lg:text-8xl font-bold !leading-tight mb-6">
+        <h2 className="text-4xl md:text-6xl lg:text-8xl font-black !leading-tight mb-6">
           <span className="text-red-400 line-through decoration-2">De R$ 147</span> por apenas <span className="text-brand-gold">R$ 27 HOJE</span>.
         </h2>
         <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">Acesso vitalício a todo o sistema e futuras atualizações. Sem mensalidades.</p>

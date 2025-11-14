@@ -17,7 +17,7 @@ const UniqueMechanism = () => {
     <section className="py-20 lg:py-32 bg-brand-turquoise text-white">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-5xl font-bold mb-6">
+            <h2 className="text-3xl md:text-5xl font-extrabold mb-6">
                 O motivo real pelo qual seu filho não obedece não é teimosia —{' '}
                 <span className="underline decoration-wavy decoration-brand-gold">é a forma como o cérebro infantil funciona.</span>
             </h2>

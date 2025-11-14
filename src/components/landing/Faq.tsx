@@ -41,7 +41,7 @@ const Faq = () => {
     <section className="py-20 lg:py-32 bg-gray-50">
       <div className="container mx-auto px-6 max-w-3xl">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-brand-dark-blue mb-4">
+          <h2 className="text-3xl md:text-5xl font-extrabold text-brand-dark-blue mb-4">
             Perguntas Frequentes
           </h2>
         </div>
