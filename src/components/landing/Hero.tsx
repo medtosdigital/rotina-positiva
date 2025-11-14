@@ -15,14 +15,14 @@ const Hero = () => {
       ></div>
       <div className="relative container mx-auto grid lg:grid-cols-2 items-center min-h-[80vh] lg:min-h-[95vh] py-20 lg:py-0 px-6">
         <div className="text-white z-10 text-center lg:text-left">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold !leading-tight tracking-tight mb-4 text-brand-dark-blue">
+          <h1 className="text-3xl md:text-5xl font-bold !leading-tight tracking-tight mb-4 text-brand-dark-blue">
             Faça seu filho{' '}
-            <span className="bg-brand-dark-blue text-brand-gold px-2 rounded-md">
+            <span className="bg-brand-dark-blue text-brand-gold px-4 py-1 rounded-lg inline-block">
               OBEDECER
             </span>{' '}
-            sem brigar, sem gritar e sem ameaças — em{' '}
-            <span className="bg-brand-dark-blue text-brand-gold px-2 rounded-md">
-              apenas 24 horas.
+            sem brigar, sem gritar e sem ameaças —{' '}
+            <span className="bg-brand-dark-blue text-brand-gold px-4 py-1 rounded-lg inline-block">
+              em apenas 24 horas.
             </span>
           </h1>
           <p className="text-lg md:text-xl lg:text-2xl mb-8 text-brand-dark-blue/80">
