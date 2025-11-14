@@ -21,13 +21,12 @@ const Hero = () => {
               OBEDECER
             </span>{' '}
             sem brigar, sem gritar e sem ameaças —{' '}
-            <span className="bg-brand-dark-blue text-brand-gold px-4 py-1 rounded-lg inline-block">
+            <span className="bg-brand-dark-blue text-brand-gold px-4 py-1 rounded-lg inline-block whitespace-nowrap">
               em apenas 24 horas.
             </span>
           </h1>
           <p className="text-lg md:text-xl lg:text-2xl mb-8 text-brand-dark-blue/80">
-            O sistema visual que transforma disciplina em um jogo que a criança
-            AMA.
+            Criança obedece quando sente que está jogando — não quando está sendo mandada.
           </p>
           <Button
             size="lg"
