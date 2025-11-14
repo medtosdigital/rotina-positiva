@@ -10,7 +10,6 @@ import Offer from '@/components/landing/Offer';
 import Guarantee from '@/components/landing/Guarantee';
 import Faq from '@/components/landing/Faq';
 import FinalCta from '@/components/landing/FinalCta';
-import StickyCTA from '@/components/landing/StickyCTA';
 
 export default function Home() {
   return (
@@ -29,7 +28,6 @@ export default function Home() {
         <Faq />
         <FinalCta />
       </main>
-      <StickyCTA />
     </div>
   );
 }
