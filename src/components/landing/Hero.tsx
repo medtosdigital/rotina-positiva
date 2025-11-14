@@ -31,7 +31,7 @@ const Hero = () => {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-main');
 
   return (
-    <section className="relative w-full bg-brand-turquoise overflow-hidden pt-12">
+    <section className="relative w-full bg-brand-turquoise overflow-hidden pt-12 pb-12">
       <div
         className="absolute inset-x-0 top-0 h-full bg-brand-gold"
         style={{
@@ -40,20 +40,6 @@ const Hero = () => {
       ></div>
 
       <div className="relative container mx-auto px-6">
-        {/* Benefit Cards Section */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-12">
-            {benefitCards.map((card) => (
-                <Card key={card.title} className="bg-white/70 backdrop-blur-sm border-0 rounded-2xl shadow-lg text-center">
-                    <CardContent className="p-4 md:p-6 flex flex-col items-center justify-center">
-                       <div className="mb-3">
-                         {card.icon}
-                       </div>
-                       <h3 className="text-sm md:text-base font-bold text-brand-dark-blue leading-tight">{card.title}</h3>
-                    </CardContent>
-                </Card>
-            ))}
-        </div>
-
         <div className="grid lg:grid-cols-2 items-center gap-8 w-full">
             <div className="text-white z-10 text-center lg:text-left">
               <h1 className="text-4xl md:text-5xl font-bold !leading-tight tracking-tight mb-4 text-brand-dark-blue">
@@ -91,6 +77,20 @@ const Hero = () => {
                     </Button>
                 </div>
             </div>
+        </div>
+        
+        {/* Benefit Cards Section */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mt-16">
+            {benefitCards.map((card) => (
+                <Card key={card.title} className="bg-white/70 backdrop-blur-sm border-0 rounded-2xl shadow-lg text-center">
+                    <CardContent className="p-4 md:p-6 flex flex-col items-center justify-center">
+                       <div className="mb-3">
+                         {card.icon}
+                       </div>
+                       <h3 className="text-sm md:text-base font-bold text-brand-dark-blue leading-tight">{card.title}</h3>
+                    </CardContent>
+                </Card>
+            ))}
         </div>
       </div>
     </section>
