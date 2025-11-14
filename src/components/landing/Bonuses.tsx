@@ -38,7 +38,7 @@ const Bonuses = () => {
                       className="w-full h-56 object-cover"
                     />
                   )}
-                   <div className="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full -rotate-12">BÔNUS</div>
+                   <div className="absolute top-2 right-2 bg-brand-gold text-brand-dark-blue text-xs font-bold px-3 py-1 rounded-full -rotate-12">BÔNUS</div>
                 </CardHeader>
                 <CardContent className="p-6 text-center">
                   <CardTitle className="text-xl font-bold text-brand-dark-blue">{bonus.title}</CardTitle>
