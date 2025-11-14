@@ -22,7 +22,7 @@ const Bonuses = () => {
           </h2>
           <p className="text-lg md:text-xl text-brand-dark-blue/80">Ao garantir seu acesso hoje, você também leva de presente:</p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 gap-8 max-w-3xl mx-auto">
           {bonuses.map((bonus) => {
             const image = imageMap.get(bonus.id);
             return (
