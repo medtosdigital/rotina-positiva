@@ -6,7 +6,12 @@ import { CheckCircle2 } from 'lucide-react';
 
 const ProductShowcase = () => {
   const mockupFull = PlaceHolderImages.find((img) => img.id === 'product-mockup-full');
-  const carouselImages = PlaceHolderImages.filter((img) => img.id.startsWith('carousel-'));
+  const carouselImages = [
+    PlaceHolderImages.find((img) => img.id === 'carousel-planner'),
+    PlaceHolderImages.find((img) => img.id === 'carousel-board'),
+    PlaceHolderImages.find((img) => img.id === 'carousel-cards')
+  ].filter(img => img !== undefined) as any[];
+
   const features = [
     "Transforme tarefas em missões divertidas.",
     "Crie cooperação sem estresse.",
@@ -35,7 +40,7 @@ const ProductShowcase = () => {
                 width={1200}
                 height={800}
                 data-ai-hint={mockupFull.imageHint}
-                className="rounded-2xl shadow-2xl w-full"
+                className="rounded-2xl shadow-2xl w-full object-cover"
               />
             )}
           </div>

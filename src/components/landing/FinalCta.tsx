@@ -18,7 +18,7 @@ const FinalCta = () => {
               width={300}
               height={300}
               data-ai-hint={mockup.imageHint}
-              className="mx-auto mb-8 rounded-2xl shadow-2xl -mt-40"
+              className="mx-auto mb-8 rounded-2xl shadow-2xl -mt-40 object-cover"
             />
           )}
 
