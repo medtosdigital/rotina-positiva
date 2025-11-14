@@ -57,6 +57,19 @@ const Hero = () => {
               </p>
             </div>
             <div className="relative mt-0 lg:mt-0 h-auto">
+                 {/* Benefit Cards Section */}
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-12">
+                    {benefitCards.map((card) => (
+                        <Card key={card.title} className="bg-white/70 backdrop-blur-sm border-0 rounded-2xl shadow-lg text-center">
+                            <CardContent className="p-4 md:p-6 flex flex-col items-center justify-center">
+                            <div className="mb-3">
+                                {card.icon}
+                            </div>
+                            <h3 className="text-sm md:text-base font-bold text-brand-dark-blue leading-tight">{card.title}</h3>
+                            </CardContent>
+                        </Card>
+                    ))}
+                </div>
               {heroImage && (
                 <Image
                   src={heroImage.imageUrl}
@@ -79,19 +92,6 @@ const Hero = () => {
             </div>
         </div>
         
-        {/* Benefit Cards Section */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mt-16">
-            {benefitCards.map((card) => (
-                <Card key={card.title} className="bg-white/70 backdrop-blur-sm border-0 rounded-2xl shadow-lg text-center">
-                    <CardContent className="p-4 md:p-6 flex flex-col items-center justify-center">
-                       <div className="mb-3">
-                         {card.icon}
-                       </div>
-                       <h3 className="text-sm md:text-base font-bold text-brand-dark-blue leading-tight">{card.title}</h3>
-                    </CardContent>
-                </Card>
-            ))}
-        </div>
       </div>
     </section>
   );
