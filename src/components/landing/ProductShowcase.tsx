@@ -2,7 +2,8 @@
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { CheckCircle2 } from 'lucide-react';
+import { CheckCircle2, ArrowDown } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 const showcaseItems = [
   { id: 'whats-inside-morning', title: 'Quadro da Manhã', benefit: 'Comece o dia sem caos.' },
@@ -75,6 +76,17 @@ const ProductShowcase = () => {
                 </li>
               ))}
             </ul>
+        </div>
+        <div className="mt-16 text-center">
+            <a href="#offer">
+                <Button
+                    size="lg"
+                    className="font-headline bg-brand-turquoise hover:bg-brand-turquoise/90 text-white text-lg md:text-xl font-bold py-6 px-10 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300"
+                >
+                    QUERO APROVEITAR A OFERTA
+                    <ArrowDown className="w-5 h-5 ml-2 animate-bounce" />
+                </Button>
+            </a>
         </div>
       </div>
     </section>

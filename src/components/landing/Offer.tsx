@@ -6,7 +6,7 @@ import { Card, CardContent } from '@/components/ui/card';
 
 const Offer = () => {
   return (
-    <section className="py-20 lg:py-24 bg-brand-gold">
+    <section id="offer" className="py-20 lg:py-24 bg-brand-gold">
       <div className="container mx-auto px-4 sm:px-6">
         <Card className="max-w-xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden border-8 border-brand-gold">
           <div className="bg-brand-turquoise text-white text-center py-3">
