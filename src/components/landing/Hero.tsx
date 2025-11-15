@@ -28,7 +28,7 @@ const Hero = () => {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-main');
 
   return (
-    <section className="relative w-full bg-brand-green-water overflow-hidden pt-20 pb-12">
+    <section className="relative w-full bg-brand-green-water overflow-hidden pt-12 pb-12">
       <div
         className="absolute inset-x-0 top-0 h-full bg-brand-gold"
         style={{
@@ -63,7 +63,7 @@ const Hero = () => {
                     ))}
                 </div>
             </div>
-            <div className="relative mt-8 lg:mt-0 h-auto flex flex-col items-center order-1 lg:order-2">
+            <div className="relative mt-8 lg:mt-0 h-auto flex flex-col items-center order-1 lg:order-2 lg:col-span-1 w-full max-w-3xl mx-auto">
               {heroImage && (
                 <div className="animate-bounce-subtle">
                   <Image
