@@ -9,11 +9,12 @@ const showcaseItems = [
   { id: 'whats-inside-morning', title: 'Quadro da Manhã', benefit: 'Comece o dia sem caos.' },
   { id: 'whats-inside-afternoon', title: 'Quadro da Tarde', benefit: 'Rotina de estudos e brincadeiras.' },
   { id: 'whats-inside-night', title: 'Quadro da Noite', benefit: 'Prepare para um sono tranquilo.' },
-  { id: 'whats-inside-rewards', title: 'Painel de Recompensas', benefit: 'Motive com prêmios desejados.' },
-  { id: 'whats-inside-study', title: 'Painel de Estudos', benefit: 'Foco total na hora da lição.' },
-  { id: 'whats-inside-reading', title: 'Painel de Leitura', benefit: 'Incentive o amor pelos livros.' },
-  { id: 'whats-inside-cards', title: 'Cartões Mágicos', benefit: 'Para tarefas extras e surpresas.' },
-  { id: 'whats-inside-coins', title: 'Moedas e Estrelas', benefit: 'O dinheiro do mundo da magia.' },
+  { id: 'whats-inside-rewards', title: 'Quadro de Recompensas', benefit: 'Motive com prêmios desejados.' },
+  { id: 'whats-inside-study', title: 'Quadro de Estudos', benefit: 'Foco total na hora da lição.' },
+  { id: 'whats-inside-reading', title: 'Quadro de Leitura', benefit: 'Incentive o amor pelos livros.' },
+  { id: 'whats-inside-responsibilities', title: 'Quadro de Responsabilidades', benefit: 'Ensine o valor de ajudar em casa.' },
+  { id: 'whats-inside-cards', title: 'Cartões de Rotina', benefit: 'Para tarefas extras e surpresas.' },
+  { id: 'whats-inside-coins', title: 'Moedas e Estrelas', benefit: 'O dinheiro do mundo da magia e muito mais...' },
 ];
 
 const ProductShowcase = () => {

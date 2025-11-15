@@ -33,50 +33,56 @@
     {
       "id": "whats-inside-morning",
       "description": "Mockup of the 'Quadro da Manhã'.",
-      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/8ba3414f-0eb6-4b58-ba0b-ae7c46d1485e.png",
+      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/ChatGPT-Image-15-de-nov.-de-2025-13_23_33.png",
       "imageHint": "morning checklist"
     },
     {
       "id": "whats-inside-afternoon",
       "description": "Mockup of the 'Quadro da Tarde'.",
-      "imageUrl": "https://images.unsplash.com/photo-1758272421664-ae691f6cdafc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhZnRlcm5vb24lMjB0YXNrc3xlbnwwfHx8fDE3NjMxNDQ2Mzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/ChatGPT-Image-15-de-nov.-de-2025-13_11_17.png",
       "imageHint": "afternoon tasks"
     },
     {
       "id": "whats-inside-night",
       "description": "Mockup of the 'Quadro da Noite'.",
-      "imageUrl": "https://images.unsplash.com/photo-1758524941606-37d8276534d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxiZWR0aW1lJTIwcm91dGluZXxlbnwwfHx8fDE3NjMxNDQ2Mzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/ChatGPT-Image-15-de-nov.-de-2025-13_21_06.png",
       "imageHint": "bedtime routine"
     },
     {
       "id": "whats-inside-rewards",
-      "description": "Mockup of the 'Painel de Recompensas'.",
-      "imageUrl": "https://picsum.photos/seed/rewards2/500/500",
+      "description": "Mockup of the 'Quadro de Recompensas'.",
+      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/ChatGPT-Image-15-de-nov.-de-2025-13_31_44.png",
       "imageHint": "rewards chart"
     },
     {
       "id": "whats-inside-study",
-      "description": "Mockup of the 'Painel de Estudos'.",
-      "imageUrl": "https://images.unsplash.com/photo-1600522551127-1b7c87eb782c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxob21ld29yayUyMHBsYW5uZXJ8ZW58MHx8fHwxNzYzMTQ0NjM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Mockup of the 'Quadro de Estudos'.",
+      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/ChatGPT-Image-15-de-nov.-de-2025-13_34_58.png",
       "imageHint": "homework planner"
     },
     {
       "id": "whats-inside-reading",
-      "description": "Mockup of the 'Painel de Leitura'.",
-      "imageUrl": "https://images.unsplash.com/photo-1645365419881-835b4cf156f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxyZWFkaW5nJTIwbG9nfGVufDB8fHx8MTc2MzE0MzU4OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Mockup of the 'Quadro de Leitura'.",
+      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/ChatGPT-Image-15-de-nov.-de-2025-13_53_28.png",
       "imageHint": "reading log"
     },
     {
       "id": "whats-inside-cards",
-      "description": "Mockup of the 'Cartões Mágicos'.",
-      "imageUrl": "https://images.unsplash.com/photo-1762647440365-4baf623d1768?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxhY3Rpdml0eSUyMGNhcmRzfGVufDB8fHx8MTc2MzE0NDYzOHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "activity cards"
+      "description": "Mockup of the 'Cartões de Rotina'.",
+      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/ChatGPT-Image-15-de-nov.-de-2025-14_26_52.png",
+      "imageHint": "routine cards"
     },
     {
       "id": "whats-inside-coins",
       "description": "Image of the virtual 'Moedas e Estrelas'.",
-      "imageUrl": "https://images.unsplash.com/photo-1703192163828-a99b96cbf412?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxnb2xkJTIwc3RhcnN8ZW58MHx8fHwxNzYzMTQ0NjM4fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/ChatGPT-Image-15-de-nov.-de-2025-14_38_41.png",
       "imageHint": "gold stars"
+    },
+    {
+      "id": "whats-inside-responsibilities",
+      "description": "Image of the 'Quadro de Responsabilidades'.",
+      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/ChatGPT-Image-15-de-nov.-de-2025-13_55_56.png",
+      "imageHint": "responsibilities chart"
     },
     {
       "id": "before-chaos",
@@ -87,7 +93,7 @@
     {
       "id": "before-mom-tired",
       "description": "A tired and stressed mother.",
-      "imageUrl": "https://images.unsplash.com/photo-1650368411210-3b22f6ad8e87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxleGhhdXN0ZWQlMjBtb3RoZXJ8ZW58MHx8fHwxNzYzMTQ0NjM4fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1650368411210-3b22f6ad8e87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxleGhhdXN0ZWQlMjBtb3RoZXJ8ZW58MHx8fHwxNzYzMTQ0NjM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "exhausted mother"
     },
     {
@@ -135,31 +141,31 @@
     {
       "id": "testimonial-6",
       "description": "Portrait of a woman smiling.",
-      "imageUrl": "https://images.unsplash.com/photo-1690444963408-9573a17a8058?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzbWlsaW5nJTIwd29tYW58ZW58MHx8fHwxNzYzMTM2ODUxfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1690444963408-9573a17a8058?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzbWlsaW5nJTIwd29tYW58ZW58MHx8fHwxNzYzMTM2ODUxfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "smiling woman"
     },
     {
       "id": "testimonial-7",
       "description": "Portrait of a smiling woman.",
-      "imageUrl": "https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MzIxODk3Mnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MzIxODk3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "woman portrait"
     },
     {
       "id": "testimonial-8",
       "description": "Portrait of a smiling woman.",
-      "imageUrl": "https://images.unsplash.com/photo-1557053910-d9eadeed1c58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MzIxODk3Mnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1557053910-d9eadeed1c58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MzIxODk3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "woman portrait"
     },
     {
       "id": "testimonial-9",
       "description": "Portrait of a smiling woman.",
-      "imageUrl": "https://images.unsplash.com/photo-1580489944761-15a19d654956?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MzIxODk3Mnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1580489944761-15a19d654956?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MzIxODk3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "woman portrait"
     },
     {
       "id": "testimonial-10",
       "description": "Portrait of a smiling woman.",
-      "imageUrl": "https://images.unsplash.com/photo-1557053910-d9eadeed1c58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MzIxODk3Mnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1557053910-d9eadeed1c58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MzIxODk3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "woman portrait"
     },
     {
@@ -201,7 +207,7 @@
     {
       "id": "final-cta-testimonial",
       "description": "Face of a woman for a mini testimonial.",
-      "imageUrl": "https://images.unsplash.com/photo-1556745753-b2904692b3cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxoYXBweSUyMGN1c3RvbWVyfGVufDB8fHx8MTc2MzA2MDM5Mnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1556745753-b2904692b3cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxoYXBweSUyMGN1c3RvbWVyfGVufDB8fHx8MTc2MzA2MDM5Mnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "happy customer"
     },
     {
