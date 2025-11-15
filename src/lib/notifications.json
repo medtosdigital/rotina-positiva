@@ -1,0 +1,48 @@
+{
+  "notifications": [
+    {
+      "type": "purchase",
+      "name": "Ana P.",
+      "location": "São Paulo, SP",
+      "comment": "Acabou de comprar o Kit Rotina Mágica!"
+    },
+    {
+      "type": "instagram",
+      "name": "mariana_mom",
+      "comment": "Gente, esse kit salvou minhas manhãs! Super recomendo!"
+    },
+    {
+      "type": "purchase",
+      "name": "Juliana C.",
+      "location": "Rio de Janeiro, RJ",
+      "comment": "Acabou de comprar o Kit Rotina Mágica!"
+    },
+    {
+      "type": "facebook",
+      "name": "Fernanda Souza",
+      "comment": "Funciona mesmo! Meu filho agora arruma o quarto cantando."
+    },
+    {
+      "type": "purchase",
+      "name": "Beatriz L.",
+      "location": "Belo Horizonte, MG",
+      "comment": "Acabou de comprar o Kit Rotina Mágica!"
+    },
+    {
+      "type": "instagram",
+      "name": "papai_em_apuros",
+      "comment": "A melhor compra que fiz esse ano. A paz voltou a reinar."
+    },
+    {
+      "type": "purchase",
+      "name": "Camila R.",
+      "location": "Curitiba, PR",
+      "comment": "Acabou de comprar o Kit Rotina Mágica!"
+    },
+    {
+        "type": "facebook",
+        "name": "Roberto Dias",
+        "comment": "Minha esposa comprou e eu duvidei, mas é incrível. Recomendo!"
+    }
+  ]
+}
