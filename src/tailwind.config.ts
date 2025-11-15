@@ -17,8 +17,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        body: ['PT Sans', 'sans-serif'],
-        headline: ['Lilita One', 'sans-serif'],
+        body: ['Nunito', 'sans-serif'],
+        headline: ['Nunito', 'sans-serif'],
       },
       colors: {
         background: 'hsl(var(--background))',
