@@ -3,6 +3,7 @@ import PainPoints from '@/components/landing/PainPoints';
 import UniqueMechanism from '@/components/landing/UniqueMechanism';
 import ProductShowcase from '@/components/landing/ProductShowcase';
 import BeforeAfter from '@/components/landing/BeforeAfter';
+import CreatorStory from '@/components/landing/CreatorStory';
 import Benefits from '@/components/landing/Benefits';
 import Testimonials from '@/components/landing/Testimonials';
 import Bonuses from '@/components/landing/Bonuses';
@@ -20,6 +21,7 @@ export default function Home() {
         <UniqueMechanism />
         <ProductShowcase />
         <BeforeAfter />
+        <CreatorStory />
         <Benefits />
         <Testimonials />
         <Bonuses />
@@ -31,3 +33,5 @@ export default function Home() {
     </div>
   );
 }
+
+    
