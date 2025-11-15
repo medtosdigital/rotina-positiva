@@ -33,7 +33,7 @@ const UniqueMechanism = () => {
 
         <div className="flex justify-center">
             <Card className="bg-white/90 backdrop-blur-sm border border-white/50 rounded-2xl shadow-xl max-w-4xl w-full">
-                <CardContent className="p-8 md:p-12 grid md:grid-cols-[1fr_auto_1fr] items-center gap-6 md:gap-8">
+                <CardContent className="p-8 md:p-12 grid md:grid-cols-[1fr_auto_1fr] items-start gap-6 md:gap-8">
                     {/* Coluna Regras Chatas */}
                     <div className="text-center md:text-left">
                         <h3 className="font-headline text-xl md:text-2xl font-bold text-red-500 mb-4">Regras Chatas</h3>
@@ -48,7 +48,7 @@ const UniqueMechanism = () => {
                     </div>
 
                     {/* Seta */}
-                    <div className="flex justify-center">
+                    <div className="flex justify-center items-center h-full">
                         <ArrowRight className="w-8 h-8 md:w-12 md:h-12 text-brand-turquoise" />
                     </div>
                     
