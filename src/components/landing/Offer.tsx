@@ -29,10 +29,12 @@ const Offer = () => {
                 <p className="font-headline text-2xl font-bold text-gray-400 line-through decoration-2 mb-2">R$ 147,00</p>
                 
                 <p className="font-headline font-bold text-brand-turquoise text-lg uppercase">OFERTA ESPECIAL HOJE</p>
-                <p className="font-headline font-bold text-brand-turquoise !leading-none">
-                    <span className="text-2xl align-middle">12x </span>
+                
+                <div className="flex justify-center items-center font-headline font-bold text-brand-turquoise !leading-none">
+                    <span className="text-2xl self-center mr-2">12x</span>
                     <span className="text-7xl font-extrabold">R$ 2,25</span>
-                </p>
+                </div>
+
                 <p className="font-body text-gray-500 text-sm">ou R$27,00 à vista</p>
             </div>
 
