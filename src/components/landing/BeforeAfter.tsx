@@ -21,7 +21,6 @@ const afterItems = [
 
 const BeforeAfter = () => {
   const beforeChaosImg = PlaceHolderImages.find(img => img.id === 'before-chaos');
-  const beforeMomTiredImg = PlaceHolderImages.find(img => img.id === 'before-mom-tired');
   const afterRoutineImg = PlaceHolderImages.find(img => img.id === 'after-routine');
 
   return (
@@ -40,9 +39,8 @@ const BeforeAfter = () => {
               <CardTitle className="font-headline text-3xl md:text-4xl font-bold text-red-600 text-center">ANTES</CardTitle>
             </CardHeader>
             <CardContent className="p-0">
-              <div className="grid grid-cols-2 gap-4 mb-6">
-                {beforeChaosImg && <Image src={beforeChaosImg.imageUrl} alt={beforeChaosImg.description} width={400} height={500} data-ai-hint={beforeChaosImg.imageHint} className="rounded-xl shadow-md w-full h-full object-cover" />}
-                {beforeMomTiredImg && <Image src={beforeMomTiredImg.imageUrl} alt={beforeMomTiredImg.description} width={400} height={500} data-ai-hint={beforeMomTiredImg.imageHint} className="rounded-xl shadow-md w-full h-full object-cover" />}
+              <div className="mb-6">
+                {beforeChaosImg && <Image src={beforeChaosImg.imageUrl} alt={beforeChaosImg.description} width={800} height={500} data-ai-hint={beforeChaosImg.imageHint} className="rounded-xl shadow-md w-full h-auto object-contain" />}
               </div>
               <ul className="space-y-3">
                 {beforeItems.map(item => (

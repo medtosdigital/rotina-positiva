@@ -87,14 +87,8 @@
     {
       "id": "before-chaos",
       "description": "A child having a tantrum in a messy room.",
-      "imageUrl": "https://images.unsplash.com/photo-1672862683946-9e3c606f71ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx0b2RkbGVyJTIwdGFudHJ1bXxlbnwwfHx8fDE3NjMxNDQ2Mzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/Screenshot-2025-11-15-154743.png",
       "imageHint": "toddler tantrum"
-    },
-    {
-      "id": "before-mom-tired",
-      "description": "A tired and stressed mother.",
-      "imageUrl": "https://images.unsplash.com/photo-1650368411210-3b22f6ad8e87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxleGhhdXN0ZWQlMjBtb3RoZXJ8ZW58MHx8fHwxNzYzMTQ0NjM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "exhausted mother"
     },
     {
       "id": "after-routine",
@@ -177,7 +171,7 @@
     {
       "id": "bonus-emocoes",
       "description": "Cover of the 'Painel das Emoções' bonus.",
-      "imageUrl": "https://images.unsplash.com/photo-1606242403145-bfd1478df2da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwbGFubmVyJTIwbW9ja3VwfGVufDB8fHx8MTc2MzA1NjQzMnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1606242403145-bfd1478df2da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwbGFubmVyJTIwbW9ja3VwfGVufDB8fHx8MTc2MzA1NjQzMnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "planner mockup"
     },
     {
