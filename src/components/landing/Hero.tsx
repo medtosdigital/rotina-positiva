@@ -44,19 +44,17 @@ const Hero = () => {
             <div className="text-white z-10 text-center lg:text-left">
               <h1 className="text-4xl md:text-5xl font-extrabold !leading-tight tracking-tight mb-4 text-brand-dark-blue">
                 Faça seu filho{' '}
-                <span className="bg-brand-dark-blue text-brand-gold px-2 py-1 rounded-lg inline-block whitespace-nowrap">
+                <span className="bg-brand-dark-blue text-brand-gold px-4 py-1 rounded-full inline-block">
                   OBEDECER
                 </span>{' '}
                 sem brigar, sem gritar e sem ameaças —{' '}
-                <span className="bg-brand-dark-blue text-brand-gold px-2 py-1 rounded-lg inline-block">
+                <span className="bg-brand-dark-blue text-brand-gold px-4 py-1 rounded-full inline-block">
                   em apenas 24 horas.
                 </span>
               </h1>
               <p className="text-lg md:text-xl lg:text-2xl mb-8 text-brand-dark-blue/80">
                 Criança obedece quando sente que está jogando — não quando está sendo mandada.
               </p>
-            </div>
-            <div className="relative mt-0 lg:mt-0 h-auto">
                  {/* Benefit Cards Section */}
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-12">
                     {benefitCards.map((card) => (
@@ -70,6 +68,8 @@ const Hero = () => {
                         </Card>
                     ))}
                 </div>
+            </div>
+            <div className="relative mt-0 lg:mt-0 h-auto">
               {heroImage && (
                 <Image
                   src={heroImage.imageUrl}
