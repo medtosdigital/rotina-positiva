@@ -44,10 +44,10 @@ const Testimonials = () => {
     <section className="py-20 lg:py-32 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
-          <h2 className="font-headline text-3xl md:text-5xl font-black text-brand-dark-blue mb-4">
+          <h2 className="font-headline text-3xl md:text-5xl font-bold text-brand-dark-blue mb-4">
             Mães reais... <span className="text-brand-turquoise">resultados reais.</span>
           </h2>
-          <p className="text-lg md:text-xl text-brand-dark-blue/80">Veja o que elas estão dizendo:</p>
+          <p className="font-body text-lg md:text-xl text-brand-dark-blue/80">Veja o que elas estão dizendo:</p>
         </div>
         <Carousel opts={{ loop: true, align: "start" }} className="w-full max-w-sm md:max-w-6xl mx-auto">
           <CarouselContent className="-ml-4">
@@ -70,7 +70,7 @@ const Testimonials = () => {
                             />
                           )}
                           <div>
-                            <p className="font-bold text-lg text-gray-800">{testimonial.name}</p>
+                            <p className="font-subtitle font-bold text-lg text-gray-800">{testimonial.name}</p>
                             <StarRating />
                           </div>
                         </div>
@@ -83,7 +83,7 @@ const Testimonials = () => {
                                 <span className="text-xs text-gray-500 ml-2">1:12</span>
                            </div>
                         ) : (
-                           <p className="text-gray-600 flex-grow">"{testimonial.text}"</p>
+                           <p className="font-body text-gray-600 flex-grow">"{testimonial.text}"</p>
                         )}
                       </CardContent>
                     </Card>

@@ -22,13 +22,13 @@ const FinalCta = () => {
             />
           )}
 
-          <h2 className="text-3xl md:text-6xl font-extrabold !leading-tight mb-8">
+          <h2 className="font-headline text-3xl md:text-6xl font-bold !leading-tight mb-8">
             Você está a 1 clique de transformar a rotina do seu filho.
           </h2>
 
           <Button
             size="lg"
-            className="bg-white hover:bg-gray-100 text-brand-orange text-lg md:text-2xl font-bold py-6 px-8 md:py-8 md:px-16 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 animate-pulse w-full max-w-md"
+            className="font-headline bg-white hover:bg-gray-100 text-brand-orange text-lg md:text-2xl font-bold py-6 px-8 md:py-8 md:px-16 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 animate-pulse w-full max-w-md"
           >
             SIM! EU QUERO TRANSFORMAR MINHA CASA!
           </Button>
@@ -45,7 +45,7 @@ const FinalCta = () => {
                         className="rounded-full object-cover border-2 border-white w-16 h-16 md:w-20 md:h-20"
                     />
                 )}
-                <div className="text-left">
+                <div className="text-left font-body">
                     <p className="text-xs sm:text-sm italic">"Melhor investimento que fiz pela paz da minha família. Funcionou no primeiro dia!"</p>
                     <div className="flex text-yellow-300 mt-1">
                         {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-current" />)}

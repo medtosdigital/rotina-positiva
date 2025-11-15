@@ -51,17 +51,17 @@ const Offer = () => {
   return (
     <section className="py-20 lg:py-24 bg-brand-dark-blue text-white">
       <div className="container mx-auto px-6 text-center">
-        <p className="text-lg md:text-2xl mb-2 text-gray-300">OFERTA ESPECIAL DE LANÇAMENTO</p>
-        <h2 className="text-4xl md:text-6xl font-black !leading-tight mb-4">
+        <p className="font-body text-lg md:text-2xl mb-2 text-gray-300">OFERTA ESPECIAL DE LANÇAMENTO</p>
+        <h2 className="font-headline text-4xl md:text-6xl font-bold !leading-tight mb-4">
           <span className="text-red-400 line-through decoration-2">De R$ 147</span> por apenas <span className="text-brand-gold">R$ 27 HOJE</span>.
         </h2>
-        <p className="text-base md:text-xl text-gray-300 max-w-2xl mx-auto">Acesso vitalício a todo o sistema e futuras atualizações. Sem mensalidades.</p>
+        <p className="font-body text-base md:text-xl text-gray-300 max-w-2xl mx-auto">Acesso vitalício a todo o sistema e futuras atualizações. Sem mensalidades.</p>
         
         <CountdownTimer />
         
         <Button
           size="lg"
-          className="bg-brand-orange hover:bg-brand-orange/90 text-primary-foreground text-lg md:text-2xl font-bold py-6 px-8 md:py-8 md:px-16 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 animate-pulse w-full max-w-md"
+          className="font-headline bg-brand-orange hover:bg-brand-orange/90 text-primary-foreground text-lg md:text-2xl font-bold py-6 px-8 md:py-8 md:px-16 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 animate-pulse w-full max-w-md"
         >
           QUERO ACESSAR AGORA POR R$27
         </Button>
@@ -69,7 +69,7 @@ const Offer = () => {
           {seals.map((seal, index) => (
             <div key={index} className="flex items-center text-gray-300 text-sm md:text-base">
               {seal.icon}
-              <span className="font-medium">{seal.text}</span>
+              <span className="font-body font-medium">{seal.text}</span>
             </div>
           ))}
         </div>

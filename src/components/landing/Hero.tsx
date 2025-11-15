@@ -39,7 +39,7 @@ const Hero = () => {
       <div className="relative container mx-auto px-6">
         <div className="grid lg:grid-cols-2 items-center gap-12 w-full">
             <div className="text-brand-dark-blue z-10 text-center lg:text-left">
-              <h1 className="font-headline text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tighter max-w-4xl">
+              <h1 className="font-headline text-2xl sm:text-3xl md:text-4xl font-bold tracking-tighter max-w-4xl">
                 Faça seu filho{' '}
                 <span className="inline-block bg-brand-dark-blue text-white px-2 py-1 rounded-full my-1 transform -rotate-3">
                     OBEDECER
@@ -49,7 +49,7 @@ const Hero = () => {
                     em apenas 24 horas.
                 </span>
               </h1>
-              <p className="text-lg md:text-xl mt-6 mb-8 text-brand-dark-blue/90 font-medium">
+              <p className="font-body text-lg md:text-xl mt-6 mb-8 text-brand-dark-blue/90">
                 Com o sistema visual que transforma disciplina em um jogo divertido.
               </p>
                 <div className="grid grid-cols-2 gap-4">
@@ -58,7 +58,7 @@ const Hero = () => {
                             <div className="mb-3">
                                 {card.icon}
                             </div>
-                            <h3 className="text-sm font-bold text-brand-dark-blue leading-tight">{card.title}</h3>
+                            <h3 className="font-subtitle text-sm font-bold text-brand-dark-blue leading-tight">{card.title}</h3>
                         </div>
                     ))}
                 </div>

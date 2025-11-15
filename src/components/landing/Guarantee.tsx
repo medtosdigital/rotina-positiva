@@ -13,10 +13,10 @@ const Guarantee = () => {
             <div className="inline-block bg-brand-gold p-4 rounded-full mb-6 shadow-lg">
                 <ShieldCheck className="w-8 h-8 md:w-12 md:h-12 text-brand-dark-blue" />
             </div>
-            <h2 className="text-3xl md:text-5xl font-extrabold text-brand-dark-blue mb-4">
+            <h2 className="font-headline text-3xl md:text-5xl font-bold text-brand-dark-blue mb-4">
               Garantia INCONDICIONAL de 7 dias.
             </h2>
-            <p className="text-base md:text-lg text-gray-600 mb-6">
+            <p className="font-body text-base md:text-lg text-gray-600 mb-6">
               Ou você vê uma transformação na sua casa, ou eu devolvo 100% do seu dinheiro. O risco é todo meu. Se por QUALQUER motivo você não amar o Rotina Mágica, basta enviar um único e-mail para receber seu investimento de volta. Simples assim.
             </p>
           </div>

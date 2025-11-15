@@ -17,7 +17,7 @@ const UniqueMechanism = () => {
     <section className="py-20 lg:py-32 bg-brand-turquoise text-white">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-5xl font-extrabold mb-6">
+            <h2 className="font-headline text-3xl md:text-5xl font-bold mb-6">
                 A birra e a desobediência do seu filho não são culpa sua —{' '}
                 <span className="underline decoration-wavy decoration-brand-gold">é como o cérebro infantil foi programado.</span>
             </h2>
@@ -31,10 +31,10 @@ const UniqueMechanism = () => {
                             <div className="bg-brand-orange p-3 rounded-full mb-2">
                                 {card.icon}
                             </div>
-                            <CardTitle className="text-lg md:text-xl font-bold">{card.title}</CardTitle>
+                            <CardTitle className="font-subtitle text-lg md:text-xl font-bold">{card.title}</CardTitle>
                         </CardHeader>
                         <CardContent className="p-4 md:p-6 pt-0">
-                            <p className="text-sm md:text-base">{card.description}</p>
+                            <p className="font-body text-sm md:text-base">{card.description}</p>
                         </CardContent>
                     </Card>
                 ))}
@@ -50,7 +50,7 @@ const UniqueMechanism = () => {
                         className="rounded-2xl shadow-2xl mb-6"
                     />
                 )}
-                 <p className="text-xl md:text-3xl font-bold text-center bg-brand-gold text-brand-dark-blue py-3 px-6 rounded-xl shadow-lg -rotate-3">
+                 <p className="font-subtitle text-xl md:text-3xl font-bold text-center bg-brand-gold text-brand-dark-blue py-3 px-6 rounded-xl shadow-lg -rotate-3">
                     Crianças obedecem à <span className="underline">diversão</span>, não à <span className="line-through">obrigação</span>.
                 </p>
             </div>

@@ -41,18 +41,18 @@ const Faq = () => {
     <section className="py-20 lg:py-32 bg-gray-50">
       <div className="container mx-auto px-6 max-w-3xl">
         <div className="text-center mb-12 md:mb-16">
-          <h2 className="font-headline text-3xl md:text-5xl font-black text-brand-dark-blue mb-4">
+          <h2 className="font-headline text-3xl md:text-5xl font-bold text-brand-dark-blue mb-4">
             Ainda tem dúvidas?
           </h2>
-          <p className="text-lg md:text-xl text-brand-dark-blue/80">A gente responde!</p>
+          <p className="font-body text-lg md:text-xl text-brand-dark-blue/80">A gente responde!</p>
         </div>
         <Accordion type="single" collapsible className="w-full">
           {faqItems.map((item, index) => (
             <AccordionItem key={index} value={`item-${index}`} className="bg-white border-b-0 mb-4 rounded-xl shadow-md transition-transform hover:scale-105">
-              <AccordionTrigger className="text-base md:text-lg font-semibold text-left px-6 py-4 hover:no-underline text-brand-dark-blue">
+              <AccordionTrigger className="font-subtitle text-base md:text-lg font-bold text-left px-6 py-4 hover:no-underline text-brand-dark-blue">
                 {item.question}
               </AccordionTrigger>
-              <AccordionContent className="px-6 pb-4 text-gray-600 text-sm md:text-base">
+              <AccordionContent className="font-body px-6 pb-4 text-gray-600 text-sm md:text-base">
                 {item.answer}
               </AccordionContent>
             </AccordionItem>

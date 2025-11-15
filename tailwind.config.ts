@@ -17,8 +17,10 @@ export default {
     },
     extend: {
       fontFamily: {
-        body: ['PT Sans', 'sans-serif'],
-        headline: ['PT Sans', 'sans-serif'],
+        body: ['Nunito', 'sans-serif'],
+        headline: ['Poppins', 'sans-serif'],
+        subtitle: ['Poppins', 'sans-serif'],
+        planner: ['Quicksand', 'sans-serif'],
         code: ['monospace'],
       },
       colors: {
