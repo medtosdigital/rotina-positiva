@@ -11,11 +11,13 @@ import Offer from '@/components/landing/Offer';
 import Guarantee from '@/components/landing/Guarantee';
 import Faq from '@/components/landing/Faq';
 import FinalCta from '@/components/landing/FinalCta';
+import PromoBanner from '@/components/landing/PromoBanner';
 
 export default function Home() {
   return (
     <div className="bg-white overflow-x-hidden">
       <main>
+        <PromoBanner />
         <Hero />
         <PainPoints />
         <UniqueMechanism />
@@ -33,5 +35,3 @@ export default function Home() {
     </div>
   );
 }
-
-    

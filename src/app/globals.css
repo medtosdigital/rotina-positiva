@@ -122,6 +122,34 @@
       transform: scale(1.05);
     }
   }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: hsl(var(--brand-orange));
+    }
+  }
+
+  .typing-animation {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0.1em solid hsl(var(--brand-orange));
+    animation: typing 1s steps(20, end), blink-caret 0.5s step-end infinite alternate;
+  }
+
 
   .animate-bounce-subtle {
     animation: bounce-subtle 1.5s infinite;
