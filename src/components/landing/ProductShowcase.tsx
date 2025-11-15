@@ -81,7 +81,7 @@ const ProductShowcase = () => {
             <a href="#offer">
                 <Button
                     size="lg"
-                    className="font-headline bg-brand-turquoise hover:bg-brand-turquoise/90 text-white text-xl md:text-2xl font-bold py-8 px-10 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 h-auto"
+                    className="font-headline bg-brand-turquoise hover:bg-brand-turquoise/90 text-white text-xl md:text-2xl font-bold py-8 px-10 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 h-auto animate-pulse-slow"
                 >
                     <div className="flex flex-col items-center">
                         <span>QUERO APROVEITAR A OFERTA</span>
