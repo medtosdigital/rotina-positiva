@@ -1,3 +1,5 @@
+"use client";
+
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -31,44 +33,39 @@ const Hero = () => {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-main');
 
   return (
-    <section className="relative w-full bg-brand-turquoise overflow-hidden pt-12 pb-12">
+    <section className="relative w-full bg-brand-turquoise overflow-hidden pt-20 pb-12">
       <div
         className="absolute inset-x-0 top-0 h-full bg-brand-gold"
         style={{
-          clipPath: 'polygon(0 0, 100% 0, 100% 80%, 0 100%)',
+          clipPath: 'polygon(0 0, 100% 0, 100% 85%, 0 100%)',
         }}
       ></div>
 
       <div className="relative container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 items-center gap-8 w-full">
+        <div className="grid lg:grid-cols-2 items-center gap-12 w-full">
             <div className="text-white z-10 text-center lg:text-left">
-              <h1 className="text-4xl md:text-5xl font-extrabold !leading-tight tracking-tight mb-4 text-brand-dark-blue">
-                O sistema visual que transforma{' '}
-                <span className="text-brand-orange underline decoration-wavy">
-                  disciplina
+              <h1 className="text-4xl md:text-5xl font-extrabold !leading-tight tracking-tight mb-6 text-brand-dark-blue">
+                Faça seu filho <br />
+                <span className="bg-brand-dark-blue text-white px-4 py-1 rounded-full inline-block my-1">
+                    OBEDECER
                 </span>{' '}
-                em um{' '}
-                <span className="bg-brand-dark-blue text-brand-gold px-4 py-1 rounded-full inline-block">
-                  jogo
-                </span>{' '}
-                que a criança{' '}
-                <span className="bg-brand-dark-blue text-brand-gold px-4 py-1 rounded-full inline-block">
-                  AMA
+                sem brigar, <br /> sem gritar e sem <br/> ameaças — <br />
+                <span className="bg-brand-dark-blue text-white px-4 py-1 rounded-full inline-block mt-1">
+                    em apenas 24 horas.
                 </span>
-                .
               </h1>
-              <p className="text-lg md:text-xl lg:text-2xl mb-8 text-brand-dark-blue/80">
+              <p className="text-lg md:text-xl mb-10 text-brand-dark-blue/80">
                 Criança obedece quando sente que está jogando — não quando está sendo mandada.
               </p>
                  {/* Benefit Cards Section */}
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-12">
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
                     {benefitCards.map((card) => (
-                        <Card key={card.title} className="bg-white/70 backdrop-blur-sm border-0 rounded-2xl shadow-lg text-center">
-                            <CardContent className="p-4 md:p-6 flex flex-col items-center justify-center">
+                        <Card key={card.title} className="bg-white/30 backdrop-blur-sm border-0 rounded-2xl shadow-lg text-center transform hover:scale-105 transition-transform duration-300">
+                            <CardContent className="p-4 flex flex-col items-center justify-center">
                             <div className="mb-3">
                                 {card.icon}
                             </div>
-                            <h3 className="text-sm md:text-base font-bold text-brand-dark-blue leading-tight">{card.title}</h3>
+                            <h3 className="text-sm font-bold text-brand-dark-blue leading-tight">{card.title}</h3>
                             </CardContent>
                         </Card>
                     ))}
@@ -89,7 +86,7 @@ const Hero = () => {
                <div className="mt-8 z-10 w-full flex justify-center">
                     <Button
                     size="lg"
-                    className="bg-brand-orange hover:bg-brand-orange/90 text-primary-foreground text-lg md:text-xl font-bold py-8 px-10 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300 w-full max-w-md lg:w-auto animate-pulse"
+                    className="bg-brand-orange hover:bg-brand-orange/90 text-white text-xl md:text-2xl font-bold py-8 px-10 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300 w-full max-w-md lg:max-w-xl animate-pulse"
                     >
                     QUERO O ROTINA MÁGICA AGORA
                     </Button>
