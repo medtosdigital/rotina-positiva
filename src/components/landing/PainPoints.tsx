@@ -1,5 +1,9 @@
+
+"use client";
+
 import { Card, CardContent } from '@/components/ui/card';
-import { CheckCircle2, XCircle } from 'lucide-react';
+import { CheckCircle2, XCircle, ArrowDown } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 const painPoints = [
   {
@@ -54,7 +58,7 @@ const PainPoints = () => {
           ))}
         </div>
 
-        <div className="mt-12 md:mt-16 flex justify-center">
+        <div className="mt-12 md:mt-16 flex flex-col items-center justify-center">
             <Card className="bg-gradient-to-br from-white/90 to-white/60 backdrop-blur-sm border border-white/50 rounded-2xl shadow-xl max-w-lg p-6 md:p-8">
                 <CardContent className="p-0 text-center">
                     <h3 className="font-headline text-3xl md:text-4xl font-bold text-brand-turquoise mb-2">Não é sua culpa.</h3>
@@ -71,8 +75,19 @@ const PainPoints = () => {
                     </div>
                 </CardContent>
             </Card>
-        </div>
 
+            <div className="mt-12 text-center">
+                <a href="#product-showcase">
+                    <Button
+                        size="lg"
+                        className="font-headline bg-brand-turquoise hover:bg-brand-turquoise/90 text-white text-lg md:text-xl font-bold py-4 px-10 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300"
+                    >
+                        EU QUERO A FERRAMENTA CERTA!
+                        <ArrowDown className="w-5 h-5 ml-2 animate-bounce" />
+                    </Button>
+                </a>
+            </div>
+        </div>
       </div>
     </section>
   );
