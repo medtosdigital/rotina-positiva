@@ -18,7 +18,7 @@ const Bonuses = () => {
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
           <h2 className="font-headline text-3xl md:text-5xl font-bold text-brand-dark-blue mb-4">
-            E de presente 🎁, você ainda leva <span className="text-brand-orange underline decoration-wavy">4 BÔNUS ESPECIAIS:</span>
+            E de presente 🎁, você ainda leva <span className="text-brand-orange underline decoration-wavy">4 BÔNUS ESPECIAIS E GRÁTIS:</span>
           </h2>
         </div>
         <div className="grid grid-cols-2 gap-4 md:gap-8 max-w-4xl mx-auto">
