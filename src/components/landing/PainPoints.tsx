@@ -78,11 +78,11 @@ const PainPoints = () => {
                 <a href="#product-showcase">
                     <Button
                         size="lg"
-                        className="font-headline bg-brand-turquoise hover:bg-brand-turquoise/90 text-white text-xl md:text-2xl font-bold py-8 px-10 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 h-auto animate-pulse-slow"
+                        className="font-headline bg-brand-turquoise hover:bg-brand-turquoise/90 text-white font-bold py-6 px-6 sm:py-8 sm:px-10 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 h-auto animate-pulse-slow w-full max-w-md"
                     >
                         <div className="flex flex-col items-center">
-                            <span>EU QUERO A FERRAMENTA CERTA!</span>
-                            <span className="text-sm font-normal">Clique e veja como funciona</span>
+                            <span className="text-lg sm:text-xl md:text-2xl">EU QUERO A FERRAMENTA CERTA!</span>
+                            <span className="text-xs sm:text-sm font-normal">Clique e veja como funciona</span>
                         </div>
                     </Button>
                 </a>

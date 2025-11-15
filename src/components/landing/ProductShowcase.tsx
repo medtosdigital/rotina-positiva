@@ -92,11 +92,11 @@ const ProductShowcase = () => {
             <a href="#offer">
                 <Button
                     size="lg"
-                    className="font-headline bg-brand-turquoise hover:bg-brand-turquoise/90 text-white text-xl md:text-2xl font-bold py-8 px-10 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 h-auto animate-pulse-slow"
+                    className="font-headline bg-brand-turquoise hover:bg-brand-turquoise/90 text-white font-bold py-6 px-6 sm:py-8 sm:px-10 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 h-auto animate-pulse-slow w-full max-w-md"
                 >
                     <div className="flex flex-col items-center">
-                        <span>QUERO APROVEITAR A OFERTA</span>
-                        <span className="text-sm font-normal">Garantir meu kit com desconto</span>
+                        <span className="text-lg sm:text-xl md:text-2xl">QUERO APROVEITAR A OFERTA</span>
+                        <span className="text-xs sm:text-sm font-normal">Garantir meu kit com desconto</span>
                     </div>
                 </Button>
             </a>
