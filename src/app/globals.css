@@ -4,25 +4,25 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 224 71.4% 4.1%;
+    --background: 0 0% 98%; /* Was #FAFAFA */
+    --foreground: 209 84% 21%; /* Was #0A3D62 */
     --card: 0 0% 100%;
-    --card-foreground: 224 71.4% 4.1%;
+    --card-foreground: 209 84% 21%;
     --popover: 0 0% 100%;
-    --popover-foreground: 224 71.4% 4.1%;
-    --primary: 33 100% 50%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 0 0% 96.1%;
-    --secondary-foreground: 0 0% 9%;
+    --popover-foreground: 209 84% 21%;
+    --primary: 178 59% 48%; /* Was #32C7C3 */
+    --primary-foreground: 209 84% 21%;
+    --secondary: 45 100% 62%; /* Was #FFC83D */
+    --secondary-foreground: 209 84% 21%;
     --muted: 0 0% 96.1%;
     --muted-foreground: 0 0% 45.1%;
-    --accent: 51 100% 50%;
-    --accent-foreground: 224 71.4% 4.1%;
+    --accent: 19 100% 62%; /* Was #FF8A3D */
+    --accent-foreground: 209 84% 21%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     --border: 0 0% 89.8%;
     --input: 0 0% 89.8%;
-    --ring: 33 100% 50%;
+    --ring: 178 59% 48%;
     --chart-1: 12 76% 61%;
     --chart-2: 173 58% 39%;
     --chart-3: 197 37% 24%;
@@ -39,32 +39,32 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
 
     /* Custom brand colors */
-    --brand-turquoise: 174 72% 56%;
-    --brand-gold: 51 100% 50%;
-    --brand-orange: 33 100% 50%;
-    --brand-green-water: 158 77% 83%;
-    --brand-dark-blue: 226 65% 31%;
+    --brand-turquoise: 178 59% 48%; /* #32C7C3 */
+    --brand-gold: 45 100% 62%; /* #FFC83D */
+    --brand-orange: 19 100% 62%; /* #FF8A3D */
+    --brand-green-water: 173 63% 47%; /* #2BC4B0 */
+    --brand-dark-blue: 209 84% 21%; /* #0A3D62 */
   }
   .dark {
-    --background: 224 71.4% 4.1%;
-    --foreground: 0 0% 98%;
-    --card: 224 71.4% 4.1%;
+    --background: 209 84% 21%; /* Was #0A3D62 */
+    --foreground: 0 0% 98%; /* Was #FAFAFA */
+    --card: 209 84% 21%;
     --card-foreground: 0 0% 98%;
-    --popover: 224 71.4% 4.1%;
+    --popover: 209 84% 21%;
     --popover-foreground: 0 0% 98%;
-    --primary: 33 100% 50%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 0 0% 14.9%;
-    --secondary-foreground: 0 0% 98%;
+    --primary: 178 59% 48%; /* Was #32C7C3 */
+    --primary-foreground: 209 84% 21%;
+    --secondary: 45 100% 62%; /* Was #FFC83D */
+    --secondary-foreground: 209 84% 21%;
     --muted: 0 0% 14.9%;
     --muted-foreground: 0 0% 63.9%;
-    --accent: 51 100% 50%;
-    --accent-foreground: 224 71.4% 4.1%;
+    --accent: 19 100% 62%; /* Was #FF8A3D */
+    --accent-foreground: 0 0% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
     --border: 0 0% 14.9%;
     --input: 0 0% 14.9%;
-    --ring: 33 100% 50%;
+    --ring: 178 59% 48%;
     --chart-1: 220 70% 50%;
     --chart-2: 160 60% 45%;
     --chart-3: 30 80% 55%;
@@ -80,11 +80,11 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
 
     /* Custom brand colors */
-    --brand-turquoise: 174 72% 56%;
-    --brand-gold: 51 100% 50%;
-    --brand-orange: 33 100% 50%;
-    --brand-green-water: 158 77% 83%;
-    --brand-dark-blue: 226 65% 31%;
+    --brand-turquoise: 178 59% 48%; /* #32C7C3 */
+    --brand-gold: 45 100% 62%; /* #FFC83D */
+    --brand-orange: 19 100% 62%; /* #FF8A3D */
+    --brand-green-water: 173 63% 47%; /* #2BC4B0 */
+    --brand-dark-blue: 209 84% 21%; /* #0A3D62 */
   }
 }
 
