@@ -35,8 +35,8 @@ const ProductShowcase = () => {
             <Image
               src={headerImage.imageUrl}
               alt={headerImage.description}
-              width={250}
-              height={250}
+              width={300}
+              height={300}
               data-ai-hint={headerImage.imageHint}
               className="mx-auto mb-6"
             />
