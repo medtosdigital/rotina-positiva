@@ -2,7 +2,6 @@ import Hero from '@/components/landing/Hero';
 import PainPoints from '@/components/landing/PainPoints';
 import UniqueMechanism from '@/components/landing/UniqueMechanism';
 import ProductShowcase from '@/components/landing/ProductShowcase';
-import WhatsInside from '@/components/landing/WhatsInside';
 import BeforeAfter from '@/components/landing/BeforeAfter';
 import Benefits from '@/components/landing/Benefits';
 import Testimonials from '@/components/landing/Testimonials';
@@ -20,7 +19,6 @@ export default function Home() {
         <PainPoints />
         <UniqueMechanism />
         <ProductShowcase />
-        <WhatsInside />
         <BeforeAfter />
         <Benefits />
         <Testimonials />
