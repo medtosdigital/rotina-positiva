@@ -1,4 +1,5 @@
 import { Card, CardContent } from '@/components/ui/card';
+import { CheckCircle2, XCircle } from 'lucide-react';
 
 const painPoints = [
   {
@@ -52,6 +53,26 @@ const PainPoints = () => {
             </Card>
           ))}
         </div>
+
+        <div className="mt-12 md:mt-16 flex justify-center">
+            <Card className="bg-gradient-to-br from-white/90 to-white/60 backdrop-blur-sm border border-white/50 rounded-2xl shadow-xl max-w-lg p-6 md:p-8">
+                <CardContent className="p-0 text-center">
+                    <h3 className="font-headline text-3xl md:text-4xl font-bold text-brand-turquoise mb-2">Não é sua culpa.</h3>
+                    <p className="font-body text-base md:text-lg text-brand-dark-blue/80 mb-6">Você só não tinha a ferramenta certa.</p>
+                    <div className="space-y-4 text-left">
+                        <div className="flex items-center bg-red-100/50 p-3 rounded-lg">
+                            <XCircle className="w-6 h-6 text-red-500 mr-3 flex-shrink-0" />
+                            <span className="font-subtitle text-base md:text-lg font-semibold text-gray-700 line-through">Métodos tradicionais</span>
+                        </div>
+                        <div className="flex items-center bg-green-100/50 p-3 rounded-lg">
+                            <CheckCircle2 className="w-6 h-6 text-green-500 mr-3 flex-shrink-0" />
+                            <span className="font-subtitle text-base md:text-lg font-bold text-brand-dark-blue">Rotina Mágica Visual</span>
+                        </div>
+                    </div>
+                </CardContent>
+            </Card>
+        </div>
+
       </div>
     </section>
   );
