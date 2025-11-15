@@ -6,15 +6,15 @@ import { CheckCircle2, ArrowDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const showcaseItems = [
-  { id: 'whats-inside-morning', title: 'Quadro da Manhã', benefit: 'Comece o dia sem caos.' },
-  { id: 'whats-inside-afternoon', title: 'Quadro da Tarde', benefit: 'Rotina de estudos e brincadeiras.' },
-  { id: 'whats-inside-night', title: 'Quadro da Noite', benefit: 'Prepare para um sono tranquilo.' },
-  { id: 'whats-inside-rewards', title: 'Quadro de Recompensas', benefit: 'Motive com prêmios desejados.' },
-  { id: 'whats-inside-study', title: 'Quadro de Estudos', benefit: 'Foco total na hora da lição.' },
-  { id: 'whats-inside-reading', title: 'Quadro de Leitura', benefit: 'Incentive o amor pelos livros.' },
-  { id: 'whats-inside-responsibilities', title: 'Quadro de Responsabilidades', benefit: 'Ensine o valor de ajudar em casa.' },
-  { id: 'whats-inside-cards', title: 'Cartões de Rotina', benefit: 'Para tarefas extras e surpresas.' },
-  { id: 'whats-inside-coins', title: 'Moedas e Estrelas', benefit: 'O dinheiro do mundo da magia e muito mais...' },
+  { id: 'whats-inside-morning', title: 'Quadro da Manhã', benefit: 'Organiza as tarefas matinais como acordar, escovar os dentes e se vestir, acabando com a correria.' },
+  { id: 'whats-inside-afternoon', title: 'Quadro da Tarde', benefit: 'Estrutura as atividades da tarde, incluindo a hora da lição de casa, lanches e momentos de diversão.' },
+  { id: 'whats-inside-night', title: 'Quadro da Noite', benefit: 'Cria um ritual relaxante para a hora de dormir, com banho, pijama e história, garantindo noites tranquilas.' },
+  { id: 'whats-inside-rewards', title: 'Quadro de Recompensas', benefit: 'Permite que a criança visualize os prêmios que pode conquistar, motivando-a a completar as tarefas.' },
+  { id_rename: 'whats-inside-study', id: 'whats-inside-study', title: 'Quadro de Estudos', benefit: 'Ajuda a criança a focar nas lições de casa e atividades escolares, tornando o aprendizado mais organizado.' },
+  { id: 'whats-inside-reading', title: 'Quadro de Leitura', benefit: 'Incentiva o hábito da leitura diária, transformando-a em um momento mágico e esperado.' },
+  { id: 'whats-inside-responsibilities', title: 'Quadro de Responsabilidades', benefit: 'Ensina o valor de pequenas tarefas domésticas, como arrumar a cama ou guardar os brinquedos.' },
+  { id: 'whats-inside-cards', title: 'Cartões de Rotina', benefit: 'São mais de 200 cards para personalizar os quadros com todas as tarefas possíveis, adaptando-se à sua família.' },
+  { id: 'whats-inside-coins', title: "Moedas e Estrelas", benefit: "Sistemas de pontos que gamificam a rotina. A criança junta para trocar por recompensas. E muito mais..." },
 ];
 
 const ProductShowcase = () => {
