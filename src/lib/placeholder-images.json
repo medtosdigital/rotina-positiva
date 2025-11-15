@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "hero-main",
-      "description": "Child happily placing a sticker on a routine chart on the wall, with a product mockup nearby.",
-      "imageUrl": "https://images.unsplash.com/photo-1758874960857-3e4759eb0502?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoYXBweSUyMGNoaWxkJTIwcm91dGluZXxlbnwwfHx8fDE3NjMxNDQ2Mzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "happy child routine"
+      "description": "A collage of the different reward charts and planners available in the Rotina Mágica kit.",
+      "imageUrl": "https://storage.googleapis.com/aifire.dev/public/static/29555a62-a5d6-4444-8d4e-b552345e85d0.png",
+      "imageHint": "reward charts"
     },
     {
       "id": "product-mockup-full",
@@ -165,7 +165,7 @@
     {
       "id": "brain-image",
       "description": "Illustration of a colorful child's brain",
-      "imageUrl": "https://images.unsplash.com/photo-1669286081720-49743b35e882?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxicmFpbiUyMGdlYXJzfGVufDB8fHx8MTc2MzA1MDI3NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1669286081720-49743b35e882?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxiYmFpbiUyMGdlYXJzfGVufDB8fHx8MTc2MzA1MDI3NHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "brain gears"
     }
   ]
