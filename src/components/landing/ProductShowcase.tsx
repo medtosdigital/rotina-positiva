@@ -57,29 +57,6 @@ const ProductShowcase = () => {
             )}
           </div>
           <div className="lg:col-span-2">
-            <Carousel className="w-full max-w-sm md:max-w-md mx-auto">
-              <CarouselContent>
-                {carouselImages.map((image) => (
-                  <CarouselItem key={image.id}>
-                    <Card className="overflow-hidden rounded-2xl shadow-lg">
-                      <CardContent className="p-0">
-                        <Image
-                          src={image.imageUrl}
-                          alt={image.description}
-                          width={600}
-                          height={400}
-                          data-ai-hint={image.imageHint}
-                          className="w-full h-auto object-cover"
-                        />
-                      </CardContent>
-                    </Card>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious className="-ml-4 md:ml-12" />
-              <CarouselNext className="-mr-4 md:mr-12" />
-            </Carousel>
-
             <div className="mt-8">
               <h3 className="font-headline text-2xl font-bold text-brand-dark-blue mb-4 text-center">O que vem no kit?</h3>
               <div className="grid grid-cols-2 gap-4">
