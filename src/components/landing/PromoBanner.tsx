@@ -2,23 +2,39 @@
 
 import { useState, useEffect } from 'react';
 
-const words = ["HOJE", "NESSA PÁGINA"];
-
 const PromoBanner = () => {
-  const [currentWord, setCurrentWord] = useState(words[0]);
+  const [words, setWords] = useState<string[]>([]);
+  const [currentWord, setCurrentWord] = useState('');
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
+    const today = new Date();
+    const formattedDate = today.toLocaleDateString('pt-BR', {
+      day: '2-digit',
+      month: '2-digit',
+      year: 'numeric',
+    });
+    
+    const initialWords = [`HOJE ${formattedDate}`, "NESSA PÁGINA"];
+    setWords(initialWords);
+    setCurrentWord(initialWords[0]);
+  }, []);
+  
+  useEffect(() => {
+    if (words.length === 0) return;
+    
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % words.length);
     }, 2000); // Change word every 2 seconds
 
     return () => clearInterval(interval);
-  }, []);
+  }, [words]);
 
   useEffect(() => {
-    setCurrentWord(words[index]);
-  }, [index]);
+    if (words.length > 0) {
+      setCurrentWord(words[index]);
+    }
+  }, [index, words]);
 
   return (
     <div className="bg-white text-center py-3 z-20 relative">
