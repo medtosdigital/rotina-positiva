@@ -27,7 +27,7 @@ const ProductShowcase = () => {
   ];
 
   return (
-    <section id="product-showcase" className="py-20 lg:py-32 bg-white">
+    <section id="product-showcase" className="pt-20 lg:pt-32 pb-12 lg:pb-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
           <h2 className="font-headline text-3xl md:text-5xl font-bold text-brand-dark-blue mb-4">
