@@ -17,7 +17,7 @@ const Guarantee = () => {
               Garantia INCONDICIONAL de 7 dias.
             </h2>
             <p className="font-body text-base md:text-lg text-gray-600 mb-6">
-              Ou você vê uma transformação na sua casa, ou eu devolvo 100% do seu dinheiro. O risco é todo meu. Se por QUALQUER motivo você não amar o Rotina Mágica, basta enviar um único e-mail para receber seu investimento de volta. Simples assim.
+              Ou você vê uma transformação na sua casa, ou eu devolvo 100% do seu dinheiro. O risco é todo meu. Se por QUALQUER motivo você não amar o Rotina Positiva, basta enviar um único e-mail para receber seu investimento de volta. Simples assim.
             </p>
           </div>
           <div className="flex justify-center">
@@ -39,5 +39,3 @@ const Guarantee = () => {
 };
 
 export default Guarantee;
-
-    

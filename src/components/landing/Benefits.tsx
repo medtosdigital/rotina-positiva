@@ -21,7 +21,7 @@ const Benefits = () => {
                         Imagine uma vida com mais paz e menos estresse
                     </h2>
                     <p className="font-body text-lg md:text-xl text-brand-dark-blue/80">
-                        Com a Rotina Mágica, você conquista benefícios reais para toda a família:
+                        Com a Rotina Positiva, você conquista benefícios reais para toda a família:
                     </p>
                 </div>
                 <div className="max-w-4xl mx-auto">

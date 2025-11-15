@@ -21,7 +21,7 @@ const Offer = () => {
               Sua chance de ter paz em casa está aqui
             </h2>
             <p className="font-body text-base md:text-lg text-brand-dark-blue/70 max-w-md mx-auto mb-8">
-              Acesso imediato ao Kit Rotina Mágica completo + todos os 10 bônus.
+              Acesso imediato ao Kit Rotina Positiva completo + todos os 10 bônus.
             </p>
             
             <div className="bg-gray-50 rounded-2xl p-6 mb-8 border">

@@ -2,31 +2,31 @@
   "placeholderImages": [
     {
       "id": "hero-main",
-      "description": "A collage of the different reward charts and planners available in the Rotina Mágica kit.",
+      "description": "A collage of the different reward charts and planners available in the Rotina Positiva kit.",
       "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/dasdsa.png",
       "imageHint": "reward charts"
     },
     {
       "id": "product-mockup-full",
-      "description": "Full mockup of the Rotina Mágica product suite on various devices.",
+      "description": "Full mockup of the Rotina Positiva product suite on various devices.",
       "imageUrl": "https://images.unsplash.com/photo-1657533038299-9dab584aadc1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwcm9kdWN0JTIwY29sbGVjdGlvbiUyMG1vY2t1cHxlbnwwfHx8fDE3NjMxNDQ2Mzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "product collection mockup"
     },
     {
       "id": "carousel-planner",
-      "description": "Image of a planner from the Rotina Mágica kit.",
+      "description": "Image of a planner from the Rotina Positiva kit.",
       "imageUrl": "https://images.unsplash.com/photo-1683291250454-433ea5fe3a07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxraWRzJTIwZGFpbHklMjBwbGFubmVyfGVufDB8fHx8MTc2MzE0NDYzOHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "kids daily planner"
     },
     {
       "id": "carousel-board",
-      "description": "Image of a routine board from the Rotina Mágica kit.",
+      "description": "Image of a routine board from the Rotina Positiva kit.",
       "imageUrl": "https://picsum.photos/seed/board2/600/400",
       "imageHint": "kids reward chart"
     },
     {
       "id": "carousel-cards",
-      "description": "Image of task cards from the Rotina Mágica kit.",
+      "description": "Image of task cards from the Rotina Positiva kit.",
       "imageUrl": "https://images.unsplash.com/photo-1614673397128-6c4d301223e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YWN0aXZpdHklMjBmbGFzaGNhcmRzfGVufDB8fHx8MTc2MzE0NDYzOHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "activity flashcards"
     },
@@ -152,7 +152,7 @@
     },
     {
       "id": "creator-story-carla",
-      "description": "Photo of Carla Alves, creator of Rotina Mágica, with her daughter.",
+      "description": "Photo of Carla Alves, creator of Rotina Positiva, with her daughter.",
       "imageUrl": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb3RoZXIlMjBhbmQlMjBkYXVnaHRlcnxlbnwwfHx8fDE3NjMxNDU0MDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "mother and daughter"
     },

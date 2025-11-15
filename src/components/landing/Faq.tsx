@@ -8,7 +8,7 @@ import {
 const faqItems = [
   {
     question: "O que eu recebo exatamente?",
-    answer: "Você recebe acesso imediato e vitalício a uma plataforma com todos os arquivos do Rotina Mágica em PDF de alta resolução, prontos para imprimir. Isso inclui todos os quadros, cartões, moedas, estrelas e todos os bônus anunciados."
+    answer: "Você recebe acesso imediato e vitalício a uma plataforma com todos os arquivos do Rotina Positiva em PDF de alta resolução, prontos para imprimir. Isso inclui todos os quadros, cartões, moedas, estrelas e todos os bônus anunciados."
   },
   {
     question: "Funciona para qualquer idade?",

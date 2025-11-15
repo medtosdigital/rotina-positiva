@@ -5,7 +5,7 @@ import { Toaster } from "@/components/ui/toaster"
 import SalesNotification from '@/components/landing/SalesNotification';
 
 export const metadata: Metadata = {
-  title: 'Magic Routine',
+  title: 'Rotina Positiva',
   description: 'O sistema visual que transforma disciplina em um jogo que a criança AMA.',
 };
 
