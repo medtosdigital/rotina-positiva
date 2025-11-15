@@ -22,7 +22,7 @@ const PromoBanner = () => {
 
   return (
     <div className="bg-white text-center py-3 z-20 relative">
-      <p className="font-headline text-brand-dark-blue font-bold text-base md:text-lg flex justify-center items-center">
+      <p className="font-headline text-brand-dark-blue font-bold text-lg md:text-xl flex justify-center items-center">
         <span>DESCONTO SÓ&nbsp;</span>
         <span className="inline-block relative">
           <span
