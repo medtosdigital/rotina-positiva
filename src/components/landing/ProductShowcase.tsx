@@ -18,6 +18,7 @@ const showcaseItems = [
 
 const ProductShowcase = () => {
   const imageMap = new Map(PlaceHolderImages.map(img => [img.id, img]));
+  const headerImage = PlaceHolderImages.find(img => img.id === 'product-showcase-header');
 
   const features = [
     "Transforme tarefas chatas em missões divertidas.",
@@ -30,6 +31,16 @@ const ProductShowcase = () => {
     <section id="product-showcase" className="pt-20 lg:pt-32 pb-12 lg:pb-12 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
+          {headerImage && (
+            <Image
+              src={headerImage.imageUrl}
+              alt={headerImage.description}
+              width={150}
+              height={150}
+              data-ai-hint={headerImage.imageHint}
+              className="mx-auto mb-6"
+            />
+          )}
           <h2 className="font-headline text-3xl md:text-5xl font-bold text-brand-dark-blue mb-4">
             Apresentando o <span className="text-brand-turquoise">ROTINA MÁGICA</span>
           </h2>
@@ -96,3 +107,5 @@ const ProductShowcase = () => {
 };
 
 export default ProductShowcase;
+
+    
