@@ -33,7 +33,7 @@ const PainPoints = () => {
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
           <h2 className="font-headline text-3xl md:text-5xl font-bold text-brand-dark-blue mb-4">
-            A vida de mãe parece uma <span className="text-brand-orange underline decoration-wavy">batalha diária?</span>
+            A vida de mãe parece uma <span className="text-white underline decoration-wavy">batalha diária?</span>
           </h2>
           <p className="font-body text-lg md:text-xl text-brand-dark-blue/80">
             Se você se identifica com alguma dessas situações, saiba que não está sozinha.
