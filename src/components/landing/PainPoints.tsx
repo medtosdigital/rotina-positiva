@@ -1,4 +1,3 @@
-
 "use client";
 
 import { Card, CardContent } from '@/components/ui/card';
@@ -80,7 +79,7 @@ const PainPoints = () => {
                 <a href="#product-showcase">
                     <Button
                         size="lg"
-                        className="font-headline bg-brand-turquoise hover:bg-brand-turquoise/90 text-white text-lg md:text-xl font-bold py-4 px-10 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300"
+                        className="font-headline bg-brand-turquoise hover:bg-brand-turquoise/90 text-white text-lg md:text-xl font-bold py-6 px-10 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300"
                     >
                         EU QUERO A FERRAMENTA CERTA!
                         <ArrowDown className="w-5 h-5 ml-2 animate-bounce" />
