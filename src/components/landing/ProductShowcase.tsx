@@ -38,11 +38,11 @@ const ProductShowcase = () => {
               width={300}
               height={300}
               data-ai-hint={headerImage.imageHint}
-              className="mx-auto mb-6"
+              className="mx-auto mb-6 w-48 md:w-auto"
             />
           )}
           <h2 className="font-headline text-3xl md:text-5xl font-bold text-brand-dark-blue mb-4">
-            Apresentando o <span className="text-brand-turquoise">ROTINA POSITIVA 👍</span>
+            Apresentando o <span className="text-brand-turquoise">ROTINA VISUAL POSITIVA</span>
           </h2>
           <p className="font-body text-lg md:text-xl text-gray-600">
             A arma secreta para pais que querem filhos obedientes, responsáveis e felizes.
