@@ -7,7 +7,7 @@ const UniqueMechanism = () => {
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="font-headline text-3xl md:text-5xl font-bold mb-6">
-            Crianças obedecem quando{' '}
+            Crianças só obedecem quando{' '}
             <span className="bg-brand-gold text-brand-dark-blue px-2 rounded-lg">
               enxergam
             </span>{' '}
