@@ -1,5 +1,5 @@
 import { Card, CardContent } from '@/components/ui/card';
-import { ArrowRight, CheckCircle2, XCircle } from 'lucide-react';
+import { ArrowRight, CheckCircle2, XCircle, ArrowDown } from 'lucide-react';
 
 const boringRules = [
   "Arrume seu quarto!",
@@ -49,7 +49,8 @@ const UniqueMechanism = () => {
 
                     {/* Seta */}
                     <div className="flex justify-center items-center h-full">
-                        <ArrowRight className="w-8 h-8 md:w-12 md:h-12 text-brand-turquoise" />
+                        <ArrowRight className="hidden md:block w-8 h-8 md:w-12 md:h-12 text-brand-turquoise" />
+                        <ArrowDown className="block md:hidden w-8 h-8 md:w-12 md:h-12 text-brand-turquoise" />
                     </div>
                     
 
