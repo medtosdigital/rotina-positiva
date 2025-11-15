@@ -31,7 +31,7 @@ const Benefits = () => {
                                 {benefits.map((benefit, index) => (
                                     <div key={index} className="flex items-center">
                                         <CheckCircle2 className="w-6 h-6 text-brand-turquoise mr-3 flex-shrink-0" />
-                                        <span className="font-subtitle text-base md:text-lg font-medium text-brand-dark-blue">{benefit}</span>
+                                        <span className="font-subtitle text-lg md:text-xl font-medium text-brand-dark-blue">{benefit}</span>
                                     </div>
                                 ))}
                             </div>
