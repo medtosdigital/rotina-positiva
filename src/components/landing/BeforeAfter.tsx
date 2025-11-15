@@ -49,7 +49,7 @@ const BeforeAfter = () => {
                 {beforeItems.map(item => (
                   <li key={item} className="flex items-start">
                     <XCircle className="w-6 h-6 text-red-500 mr-3 mt-0.5 flex-shrink-0" />
-                    <span className="font-body text-gray-700 text-base md:text-lg">{item}</span>
+                    <span className="font-body text-gray-700 text-lg md:text-xl">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -70,7 +70,7 @@ const BeforeAfter = () => {
                 {afterItems.map(item => (
                   <li key={item} className="flex items-start">
                     <CheckCircle2 className="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                    <span className="font-body text-gray-700 text-base md:text-lg">{item}</span>
+                    <span className="font-body text-gray-700 text-lg md:text-xl">{item}</span>
                   </li>
                 ))}
               </ul>
