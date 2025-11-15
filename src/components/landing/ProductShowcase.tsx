@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { CheckCircle2 } from 'lucide-react';
 
@@ -17,11 +16,6 @@ const showcaseItems = [
 
 const ProductShowcase = () => {
   const mockupFull = PlaceHolderImages.find((img) => img.id === 'product-mockup-full');
-  const carouselImages = [
-    PlaceHolderImages.find((img) => img.id === 'carousel-planner'),
-    PlaceHolderImages.find((img) => img.id === 'carousel-board'),
-    PlaceHolderImages.find((img) => img.id === 'carousel-cards')
-  ].filter(img => img !== undefined) as any[];
   const imageMap = new Map(PlaceHolderImages.map(img => [img.id, img]));
 
   const features = [
