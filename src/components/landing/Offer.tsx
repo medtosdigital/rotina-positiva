@@ -32,7 +32,7 @@ const Offer = () => {
                 
                 <div className="flex justify-center items-end font-headline font-bold text-brand-turquoise !leading-none">
                     <span className="text-2xl self-start mr-1 mt-2">12x</span>
-                    <span className="text-6xl font-extrabold">R$ 3,60</span>
+                    <span className="text-5xl font-extrabold">R$ 3,60</span>
                 </div>
 
                 <p className="font-body text-gray-500 text-sm">ou R$37,00 à vista</p>
