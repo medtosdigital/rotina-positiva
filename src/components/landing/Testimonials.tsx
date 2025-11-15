@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Star, PlayCircle } from 'lucide-react';
+import { Star } from 'lucide-react';
 import Autoplay from "embla-carousel-autoplay";
 import React from 'react';
 
@@ -13,37 +13,51 @@ const testimonials = [
     id: 'testimonial-1',
     name: 'Juliana S.',
     text: '"A paz voltou a reinar em casa! Meu filho agora faz tudo sozinho e ainda pede pra usar o quadro. Mágico mesmo!"',
-    isAudio: true,
   },
   {
     id: 'testimonial-2',
     name: 'Fernanda L.',
     text: '"Estava exausta de tanto gritar. Em dois dias, a mudança foi da água para o vinho. Ele se sente o máximo marcando as estrelinhas."',
-    isAudio: false,
   },
   {
     id: 'testimonial-3',
     name: 'Carla M.',
     text: '"Comprei sem acreditar muito, mas... uau! O jantar e a hora de dormir viraram nossos melhores momentos. Recomendo pra TODAS as mães."',
-    isAudio: true,
   },
   {
     id: 'testimonial-4',
     name: 'Mariana P.',
     text: '"Minha filha amou os cartões mágicos. Agora ela ajuda nas tarefas de casa pra ganhar mais moedas. Inacreditável!"',
-    isAudio: false,
   },
   {
     id: 'testimonial-5',
     name: 'Roberta A.',
     text: '"O melhor investimento que fiz pela minha família. A rotina agora é leve e divertida. Obrigada!"',
-    isAudio: true,
   },
   {
     id: 'testimonial-6',
     name: 'Patricia F.',
     text: '"Se eu soubesse que existia, tinha comprado antes. Acabaram as birras na hora de desligar a TV. Simplesmente funciona."',
-    isAudio: false,
+  },
+  {
+    id: 'testimonial-7',
+    name: 'Ana B.',
+    text: '"Funciona até com meu filho mais velho, de 9 anos. Ele agora ajuda o irmão menor a completar as tarefas. Estou chocada!"',
+  },
+  {
+    id: 'testimonial-8',
+    name: 'Sandra G.',
+    text: '"Achei que era só mais um produto da internet, mas me surpreendi. A qualidade do material é ótima e a mudança de comportamento é real."',
+  },
+  {
+    id: 'testimonial-9',
+    name: 'Beatriz M.',
+    text: '"O quadro de recompensas foi a virada de chave aqui. Ele está super empenhado em juntar estrelas para o passeio no parque."',
+  },
+  {
+    id: 'testimonial-10',
+    name: 'Laura C.',
+    text: '"Finalmente manhãs sem estresse! Meu filho acorda e já vai direto para o quadro ver qual a primeira ‘missão’ do dia. Incrível!"',
   }
 ];
 
@@ -99,17 +113,7 @@ const Testimonials = () => {
                             <StarRating />
                           </div>
                         </div>
-                        {testimonial.isAudio ? (
-                           <div className="bg-green-100 rounded-lg p-3 flex items-center w-full cursor-pointer hover:bg-green-200 transition-colors">
-                                <PlayCircle className="w-8 h-8 text-green-600 mr-3"/>
-                                <div className="w-full bg-gray-300 rounded-full h-1.5">
-                                    <div className="bg-green-500 h-1.5 rounded-full" style={{width: '75%'}}></div>
-                                </div>
-                                <span className="text-xs text-gray-500 ml-2">1:12</span>
-                           </div>
-                        ) : (
-                           <p className="font-body text-gray-600 flex-grow">"{testimonial.text}"</p>
-                        )}
+                        <p className="font-body text-gray-600 flex-grow">"{testimonial.text}"</p>
                       </CardContent>
                     </Card>
                   </div>
