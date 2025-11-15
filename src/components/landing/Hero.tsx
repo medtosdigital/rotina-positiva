@@ -72,7 +72,7 @@ const Hero = () => {
                     width={800}
                     height={600}
                     data-ai-hint={heroImage.imageHint}
-                    className="object-contain w-full h-full rounded-2xl shadow-2xl"
+                    className="object-contain w-full h-full rounded-2xl"
                     priority
                   />
                 </div>
