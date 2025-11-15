@@ -27,7 +27,7 @@ const ProductShowcase = () => {
   ];
 
   return (
-    <section id="product-showcase" className="pt-20 lg:pt-32 pb-12 lg:pb-20 bg-white">
+    <section id="product-showcase" className="pt-20 lg:pt-32 pb-12 lg:pb-12 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
           <h2 className="font-headline text-3xl md:text-5xl font-bold text-brand-dark-blue mb-4">
@@ -81,10 +81,12 @@ const ProductShowcase = () => {
             <a href="#offer">
                 <Button
                     size="lg"
-                    className="font-headline bg-brand-turquoise hover:bg-brand-turquoise/90 text-white text-lg md:text-xl font-bold py-6 px-10 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300"
+                    className="font-headline bg-brand-turquoise hover:bg-brand-turquoise/90 text-white text-xl md:text-2xl font-bold py-8 px-10 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 h-auto"
                 >
-                    QUERO APROVEITAR A OFERTA
-                    <ArrowDown className="w-5 h-5 ml-2 animate-bounce" />
+                    <div className="flex flex-col items-center">
+                        <span>QUERO APROVEITAR A OFERTA</span>
+                        <span className="text-sm font-normal">Garantir meu kit com desconto</span>
+                    </div>
                 </Button>
             </a>
         </div>

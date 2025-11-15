@@ -74,15 +74,16 @@ const PainPoints = () => {
                     </div>
                 </CardContent>
             </Card>
-
             <div className="mt-12 text-center">
                 <a href="#product-showcase">
                     <Button
                         size="lg"
-                        className="font-headline bg-brand-turquoise hover:bg-brand-turquoise/90 text-white text-lg md:text-xl font-bold py-6 px-10 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300"
+                        className="font-headline bg-brand-turquoise hover:bg-brand-turquoise/90 text-white text-xl md:text-2xl font-bold py-8 px-10 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 h-auto"
                     >
-                        EU QUERO A FERRAMENTA CERTA!
-                        <ArrowDown className="w-5 h-5 ml-2 animate-bounce" />
+                        <div className="flex flex-col items-center">
+                            <span>EU QUERO A FERRAMENTA CERTA!</span>
+                            <span className="text-sm font-normal">Clique e veja como funciona</span>
+                        </div>
                     </Button>
                 </a>
             </div>

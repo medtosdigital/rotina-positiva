@@ -38,10 +38,12 @@ const Offer = () => {
 
             <Button
               size="lg"
-              className="font-headline bg-brand-turquoise hover:bg-brand-turquoise/90 text-white text-lg md:text-2xl font-bold py-6 px-8 md:py-8 md:px-16 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 w-full"
+              className="font-headline bg-brand-turquoise hover:bg-brand-turquoise/90 text-white text-xl md:text-2xl font-bold py-8 px-8 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 w-full h-auto"
             >
-              QUERO MEU FILHO OBEDECENDO!
-              <ArrowRight className="w-6 h-6 ml-2" />
+              <div className="flex flex-col items-center">
+                <span>QUERO MEU FILHO OBEDECENDO!</span>
+                <span className="text-sm font-normal">Acesso vitalício e risco zero</span>
+              </div>
             </Button>
             
             <div className="flex items-center justify-center gap-3 mt-8 text-gray-600">
