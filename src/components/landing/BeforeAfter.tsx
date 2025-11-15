@@ -23,7 +23,6 @@ const BeforeAfter = () => {
   const beforeChaosImg = PlaceHolderImages.find(img => img.id === 'before-chaos');
   const beforeMomTiredImg = PlaceHolderImages.find(img => img.id === 'before-mom-tired');
   const afterRoutineImg = PlaceHolderImages.find(img => img.id === 'after-routine');
-  const afterMomHappyImg = PlaceHolderImages.find(img => img.id === 'after-mom-happy');
 
   return (
     <section className="py-12 lg:py-20 bg-white">
@@ -62,9 +61,8 @@ const BeforeAfter = () => {
               <CardTitle className="font-headline text-3xl md:text-4xl font-bold text-green-600 text-center">DEPOIS</CardTitle>
             </CardHeader>
             <CardContent className="p-0">
-              <div className="grid grid-cols-2 gap-4 mb-6">
-                {afterRoutineImg && <Image src={afterRoutineImg.imageUrl} alt={afterRoutineImg.description} width={400} height={500} data-ai-hint={afterRoutineImg.imageHint} className="rounded-xl shadow-md w-full h-full object-cover" />}
-                {afterMomHappyImg && <Image src={afterMomHappyImg.imageUrl} alt={afterMomHappyImg.description} width={400} height={500} data-ai-hint={afterMomHappyImg.imageHint} className="rounded-xl shadow-md w-full h-full object-cover" />}
+              <div className="mb-6">
+                {afterRoutineImg && <Image src={afterRoutineImg.imageUrl} alt={afterRoutineImg.description} width={800} height={500} data-ai-hint={afterRoutineImg.imageHint} className="rounded-xl shadow-md w-full h-auto object-contain" />}
               </div>
               <ul className="space-y-3">
                 {afterItems.map(item => (

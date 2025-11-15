@@ -99,14 +99,8 @@
     {
       "id": "after-routine",
       "description": "A happy child focused on completing a task on their routine chart.",
-      "imageUrl": "https://images.unsplash.com/photo-1607453998774-d533f65dac99?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxoYXBweSUyMGNoaWxkfGVufDB8fHx8MTc2MzE0NDYzOHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "happy child"
-    },
-    {
-      "id": "after-mom-happy",
-      "description": "A smiling and relaxed mother.",
-      "imageUrl": "https://images.unsplash.com/photo-1660248415930-dd70e678b5f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxyZWxheGVkJTIwbW90aGVyfGVufDB8fHx8MTc2MzE0NDYzOXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "relaxed mother"
+      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/Screenshot_2025-11-15_154233-removebg-preview.png",
+      "imageHint": "happy child routine"
     },
     {
       "id": "testimonial-1",
