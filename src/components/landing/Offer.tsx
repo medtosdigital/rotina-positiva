@@ -21,7 +21,7 @@ const Offer = () => {
               Sua chance de ter paz em casa está aqui
             </h2>
             <p className="font-body text-base md:text-lg text-brand-dark-blue/70 max-w-md mx-auto mb-8">
-              Acesso imediato ao Kit Rotina Positiva completo + todos os 10 bônus.
+              Acesso imediato ao Kit Rotina Positiva completo + todos os bônus.
             </p>
             
             <div className="bg-gray-50 rounded-2xl p-6 mb-8 border">
@@ -30,7 +30,7 @@ const Offer = () => {
                 
                 <p className="font-headline font-bold text-brand-turquoise text-lg uppercase">OFERTA ESPECIAL HOJE</p>
                 
-                <div className="flex justify-center items-center font-headline font-bold text-brand-turquoise !leading-none">
+                <div className="flex justify-center items-end font-headline font-bold text-brand-turquoise !leading-none">
                     <span className="text-2xl self-center mr-2">12x</span>
                     <span className="text-7xl font-extrabold">R$ 3,60</span>
                 </div>
