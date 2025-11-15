@@ -39,17 +39,17 @@ const Hero = () => {
       <div className="relative container mx-auto px-6">
         <div className="grid lg:grid-cols-2 items-center gap-12 w-full">
             <div className="text-brand-dark-blue z-10 text-center lg:text-left">
-              <h1 className="font-headline text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tighter max-w-4xl">
+              <h1 className="font-headline text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tighter max-w-4xl">
                 Faça seu filho{' '}
-                <span className="inline-block bg-brand-dark-blue text-white px-4 py-2 rounded-full my-2 transform -rotate-3">
+                <span className="inline-block bg-brand-dark-blue text-white px-2 py-1 rounded-full my-1 transform -rotate-3">
                     OBEDECER
                 </span>{' '}
                 sem brigar, sem gritar e sem ameaças —{' '}
-                <span className="inline-block bg-brand-dark-blue text-white px-4 py-2 rounded-full mt-2 transform rotate-2">
+                <span className="inline-block bg-brand-dark-blue text-white px-2 py-1 rounded-full mt-1 transform rotate-2">
                     em apenas 24 horas.
                 </span>
               </h1>
-              <p className="text-lg md:text-2xl mt-8 mb-10 text-brand-dark-blue/90 font-medium">
+              <p className="text-lg md:text-xl mt-6 mb-8 text-brand-dark-blue/90 font-medium">
                 Criança obedece quando sente que está <span className="underline decoration-wavy decoration-brand-orange">jogando</span> — não quando está sendo mandada.
               </p>
                 <div className="grid grid-cols-2 gap-4">
@@ -80,7 +80,7 @@ const Hero = () => {
                <div className="mt-10 z-10 w-full flex justify-center">
                     <Button
                       size="lg"
-                      className="font-headline bg-brand-orange hover:bg-brand-orange/90 text-white text-lg md:text-2xl font-bold py-6 px-8 md:py-8 md:px-10 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300 w-full max-w-md lg:max-w-xl animate-pulse"
+                      className="font-headline bg-brand-orange hover:bg-brand-orange/90 text-white text-lg md:text-xl font-bold py-5 px-8 md:py-6 md:px-10 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300 w-full max-w-md lg:max-w-xl animate-pulse"
                     >
                       QUERO O ROTINA MÁGICA AGORA
                     </Button>
