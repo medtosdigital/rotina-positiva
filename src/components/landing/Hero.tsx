@@ -69,10 +69,10 @@ const Hero = () => {
                   <Image
                     src={heroImage.imageUrl}
                     alt={heroImage.description}
-                    width={1000}
-                    height={750}
+                    width={1200}
+                    height={900}
                     data-ai-hint={heroImage.imageHint}
-                    className="object-contain w-full h-full rounded-2xl"
+                    className="object-contain w-full h-full"
                     priority
                   />
                 </div>
