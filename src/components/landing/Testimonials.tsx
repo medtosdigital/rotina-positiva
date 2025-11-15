@@ -1,8 +1,12 @@
+"use client"
+
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Star, PlayCircle } from 'lucide-react';
+import Autoplay from "embla-carousel-autoplay";
+import React from 'react';
 
 const testimonials = [
   {
@@ -23,12 +27,24 @@ const testimonials = [
     text: '"Comprei sem acreditar muito, mas... uau! O jantar e a hora de dormir viraram nossos melhores momentos. Recomendo pra TODAS as mães."',
     isAudio: true,
   },
-   {
-    id: 'testimonial-1',
+  {
+    id: 'testimonial-4',
     name: 'Mariana P.',
     text: '"Minha filha amou os cartões mágicos. Agora ela ajuda nas tarefas de casa pra ganhar mais moedas. Inacreditável!"',
     isAudio: false,
   },
+  {
+    id: 'testimonial-5',
+    name: 'Roberta A.',
+    text: '"O melhor investimento que fiz pela minha família. A rotina agora é leve e divertida. Obrigada!"',
+    isAudio: true,
+  },
+  {
+    id: 'testimonial-6',
+    name: 'Patricia F.',
+    text: '"Se eu soubesse que existia, tinha comprado antes. Acabaram as birras na hora de desligar a TV. Simplesmente funciona."',
+    isAudio: false,
+  }
 ];
 
 const StarRating = () => (
@@ -39,6 +55,9 @@ const StarRating = () => (
 
 const Testimonials = () => {
   const imageMap = new Map(PlaceHolderImages.map(img => [img.id, img]));
+  const plugin = React.useRef(
+    Autoplay({ delay: 3000, stopOnInteraction: true, stopOnMouseEnter: true })
+  );
 
   return (
     <section className="py-20 lg:py-32 bg-white">
@@ -49,7 +68,13 @@ const Testimonials = () => {
           </h2>
           <p className="font-body text-lg md:text-xl text-brand-dark-blue/80">Veja o que elas estão dizendo:</p>
         </div>
-        <Carousel opts={{ loop: true, align: "start" }} className="w-full max-w-sm md:max-w-6xl mx-auto">
+        <Carousel 
+          opts={{ loop: true, align: "start" }} 
+          plugins={[plugin.current]}
+          className="w-full max-w-sm md:max-w-6xl mx-auto"
+          onMouseEnter={plugin.current.stop}
+          onMouseLeave={plugin.current.reset}
+        >
           <CarouselContent className="-ml-4">
             {testimonials.map((testimonial, index) => {
               const image = imageMap.get(testimonial.id);
