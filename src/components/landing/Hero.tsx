@@ -46,7 +46,7 @@ const Hero = () => {
                 </span>{' '}
                 sem brigar, sem gritar e sem ameaças —{' '}
                 <span className="inline-block bg-primary text-white px-4 rounded-lg rotate-1">
-                    em apenas 24 horas.
+                    com Rotina e Disciplina.
                 </span>
               </h1>
               <p className="font-body text-lg md:text-xl mt-6 mb-8 text-brand-dark-blue/90 max-w-xl mx-auto lg:mx-0">
