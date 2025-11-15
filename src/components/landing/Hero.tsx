@@ -28,7 +28,7 @@ const Hero = () => {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-main');
 
   return (
-    <section className="relative w-full bg-brand-green-water overflow-hidden pt-12 pb-12">
+    <section className="relative w-full bg-brand-green-water overflow-hidden pb-12">
       <div
         className="absolute inset-x-0 top-0 h-full bg-brand-gold"
         style={{
