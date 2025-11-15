@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 const painPoints = [
   {
     icon: '🗣️',
-    text: 'Eu repito mil vezes e ninguém me escuta',
+    text: 'Cansada de repetir tudo mil vezes?',
   },
   {
     icon: '🤯',
