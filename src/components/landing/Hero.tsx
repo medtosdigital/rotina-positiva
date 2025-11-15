@@ -37,9 +37,9 @@ const Hero = () => {
       ></div>
 
       <div className="relative container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 items-center gap-12 w-full">
-            <div className="text-brand-dark-blue z-10 text-center lg:text-left">
-              <h1 className="font-headline text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tighter max-w-4xl">
+        <div className="grid lg:grid-cols-2 items-center gap-8 md:gap-12 w-full">
+            <div className="text-brand-dark-blue z-10 text-center lg:text-left order-2 lg:order-1">
+              <h1 className="font-headline text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tighter">
                 Faça seu filho{' '}
                 <span className="inline-block bg-primary text-primary-foreground px-4 rounded-lg -rotate-1">
                     OBEDECER
@@ -49,10 +49,10 @@ const Hero = () => {
                     em apenas 24 horas.
                 </span>
               </h1>
-              <p className="font-body text-lg md:text-xl mt-6 mb-8 text-brand-dark-blue/90">
+              <p className="font-body text-lg md:text-xl mt-6 mb-8 text-brand-dark-blue/90 max-w-xl mx-auto lg:mx-0">
                 Com o sistema visual que transforma disciplina em um jogo divertido.
               </p>
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-2 gap-4 max-w-md mx-auto lg:mx-0">
                     {benefitCards.map((card) => (
                         <div key={card.title} className="bg-white/30 backdrop-blur-sm border-2 border-white/50 rounded-2xl shadow-lg text-center p-4 flex flex-col items-center justify-center transform hover:scale-110 transition-transform duration-300">
                             <div className="mb-3">
@@ -63,7 +63,7 @@ const Hero = () => {
                     ))}
                 </div>
             </div>
-            <div className="relative mt-8 lg:mt-0 h-auto flex flex-col items-center">
+            <div className="relative mt-8 lg:mt-0 h-auto flex flex-col items-center order-1 lg:order-2">
               {heroImage && (
                 <div className="animate-bounce-subtle">
                   <Image
@@ -80,7 +80,7 @@ const Hero = () => {
                <div className="mt-10 z-10 w-full flex justify-center">
                     <Button
                       size="lg"
-                      className="font-headline bg-brand-orange hover:bg-brand-orange/90 text-white text-lg md:text-xl font-bold py-5 px-8 md:py-6 md:px-10 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300 w-full max-w-md lg:max-w-xl animate-pulse"
+                      className="font-headline bg-brand-orange hover:bg-brand-orange/90 text-white text-lg md:text-xl font-bold py-5 px-8 md:py-6 md:px-10 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300 w-full max-w-md animate-pulse"
                     >
                       QUERO O ROTINA MÁGICA AGORA
                     </Button>
