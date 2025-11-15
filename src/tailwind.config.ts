@@ -18,7 +18,7 @@ export default {
     extend: {
       fontFamily: {
         body: ['Nunito', 'sans-serif'],
-        headline: ['Nunito', 'sans-serif'],
+        headline: ['Baloo 2', 'sans-serif'],
       },
       colors: {
         background: 'hsl(var(--background))',
