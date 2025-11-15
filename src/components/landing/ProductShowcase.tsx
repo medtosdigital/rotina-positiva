@@ -41,26 +41,24 @@ const ProductShowcase = () => {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="mt-8">
               <h3 className="font-headline text-2xl font-bold text-brand-dark-blue mb-4 text-center">O que vem no kit?</h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {showcaseItems.map((item) => {
                   const image = imageMap.get(item.id);
                   return (
-                    <Card key={item.id} className="bg-gray-50 rounded-lg overflow-hidden group transform hover:-translate-y-1 transition-transform duration-300">
-                      <CardContent className="p-0 flex items-center">
-                        {image && (
-                          <Image
-                            src={image.imageUrl}
-                            alt={image.description}
-                            width={120}
-                            height={120}
-                            data-ai-hint={image.imageHint}
-                            className="w-24 h-24 object-cover"
-                          />
-                        )}
-                        <div className="p-3">
-                          <h4 className="font-subtitle text-sm font-bold mb-1">{item.title}</h4>
-                          <p className="font-body text-gray-600 text-xs">{item.benefit}</p>
-                        </div>
+                    <Card key={item.id} className="bg-gray-50 rounded-xl overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300 shadow-lg">
+                      {image && (
+                        <Image
+                          src={image.imageUrl}
+                          alt={item.title}
+                          width={400}
+                          height={300}
+                          data-ai-hint={image.imageHint}
+                          className="w-full h-48 object-cover"
+                        />
+                      )}
+                      <CardContent className="p-4">
+                        <h4 className="font-subtitle text-lg font-bold mb-1 text-brand-dark-blue">{item.title}</h4>
+                        <p className="font-body text-gray-600 text-sm">{item.benefit}</p>
                       </CardContent>
                     </Card>
                   );
@@ -68,14 +66,16 @@ const ProductShowcase = () => {
               </div>
             </div>
 
-            <ul className="mt-8 space-y-3 text-base md:text-lg">
-              {features.map((feature, index) => (
-                <li key={index} className="flex items-center">
-                  <CheckCircle2 className="h-6 w-6 text-brand-green-water mr-3 flex-shrink-0" />
-                  <span className="font-body text-gray-700">{feature}</span>
-                </li>
-              ))}
-            </ul>
+            <div className="self-center">
+                <ul className="mt-8 space-y-4 text-lg md:text-xl">
+                {features.map((feature, index) => (
+                    <li key={index} className="flex items-start">
+                    <CheckCircle2 className="h-7 w-7 text-brand-green-water mr-4 mt-1 flex-shrink-0" />
+                    <span className="font-body text-gray-700">{feature}</span>
+                    </li>
+                ))}
+                </ul>
+            </div>
         </div>
         <div className="mt-16 text-center">
             <a href="#offer">
