@@ -22,7 +22,7 @@ const ProductShowcase = () => {
   return (
     <section className="py-20 lg:py-32 bg-white">
       <div className="container mx-auto px-6">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
           <h2 className="text-3xl md:text-5xl font-extrabold text-brand-dark-blue mb-4">
             Apresentando o <span className="text-brand-turquoise">ROTINA MÁGICA</span>
           </h2>
@@ -31,7 +31,7 @@ const ProductShowcase = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-5 gap-12 items-center">
+        <div className="grid lg:grid-cols-5 gap-8 lg:gap-12 items-center">
           <div className="lg:col-span-3">
             {mockupFull && (
               <Image
@@ -45,7 +45,7 @@ const ProductShowcase = () => {
             )}
           </div>
           <div className="lg:col-span-2">
-            <Carousel className="w-full max-w-md mx-auto">
+            <Carousel className="w-full max-w-sm md:max-w-md mx-auto">
               <CarouselContent>
                 {carouselImages.map((image) => (
                   <CarouselItem key={image.id}>
@@ -64,10 +64,10 @@ const ProductShowcase = () => {
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious className="ml-12" />
-              <CarouselNext className="mr-12" />
+              <CarouselPrevious className="-ml-4 md:ml-12" />
+              <CarouselNext className="-mr-4 md:mr-12" />
             </Carousel>
-            <ul className="mt-8 space-y-3 text-lg">
+            <ul className="mt-8 space-y-3 text-base md:text-lg">
               {features.map((feature, index) => (
                 <li key={index} className="flex items-center">
                   <CheckCircle2 className="h-6 w-6 text-brand-green-water mr-3 flex-shrink-0" />

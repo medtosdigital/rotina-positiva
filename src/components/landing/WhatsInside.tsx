@@ -19,13 +19,13 @@ const WhatsInside = () => {
   return (
     <section className="py-20 lg:py-32 bg-brand-orange text-white">
       <div className="container mx-auto px-6">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="font-headline text-4xl md:text-5xl font-black mb-4">
+        <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
+          <h2 className="font-headline text-3xl md:text-5xl font-black mb-4">
             Toda a rotina da sua casa organizada como um <span className="underline decoration-wavy decoration-white">JOGO</span>.
           </h2>
           <p className="text-lg md:text-xl text-white/80">Um kit completo e personalizável para imprimir e montar.</p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
           {items.map((item) => {
             const image = imageMap.get(item.id);
             return (
@@ -38,12 +38,12 @@ const WhatsInside = () => {
                       width={500}
                       height={500}
                       data-ai-hint={image.imageHint}
-                      className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                      className="w-full h-32 md:h-48 object-cover group-hover:scale-110 transition-transform duration-300"
                     />
                   )}
-                  <div className="p-6">
-                    <h3 className="font-headline text-xl font-bold mb-2">{item.title}</h3>
-                    <p className="text-white/80">{item.benefit}</p>
+                  <div className="p-4 md:p-6">
+                    <h3 className="font-headline text-lg md:text-xl font-bold mb-2">{item.title}</h3>
+                    <p className="text-white/80 text-sm md:text-base">{item.benefit}</p>
                   </div>
                 </CardContent>
               </Card>

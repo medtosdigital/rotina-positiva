@@ -49,10 +49,10 @@ const Hero = () => {
                     em apenas 24 horas.
                 </span>
               </h1>
-              <p className="text-xl md:text-2xl mt-8 mb-10 text-brand-dark-blue/90 font-medium">
+              <p className="text-lg md:text-2xl mt-8 mb-10 text-brand-dark-blue/90 font-medium">
                 Criança obedece quando sente que está <span className="underline decoration-wavy decoration-brand-orange">jogando</span> — não quando está sendo mandada.
               </p>
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+                <div className="grid grid-cols-2 gap-4">
                     {benefitCards.map((card) => (
                         <div key={card.title} className="bg-white/30 backdrop-blur-sm border-2 border-white/50 rounded-2xl shadow-lg text-center p-4 flex flex-col items-center justify-center transform hover:scale-110 transition-transform duration-300">
                             <div className="mb-3">
@@ -80,7 +80,7 @@ const Hero = () => {
                <div className="mt-10 z-10 w-full flex justify-center">
                     <Button
                       size="lg"
-                      className="font-headline bg-brand-orange hover:bg-brand-orange/90 text-white text-xl md:text-2xl font-bold py-8 px-10 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300 w-full max-w-md lg:max-w-xl animate-pulse"
+                      className="font-headline bg-brand-orange hover:bg-brand-orange/90 text-white text-lg md:text-2xl font-bold py-6 px-8 md:py-8 md:px-10 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300 w-full max-w-md lg:max-w-xl animate-pulse"
                     >
                       QUERO O ROTINA MÁGICA AGORA
                     </Button>
