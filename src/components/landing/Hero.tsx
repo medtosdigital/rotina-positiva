@@ -44,13 +44,13 @@ const Hero = () => {
       <div className="relative container mx-auto px-6">
         <div className="grid lg:grid-cols-2 items-center gap-12 w-full">
             <div className="text-white z-10 text-center lg:text-left">
-              <h1 className="text-4xl md:text-5xl font-extrabold !leading-tight tracking-tight mb-6 text-brand-dark-blue">
+              <h1 className="text-4xl md:text-5xl font-extrabold !leading-tight tracking-tight mb-4 text-brand-dark-blue">
                 Faça seu filho <br />
-                <span className="bg-brand-dark-blue text-white px-4 py-1 rounded-full inline-block my-1">
+                <span className="bg-brand-dark-blue text-white px-4 py-2 rounded-full inline-block my-2 transform -rotate-3">
                     OBEDECER
                 </span>{' '}
                 sem brigar, <br /> sem gritar e sem <br/> ameaças — <br />
-                <span className="bg-brand-dark-blue text-white px-4 py-1 rounded-full inline-block mt-1">
+                <span className="bg-brand-dark-blue text-white px-4 py-2 rounded-full inline-block mt-2 transform rotate-2">
                     em apenas 24 horas.
                 </span>
               </h1>
