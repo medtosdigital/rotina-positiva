@@ -39,7 +39,7 @@ const Hero = () => {
       <div className="relative container mx-auto px-6">
         <div className="grid lg:grid-cols-2 items-center gap-12 w-full">
             <div className="text-brand-dark-blue z-10 text-center lg:text-left">
-              <h1 className="font-headline text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tighter max-w-4xl">
+              <h1 className="font-headline text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tighter max-w-4xl">
                 Faça seu filho{' '}
                 <span className="inline-block bg-brand-dark-blue text-white px-4 py-2 rounded-full my-2 transform -rotate-3">
                     OBEDECER
