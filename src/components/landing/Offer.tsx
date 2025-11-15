@@ -38,7 +38,7 @@ const Offer = () => {
 
             <Button
               size="lg"
-              className="font-headline bg-brand-turquoise hover:bg-brand-turquoise/90 text-white text-xl md:text-2xl font-bold py-8 px-8 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 w-full h-auto animate-pulse-slow"
+              className="font-headline bg-[#2ECC71] hover:bg-[#2ECC71]/90 text-white text-xl md:text-2xl font-bold py-8 px-8 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 w-full h-auto animate-pulse-slow"
             >
               <div className="flex flex-col items-center">
                 <span>QUERO MEU FILHO OBEDECENDO!</span>
