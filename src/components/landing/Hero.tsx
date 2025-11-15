@@ -41,7 +41,7 @@ const Hero = () => {
             <div className="text-brand-dark-blue z-10 text-center lg:text-left order-2 lg:order-1">
               <h1 className="font-headline text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tighter">
                 Faça seu filho{' '}
-                <span className="inline-block bg-primary text-primary-foreground px-4 rounded-lg -rotate-1">
+                <span className="inline-block bg-primary text-white px-4 rounded-lg -rotate-1">
                     OBEDECER
                 </span>{' '}
                 sem brigar, sem gritar e sem ameaças —{' '}
