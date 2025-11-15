@@ -31,17 +31,17 @@ const PainPoints = () => {
   return (
     <section className="py-20 lg:py-32 bg-brand-gold">
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl md:text-5xl font-extrabold text-center text-brand-dark-blue mb-12">
-          Se você se identifica com <span className="text-brand-orange underline decoration-wavy">pelo menos um</span> desses pontos...
+        <h2 className="font-headline text-4xl md:text-5xl font-black text-center text-brand-dark-blue mb-16">
+          Sua casa parece um <span className="text-brand-orange underline decoration-wavy">campo de batalha</span> diário?
         </h2>
-        <div className="grid grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
           {painPoints.map((point, index) => (
             <Card
               key={index}
               className="bg-white/80 backdrop-blur-sm border-2 border-white rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300"
             >
               <CardContent className="flex flex-col items-center justify-center text-center p-6 h-full">
-                <div className="text-5xl mb-4">{point.icon}</div>
+                <div className="text-5xl mb-4 animate-wiggle" style={{ animationDelay: `${index * 100}ms` }}>{point.icon}</div>
                 <p className="font-semibold text-brand-dark-blue text-lg">{point.text}</p>
               </CardContent>
             </Card>

@@ -44,9 +44,10 @@ const Testimonials = () => {
     <section className="py-20 lg:py-32 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-5xl font-extrabold text-brand-dark-blue mb-4">
+          <h2 className="font-headline text-4xl md:text-5xl font-black text-brand-dark-blue mb-4">
             Mães reais... <span className="text-brand-turquoise">resultados reais.</span>
           </h2>
+          <p className="text-lg md:text-xl text-brand-dark-blue/80">Veja o que elas estão dizendo:</p>
         </div>
         <Carousel opts={{ loop: true }} className="w-full max-w-6xl mx-auto">
           <CarouselContent className="-ml-4">
@@ -54,8 +55,8 @@ const Testimonials = () => {
               const image = imageMap.get(testimonial.id);
               return (
                 <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
-                  <div className="p-1">
-                    <Card className="rounded-2xl shadow-lg h-full flex flex-col transform hover:scale-105 transition-transform duration-300">
+                  <div className="p-1 h-full">
+                    <Card className="rounded-2xl shadow-lg h-full flex flex-col transform hover:scale-105 transition-transform duration-300 border-2 border-gray-100">
                       <CardContent className="p-6 flex-grow flex flex-col">
                         <div className="flex items-center mb-4">
                           {image && (
@@ -65,7 +66,7 @@ const Testimonials = () => {
                               width={100}
                               height={100}
                               data-ai-hint={image.imageHint}
-                              className="w-16 h-16 rounded-full mr-4 object-cover"
+                              className="w-16 h-16 rounded-full mr-4 object-cover border-2 border-brand-gold"
                             />
                           )}
                           <div>

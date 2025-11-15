@@ -20,9 +20,10 @@ const WhatsInside = () => {
     <section className="py-20 lg:py-32 bg-brand-orange text-white">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl md:text-5xl font-extrabold mb-4">
+          <h2 className="font-headline text-4xl md:text-5xl font-black mb-4">
             Toda a rotina da sua casa organizada como um <span className="underline decoration-wavy decoration-white">JOGO</span>.
           </h2>
+          <p className="text-lg md:text-xl text-white/80">Um kit completo e personalizável para imprimir e montar.</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {items.map((item) => {
@@ -41,7 +42,7 @@ const WhatsInside = () => {
                     />
                   )}
                   <div className="p-6">
-                    <h3 className="text-xl font-bold mb-2">{item.title}</h3>
+                    <h3 className="font-headline text-xl font-bold mb-2">{item.title}</h3>
                     <p className="text-white/80">{item.benefit}</p>
                   </div>
                 </CardContent>

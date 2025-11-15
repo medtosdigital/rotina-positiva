@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Gift } from 'lucide-react';
 
 const bonuses = [
   { id: 'bonus-anti-gritos', title: 'Guia Anti-Gritos' },
@@ -17,12 +16,11 @@ const Bonuses = () => {
     <section className="pt-10 pb-20 lg:pt-16 lg:pb-32 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-5xl font-extrabold text-brand-dark-blue mb-4">
-            Presentes especiais que deixam tudo <span className="text-brand-orange underline decoration-wavy">AINDA mais fácil</span>.
+          <h2 className="font-headline text-4xl md:text-5xl font-extrabold text-brand-dark-blue mb-4">
+            E de presente, você ainda leva <span className="text-brand-orange underline decoration-wavy">4 BÔNUS ESPECIAIS:</span>
           </h2>
-          <p className="text-lg md:text-xl text-brand-dark-blue/80">Ao garantir seu acesso hoje, você também leva de presente:</p>
         </div>
-        <div className="grid grid-cols-2 gap-8 max-w-3xl mx-auto">
+        <div className="grid grid-cols-2 gap-8 max-w-4xl mx-auto">
           {bonuses.map((bonus) => {
             const image = imageMap.get(bonus.id);
             return (
@@ -41,7 +39,7 @@ const Bonuses = () => {
                    <div className="absolute top-2 right-2 bg-brand-gold text-brand-dark-blue text-xs font-bold px-3 py-1 rounded-full -rotate-12">BÔNUS</div>
                 </CardHeader>
                 <CardContent className="p-6 text-center">
-                  <CardTitle className="text-xl font-bold text-brand-dark-blue">{bonus.title}</CardTitle>
+                  <CardTitle className="font-headline text-2xl font-bold text-brand-dark-blue">{bonus.title}</CardTitle>
                 </CardContent>
               </Card>
             );
