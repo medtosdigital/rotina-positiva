@@ -41,20 +41,20 @@ const ProductShowcase = () => {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="mt-8">
               <h3 className="font-headline text-2xl font-bold text-brand-dark-blue mb-4 text-center">O que vem no kit?</h3>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4">
                 {showcaseItems.map((item) => {
                   const image = imageMap.get(item.id);
                   return (
                     <Card key={item.id} className="bg-gray-50 rounded-lg overflow-hidden group transform hover:-translate-y-1 transition-transform duration-300">
-                      <CardContent className="p-0">
+                      <CardContent className="p-0 flex items-center">
                         {image && (
                           <Image
                             src={image.imageUrl}
                             alt={image.description}
-                            width={200}
-                            height={200}
+                            width={120}
+                            height={120}
                             data-ai-hint={image.imageHint}
-                            className="w-full h-24 object-cover"
+                            className="w-24 h-24 object-cover"
                           />
                         )}
                         <div className="p-3">
