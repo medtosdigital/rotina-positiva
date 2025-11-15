@@ -45,6 +45,9 @@ const FinalCta = () => {
                 </div>
              </div>
           </div>
+          <div className="mt-8 font-body text-sm">
+            <p>Suporte: <a href="mailto:contato@ditadinhokids.com" className="underline hover:text-white/80">contato@ditadinhokids.com</a></p>
+          </div>
         </div>
       </div>
     </section>
