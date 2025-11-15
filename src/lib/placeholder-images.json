@@ -15,7 +15,7 @@
     {
       "id": "carousel-planner",
       "description": "Image of a planner from the Rotina Positiva kit.",
-      "imageUrl": "https://images.unsplash.com/photo-1683291250454-433ea5fe3a07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxraWRzJTIwZGFpbHklMjBwbGFubmVyfGVufDB8fHx8MTc2MzE0NDYzOHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1683291250454-433ea5fe3a07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxraWRzJTIwZGFpbHklMjBwbGFubmVyfGVufDB8fHx8MTc2MzE0NDYzOHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "kids daily planner"
     },
     {
@@ -27,13 +27,13 @@
     {
       "id": "carousel-cards",
       "description": "Image of task cards from the Rotina Positiva kit.",
-      "imageUrl": "https://images.unsplash.com/photo-1614673397128-6c4d301223e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YWN0aXZpdHklMjBmbGFzaGNhcmRzfGVufDB8fHx8MTc2MzE0NDYzOHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1614673397128-6c4d301223e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YWN0aXZpdHklMjBmbGFzaGNhcmRzfGVufDB8fHx8MTc2MzE0NDYzOHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "activity flashcards"
     },
     {
       "id": "whats-inside-morning",
       "description": "Mockup of the 'Quadro da Manhã'.",
-      "imageUrl": "https://images.unsplash.com/photo-1579741370245-a1bf1cf90c4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb3JuaW5nJTIwY2hlY2tsaXN0fGVufDB8fHx8MTc2MzE0NDYzOHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1579741370245-a1bf1cf90c4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb3JuaW5nJTIwY2hlY2tsaXN0fGVufDB8fHx8MTc2MzE0NDYzOHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "morning checklist"
     },
     {
@@ -45,7 +45,7 @@
     {
       "id": "whats-inside-night",
       "description": "Mockup of the 'Quadro da Noite'.",
-      "imageUrl": "https://images.unsplash.com/photo-1758524941606-37d8276534d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxiZWR0aW1lJTIwcm91dGluZXxlbnwwfHx8fDE3NjMxNDQ2Mzh8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1758524941606-37d8276534d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxiZWR0aW1lJTIwcm91dGluZXxlbnwwfHx8fDE3NjMxNDQ2Mzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "bedtime routine"
     },
     {
@@ -57,19 +57,19 @@
     {
       "id": "whats-inside-study",
       "description": "Mockup of the 'Painel de Estudos'.",
-      "imageUrl": "https://images.unsplash.com/photo-1600522551127-1b7c87eb782c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxob21ld29yayUyMHBsYW5uZXJ8ZW58MHx8fHwxNzYzMTQ0NjM4fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1600522551127-1b7c87eb782c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxob21ld29yayUyMHBsYW5uZXJ8ZW58MHx8fHwxNzYzMTQ0NjM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "homework planner"
     },
     {
       "id": "whats-inside-reading",
       "description": "Mockup of the 'Painel de Leitura'.",
-      "imageUrl": "https://images.unsplash.com/photo-1645365419881-835b4cf156f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxyZWFkaW5nJTIwbG9nfGVufDB8fHx8MTc2MzE0MzU4OXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1645365419881-835b4cf156f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxyZWFkaW5nJTIwbG9nfGVufDB8fHx8MTc2MzE0MzU4OXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "reading log"
     },
     {
       "id": "whats-inside-cards",
       "description": "Mockup of the 'Cartões Mágicos'.",
-      "imageUrl": "https://images.unsplash.com/photo-1762647440365-4baf623d1768?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxhY3Rpdml0eSUyMGNhcmRzfGVufDB8fHx8MTc2MzE0NDYzOHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1762647440365-4baf623d1768?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxhY3Rpdml0eSUyMGNhcmRzfGVufDB8fHx8MTc2MzE0NDYzOHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "activity cards"
     },
     {
@@ -81,37 +81,37 @@
     {
       "id": "before-chaos",
       "description": "A child having a tantrum in a messy room.",
-      "imageUrl": "https://images.unsplash.com/photo-1672862683946-9e3c606f71ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx0b2RkbGVyJTIwdGFudHJ1bXxlbnwwfHx8fDE3NjMxNDQ2Mzh8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1672862683946-9e3c606f71ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx0b2RkbGVyJTIwdGFudHJ1bXxlbnwwfHx8fDE3NjMxNDQ2Mzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "toddler tantrum"
     },
     {
       "id": "before-mom-tired",
       "description": "A tired and stressed mother.",
-      "imageUrl": "https://images.unsplash.com/photo-1650368411210-3b22f6ad8e87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxleGhhdXN0ZWQlMjBtb3RoZXJ8ZW58MHx8fHwxNzYzMTQ0NjM4fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1650368411210-3b22f6ad8e87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxleGhhdXN0ZWQlMjBtb3RoZXJ8ZW58MHx8fHwxNzYzMTQ0NjM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "exhausted mother"
     },
     {
       "id": "after-routine",
       "description": "A happy child focused on completing a task on their routine chart.",
-      "imageUrl": "https://images.unsplash.com/photo-1607453998774-d533f65dac99?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxoYXBweSUyMGNoaWxkfGVufDB8fHx8MTc2MzE0NDYzOHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1607453998774-d533f65dac99?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxoYXBweSUyMGNoaWxkfGVufDB8fHx8MTc2MzE0NDYzOHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "happy child"
     },
     {
       "id": "after-mom-happy",
       "description": "A smiling and relaxed mother.",
-      "imageUrl": "https://images.unsplash.com/photo-1660248415930-dd70e678b5f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxyZWxheGVkJTIwbW90aGVyfGVufDB8fHx8MTc2MzE0NDYzOXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1660248415930-dd70e678b5f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxyZWxheGVkJTIwbW90aGVyfGVufDB8fHx8MTc2MzE0NDYzOXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "relaxed mother"
     },
     {
       "id": "testimonial-1",
       "description": "Photo of a smiling mother.",
-      "imageUrl": "https://images.unsplash.com/photo-1614283233556-f35b0c801ef1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MzEwMjI2Mnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1614283233556-f35b0c801ef1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MzEwMjI2Mnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "woman portrait"
     },
     {
       "id": "testimonial-2",
       "description": "Photo of a mother for a testimonial.",
-      "imageUrl": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx3b21hbiUyMGZhY2V8ZW58MHx8fHwxNzYzMTI5NTE2fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx3b21hbiUyMGZhY2V8ZW58MHx8fHwxNzYzMTI5NTE2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "woman face"
     },
     {
@@ -123,7 +123,7 @@
     {
       "id": "bonus-anti-gritos",
       "description": "Cover of the 'Guia Anti-Gritos' bonus.",
-      "imageUrl": "https://images.unsplash.com/photo-1755541608494-5c02cf56e1f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxlYm9vayUyMGNvdmVyfGVufDB8fHx8MTc2MzA3NDk1Mnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1755541608494-5c02cf56e1f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxlYm9vayUyMGNvdmVyfGVufDB8fHx8MTc2MzA3NDk1Mnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "ebook cover"
     },
     {
@@ -135,7 +135,7 @@
     {
       "id": "bonus-emocoes",
       "description": "Cover of the 'Painel das Emoções' bonus.",
-      "imageUrl": "https://images.unsplash.com/photo-1606242403145-bfd1478df2da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwbGFubmVyJTIwbW9ja3VwfGVufDB8fHx8MTc2MzA1NjQzMnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1606242403145-bfd1478df2da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwbGFubmVyJTIwbW9ja3VwfGVufDB8fHx8MTc2MzA1NjQzMnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "planner mockup"
     },
     {
@@ -147,20 +147,14 @@
     {
       "id": "guarantee-mom",
       "description": "Image of a happy mother with her child.",
-      "imageUrl": "https://images.unsplash.com/photo-1589169011402-8b2cbd1ee593?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bW90aGVyJTIwY2hpbGR8ZW58MHx8fHwxNzYzMDU1ODY2fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1589169011402-8b2cbd1ee593?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bW90aGVyJTIwY2hpbGR8ZW58MHx8fHwxNzYzMDU1ODY2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "mother child"
     },
     {
       "id": "creator-story-carla",
       "description": "Photo of Carla Alves, creator of Rotina Positiva, with her daughter.",
-      "imageUrl": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb3RoZXIlMjBhbmQlMjBkYXVnaHRlcnxlbnwwfHx8fDE3NjMxNDU0MDV8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb3RoZXIlMjBhbmQlMjBkYXVnaHRlcnxlbnwwfHx8fDE3NjMxNDU0MDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "mother and daughter"
-    },
-    {
-      "id": "final-cta-mockup",
-      "description": "A small mockup of the product for the final CTA section.",
-      "imageUrl": "https://images.unsplash.com/photo-1684841565710-168022dfda52?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwcm9kdWN0JTIwYnVuZGxlfGVufDB8fHx8MTc2MzE0NDYzOHww&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "product bundle"
     },
     {
       "id": "final-cta-testimonial",
@@ -171,7 +165,7 @@
     {
       "id": "brain-image",
       "description": "Illustration of a colorful child's brain",
-      "imageUrl": "https://images.unsplash.com/photo-1669286081720-49743b35e882?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxiYmFpbiUyMGdlYXJzfGVufDB8fHx8MTc2MzA1MDI3NHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1669286081720-49743b35e882?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxiYmFpbiUyMGdlYXJzfGVufDB8fHx8MTc2MzA1MDI3NHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "brain gears"
     },
     {

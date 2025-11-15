@@ -4,24 +4,13 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Star } from 'lucide-react';
 
 const FinalCta = () => {
-  const mockup = PlaceHolderImages.find(img => img.id === 'final-cta-mockup');
 
   return (
     <section className="pt-20 pb-20 lg:pt-24 lg:pb-24 bg-brand-orange text-white">
       <div className="container mx-auto px-6 text-center">
         <div className="max-w-4xl mx-auto">
-          {mockup && (
-            <Image
-              src={mockup.imageUrl}
-              alt={mockup.description}
-              width={300}
-              height={300}
-              data-ai-hint={mockup.imageHint}
-              className="mx-auto mb-8 rounded-2xl shadow-2xl -mt-32 md:-mt-40 w-48 md:w-auto"
-            />
-          )}
 
-          <h2 className="font-headline text-3xl md:text-6xl font-bold !leading-tight mb-8">
+          <h2 className="font-headline text-3xl md:text-6xl font-bold !leading-tight mb-8 pt-12 md:pt-0">
             Você está a 1 clique de transformar a rotina do seu filho.
           </h2>
 
