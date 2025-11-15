@@ -27,25 +27,25 @@
     {
       "id": "carousel-cards",
       "description": "Image of task cards from the Rotina Positiva kit.",
-      "imageUrl": "https://images.unsplash.com/photo-1614673397128-6c4d301223e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YWN0aXZpdHklMjBmbGFzaGNhcmRzfGVufDB8fHx8MTc2MzE0NDYzOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1614673397128-6c4d301223e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YWN0aXZpdHklMjBmbGFzaGNhcmRzfGVufDB8fHx8MTc2MzE0NDYzOHww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "activity flashcards"
     },
     {
       "id": "whats-inside-morning",
       "description": "Mockup of the 'Quadro da Manhã'.",
-      "imageUrl": "https://images.unsplash.com/photo-1579741370245-a1bf1cf90c4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb3JuaW5nJTIwY2hlY2tsaXN0fGVufDB8fHx8MTc2MzE0NDYzOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1579741370245-a1bf1cf90c4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb3JuaW5nJTIwY2hlY2tsaXN0fGVufDB8fHx8MTc2MzE0NDYzOHww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "morning checklist"
     },
     {
       "id": "whats-inside-afternoon",
       "description": "Mockup of the 'Quadro da Tarde'.",
-      "imageUrl": "https://images.unsplash.com/photo-1758272421664-ae691f6cdafc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhZnRlcm5vb24lMjB0YXNrc3xlbnwwfHx8fDE3NjMxNDQ2Mzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1758272421664-ae691f6cdafc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhZnRlcm5vb24lMjB0YXNrc3xlbnwwfHx8fDE3NjMxNDQ2Mzh8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "afternoon tasks"
     },
     {
       "id": "whats-inside-night",
       "description": "Mockup of the 'Quadro da Noite'.",
-      "imageUrl": "https://images.unsplash.com/photo-1758524941606-37d8276534d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxiZWR0aW1lJTIwcm91dGluZXxlbnwwfHx8fDE3NjMxNDQ2Mzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1758524941606-37d8276534d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxiZWR0aW1lJTIwcm91dGluZXxlbnwwfHx8fDE3NjMxNDQ2Mzh8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "bedtime routine"
     },
     {
@@ -57,7 +57,7 @@
     {
       "id": "whats-inside-study",
       "description": "Mockup of the 'Painel de Estudos'.",
-      "imageUrl": "https://images.unsplash.com/photo-1600522551127-1b7c87eb782c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxob21ld29yayUyMHBsYW5uZXJ8ZW58MHx8fHwxNzYzMTQ0NjM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1600522551127-1b7c87eb782c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxob21ld29yayUyMHBsYW5uZXJ8ZW58MHx8fHwxNzYzMTQ0NjM4fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "homework planner"
     },
     {
@@ -153,7 +153,7 @@
     {
       "id": "creator-story-carla",
       "description": "Photo of Carla Alves, creator of Rotina Positiva, with her daughter.",
-      "imageUrl": "https://storage.googleapis.com/gcp-studio-prod-generative-ai-output/user_12e4f0a0740a4306b3e15777c57df3d2/1763172036666_mother-and-daughter.png",
+      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2024/05/Design-sem-nome-14.png",
       "imageHint": "mother daughter"
     },
     {
