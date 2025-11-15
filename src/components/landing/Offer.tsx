@@ -1,78 +1,58 @@
 "use client";
 
-import { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { ShieldCheck, Zap, Package, Clock } from 'lucide-react';
-
-const seals = [
-  { icon: <ShieldCheck className="w-6 h-6 mr-2" />, text: 'Garantia 7 dias' },
-  { icon: <Zap className="w-6 h-6 mr-2" />, text: 'Acesso imediato' },
-  { icon: <Package className="w-6 h-6 mr-2" />, text: 'Produto digital' },
-];
-
-const CountdownTimer = () => {
-    const [timeLeft, setTimeLeft] = useState({ hours: 0, minutes: 29, seconds: 59 });
-
-    useEffect(() => {
-        const timer = setInterval(() => {
-            setTimeLeft(prevTime => {
-                if (prevTime.seconds > 0) {
-                    return { ...prevTime, seconds: prevTime.seconds - 1 };
-                }
-                if (prevTime.minutes > 0) {
-                    return { ...prevTime, minutes: prevTime.minutes - 1, seconds: 59 };
-                }
-                if (prevTime.hours > 0) {
-                    return { hours: prevTime.hours - 1, minutes: 59, seconds: 59 };
-                }
-                return prevTime;
-            });
-        }, 1000);
-
-        return () => clearInterval(timer);
-    }, []);
-
-    const formatTime = (time: number) => time.toString().padStart(2, '0');
-
-    return (
-        <div className="bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2 md:px-6 md:py-3 flex items-center justify-center gap-2 md:gap-4 my-8">
-            <Clock className="w-6 h-6 md:w-8 md:h-8 text-brand-gold" />
-            <div>
-                <p className="text-xs md:text-sm font-light uppercase tracking-wider">Esta oferta termina em:</p>
-                <p className="text-xl md:text-2xl font-bold tracking-widest">
-                    {formatTime(timeLeft.hours)}:{formatTime(timeLeft.minutes)}:{formatTime(timeLeft.seconds)}
-                </p>
-            </div>
-        </div>
-    );
-}
+import { ShieldCheck, ArrowRight, Flame } from 'lucide-react';
+import { Card, CardContent } from '@/components/ui/card';
 
 const Offer = () => {
   return (
-    <section className="py-20 lg:py-24 bg-brand-dark-blue text-white">
-      <div className="container mx-auto px-6 text-center">
-        <p className="font-body text-lg md:text-2xl mb-2 text-gray-300">OFERTA ESPECIAL DE LANÇAMENTO</p>
-        <h2 className="font-headline text-4xl md:text-6xl font-bold !leading-tight mb-4">
-          <span className="text-red-400 line-through decoration-2">De R$ 147</span> por apenas <span className="text-brand-gold">R$ 27 HOJE</span>.
-        </h2>
-        <p className="font-body text-base md:text-xl text-gray-300 max-w-2xl mx-auto">Acesso vitalício a todo o sistema e futuras atualizações. Sem mensalidades.</p>
-        
-        <CountdownTimer />
-        
-        <Button
-          size="lg"
-          className="font-headline bg-brand-orange hover:bg-brand-orange/90 text-primary-foreground text-lg md:text-2xl font-bold py-6 px-8 md:py-8 md:px-16 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 animate-pulse w-full max-w-md"
-        >
-          QUERO ACESSAR AGORA POR R$27
-        </Button>
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-4 md:gap-6 mt-8">
-          {seals.map((seal, index) => (
-            <div key={index} className="flex items-center text-gray-300 text-sm md:text-base">
-              {seal.icon}
-              <span className="font-body font-medium">{seal.text}</span>
+    <section className="py-20 lg:py-24 bg-brand-gold">
+      <div className="container mx-auto px-4 sm:px-6">
+        <Card className="max-w-xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden border-8 border-brand-gold">
+          <div className="bg-brand-turquoise text-white text-center py-3">
+            <p className="font-headline font-bold text-lg tracking-wide flex items-center justify-center gap-2">
+              <Flame className="w-5 h-5" />
+              <span>OFERTA POR TEMPO LIMITADO</span>
+              <Flame className="w-5 h-5" />
+            </p>
+          </div>
+          <CardContent className="p-6 sm:p-10 text-center">
+            <h2 className="font-headline text-4xl md:text-5xl font-bold text-brand-dark-blue !leading-tight mb-3">
+              Sua chance de ter paz em casa está aqui
+            </h2>
+            <p className="font-body text-base md:text-lg text-brand-dark-blue/70 max-w-md mx-auto mb-8">
+              Acesso imediato ao Kit Rotina Mágica completo + todos os 10 bônus.
+            </p>
+            
+            <div className="bg-gray-50 rounded-2xl p-6 mb-8 border">
+                <p className="font-body text-gray-500 text-sm">Preço normal</p>
+                <p className="font-headline text-2xl font-bold text-gray-400 line-through decoration-2 mb-2">R$ 147,00</p>
+                
+                <p className="font-headline font-bold text-brand-turquoise text-lg uppercase">OFERTA ESPECIAL HOJE</p>
+                <p className="font-headline font-bold text-brand-turquoise !leading-none">
+                    <span className="text-2xl align-middle">12x </span>
+                    <span className="text-7xl font-extrabold">R$ 2,25</span>
+                </p>
+                <p className="font-body text-gray-500 text-sm">ou R$27,00 à vista</p>
             </div>
-          ))}
-        </div>
+
+            <Button
+              size="lg"
+              className="font-headline bg-brand-turquoise hover:bg-brand-turquoise/90 text-white text-lg md:text-2xl font-bold py-6 px-8 md:py-8 md:px-16 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 w-full"
+            >
+              QUERO MEU FILHO OBEDECENDO!
+              <ArrowRight className="w-6 h-6 ml-2" />
+            </Button>
+            
+            <div className="flex items-center justify-center gap-3 mt-8 text-gray-600">
+                <ShieldCheck className="w-8 h-8 text-green-500 flex-shrink-0" />
+                <div className="text-left">
+                    <p className="font-subtitle font-bold">Garantia Incondicional de 7 Dias</p>
+                    <p className="text-sm font-body">Seu risco é zero. Se não amar, peça seu dinheiro de volta.</p>
+                </div>
+            </div>
+          </CardContent>
+        </Card>
       </div>
     </section>
   );
