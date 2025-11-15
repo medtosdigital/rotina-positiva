@@ -1,5 +1,18 @@
 import { Card, CardContent } from '@/components/ui/card';
-import { ArrowDown } from 'lucide-react';
+import { ArrowRight, CheckCircle2, XCircle } from 'lucide-react';
+
+const boringRules = [
+  "Arrume seu quarto!",
+  "Vá fazer o dever!",
+  "É hora de tomar banho!",
+];
+
+const funRoutine = [
+  "Conquistar a 'Missão Quarto Arrumado'",
+  "Destravar a 'Fase do Saber'",
+  "Ativar o 'Poder do Super Banho'",
+];
+
 
 const UniqueMechanism = () => {
   return (
@@ -19,16 +32,38 @@ const UniqueMechanism = () => {
         </div>
 
         <div className="flex justify-center">
-            <Card className="bg-white/90 backdrop-blur-sm border border-white/50 rounded-2xl shadow-xl max-w-lg w-full">
-                <CardContent className="p-8 md:p-12 flex flex-col items-center justify-center space-y-6">
-                    <div className="bg-red-100 border-2 border-dashed border-red-400 rounded-xl px-6 py-3">
-                        <p className="font-subtitle text-xl font-bold text-red-500">Regras Chatas</p>
+            <Card className="bg-white/90 backdrop-blur-sm border border-white/50 rounded-2xl shadow-xl max-w-4xl w-full">
+                <CardContent className="p-8 md:p-12 grid md:grid-cols-[1fr_auto_1fr] items-center gap-6 md:gap-8">
+                    {/* Coluna Regras Chatas */}
+                    <div className="text-center md:text-left">
+                        <h3 className="font-headline text-xl md:text-2xl font-bold text-red-500 mb-4">Regras Chatas</h3>
+                        <ul className="space-y-3">
+                            {boringRules.map((rule, index) => (
+                                <li key={index} className="flex items-start">
+                                    <XCircle className="w-6 h-6 text-red-400 mr-3 mt-0.5 flex-shrink-0" />
+                                    <span className="font-body text-gray-600">{rule}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+
+                    {/* Seta */}
+                    <div className="flex justify-center">
+                        <ArrowRight className="w-8 h-8 md:w-12 md:h-12 text-brand-turquoise" />
                     </div>
                     
-                    <ArrowDown className="w-10 h-10 text-brand-turquoise animate-bounce" />
 
-                    <div className="bg-green-100/80 rounded-xl px-8 py-4 shadow-lg">
-                         <p className="font-subtitle text-xl font-bold text-green-700">Jogo Visual Divertido</p>
+                    {/* Coluna Rotina Divertida */}
+                    <div className="text-center md:text-left">
+                        <h3 className="font-headline text-xl md:text-2xl font-bold text-green-600 mb-4">Rotina Divertida</h3>
+                         <ul className="space-y-3">
+                            {funRoutine.map((task, index) => (
+                                <li key={index} className="flex items-start">
+                                    <CheckCircle2 className="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                                    <span className="font-body text-brand-dark-blue font-medium">{task}</span>
+                                </li>
+                            ))}
+                        </ul>
                     </div>
                 </CardContent>
             </Card>
