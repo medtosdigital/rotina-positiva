@@ -33,7 +33,7 @@
     {
       "id": "whats-inside-morning",
       "description": "Mockup of the 'Quadro da Manhã'.",
-      "imageUrl": "https://images.unsplash.com/photo-1579741370245-a1bf1cf90c4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb3JuaW5nJTIwY2hlY2tsaXN0fGVufDB8fHx8MTc2MzE0NDYzOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/8ba3414f-0eb6-4b58-ba0b-ae7c46d1485e.png",
       "imageHint": "morning checklist"
     },
     {
@@ -75,7 +75,7 @@
     {
       "id": "whats-inside-coins",
       "description": "Image of the virtual 'Moedas e Estrelas'.",
-      "imageUrl": "https://images.unsplash.com/photo-1703192163828-a99b96cbf412?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxnb2xkJTIwc3RhcnN8ZW58MHx8fHwxNzYzMTQ0NjM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1703192163828-a99b96cbf412?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxnb2xkJTIwc3RhcnN8ZW58MHx8fHwxNzYzMTQ0NjM4fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "gold stars"
     },
     {
@@ -135,31 +135,31 @@
     {
       "id": "testimonial-6",
       "description": "Portrait of a woman smiling.",
-      "imageUrl": "https://images.unsplash.com/photo-1690444963408-9573a17a8058?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzbWlsaW5nJTIwd29tYW58ZW58MHx8fHwxNzYzMTM2ODUxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1690444963408-9573a17a8058?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzbWlsaW5nJTIwd29tYW58ZW58MHx8fHwxNzYzMTM2ODUxfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "smiling woman"
     },
     {
       "id": "testimonial-7",
       "description": "Portrait of a smiling woman.",
-      "imageUrl": "https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MzIxODk3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MzIxODk3Mnww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "woman portrait"
     },
     {
       "id": "testimonial-8",
       "description": "Portrait of a smiling woman.",
-      "imageUrl": "https://images.unsplash.com/photo-1557053910-d9eadeed1c58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MzIxODk3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1557053910-d9eadeed1c58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MzIxODk3Mnww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "woman portrait"
     },
     {
       "id": "testimonial-9",
       "description": "Portrait of a smiling woman.",
-      "imageUrl": "https://images.unsplash.com/photo-1580489944761-15a19d654956?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MzIxODk3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1580489944761-15a19d654956?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MzIxODk3Mnww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "woman portrait"
     },
     {
       "id": "testimonial-10",
       "description": "Portrait of a smiling woman.",
-      "imageUrl": "https://images.unsplash.com/photo-1557053910-d9eadeed1c58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MzIxODk3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1557053910-d9eadeed1c58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MzIxODk3Mnww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "woman portrait"
     },
     {
@@ -177,13 +177,13 @@
     {
       "id": "bonus-emocoes",
       "description": "Cover of the 'Painel das Emoções' bonus.",
-      "imageUrl": "https://images.unsplash.com/photo-1606242403145-bfd1478df2da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwbGFubmVyJTIwbW9ja3VwfGVufDB8fHx8MTc2MzA1NjQzMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1606242403145-bfd1478df2da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwbGFubmVyJTIwbW9ja3VwfGVufDB8fHx8MTc2MzA1NjQzMnww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "planner mockup"
     },
     {
       "id": "bonus-regras",
       "description": "Cover of the 'Cartazes Regras da Casa' bonus.",
-      "imageUrl": "https://images.unsplash.com/photo-1664216294580-079bc527ae49?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwcm9kdWN0JTIwbW9ja3VwfGVufDB8fHx8MTc2MzA0Nzc3Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1664216294580-079bc527ae49?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwcm9kdWN0JTIwbW9ja3VwfGVufDB8fHx8MTc2MzA0Nzc3Nnww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "product mockup"
     },
     {
@@ -195,13 +195,13 @@
     {
       "id": "creator-story-carla",
       "description": "Photo of Carla Alves, creator of Rotina Positiva, with her daughter.",
-      "imageUrl": "https://images.unsplash.com/photo-1589169011402-8b2cbd1ee593?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bW90aGVyJTIwY2hpbGR8ZW58MHx8fHwxNzYzMDU1ODY2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1589169011402-8b2cbd1ee593?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bW90aGVyJTIwY2hpbGR8ZW58MHx8fHwxNzYzMDU1ODY2fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "mother daughter"
     },
     {
       "id": "final-cta-testimonial",
       "description": "Face of a woman for a mini testimonial.",
-      "imageUrl": "https://images.unsplash.com/photo-1556745753-b2904692b3cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxoYXBweSUyMGN1c3RvbWVyfGVufDB8fHx8MTc2MzA2MDM5Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1556745753-b2904692b3cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxoYXBweSUyMGN1c3RvbWVyfGVufDB8fHx8MTc2MzA2MDM5Mnww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "happy customer"
     },
     {
