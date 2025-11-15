@@ -50,7 +50,7 @@ const Hero = () => {
                 </span>
               </h1>
               <p className="text-lg md:text-xl mt-6 mb-8 text-brand-dark-blue/90 font-medium">
-                Criança obedece quando sente que está <span className="underline decoration-wavy decoration-brand-orange">jogando</span> — não quando está sendo mandada.
+                Com o sistema visual que transforma disciplina em um jogo divertido.
               </p>
                 <div className="grid grid-cols-2 gap-4">
                     {benefitCards.map((card) => (
