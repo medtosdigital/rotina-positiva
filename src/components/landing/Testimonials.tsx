@@ -70,7 +70,7 @@ const StarRating = () => (
 const Testimonials = () => {
   const imageMap = new Map(PlaceHolderImages.map(img => [img.id, img]));
   const plugin = React.useRef(
-    Autoplay({ delay: 3000, stopOnInteraction: true, stopOnMouseEnter: true })
+    Autoplay({ delay: 3000, stopOnInteraction: false, stopOnMouseEnter: true })
   );
 
   return (
@@ -87,7 +87,7 @@ const Testimonials = () => {
           plugins={[plugin.current]}
           className="w-full max-w-sm md:max-w-6xl mx-auto"
           onMouseEnter={plugin.current.stop}
-          onMouseLeave={plugin.current.reset}
+          onMouseLeave={plugin.current.play}
         >
           <CarouselContent className="-ml-4">
             {testimonials.map((testimonial, index) => {

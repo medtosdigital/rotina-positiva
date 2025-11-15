@@ -98,63 +98,63 @@
     },
     {
       "id": "testimonial-1",
-      "description": "Photo of a smiling mother.",
-      "imageUrl": "https://images.unsplash.com/photo-1614283233556-f35b0c801ef1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MzEwMjI2Mnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "woman portrait"
+      "description": "Portrait of a smiling Brazilian mother.",
+      "imageUrl": "https://images.unsplash.com/photo-1691211393551-5c4256e02f82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxicmF6aWxpYW4lMjBtb3RoZXJ8ZW58MHx8fHwxNzYzMjMzMDQ4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "brazilian mother"
     },
     {
       "id": "testimonial-2",
-      "description": "Photo of a mother for a testimonial.",
-      "imageUrl": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx3b21hbiUyMGZhY2V8ZW58MHx8fHwxNzYzMTI5NTE2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "woman face"
+      "description": "Portrait of a happy Brazilian mother.",
+      "imageUrl": "https://images.unsplash.com/photo-1527692013692-dd97db1f9a2f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxicmF6aWxpYW4lMjB3b21hbnxlbnwwfHx8fDE3NjMyMzMwNDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "brazilian woman"
     },
     {
       "id": "testimonial-3",
-      "description": "Selfie of a happy woman.",
-      "imageUrl": "https://images.unsplash.com/photo-1579047917338-a6a69144fe63?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxoYXBweSUyMHBlcnNvbnxlbnwwfHx8fDE3NjMwNDUxMDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "happy person"
+      "description": "Portrait of a smiling Brazilian mother.",
+      "imageUrl": "https://images.unsplash.com/photo-1494451930944-8998635c2123?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxicmF6aWxpYW4lMjBtb3RoZXJ8ZW58MHx8fHwxNzYzMjMzMDQ4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "brazilian mother"
     },
     {
       "id": "testimonial-4",
-      "description": "Portrait of a smiling woman.",
-      "imageUrl": "https://images.unsplash.com/photo-1546961329-78bef0414d7c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MzIxODk3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "woman portrait"
+      "description": "Portrait of a happy Brazilian mother.",
+      "imageUrl": "https://images.unsplash.com/photo-1645242746626-b3d8f4734ca4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxicmF6aWxpYW4lMjB3b21hbnxlbnwwfHx8fDE3NjMyMzMwNDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "brazilian woman"
     },
     {
       "id": "testimonial-5",
-      "description": "Portrait of a happy mother.",
-      "imageUrl": "https://images.unsplash.com/photo-1743267216993-df3799d82e82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtb3RoZXIlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjMxNDY3NzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "mother portrait"
+      "description": "Portrait of a smiling Brazilian mother.",
+      "imageUrl": "https://images.unsplash.com/photo-1653922708190-af35a1f83db7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YnJhemlsaWFuJTIwbW90aGVyfGVufDB8fHx8MTc2MzIzMzA0OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "brazilian mother"
     },
     {
       "id": "testimonial-6",
-      "description": "Portrait of a woman smiling.",
-      "imageUrl": "https://images.unsplash.com/photo-1690444963408-9573a17a8058?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzbWlsaW5nJTIwd29tYW58ZW58MHx8fHwxNzYzMTM2ODUxfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "smiling woman"
+      "description": "Portrait of a happy Brazilian mother.",
+      "imageUrl": "https://images.unsplash.com/photo-1500336624523-d727130c3328?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxicmF6aWxpYW4lMjB3b21hbnxlbnwwfHx8fDE3NjMyMzMwNDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "brazilian woman"
     },
     {
       "id": "testimonial-7",
-      "description": "Portrait of a smiling woman.",
-      "imageUrl": "https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MzIxODk3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "woman portrait"
+      "description": "Portrait of a smiling Brazilian mother.",
+      "imageUrl": "https://images.unsplash.com/photo-1494451930944-8998635c2123?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxicmF6aWxpYW4lMjBtb3RoZXJ8ZW58MHx8fHwxNzYzMjMzMDQ4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "brazilian mother"
     },
     {
       "id": "testimonial-8",
-      "description": "Portrait of a smiling woman.",
-      "imageUrl": "https://images.unsplash.com/photo-1557053910-d9eadeed1c58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MzIxODk3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "woman portrait"
+      "description": "Portrait of a happy Brazilian mother.",
+      "imageUrl": "https://images.unsplash.com/photo-1519419691348-3b3433c4c20e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxicmF6aWxpYW4lMjB3b21hbnxlbnwwfHx8fDE3NjMyMzMwNDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "brazilian woman"
     },
     {
       "id": "testimonial-9",
-      "description": "Portrait of a smiling woman.",
-      "imageUrl": "https://images.unsplash.com/photo-1580489944761-15a19d654956?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MzIxODk3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "woman portrait"
+      "description": "Portrait of a smiling Brazilian mother.",
+      "imageUrl": "https://images.unsplash.com/photo-1694185766467-e2a104a79382?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxicmF6aWxpYW4lMjBtb3RoZXJ8ZW58MHx8fHwxNzYzMjMzMDQ4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "brazilian mother"
     },
     {
       "id": "testimonial-10",
-      "description": "Portrait of a smiling woman.",
-      "imageUrl": "https://images.unsplash.com/photo-1557053910-d9eadeed1c58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MzIxODk3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "woman portrait"
+      "description": "Portrait of a happy Brazilian mother.",
+      "imageUrl": "https://images.unsplash.com/photo-1527692013692-dd97db1f9a2f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxicmF6aWxpYW4lMjB3b21hbnxlbnwwfHx8fDE3NjMyMzMwNDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "brazilian woman"
     },
     {
       "id": "bonus-cooperacao",
@@ -195,7 +195,7 @@
     {
       "id": "final-cta-testimonial",
       "description": "Face of a woman for a mini testimonial.",
-      "imageUrl": "https://images.unsplash.com/photo-1556745753-b2904692b3cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxoYXBweSUyMGN1c3RvbWVyfGVufDB8fHx8MTc2MzA2MDM5Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1556745753-b2904692b3cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxoYXBweSUyMGN1c3RvbWVyfGVufDB8fHx8MTc2MzA2MDM5Mnww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "happy customer"
     },
     {
