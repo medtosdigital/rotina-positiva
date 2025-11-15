@@ -69,8 +69,8 @@ const Hero = () => {
                   <Image
                     src={heroImage.imageUrl}
                     alt={heroImage.description}
-                    width={800}
-                    height={600}
+                    width={1000}
+                    height={750}
                     data-ai-hint={heroImage.imageHint}
                     className="object-contain w-full h-full rounded-2xl"
                     priority
