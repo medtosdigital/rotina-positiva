@@ -45,7 +45,7 @@ const Hero = () => {
                     OBEDECER
                 </span>{' '}
                 sem brigar, sem gritar e sem ameaças —{' '}
-                <span className="inline-block bg-primary text-primary-foreground px-4 rounded-lg rotate-1">
+                <span className="inline-block bg-primary text-white px-4 rounded-lg rotate-1">
                     em apenas 24 horas.
                 </span>
               </h1>
