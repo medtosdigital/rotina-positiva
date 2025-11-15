@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { HeartHandshake, Puzzle, ShieldCheck, Trophy } from 'lucide-react';
+import { HeartHandshake, Puzzle, ShieldCheck, Trophy, Star } from 'lucide-react';
 
 const benefitCards = [
     {
@@ -26,9 +26,10 @@ const benefitCards = [
 
 const Hero = () => {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-main');
+  const testimonial = PlaceHolderImages.find(img => img.id === 'final-cta-testimonial');
 
   return (
-    <section className="relative w-full bg-brand-green-water overflow-hidden pb-12">
+    <section className="relative w-full bg-brand-green-water overflow-hidden">
       <div
         className="absolute inset-x-0 top-0 h-full bg-brand-gold"
         style={{
@@ -36,9 +37,30 @@ const Hero = () => {
         }}
       ></div>
 
-      <div className="relative container mx-auto px-6">
+      <div className="relative container mx-auto px-6 pt-12 pb-12">
         <div className="grid lg:grid-cols-2 items-center gap-8 md:gap-12 w-full">
             <div className="text-brand-dark-blue z-10 text-center lg:text-left order-2 lg:order-1">
+              <div className="mb-6 flex justify-center lg:justify-start">
+                <div className="bg-white/30 backdrop-blur-sm border border-white/50 rounded-xl p-4 flex items-center gap-4 max-w-sm md:max-w-md shadow-lg text-white">
+                   {testimonial && (
+                       <Image
+                           src={testimonial.imageUrl}
+                           alt={testimonial.description}
+                           width={80}
+                           height={80}
+                           data-ai-hint={testimonial.imageHint}
+                           className="rounded-full object-cover border-2 border-white w-12 h-12"
+                       />
+                   )}
+                   <div className="text-left font-body">
+                       <p className="text-xs sm:text-sm italic text-brand-dark-blue">"Melhor investimento que fiz pela paz da minha família. Funcionou no primeiro dia!"</p>
+                       <div className="flex text-yellow-400 mt-1">
+                           {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-current" />)}
+                       </div>
+                   </div>
+                </div>
+             </div>
+
               <h1 className="font-headline text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tighter">
                 Faça seu filho{' '}
                 <span className="inline-block bg-primary text-white px-4 rounded-lg -rotate-1">

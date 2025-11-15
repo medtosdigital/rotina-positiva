@@ -5,7 +5,6 @@ import { Star } from 'lucide-react';
 
 const FinalCta = () => {
   const mockup = PlaceHolderImages.find(img => img.id === 'final-cta-mockup');
-  const testimonial = PlaceHolderImages.find(img => img.id === 'final-cta-testimonial');
 
   return (
     <section className="pt-20 pb-20 lg:pt-24 lg:pb-24 bg-brand-orange text-white">
@@ -38,19 +37,9 @@ const FinalCta = () => {
 
           <div className="mt-12 flex justify-center items-center">
              <div className="bg-white/20 rounded-xl p-4 flex items-center gap-4 max-w-sm md:max-w-md shadow-lg">
-                {testimonial && (
-                    <Image
-                        src={testimonial.imageUrl}
-                        alt={testimonial.description}
-                        width={80}
-                        height={80}
-                        data-ai-hint={testimonial.imageHint}
-                        className="rounded-full object-cover border-2 border-white w-16 h-16 md:w-20 md:h-20"
-                    />
-                )}
-                <div className="text-left font-body">
-                    <p className="text-xs sm:text-sm italic">"Melhor investimento que fiz pela paz da minha família. Funcionou no primeiro dia!"</p>
-                    <div className="flex text-yellow-300 mt-1">
+                <div className="text-center font-body">
+                    <p className="text-sm sm:text-base italic">"Melhor investimento que fiz pela paz da minha família. Funcionou no primeiro dia!" - <strong>Juliana S.</strong></p>
+                    <div className="flex text-yellow-300 mt-1 justify-center">
                         {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-current" />)}
                     </div>
                 </div>
