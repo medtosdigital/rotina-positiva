@@ -43,14 +43,19 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 items-center gap-8 w-full">
             <div className="text-white z-10 text-center lg:text-left">
               <h1 className="text-4xl md:text-5xl font-extrabold !leading-tight tracking-tight mb-4 text-brand-dark-blue">
-                Faça seu filho{' '}
-                <span className="bg-brand-dark-blue text-brand-gold px-4 py-1 rounded-full inline-block">
-                  OBEDECER
+                O sistema visual que transforma{' '}
+                <span className="text-brand-orange underline decoration-wavy">
+                  disciplina
                 </span>{' '}
-                sem brigar, sem gritar e sem ameaças —{' '}
+                em um{' '}
                 <span className="bg-brand-dark-blue text-brand-gold px-4 py-1 rounded-full inline-block">
-                  em apenas 24 horas.
+                  jogo
+                </span>{' '}
+                que a criança{' '}
+                <span className="bg-brand-dark-blue text-brand-gold px-4 py-1 rounded-full inline-block">
+                  AMA
                 </span>
+                .
               </h1>
               <p className="text-lg md:text-xl lg:text-2xl mb-8 text-brand-dark-blue/80">
                 Criança obedece quando sente que está jogando — não quando está sendo mandada.
