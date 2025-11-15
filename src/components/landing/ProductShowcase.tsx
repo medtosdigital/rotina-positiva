@@ -15,7 +15,6 @@ const showcaseItems = [
 ];
 
 const ProductShowcase = () => {
-  const mockupFull = PlaceHolderImages.find((img) => img.id === 'product-mockup-full');
   const imageMap = new Map(PlaceHolderImages.map(img => [img.id, img]));
 
   const features = [
@@ -37,20 +36,7 @@ const ProductShowcase = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-5 gap-8 lg:gap-12 items-center">
-          <div className="lg:col-span-3">
-            {mockupFull && (
-              <Image
-                src={mockupFull.imageUrl}
-                alt={mockupFull.description}
-                width={1200}
-                height={800}
-                data-ai-hint={mockupFull.imageHint}
-                className="rounded-2xl shadow-2xl w-full object-cover"
-              />
-            )}
-          </div>
-          <div className="lg:col-span-2">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="mt-8">
               <h3 className="font-headline text-2xl font-bold text-brand-dark-blue mb-4 text-center">O que vem no kit?</h3>
               <div className="grid grid-cols-2 gap-4">
@@ -88,7 +74,6 @@ const ProductShowcase = () => {
                 </li>
               ))}
             </ul>
-          </div>
         </div>
       </div>
     </section>
