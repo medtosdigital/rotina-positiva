@@ -31,8 +31,8 @@ const Offer = () => {
                 <p className="font-headline font-bold text-brand-turquoise text-lg uppercase">OFERTA ESPECIAL HOJE</p>
                 
                 <div className="flex justify-center items-end font-headline font-bold text-brand-turquoise !leading-none">
-                    <span className="text-2xl self-center mr-2">12x</span>
-                    <span className="text-7xl font-extrabold">R$ 3,60</span>
+                    <span className="text-2xl self-start mr-1 mt-2">12x</span>
+                    <span className="text-7xl sm:text-8xl font-extrabold">R$ 3,60</span>
                 </div>
 
                 <p className="font-body text-gray-500 text-sm">ou R$37,00 à vista</p>
@@ -43,6 +43,7 @@ const Offer = () => {
               className="font-headline bg-[#2ECC71] hover:bg-[#2ECC71]/90 text-white font-bold py-6 px-6 sm:py-8 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 w-full h-auto animate-pulse-slow"
             >
               <div className="flex flex-col items-center text-center">
+                <span className="text-xs sm:text-sm font-normal uppercase">Comprar agora com desconto</span>
                 <span className="text-base sm:text-xl md:text-2xl uppercase">QUERO MEU FILHO OBEDECENDO!</span>
                 <span className="text-xs sm:text-sm font-normal">Acesso vitalício e risco zero</span>
               </div>
