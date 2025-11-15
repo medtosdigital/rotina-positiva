@@ -49,7 +49,7 @@ const Hero = () => {
                     em apenas 24 horas.
                 </span>
               </h1>
-              <p className="text-xl md:text-2xl mb-10 text-brand-dark-blue/90 font-medium">
+              <p className="text-xl md:text-2xl mt-8 mb-10 text-brand-dark-blue/90 font-medium">
                 Criança obedece quando sente que está <span className="underline decoration-wavy decoration-brand-orange">jogando</span> — não quando está sendo mandada.
               </p>
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
