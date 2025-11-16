@@ -6,7 +6,7 @@ const bonuses = [
   { id: 'bonus-cooperacao', title: 'Jogo da Cooperação', price: 'R$79,90', description: '30 desafios para fortalecer o vínculo entre pais e filhos.' },
   { id: 'bonus-tdah', title: 'Kit para Crianças com TDAH', price: 'R$109,87', description: 'Rotina visual adaptada para necessidades especiais. Essencial!' },
   { id: 'bonus-emocoes', title: 'Painel de Emoções', price: 'R$47', description: 'Ajude seu filho a identificar e nomear as emoções.' },
-  { id: 'bonus-regras', title: 'Cartazes \'Regras da Casa\'', price: 'R$57', description: 'Versões coloridas e clean para combinar com sua decoração.' },
+  { id: 'bonus-regras', title: "Cartazes 'Regras da Casa'", price: 'R$57', description: 'Versões coloridas e clean para combinar com sua decoração.' },
 ];
 
 const Bonuses = () => {

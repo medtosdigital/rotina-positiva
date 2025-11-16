@@ -153,31 +153,31 @@
     {
       "id": "testimonial-10",
       "description": "Portrait of a happy Brazilian mother.",
-      "imageUrl": "https://images.unsplash.com/photo-1527692013692-dd97db1f9a2f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxicmF6aWxpYW4lMjB3b21hbnxlbnwwfHx8fDE3NjMyMzMwNDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1527692013692-dd97db1f9a2f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxicmF6aWxpYW4lMjB3b21hbnxlbnwwfHx8fDE3NjMyMzMwNDh8MA&ixlibrb-4.1.0&q=80&w=1080",
       "imageHint": "brazilian woman"
     },
     {
       "id": "bonus-cooperacao",
       "description": "Cover of the 'Jogo da Cooperação' bonus.",
-      "imageUrl": "https://images.unsplash.com/photo-1579741370245-a1bf1cf90c4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxib2FyZCUyMGdhbWV8ZW58MHx8fHwxNzYzMTQ0NjM4fDA&ixlibrb-4.1.0&q=80&w=1080",
+      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/ChatGPT-Image-15-de-nov.-de-2025-21_15_39.png",
       "imageHint": "board game"
     },
     {
       "id": "bonus-tdah",
       "description": "Cover of the 'Kit TDAH' bonus.",
-      "imageUrl": "https://picsum.photos/seed/bonus2/400/400",
+      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/ChatGPT-Image-15-de-nov.-de-2025-21_47_59.png",
       "imageHint": "guide mockup"
     },
     {
       "id": "bonus-emocoes",
       "description": "Cover of the 'Painel das Emoções' bonus.",
-      "imageUrl": "https://images.unsplash.com/photo-1606242403145-bfd1478df2da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwbGFubmVyJTIwbW9ja3VwfGVufDB8fHx8MTc2MzA1NjQzMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/ChatGPT-Image-15-de-nov.-de-2025-22_11_10.png",
       "imageHint": "planner mockup"
     },
     {
       "id": "bonus-regras",
       "description": "Cover of the 'Cartazes Regras da Casa' bonus.",
-      "imageUrl": "https://images.unsplash.com/photo-1664216294580-079bc527ae49?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwcm9kdWN0JTIwbW9ja3VwfGVufDB8fHx8MTc2MzA0Nzc3Nnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/ChatGPT-Image-15-de-nov.-de-2025-22_59_02.png",
       "imageHint": "product mockup"
     },
     {
@@ -189,13 +189,13 @@
     {
       "id": "creator-story-carla",
       "description": "Photo of Carla Alves, creator of Rotina Positiva, with her daughter.",
-      "imageUrl": "https://images.unsplash.com/photo-1589169011402-8b2cbd1ee593?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bW90aGVyJTIwY2hpbGR8ZW58MHx8fHwxNzYzMDU1ODY2fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1589169011402-8b2cbd1ee593?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bW90aGVyJTIwY2hpbGR8ZW58MHx8fHwxNzYzMDU1ODY2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "mother daughter"
     },
     {
       "id": "final-cta-testimonial",
       "description": "Face of a woman for a mini testimonial.",
-      "imageUrl": "https://images.unsplash.com/photo-1556745753-b2904692b3cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxoYXBweSUyMGN1c3RvbWVyfGVufDB8fHx8MTc2MzA2MDM5Mnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1556745753-b2904692b3cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxoYXBweSUyMGN1c3RvbWVyfGVufDB8fHx8MTc2MzA2MDM5Mnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "happy customer"
     },
     {
