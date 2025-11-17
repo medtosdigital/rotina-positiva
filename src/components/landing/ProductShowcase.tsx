@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { CheckCircle2, ArrowDown } from 'lucide-react';
+import { CheckCircle2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const showcaseItems = [
@@ -78,6 +78,20 @@ const ProductShowcase = () => {
               </div>
             </div>
         </div>
+
+        <div className="max-w-md mx-auto mt-16 text-center">
+            <Card className="bg-green-50 border-2 border-green-200 rounded-2xl p-6 shadow-lg">
+              <ul className="space-y-4">
+                  {features.map((feature, index) => (
+                      <li key={index} className="flex items-center text-left">
+                          <CheckCircle2 className="w-6 h-6 text-green-500 mr-3 flex-shrink-0" />
+                          <span className="font-body text-base md:text-lg text-brand-dark-blue">{feature}</span>
+                      </li>
+                  ))}
+              </ul>
+            </Card>
+        </div>
+
         <div className="mt-16 text-center">
             <a href="#offer">
                 <Button
