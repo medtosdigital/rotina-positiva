@@ -10,7 +10,7 @@ const showcaseItems = [
   { id: 'whats-inside-afternoon', title: 'Quadro da Tarde', benefit: 'Estrutura as atividades da tarde, incluindo a hora da lição de casa, lanches e momentos de diversão, sem precisar ficar repetindo as mesmas ordens.' },
   { id: 'whats-inside-night', title: 'Quadro da Noite', benefit: 'Cria um ritual relaxante e previsível para a hora de dormir. Inclui banho, pijama e história, garantindo noites tranquilas e sem choro.' },
   { id: 'whats-inside-rewards', title: 'Quadro de Recompensas', benefit: 'Permite que a criança visualize os prêmios que pode conquistar ao completar suas tarefas. A motivação que faltava para a cooperação.' },
-  { id: 'whats-inside-study', id: 'whats-inside-study', title: 'Quadro de Estudos', benefit: 'Ajuda a criança a focar nas lições de casa e atividades escolares, tornando o aprendizado mais organizado e menos cansativo para todos.' },
+  { id: 'whats-inside-study', title: 'Quadro de Estudos', benefit: 'Ajuda a criança a focar nas lições de casa e atividades escolares, tornando o aprendizado mais organizado e menos cansativo para todos.' },
   { id: 'whats-inside-reading', title: 'Quadro de Leitura', benefit: 'Incentiva o hábito da leitura diária de forma prazerosa. Transforme a leitura em um momento mágico e esperado pela criança.' },
   { id: 'whats-inside-responsibilities', title: 'Quadro de Responsabilidades', benefit: 'Ensina o valor de pequenas tarefas domésticas, como arrumar a cama ou guardar os brinquedos, desenvolvendo o senso de responsabilidade.' },
   { id: 'whats-inside-cards', title: 'Cartões de Rotina', benefit: 'São mais de 200 cards para personalizar os quadros com todas as tarefas possíveis. Adapta-se 100% à rotina da sua família.' },
@@ -50,7 +50,7 @@ const ProductShowcase = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-[1fr_auto] gap-8 lg:gap-12 items-center">
+        <div className="max-w-5xl mx-auto">
             <div className="mt-8">
               <h3 className="font-headline text-2xl font-bold text-brand-dark-blue mb-4 text-center">O que vem no kit?</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -76,17 +76,6 @@ const ProductShowcase = () => {
                   );
                 })}
               </div>
-            </div>
-
-            <div className="self-center hidden lg:block">
-                <ul className="mt-8 space-y-4 text-lg md:text-xl">
-                {features.map((feature, index) => (
-                    <li key={index} className="flex items-start">
-                    <CheckCircle2 className="h-7 w-7 text-brand-green-water mr-4 mt-1 flex-shrink-0" />
-                    <span className="font-body text-gray-700">{feature}</span>
-                    </li>
-                ))}
-                </ul>
             </div>
         </div>
         <div className="mt-16 text-center">
