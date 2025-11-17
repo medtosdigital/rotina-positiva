@@ -14,15 +14,17 @@ const FinalCta = () => {
             Você está a 1 clique de transformar a rotina do seu filho.
           </h2>
 
-          <Button
-            size="lg"
-            className="font-headline bg-white hover:bg-gray-100 text-brand-orange font-bold py-6 px-6 sm:py-8 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 animate-pulse-slow w-full max-w-md h-auto"
-          >
-            <div className="flex flex-col items-center">
-              <span className="text-base sm:text-xl md:text-2xl">SIM! EU QUERO TRANSFORMAR MINHA CASA!</span>
-              <span className="text-xs sm:text-sm font-normal opacity-80">Comprar agora com desconto</span>
-            </div>
-          </Button>
+          <a href="https://pay.kiwify.com.br/KSInQjA" target="_blank" rel="noopener noreferrer">
+            <Button
+              size="lg"
+              className="font-headline bg-white hover:bg-gray-100 text-brand-orange font-bold py-6 px-6 sm:py-8 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 animate-pulse-slow w-full max-w-md h-auto"
+            >
+              <div className="flex flex-col items-center">
+                <span className="text-base sm:text-xl md:text-2xl">SIM! EU QUERO TRANSFORMAR MINHA CASA!</span>
+                <span className="text-xs sm:text-sm font-normal opacity-80">Comprar agora com desconto</span>
+              </div>
+            </Button>
+          </a>
 
           <div className="mt-12 flex justify-center items-center">
              <div className="bg-white/20 rounded-xl p-4 flex items-center gap-4 max-w-sm md:max-w-md shadow-lg">
