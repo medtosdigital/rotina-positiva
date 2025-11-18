@@ -36,6 +36,13 @@ const PromoBanner = () => {
     }
   }, [index, words]);
 
+  if (!currentWord) {
+    return (
+        <div className="bg-white text-center py-3 z-20 relative h-[44px]">
+        </div>
+    );
+  }
+
   return (
     <div className="bg-white text-center py-3 z-20 relative">
       <p className="font-headline text-brand-dark-blue font-bold text-lg md:text-xl flex justify-center items-center">
