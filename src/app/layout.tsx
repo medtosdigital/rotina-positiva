@@ -3,6 +3,7 @@ import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
 import SalesNotification from '@/components/landing/SalesNotification';
+import Script from 'next/script';
 
 export const metadata: Metadata = {
   title: 'Rotina Positiva',
@@ -20,6 +21,19 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Poppins:wght@600;700&family=Quicksand:wght@500&display=swap" rel="stylesheet" />
+        <script
+          id="utmify-pixel-script"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.pixelId = "677b35a79d0a196ad04dc661";
+              var a = document.createElement("script");
+              a.setAttribute("async", "");
+              a.setAttribute("defer", "");
+              a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+              document.head.appendChild(a);
+            `,
+          }}
+        />
       </head>
       <body className="font-body antialiased">
         <SalesNotification />
