@@ -34,6 +34,12 @@ export default function RootLayout({
             `,
           }}
         />
+        <script
+          src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+          data-utmify-prevent-subids=""
+          async
+          defer
+        ></script>
       </head>
       <body className="font-body antialiased">
         <SalesNotification />
