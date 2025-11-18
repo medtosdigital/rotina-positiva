@@ -1,8 +1,9 @@
 "use client";
 
 import { Button } from '@/components/ui/button';
-import { ShieldCheck, ArrowRight, Flame } from 'lucide-react';
+import { ShieldCheck, Flame } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
+import { BuyButton } from './BuyButton';
 
 const Offer = () => {
   return (
@@ -37,9 +38,8 @@ const Offer = () => {
 
                 <p className="font-body text-gray-500 text-sm">ou R$37,00 à vista</p>
             </div>
-            <a href="https://pay.kiwify.com.br/KSInQjA" target="_blank" rel="noopener noreferrer">
-              <Button
-                size="lg"
+            
+            <BuyButton
                 className="font-headline bg-[#2ECC71] hover:bg-[#2ECC71]/90 text-white font-bold py-6 px-6 sm:py-8 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 w-full h-auto animate-pulse-slow"
               >
                 <div className="flex flex-col items-center text-center">
@@ -47,8 +47,7 @@ const Offer = () => {
                   <span className="text-base sm:text-xl md:text-2xl uppercase">QUERO MEU FILHO OBEDECENDO!</span>
                   <span className="text-xs sm:text-sm font-normal">Acesso vitalício e risco zero</span>
                 </div>
-              </Button>
-            </a>
+            </BuyButton>
             
             <div className="flex items-center justify-center gap-3 mt-8 text-gray-600">
                 <ShieldCheck className="w-8 h-8 text-green-500 flex-shrink-0" />
