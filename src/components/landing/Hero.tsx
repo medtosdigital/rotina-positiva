@@ -86,9 +86,11 @@ const Hero = () => {
                     ))}
                 </div>
                 <div className="mt-8 flex justify-center lg:justify-start">
-                    <BuyButton className="font-headline bg-brand-orange hover:bg-brand-orange/90 text-white font-bold py-4 px-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300 animate-pulse-slow">
+                  <a href="#unique-mechanism">
+                    <Button className="font-headline bg-brand-turquoise hover:bg-brand-turquoise/90 text-white font-bold py-4 px-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300 animate-pulse-slow">
                         QUERO PAZ EM CASA AGORA!
-                    </BuyButton>
+                    </Button>
+                  </a>
                 </div>
             </div>
             <div className="relative mt-8 lg:mt-0 h-auto flex flex-col items-center order-1 lg:order-2 lg:col-span-1 w-full max-w-3xl mx-auto">

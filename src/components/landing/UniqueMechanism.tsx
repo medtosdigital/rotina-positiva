@@ -16,7 +16,7 @@ const funRoutine = [
 
 const UniqueMechanism = () => {
   return (
-    <section className="py-20 lg:py-32 bg-brand-turquoise text-white">
+    <section id="unique-mechanism" className="py-20 lg:py-32 bg-brand-turquoise text-white">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="font-headline text-3xl md:text-5xl font-bold mb-6">
