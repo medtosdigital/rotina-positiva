@@ -15,7 +15,7 @@ const FinalCta = () => {
             className="font-headline bg-white hover:bg-gray-100 text-brand-orange font-bold py-6 px-6 sm:py-8 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 animate-pulse-slow w-full max-w-md h-auto"
           >
             <div className="flex flex-col items-center">
-              <span className="text-base sm:text-xl md:text-2xl">
+              <span className="text-lg sm:text-xl md:text-2xl">
                 SIM! EU QUERO TRANSFORMAR MINHA CASA!
               </span>
               <span className="text-xs sm:text-sm font-normal opacity-80">
