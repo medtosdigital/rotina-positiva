@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from '@/components/ui/button';
-import { ShieldCheck, Flame } from 'lucide-react';
+import { ShieldCheck, Flame, AlertTriangle } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { BuyButton } from './BuyButton';
 
@@ -18,6 +18,12 @@ const Offer = () => {
             </p>
           </div>
           <CardContent className="p-6 sm:p-10 text-center">
+
+            <div className="flex justify-center items-center gap-2 text-brand-orange mb-4">
+              <AlertTriangle className="w-5 h-5" />
+              <p className="font-headline font-bold">ÚLTIMAS HORAS COM PREÇO PROMOCIONAL</p>
+            </div>
+
             <h2 className="font-headline text-4xl md:text-5xl font-bold text-brand-dark-blue !leading-tight mb-3">
               Sua chance de ter paz em casa está aqui
             </h2>

@@ -57,10 +57,10 @@ const Bonuses = () => {
         <div className="mt-16 text-center max-w-2xl mx-auto">
             <Card className="bg-gradient-to-br from-brand-turquoise to-brand-green-water text-white p-8 rounded-2xl shadow-2xl">
                 <p className="font-body text-lg md:text-xl mb-2">
-                    Somando todos os bônus, você investiria <span className="font-bold line-through">R$ {totalValue.toFixed(2).replace('.',',')}</span>.
+                    Você levaria <span className="font-bold line-through">R$ {totalValue.toFixed(2).replace('.',',')}</span> em produtos...
                 </p>
                 <p className="font-headline text-2xl md:text-3xl font-bold">
-                    Mas, ao garantir seu kit <span className="underline decoration-wavy">HOJE</span>, você recebe tudo isso <span className="bg-brand-gold text-brand-dark-blue px-2 py-1 rounded-md">DE GRAÇA!</span>
+                    Mas HOJE, ao garantir seu kit, você recebe tudo isso <span className="bg-brand-gold text-brand-dark-blue px-2 py-1 rounded-md">DE GRAÇA!</span>
                 </p>
             </Card>
         </div>
