@@ -43,7 +43,7 @@ const ProductShowcase = () => {
             />
           )}
           <h2 className="font-headline text-3xl md:text-5xl font-bold text-brand-dark-blue mb-4">
-            Apresentando o <span className="text-brand-turquoise">ROTINA VISUAL POSITIVA 👍</span>
+            Apresentando os <span className="text-brand-turquoise">QUADROS DE ROTINA POSITIVA 👍</span>
           </h2>
           <p className="font-body text-lg md:text-xl text-gray-600">
             A arma secreta para pais que querem filhos obedientes, responsáveis e felizes.

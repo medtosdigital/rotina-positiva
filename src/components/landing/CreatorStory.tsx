@@ -28,9 +28,9 @@ const CreatorStory = () => {
               "Oi, eu sou a Carla Alves. Como muitas de vocês, eu também vivi o caos. Minha filha, Sofia, é um anjo, mas as manhãs eram um pesadelo de birras e 'nãos'. Eu me sentia esgotada e culpada por gritar. Tentei de tudo, até que percebi que ela precisava 'ver' a rotina."
             </p>
             <p className="font-body text-base md:text-lg text-gray-600 mb-6">
-              "Foi assim que nasceu o Rotina Positiva. Criei um sistema visual, lúdico e divertido, que transformou nossas vidas. A Sofia se tornou participativa, organizada e confiante. E eu... bom, eu voltei a ter paz. Criei isso para a minha filha, e agora compartilho com você."
+              "Foi assim que nasceram os Quadros de Rotina Positiva. Criei um sistema visual, lúdico e divertido, que transformou nossas vidas. A Sofia se tornou participativa, organizada e confiante. E eu... bom, eu voltei a ter paz. Criei isso para a minha filha, e agora compartilho com você."
             </p>
-            <p className="font-subtitle font-bold text-brand-turquoise">- Carla Alves, mãe da Sofia e criadora do Rotina Positiva</p>
+            <p className="font-subtitle font-bold text-brand-turquoise">- Carla Alves, mãe da Sofia e criadora dos Quadros de Rotina Positiva</p>
           </div>
         </div>
       </div>

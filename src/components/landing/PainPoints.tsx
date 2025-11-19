@@ -69,7 +69,7 @@ const PainPoints = () => {
                         </div>
                         <div className="flex items-center bg-green-100/50 p-3 rounded-lg">
                             <CheckCircle2 className="w-6 h-6 text-green-500 mr-3 flex-shrink-0" />
-                            <span className="font-subtitle text-base md:text-lg font-bold text-brand-dark-blue">Rotina Positiva Visual</span>
+                            <span className="font-subtitle text-base md:text-lg font-bold text-brand-dark-blue">Quadros de Rotina Positiva</span>
                         </div>
                     </div>
                 </CardContent>

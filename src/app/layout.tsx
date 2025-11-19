@@ -6,7 +6,7 @@ import SalesNotification from '@/components/landing/SalesNotification';
 import Script from 'next/script';
 
 export const metadata: Metadata = {
-  title: 'Rotina Positiva',
+  title: 'Quadros de Rotina Positiva',
   description: 'O sistema visual que transforma disciplina em um jogo que a criança AMA.',
 };
 

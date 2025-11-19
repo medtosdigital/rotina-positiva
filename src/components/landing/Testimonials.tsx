@@ -72,7 +72,7 @@ const Testimonials = () => {
           <h2 className="font-headline text-3xl md:text-5xl font-bold text-brand-dark-blue mb-4">
             Não acredite em nós... <span className="text-brand-turquoise">Acredite nelas!</span>
           </h2>
-          <p className="font-body text-lg md:text-xl text-brand-dark-blue/80">Mães reais que transformaram suas casas com a Rotina Positiva.</p>
+          <p className="font-body text-lg md:text-xl text-brand-dark-blue/80">Mães reais que transformaram suas casas com os Quadros de Rotina Positiva.</p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
