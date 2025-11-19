@@ -4,6 +4,14 @@ import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Star, MessageCircle } from 'lucide-react';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+import Autoplay from "embla-carousel-autoplay"
 
 const testimonials = [
   {
@@ -62,9 +70,43 @@ const StarRating = () => (
     </div>
 );
 
-const Testimonials = () => {
+const TestimonialCard = ({ testimonial }: { testimonial: typeof testimonials[0] }) => {
   const imageMap = new Map(PlaceHolderImages.map(img => [img.id, img]));
+  const image = imageMap.get(testimonial.id);
+  
+  return (
+    <Card className="bg-white rounded-2xl shadow-lg flex flex-col h-full">
+      <CardContent className="p-6 flex-grow flex flex-col">
+        <div className="flex items-center mb-4">
+          {image && (
+            <Image
+              src={image.imageUrl}
+              alt={testimonial.name}
+              width={100}
+              height={100}
+              data-ai-hint={image.imageHint}
+              className="w-14 h-14 rounded-full mr-4 object-cover border-2 border-brand-gold"
+            />
+          )}
+          <div>
+            <p className="font-subtitle font-bold text-lg text-gray-800">{testimonial.name}</p>
+            <p className="font-body text-sm text-gray-400">{testimonial.username}</p>
+          </div>
+        </div>
+        <div className="relative font-body text-gray-600 flex-grow bg-gray-50 p-4 rounded-xl border">
+          <MessageCircle className="absolute top-[-10px] left-4 w-6 h-6 text-gray-50 fill-current stroke-current" />
+          <p>"{testimonial.text}"</p>
+        </div>
+         <div className="mt-4">
+           <StarRating />
+         </div>
+      </CardContent>
+    </Card>
+  );
+};
 
+
+const Testimonials = () => {
   return (
     <section className="py-20 lg:py-32 bg-gray-50">
       <div className="container mx-auto px-6">
@@ -75,39 +117,32 @@ const Testimonials = () => {
           <p className="font-body text-lg md:text-xl text-brand-dark-blue/80">Mães reais que transformaram suas casas com os Quadros de Rotina Positiva.</p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
-          {testimonials.map((testimonial) => {
-            const image = imageMap.get(testimonial.id);
-            return (
-              <Card key={testimonial.id} className="bg-white rounded-2xl shadow-lg transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
-                <CardContent className="p-6 flex-grow flex flex-col">
-                  <div className="flex items-center mb-4">
-                    {image && (
-                      <Image
-                        src={image.imageUrl}
-                        alt={testimonial.name}
-                        width={100}
-                        height={100}
-                        data-ai-hint={image.imageHint}
-                        className="w-14 h-14 rounded-full mr-4 object-cover border-2 border-brand-gold"
-                      />
-                    )}
-                    <div>
-                      <p className="font-subtitle font-bold text-lg text-gray-800">{testimonial.name}</p>
-                      <p className="font-body text-sm text-gray-400">{testimonial.username}</p>
-                    </div>
+        {/* Mobile Carousel */}
+        <div className="md:hidden">
+          <Carousel 
+            className="w-full max-w-xs mx-auto"
+            plugins={[Autoplay({ delay: 3000, stopOnInteraction: true })]}
+            opts={{ loop: true }}
+          >
+            <CarouselContent>
+              {testimonials.map((testimonial) => (
+                <CarouselItem key={testimonial.id}>
+                  <div className="p-1">
+                    <TestimonialCard testimonial={testimonial} />
                   </div>
-                  <div className="relative font-body text-gray-600 flex-grow bg-gray-50 p-4 rounded-xl border">
-                    <MessageCircle className="absolute top-[-10px] left-4 w-6 h-6 text-gray-50 fill-current stroke-current" />
-                    <p>"{testimonial.text}"</p>
-                  </div>
-                   <div className="mt-4">
-                     <StarRating />
-                   </div>
-                </CardContent>
-              </Card>
-            );
-          })}
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-[-10px]"/>
+            <CarouselNext className="right-[-10px]" />
+          </Carousel>
+        </div>
+        
+        {/* Desktop Grid */}
+        <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
+          {testimonials.map((testimonial) => (
+            <TestimonialCard key={testimonial.id} testimonial={testimonial} />
+          ))}
         </div>
       </div>
     </section>
