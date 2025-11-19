@@ -75,7 +75,7 @@ const Hero = () => {
               <p className="font-body text-lg md:text-xl mt-6 mb-8 text-brand-dark-blue/90 max-w-xl mx-auto lg:mx-0">
                 Com o sistema visual que transforma disciplina em um jogo divertido.
               </p>
-                <div className="grid grid-cols-2 gap-4 max-w-md mx-auto lg:mx-0">
+                <div className="grid grid-cols-2 gap-4 max-w-md mx-auto lg:mx-0 mb-8">
                     {benefitCards.map((card) => (
                         <div key={card.title} className="bg-white/30 backdrop-blur-sm border-2 border-white/50 rounded-2xl shadow-lg text-center p-4 flex flex-col items-center justify-center transform hover:scale-110 transition-transform duration-300">
                             <div className="mb-3">
@@ -84,13 +84,6 @@ const Hero = () => {
                             <h3 className="font-subtitle text-sm font-bold text-brand-dark-blue leading-tight">{card.title}</h3>
                         </div>
                     ))}
-                </div>
-                <div className="mt-8 flex justify-center lg:justify-start">
-                  <a href="#unique-mechanism">
-                    <Button className="font-headline bg-brand-turquoise hover:bg-brand-turquoise/90 text-white font-bold py-4 px-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300 animate-pulse-slow">
-                        QUERO PAZ EM CASA AGORA!
-                    </Button>
-                  </a>
                 </div>
             </div>
             <div className="relative mt-8 lg:mt-0 h-auto flex flex-col items-center order-1 lg:order-2 lg:col-span-1 w-full max-w-3xl mx-auto">
