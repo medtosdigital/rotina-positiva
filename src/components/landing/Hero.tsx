@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { HeartHandshake, Puzzle, ShieldCheck, Trophy, Star, Award, BrainCircuit, Users } from 'lucide-react';
+import { HeartHandshake, Puzzle, ShieldCheck, Trophy, Star, Award, BrainCircuit, Users, Facebook, Instagram } from 'lucide-react';
 import { BuyButton } from './BuyButton';
 
 const benefitCards = [
@@ -31,11 +31,11 @@ const authorityItems = [
     { icon: <Users className="w-6 h-6 text-brand-dark-blue/80" />, text: "+42 mil famílias já usam" },
 ]
 
-const mediaLogos = [
-    { name: "TV", logo: "https://placehold.co/100x40/0A3D62/FAFAFA?text=TV" },
-    { name: "Jornal", logo: "https://placehold.co/100x40/0A3D62/FAFAFA?text=JORNAL" },
-    { name: "Revista", logo: "https://placehold.co/100x40/0A3D62/FAFAFA?text=REVISTA" },
-]
+const TikTokIcon = (props: React.SVGProps<SVGSVGElement>) => (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2859 3333" {...props} shapeRendering="geometricPrecision" textRendering="geometricPrecision" imageRendering="optimizeQuality" fillRule="evenodd" clipRule="evenodd">
+        <path d="M2081 0c55 473 319 755 778 785v532c-266 26-499-61-770-225v995c0 1264-1378 1659-1932 753-356-583-138-1606 1004-1647v561c-87 14-180 36-265 65-254 86-398 247-358 531 77 544 1075 705 992-358V1h551z"/>
+    </svg>
+);
 
 const Hero = () => {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-main');
@@ -110,10 +110,10 @@ const Hero = () => {
                     ))}
                     <div className="flex flex-col gap-3">
                         <p className='font-subtitle text-sm sm:text-base font-semibold text-brand-dark-blue/90'>Destaque na Mídia:</p>
-                        <div className="flex flex-wrap items-center gap-4">
-                            {mediaLogos.map((media) => (
-                                <Image key={media.name} src={media.logo} alt={media.name} width={100} height={40} className="opacity-70" />
-                            ))}
+                        <div className="flex flex-wrap items-center gap-4 text-brand-dark-blue/70">
+                            <Facebook className="w-8 h-8"/>
+                            <Instagram className="w-8 h-8"/>
+                            <TikTokIcon className="w-7 h-7 fill-current"/>
                         </div>
                     </div>
                   </div>
