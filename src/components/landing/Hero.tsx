@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { HeartHandshake, Puzzle, ShieldCheck, Trophy, Star } from 'lucide-react';
+import { HeartHandshake, Puzzle, ShieldCheck, Trophy, Star, Award, BrainCircuit, Tv } from 'lucide-react';
 import { BuyButton } from './BuyButton';
 
 const benefitCards = [
@@ -23,6 +23,12 @@ const benefitCards = [
         icon: <Puzzle className="w-8 h-8 text-brand-orange" />,
         title: "Menos Estresse para os Pais",
     }
+]
+
+const authorityItems = [
+    { icon: <Award className="w-6 h-6 text-brand-dark-blue/80" />, text: "Recomendado por Psicólogos" },
+    { icon: <BrainCircuit className="w-6 h-6 text-brand-dark-blue/80" />, text: "Aprovado por Pedagogos" },
+    { icon: <Tv className="w-6 h-6 text-brand-dark-blue/80" />, text: "Destaque na Mídia" },
 ]
 
 const Hero = () => {
@@ -75,6 +81,20 @@ const Hero = () => {
               <p className="font-body text-lg md:text-xl mt-6 mb-8 text-brand-dark-blue/90 max-w-xl mx-auto lg:mx-0">
                 Com o sistema visual que transforma disciplina em um jogo divertido.
               </p>
+
+              <div className="my-8">
+                <div className="bg-white/40 backdrop-blur border border-white/60 rounded-xl p-3 md:p-4">
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-2 text-center">
+                    {authorityItems.map((item, index) => (
+                      <div key={index} className="flex items-center justify-center sm:justify-start gap-2">
+                        {item.icon}
+                        <span className="font-subtitle text-xs sm:text-sm font-semibold text-brand-dark-blue/90">{item.text}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
                 <div className="grid grid-cols-2 gap-4 max-w-md mx-auto lg:mx-0 mb-8">
                     {benefitCards.map((card) => (
                         <div key={card.title} className="bg-white/30 backdrop-blur-sm border-2 border-white/50 rounded-2xl shadow-lg text-center p-4 flex flex-col items-center justify-center transform hover:scale-110 transition-transform duration-300">
