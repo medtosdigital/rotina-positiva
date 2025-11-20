@@ -82,8 +82,19 @@ const Hero = () => {
                 Com o sistema visual que transforma disciplina em um jogo divertido.
               </p>
 
+              <div className="grid grid-cols-2 gap-4 max-w-md mx-auto lg:mx-0 mb-8">
+                  {benefitCards.map((card) => (
+                      <div key={card.title} className="bg-white/30 backdrop-blur-sm border-2 border-white/50 rounded-2xl shadow-lg text-center p-4 flex flex-col items-center justify-center transform hover:scale-110 transition-transform duration-300">
+                          <div className="mb-3">
+                              {card.icon}
+                          </div>
+                          <h3 className="font-subtitle text-sm font-bold text-brand-dark-blue leading-tight">{card.title}</h3>
+                      </div>
+                  ))}
+              </div>
+
               <div className="my-8">
-                <div className="bg-white/40 backdrop-blur border border-white/60 rounded-xl p-3 md:p-4">
+                <div className="bg-white/80 backdrop-blur border border-white/60 rounded-xl p-3 md:p-4 shadow-lg">
                   <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-2 text-center">
                     {authorityItems.map((item, index) => (
                       <div key={index} className="flex items-center justify-center sm:justify-start gap-2">
@@ -95,16 +106,6 @@ const Hero = () => {
                 </div>
               </div>
 
-                <div className="grid grid-cols-2 gap-4 max-w-md mx-auto lg:mx-0 mb-8">
-                    {benefitCards.map((card) => (
-                        <div key={card.title} className="bg-white/30 backdrop-blur-sm border-2 border-white/50 rounded-2xl shadow-lg text-center p-4 flex flex-col items-center justify-center transform hover:scale-110 transition-transform duration-300">
-                            <div className="mb-3">
-                                {card.icon}
-                            </div>
-                            <h3 className="font-subtitle text-sm font-bold text-brand-dark-blue leading-tight">{card.title}</h3>
-                        </div>
-                    ))}
-                </div>
             </div>
             <div className="relative mt-8 lg:mt-0 h-auto flex flex-col items-center order-1 lg:order-2 lg:col-span-1 w-full max-w-3xl mx-auto">
               {heroImage && (
