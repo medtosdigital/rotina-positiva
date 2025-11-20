@@ -31,9 +31,9 @@ const authorityItems = [
 ]
 
 const mediaLogos = [
-    { name: "Super Mãe TV", logo: "https://placehold.co/100x40/0A3D62/FAFAFA?text=SUPER+MÃE" },
-    { name: "Família em Foco", logo: "https://placehold.co/100x40/0A3D62/FAFAFA?text=FAMÍLIA" },
-    { name: "Revista Educar", logo: "https://placehold.co/100x40/0A3D62/FAFAFA?text=EDUCAR" },
+    { name: "TV", logo: "https://placehold.co/100x40/0A3D62/FAFAFA?text=TV" },
+    { name: "Jornal", logo: "https://placehold.co/100x40/0A3D62/FAFAFA?text=JORNAL" },
+    { name: "Revista", logo: "https://placehold.co/100x40/0A3D62/FAFAFA?text=REVISTA" },
 ]
 
 const Hero = () => {
