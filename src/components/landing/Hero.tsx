@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { HeartHandshake, Puzzle, ShieldCheck, Trophy, Star, Award, BrainCircuit } from 'lucide-react';
+import { HeartHandshake, Puzzle, ShieldCheck, Trophy, Star, Award, BrainCircuit, Users } from 'lucide-react';
 import { BuyButton } from './BuyButton';
 
 const benefitCards = [
@@ -28,6 +28,7 @@ const benefitCards = [
 const authorityItems = [
     { icon: <Award className="w-6 h-6 text-brand-dark-blue/80" />, text: "Recomendado por Psicólogos" },
     { icon: <BrainCircuit className="w-6 h-6 text-brand-dark-blue/80" />, text: "Aprovado por Pedagogos" },
+    { icon: <Users className="w-6 h-6 text-brand-dark-blue/80" />, text: "+42 mil famílias já usam" },
 ]
 
 const mediaLogos = [
