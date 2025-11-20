@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { HeartHandshake, Puzzle, ShieldCheck, Trophy, Star, Award, BrainCircuit, Tv } from 'lucide-react';
+import { HeartHandshake, Puzzle, ShieldCheck, Trophy, Star, Award, BrainCircuit } from 'lucide-react';
 import { BuyButton } from './BuyButton';
 
 const benefitCards = [
@@ -28,7 +28,12 @@ const benefitCards = [
 const authorityItems = [
     { icon: <Award className="w-6 h-6 text-brand-dark-blue/80" />, text: "Recomendado por Psicólogos" },
     { icon: <BrainCircuit className="w-6 h-6 text-brand-dark-blue/80" />, text: "Aprovado por Pedagogos" },
-    { icon: <Tv className="w-6 h-6 text-brand-dark-blue/80" />, text: "Destaque na Mídia" },
+]
+
+const mediaLogos = [
+    { name: "Super Mãe TV", logo: "https://placehold.co/100x40/0A3D62/FAFAFA?text=SUPER+MÃE" },
+    { name: "Família em Foco", logo: "https://placehold.co/100x40/0A3D62/FAFAFA?text=FAMÍLIA" },
+    { name: "Revista Educar", logo: "https://placehold.co/100x40/0A3D62/FAFAFA?text=EDUCAR" },
 ]
 
 const Hero = () => {
@@ -94,14 +99,22 @@ const Hero = () => {
               </div>
 
               <div className="my-8">
-                <div className="bg-white/80 backdrop-blur border border-white/60 rounded-xl p-3 md:p-4 shadow-lg">
-                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-2 text-center">
+                <div className="bg-white/80 backdrop-blur border border-white/60 rounded-xl p-4 shadow-lg max-w-md mx-auto lg:mx-0">
+                  <div className="flex flex-col gap-4">
                     {authorityItems.map((item, index) => (
-                      <div key={index} className="flex items-center justify-center sm:justify-start gap-2">
+                      <div key={index} className="flex items-center gap-3">
                         {item.icon}
-                        <span className="font-subtitle text-xs sm:text-sm font-semibold text-brand-dark-blue/90">{item.text}</span>
+                        <span className="font-subtitle text-sm sm:text-base font-semibold text-brand-dark-blue/90">{item.text}</span>
                       </div>
                     ))}
+                    <div className="flex flex-col gap-3">
+                        <p className='font-subtitle text-sm sm:text-base font-semibold text-brand-dark-blue/90'>Destaque na Mídia:</p>
+                        <div className="flex flex-wrap items-center gap-4">
+                            {mediaLogos.map((media) => (
+                                <Image key={media.name} src={media.logo} alt={media.name} width={100} height={40} className="opacity-70" />
+                            ))}
+                        </div>
+                    </div>
                   </div>
                 </div>
               </div>
