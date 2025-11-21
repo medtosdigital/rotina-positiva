@@ -1,7 +1,7 @@
 "use client";
 
 import { Card, CardContent } from '@/components/ui/card';
-import { CheckCircle2, XCircle, ArrowDown } from 'lucide-react';
+import { CheckCircle2, XCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const painPoints = [
@@ -40,11 +40,11 @@ declare global {
 const PainPoints = () => {
 
   return (
-    <section className="py-20 lg:py-32 bg-brand-gold">
+    <section className="py-20 lg:py-32 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
           <h2 className="font-headline text-3xl md:text-5xl font-bold text-brand-dark-blue mb-4">
-            A vida de mãe parece uma <span className="text-white underline decoration-wavy">batalha diária?</span>
+            A vida de mãe parece uma <span className="bg-brand-gold px-2 rounded-lg">batalha diária?</span>
           </h2>
           <p className="font-body text-lg md:text-xl text-brand-dark-blue/80">
             Se você se identifica com alguma dessas situações, saiba que não está sozinha.
@@ -54,7 +54,7 @@ const PainPoints = () => {
           {painPoints.map((point, index) => (
             <Card
               key={index}
-              className="bg-white/80 backdrop-blur-sm border-2 border-white rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300"
+              className="bg-gray-50/80 backdrop-blur-sm border border-gray-200/50 rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300"
             >
               <CardContent className="flex flex-col items-center justify-center text-center p-4 md:p-6 h-full">
                 <div className="text-4xl md:text-5xl mb-4 animate-wiggle" style={{ animationDelay: `${index * 100}ms` }}>{point.icon}</div>
@@ -65,7 +65,7 @@ const PainPoints = () => {
         </div>
 
         <div className="mt-12 md:mt-16 flex flex-col items-center justify-center">
-            <Card className="bg-gradient-to-br from-white/90 to-white/60 backdrop-blur-sm border border-white/50 rounded-2xl shadow-xl max-w-lg p-6 md:p-8">
+            <Card className="bg-gradient-to-br from-white/90 to-white/60 backdrop-blur-sm border border-gray-200 rounded-2xl shadow-xl max-w-lg p-6 md:p-8">
                 <CardContent className="p-0 text-center">
                     <h3 className="font-headline text-3xl md:text-4xl font-bold text-brand-turquoise mb-2">Não é sua culpa.</h3>
                     <p className="font-body text-base md:text-lg text-brand-dark-blue/80 mb-6">Você só não tinha a ferramenta certa.</p>
