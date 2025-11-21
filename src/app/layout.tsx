@@ -67,6 +67,35 @@ export default function RootLayout({
           />
         </noscript>
         {/* End Meta Pixel Code */}
+        <script
+          id="back-redirect-script"
+          dangerouslySetInnerHTML={{
+            __html: `
+              const link = '/desconto';
+
+              function setBackRedirect(url) {
+                let urlBackRedirect = url;
+                urlBackRedirect = urlBackRedirect.trim() +
+                  (urlBackRedirect.indexOf('?') > 0 ? '&' : '?') +
+                  document.location.search.replace('?', '').toString();
+
+                history.pushState({}, '', location.href);
+                history.pushState({}, '', location.href);
+                history.pushState({}, '', location.href);
+
+                window.addEventListener('popstate', () => {
+                  setTimeout(() => {
+                    location.href = urlBackRedirect;
+                  }, 1);
+                });
+              }
+
+              if (window.location.pathname !== '/desconto') {
+                setBackRedirect(link);
+              }
+            `,
+          }}
+        />
       </head>
       <body className="font-body antialiased">
         <SalesNotification />

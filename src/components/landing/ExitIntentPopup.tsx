@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import {
   AlertDialog,
@@ -14,47 +14,8 @@ import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { ScrollArea } from '@/components/ui/scroll-area';
 
-const ExitIntentPopup = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const showPopup = useCallback(() => {
-    // Garante que o pop-up só seja exibido uma vez por sessão
-    if (sessionStorage.getItem('exitPopupShown') !== 'true') {
-      setIsOpen(true);
-      sessionStorage.setItem('exitPopupShown', 'true');
-    }
-  }, []);
-
-  const handleClose = () => {
-    setIsOpen(false);
-  };
-  
-  useEffect(() => {
-    // Gatilho para DESKTOP: saída do mouse pela parte superior da tela
-    const handleMouseLeave = (e: MouseEvent) => {
-      if (e.clientY <= 0 && window.innerWidth >= 768) { // Apenas em telas maiores
-        showPopup();
-      }
-    };
-
-    // Gatilho para MOBILE: troca de aba/visibilidade
-    const handleVisibilityChange = () => {
-        // document.visibilityState será 'hidden' quando o usuário trocar de aba ou minimizar o navegador
-      if (document.visibilityState === 'hidden' && window.innerWidth < 768) { // Apenas em telas menores
-        showPopup();
-      }
-    };
-
-    document.addEventListener('mouseleave', handleMouseLeave);
-    document.addEventListener('visibilitychange', handleVisibilityChange);
-
-    // Limpeza dos eventos ao desmontar o componente
-    return () => {
-      document.removeEventListener('mouseleave', handleMouseLeave);
-      document.removeEventListener('visibilitychange', handleVisibilityChange);
-    };
-  }, [showPopup]);
-
+const ExitIntentPopup = ({ defaultOpen = false }: { defaultOpen?: boolean }) => {
+  const [isOpen, setIsOpen] = useState(defaultOpen);
 
   const afterImages = PlaceHolderImages.filter(img => 
     ['after-routine-1', 'after-routine-2', 'after-routine-3'].includes(img.id)
@@ -110,9 +71,9 @@ const ExitIntentPopup = () => {
                     </div>
                 </Button>
             </a>
-            <Button variant="link" onClick={handleClose} className="text-gray-500 text-xs sm:text-sm h-auto p-1">
-                 Não, obrigado. Quero perder a oferta.
-            </Button>
+            <a href="https://pay.kiwify.com.br/KSInQjA" className="text-gray-500 text-xs sm:text-sm h-auto p-1 text-center hover:underline">
+                 Não, obrigado. Quero perder a oferta e pagar mais caro.
+            </a>
         </AlertDialogFooter>
       </AlertDialogContent>
     </AlertDialog>
