@@ -46,7 +46,7 @@ const Offer = () => {
             </div>
             
             <BuyButton
-                className="font-headline bg-[#2ECC71] hover:bg-[#2ECC71]/90 text-white font-bold py-6 px-6 sm:py-8 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 w-full h-auto animate-pulse-slow"
+                className="font-headline bg-[#2ECC71] hover:bg-[#2ECC71]/90 text-white font-bold py-6 px-6 sm:py-8 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 w-full h-auto animate-glow"
               >
                 <div className="flex flex-col items-center text-center">
                   <span className="text-xs sm:text-sm font-normal uppercase">Comprar agora com desconto</span>

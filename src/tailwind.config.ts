@@ -113,12 +113,30 @@ export default {
           '0%, 100%': { transform: 'rotate(-3deg)' },
           '50%': { transform: 'rotate(3deg)' },
         },
+        'pulse-slow': {
+          '0%, 100%': {
+            transform: 'scale(1)',
+          },
+          '50%': {
+            transform: 'scale(1.05)',
+          },
+        },
+        'glow': {
+          '0%, 100%': {
+            boxShadow: '0 0 5px hsl(var(--primary)), 0 0 10px hsl(var(--primary)), 0 0 15px hsl(var(--primary))',
+          },
+          '50%': {
+            boxShadow: '0 0 20px hsl(var(--primary)), 0 0 30px hsl(var(--primary)), 0 0 40px hsl(var(--primary))',
+          },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         'bounce-subtle': 'bounce-subtle 1.5s infinite',
         'wiggle': 'wiggle 1s ease-in-out infinite',
+        'pulse-slow': 'pulse-slow 2s infinite',
+        'glow': 'glow 2.5s infinite',
       },
     },
   },
