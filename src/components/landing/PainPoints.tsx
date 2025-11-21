@@ -32,6 +32,14 @@ const painPoints = [
 ];
 
 const PainPoints = () => {
+    const handleScroll = (e: React.MouseEvent<HTMLButtonElement>, targetId: string) => {
+        e.preventDefault();
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
   return (
     <section className="py-20 lg:py-32 bg-brand-gold">
       <div className="container mx-auto px-6">
@@ -75,17 +83,16 @@ const PainPoints = () => {
                 </CardContent>
             </Card>
             <div className="mt-12 text-center">
-                <a href="#product-showcase">
-                    <Button
-                        size="lg"
-                        className="font-headline bg-brand-turquoise hover:bg-brand-turquoise/90 text-white font-bold py-6 px-6 sm:py-8 sm:px-10 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 h-auto animate-pulse-slow w-full max-w-md"
-                    >
-                        <div className="flex flex-col items-center">
-                            <span className="text-lg sm:text-xl md:text-2xl">EU QUERO A FERRAMENTA CERTA!</span>
-                            <span className="text-xs sm:text-sm font-normal">Clique e veja como funciona</span>
-                        </div>
-                    </Button>
-                </a>
+                <Button
+                    onClick={(e) => handleScroll(e, 'product-showcase')}
+                    size="lg"
+                    className="font-headline bg-brand-turquoise hover:bg-brand-turquoise/90 text-white font-bold py-6 px-6 sm:py-8 sm:px-10 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 h-auto animate-pulse-slow w-full max-w-md"
+                >
+                    <div className="flex flex-col items-center">
+                        <span className="text-lg sm:text-xl md:text-2xl">EU QUERO A FERRAMENTA CERTA!</span>
+                        <span className="text-xs sm:text-sm font-normal">Clique e veja como funciona</span>
+                    </div>
+                </Button>
             </div>
         </div>
       </div>
