@@ -18,7 +18,8 @@ export default {
     extend: {
       fontFamily: {
         body: ['Nunito', 'sans-serif'],
-        headline: ['Baloo 2', 'sans-serif'],
+        headline: ['Poppins', 'sans-serif'],
+        subtitle: ['Poppins', 'sans-serif'],
       },
       colors: {
         background: 'hsl(var(--background))',
@@ -123,10 +124,10 @@ export default {
         },
         'glow': {
           '0%, 100%': {
-            boxShadow: '0 0 5px hsl(var(--primary)), 0 0 10px hsl(var(--primary)), 0 0 15px hsl(var(--primary))',
+            boxShadow: '0 0 5px hsl(var(--brand-gold)), 0 0 10px hsl(var(--brand-gold)), 0 0 15px hsl(var(--brand-gold))',
           },
           '50%': {
-            boxShadow: '0 0 20px hsl(var(--primary)), 0 0 30px hsl(var(--primary)), 0 0 40px hsl(var(--primary))',
+            boxShadow: '0 0 20px hsl(var(--brand-gold)), 0 0 30px hsl(var(--brand-gold)), 0 0 40px hsl(var(--brand-gold))',
           },
         },
       },

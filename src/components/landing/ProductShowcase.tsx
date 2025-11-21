@@ -9,8 +9,8 @@ import { Button } from '@/components/ui/button';
 const mainShowcaseItems = [
   { 
     id: 'whats-inside-morning', 
-    title: 'Quadro da Manhã', 
-    benefit: 'Organiza as tarefas matinais como acordar, escovar os dentes e se vestir, acabando com a correria e o estresse. A criança aprende a ter autonomia desde cedo, de forma leve e divertida.',
+    title: 'Pilar da Proatividade (Manhã)', 
+    benefit: 'Instala o hábito de executar sem reclamar. Acordar, escovar os dentes e se vestir viram missões automáticas para treinar a disciplina de um futuro líder.',
     icon: <Sun className="w-5 h-5 mr-2" />,
     bgColor: 'bg-blue-100/50',
     borderColor: 'border-blue-200',
@@ -18,8 +18,8 @@ const mainShowcaseItems = [
   },
   { 
     id: 'whats-inside-afternoon', 
-    title: 'Quadro da Tarde', 
-    benefit: 'Estrutura as atividades da tarde, incluindo a hora da lição de casa, lanches e momentos de diversão, sem precisar ficar repetindo as mesmas ordens.',
+    title: 'Pilar do Foco (Tarde)', 
+    benefit: 'Ensina a priorizar. A lição de casa vem antes da diversão, treinando o cérebro para o foco profundo necessário em carreiras de alta performance.',
     icon: <Sunset className="w-5 h-5 mr-2" />,
     bgColor: 'bg-orange-100/50',
     borderColor: 'border-orange-200',
@@ -27,8 +27,8 @@ const mainShowcaseItems = [
   },
   { 
     id: 'whats-inside-night', 
-    title: 'Quadro da Noite', 
-    benefit: 'Cria um ritual relaxante e previsível para a hora de dormir. Inclui banho, pijama e história, garantindo noites tranquilas e sem choro.',
+    title: 'Pilar da Finalização (Noite)', 
+    benefit: 'Cria a mentalidade de "terminar o que começou". O ritual da noite ensina a importância de concluir o dia de forma organizada, preparando a mente para o sucesso do dia seguinte.',
     icon: <Moon className="w-5 h-5 mr-2" />,
     bgColor: 'bg-indigo-100/50',
     borderColor: 'border-indigo-200',
@@ -37,12 +37,12 @@ const mainShowcaseItems = [
 ];
 
 const otherShowcaseItems = [
-  { id: 'whats-inside-rewards', title: 'Quadro de Recompensas', benefit: 'Permite que a criança visualize os prêmios que pode conquistar ao completar suas tarefas. A motivação que faltava para a cooperação.' },
-  { id: 'whats-inside-study', title: 'Quadro de Estudos', benefit: 'Ajuda a criança a focar nas lições de casa e atividades escolares, tornando o aprendizado mais organizado e menos cansativo para todos.' },
-  { id: 'whats-inside-reading', title: 'Quadro de Leitura', benefit: 'Incentiva o hábito da leitura diária de forma prazerosa. Transforme a leitura em um momento mágico e esperado pela criança.' },
-  { id: 'whats-inside-responsibilities', title: 'Quadro de Responsabilidades', benefit: 'Ensina o valor de pequenas tarefas domésticas, como arrumar a cama ou guardar os brinquedos, desenvolvendo o senso de responsabilidade.' },
-  { id: 'whats-inside-cards', title: 'Cartões de Rotina', benefit: 'São mais de 200 cards para personalizar os quadros com todas as tarefas possíveis. Adapta-se 100% à rotina da sua família.' },
-  { id: 'whats-inside-coins', title: "Moedas e Estrelas", benefit: "Sistemas de pontos que transformam a rotina em um jogo. A criança junta estrelas e moedas para trocar por recompensas que vocês definem." },
+  { id: 'whats-inside-rewards', title: 'Módulo de Metas e Ambição', benefit: 'Conecta esforço à recompensa, o princípio básico de qualquer carreira de sucesso. A criança aprende a visualizar um prêmio e traçar o caminho para conquistá-lo.' },
+  { id: 'whats-inside-study', title: 'Módulo de Hiperfoco', benefit: 'Transforma a obrigação de estudar em um desafio com começo, meio e fim. Essencial para criar um adulto que sabe aprender e se adaptar.' },
+  { id: 'whats-inside-reading', title: 'Módulo de Leitura Estratégica', benefit: 'Incentiva o hábito que diferencia os bem-sucedidos. A leitura diária vira um superpoder para expandir o conhecimento e a criatividade.' },
+  { id: 'whats-inside-responsibilities', title: 'Módulo de Dono', benefit: 'Desenvolve o senso de responsabilidade e pertencimento. Tarefas como arrumar a cama se tornam o primeiro treino para uma mentalidade de dono.' },
+  { id: 'whats-inside-cards', title: '+200 Comandos Visuais', benefit: 'São mais de 200 "comandos" para o cérebro da criança. Um arsenal completo para personalizar a programação mental para o sucesso.' },
+  { id: 'whats-inside-coins', title: "Sistema de Conquista", benefit: "Gamifica o sucesso. Estrelas e moedas funcionam como o 'salário' pelo esforço, ensinando o valor do trabalho duro de forma divertida." },
 ];
 
 declare global {
@@ -61,10 +61,10 @@ const ProductShowcase = () => {
 
 
   const features = [
-    "Transforme tarefas chatas em missões divertidas.",
-    "Crie uma cultura de cooperação sem estresse.",
-    "Ensine responsabilidade e organização desde cedo.",
-    "Ganhe mais tempo livre e paz de espírito para você."
+    "Instale o 'chip' da disciplina de forma natural.",
+    "Transforme birra em cooperação e proatividade.",
+    "Programe a mente do seu filho para o sucesso.",
+    "Conquiste a paz hoje, garanta o futuro dele amanhã."
   ];
 
   return (
@@ -74,7 +74,7 @@ const ProductShowcase = () => {
           <div className="grid grid-cols-3 gap-2 sm:gap-4 mb-8">
             {headerImages.map((image, index) => (
               image && (
-                <div key={index} className="rounded-lg overflow-hidden shadow-lg w-full">
+                <div key={index} className="rounded-lg overflow-hidden shadow-lg w-full transform transition-transform duration-300 hover:scale-110">
                   <Image
                     src={image.imageUrl}
                     alt={image.description}
@@ -88,27 +88,28 @@ const ProductShowcase = () => {
             ))}
           </div>
           <h2 className="font-headline text-3xl md:text-5xl font-bold text-brand-dark-blue mb-4">
-            Apresentando os <span className="text-brand-turquoise">QUADROS DE ROTINA POSITIVA 👍</span>
+            O Protocolo Rotina Positiva:{' '}
+            <span className="text-brand-turquoise">O "Sistema Operacional" do Sucesso</span>
           </h2>
           <p className="font-body text-lg md:text-xl text-gray-600">
-            A arma secreta para pais que querem filhos obedientes, responsáveis e felizes.
+            Esta é a ferramenta que reprograma o cérebro do seu filho, instalando os 3 pilares essenciais para criar um adulto focado, disciplinado e bem-sucedido.
           </p>
         </div>
 
         <div className="max-w-5xl mx-auto">
-            <h3 className="font-headline text-2xl md:text-3xl font-bold text-brand-dark-blue mb-8 text-center">O que vem no kit?</h3>
+            <h3 className="font-headline text-2xl md:text-3xl font-bold text-brand-dark-blue mb-8 text-center">Os 3 Pilares do Protocolo:</h3>
 
             {/* Main Showcase Items */}
             <div className="space-y-8 mb-16">
               {mainShowcaseItems.map((item) => {
                 const image = imageMap.get(item.id);
                 return (
-                  <Card key={item.id} className={`rounded-2xl shadow-lg border-2 ${item.borderColor} ${item.bgColor} overflow-hidden`}>
+                  <Card key={item.id} className={`rounded-2xl shadow-lg border-2 ${item.borderColor} ${item.bgColor} overflow-hidden transform transition-transform duration-300 hover:scale-105`}>
                     <CardContent className="p-6 md:p-8 grid md:grid-cols-2 gap-8 items-center">
                       <div className="text-center md:text-left">
                         <div className={`inline-flex items-center justify-center px-4 py-1 rounded-full font-bold text-sm mb-4 ${item.tagBgColor}`}>
                           {item.icon}
-                          {item.title.replace('Quadro da ', '').toUpperCase()}
+                          {item.title.replace('Pilar da ', '').replace(' (Manhã)','').replace(' (Tarde)','').replace(' (Noite)','').toUpperCase()}
                         </div>
                         <h4 className="font-headline text-2xl md:text-3xl font-bold mb-3 text-brand-dark-blue">{item.title}</h4>
                         <p className="font-body text-gray-600 text-base">{item.benefit}</p>
@@ -133,7 +134,7 @@ const ProductShowcase = () => {
 
             {/* Other Showcase Items */}
             <div className="mt-8">
-              <h3 className="font-headline text-2xl font-bold text-brand-dark-blue mb-6 text-center">E ainda...</h3>
+              <h3 className="font-headline text-2xl font-bold text-brand-dark-blue mb-6 text-center">E os Módulos de Aceleração...</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                 {otherShowcaseItems.map((item) => {
                   const image = imageMap.get(item.id);
@@ -182,8 +183,8 @@ const ProductShowcase = () => {
                 className="font-headline bg-brand-turquoise hover:bg-brand-turquoise/90 text-white font-bold py-6 px-6 sm:py-8 sm:px-10 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 h-auto animate-pulse-slow w-full max-w-md"
             >
                 <div className="flex flex-col items-center">
-                    <span className="text-lg sm:text-xl md:text-2xl">QUERO APROVEITAR A OFERTA</span>
-                    <span className="text-xs sm:text-sm font-normal">Garantir meu kit com desconto</span>
+                    <span className="text-lg sm:text-xl md:text-2xl">QUERO INSTALAR O SISTEMA DO SUCESSO</span>
+                    <span className="text-xs sm:text-sm font-normal">Garantir o protocolo com desconto</span>
                 </div>
             </Button>
         </div>

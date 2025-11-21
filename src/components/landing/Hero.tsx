@@ -8,8 +8,8 @@ import { BuyButton } from './BuyButton';
 
 const authorityItems = [
     { icon: <Award className="w-6 h-6 text-brand-dark-blue/80" />, text: "Recomendado por Psicólogos" },
-    { icon: <BrainCircuit className="w-6 h-6 text-brand-dark-blue/80" />, text: "Aprovado por Pedagogos" },
-    { icon: <Users className="w-6 h-6 text-brand-dark-blue/80" />, text: "+42 mil famílias já usam" },
+    { icon: <BrainCircuit className="w-6 h-6 text-brand-dark-blue/80" />, text: "Validado por Pedagogos" },
+    { icon: <Users className="w-6 h-6 text-brand-dark-blue/80" />, text: "+42 mil pais já transformaram suas casas" },
 ]
 
 const Hero = () => {
@@ -17,32 +17,29 @@ const Hero = () => {
 
   return (
     <>
-      {/* Wistia Scripts */}
       <Script src="https://fast.wistia.com/player.js" strategy="lazyOnload" />
       <Script src="https://fast.wistia.com/embed/c3m3h47fz2.js" strategy="lazyOnload" />
       
       <section className="relative w-full bg-white">
         <div className="relative container mx-auto px-6 pt-12 pb-20">
-          <div className="flex flex-col items-center gap-12 md:gap-10 w-full">
+          <div className="flex flex-col items-center gap-10 w-full">
             
-            {/* Coluna de Texto */}
-            <div className="text-brand-dark-blue text-center lg:text-center max-w-4xl">
-              <h1 className="font-headline text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tighter">
-                Faça seu filho(a){' '}
+            <div className="text-brand-dark-blue text-center max-w-4xl">
+              <h1 className="font-headline text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tighter !leading-tight">
+                Seu filho(a) te obedece hoje. Ou se torna um{' '}
                 <span className="inline-block bg-primary text-white px-4 rounded-lg -rotate-1">
-                    OBEDECER
+                    adulto fracassado
                 </span>{' '}
-                sem brigar, sem gritar e sem ameaças —{' '}
+                amanhã. A escolha é sua —{' '}
                 <span className="inline-block bg-primary text-white px-4 rounded-lg rotate-1">
-                    com Rotina e Disciplina.
+                    a decisão é agora.
                 </span>
               </h1>
-              <p className="font-body text-lg md:text-xl mt-6 mb-8 text-brand-dark-blue/90 max-w-2xl mx-auto">
-                Com o sistema visual que transforma disciplina em um jogo divertido.
+              <p className="font-body text-lg md:text-xl mt-6 mb-8 text-brand-dark-blue/90 max-w-3xl mx-auto">
+                A ferramenta validada por especialistas que instala as <b className="font-bold">3 habilidades de adultos bem-sucedidos</b> no cérebro do seu filho: Foco, Disciplina e Responsabilidade.
               </p>
             </div>
 
-            {/* Coluna do Vídeo */}
             <div className="relative mt-0 flex justify-center items-center w-full max-w-sm">
               <div className="w-full mx-auto p-2 rounded-2xl bg-brand-gold shadow-2xl animate-glow">
                   <div 
@@ -52,13 +49,11 @@ const Hero = () => {
                       position:"relative",
                       width:"100%",
                       background: "center / contain no-repeat url('https://fast.wistia.com/embed/medias/c3m3h47fz2/swatch')",
-                      filter: "blur(5px)",
                     }}
                   >&nbsp;</div>
               </div>
             </div>
 
-             {/* Botão e Autoridade */}
              <div className="flex flex-col items-center gap-6 mt-8">
                 <div className="mb-6 flex justify-center lg:justify-start">
                   <div className="bg-gray-100/80 backdrop-blur-sm border border-gray-200/50 rounded-xl p-4 flex items-center gap-4 max-w-sm md:max-w-md shadow-lg">
@@ -73,7 +68,7 @@ const Hero = () => {
                         />
                     )}
                     <div className="text-left font-body">
-                        <p className="text-xs sm:text-sm italic text-brand-dark-blue">"Melhor investimento que fiz pela paz da minha família. Funcionou no primeiro dia!"</p>
+                        <p className="text-xs sm:text-sm italic text-brand-dark-blue">"O futuro da minha filha começa agora. Melhor investimento que fiz. Funcionou no primeiro dia!"</p>
                         <div className="flex text-yellow-400 mt-1">
                             {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-current" />)}
                         </div>
@@ -85,8 +80,8 @@ const Hero = () => {
                     className="font-headline bg-brand-turquoise hover:bg-brand-turquoise/90 text-white font-bold py-6 px-6 sm:py-8 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 w-full max-w-md h-auto animate-pulse-slow"
                 >
                     <div className="flex flex-col items-center">
-                        <span className="text-lg sm:text-xl md:text-2xl">QUERO TRANSFORMAR MINHA CASA</span>
-                        <span className="text-xs sm:text-sm font-normal">Garantir meu kit com desconto</span>
+                        <span className="text-lg sm:text-xl md:text-2xl">QUERO CONSTRUIR UM FUTURO BRILHANTE</span>
+                        <span className="text-xs sm:text-sm font-normal">Garantir meu kit e o futuro do meu filho</span>
                     </div>
                 </BuyButton>
 
