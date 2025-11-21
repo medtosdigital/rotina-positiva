@@ -209,6 +209,24 @@
       "description": "A magical wand with sparkles.",
       "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/dasdsa.png",
       "imageHint": "magic wand"
+    },
+    {
+      "id": "product-in-use-1",
+      "description": "Child using the positive routine chart.",
+      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/1.png",
+      "imageHint": "child routine chart"
+    },
+    {
+      "id": "product-in-use-2",
+      "description": "Child pointing at the positive routine chart.",
+      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/1.2.png",
+      "imageHint": "child pointing chart"
+    },
+    {
+      "id": "product-in-use-3",
+      "description": "Child happily showing the positive routine chart.",
+      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/1.1.png",
+      "imageHint": "child happy chart"
     }
   ]
 }

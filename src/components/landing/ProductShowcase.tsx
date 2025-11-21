@@ -1,4 +1,5 @@
 
+
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -19,7 +20,12 @@ const showcaseItems = [
 
 const ProductShowcase = () => {
   const imageMap = new Map(PlaceHolderImages.map(img => [img.id, img]));
-  const headerImage = PlaceHolderImages.find(img => img.id === 'product-showcase-header');
+  const headerImages = [
+    PlaceHolderImages.find(img => img.id === 'product-in-use-1'),
+    PlaceHolderImages.find(img => img.id === 'product-in-use-2'),
+    PlaceHolderImages.find(img => img.id === 'product-in-use-3'),
+  ].filter(img => !!img);
+
 
   const features = [
     "Transforme tarefas chatas em missões divertidas.",
@@ -32,16 +38,22 @@ const ProductShowcase = () => {
     <section id="product-showcase" className="pt-20 lg:pt-32 pb-12 lg:pb-12 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
-          {headerImage && (
-            <Image
-              src={headerImage.imageUrl}
-              alt={headerImage.description}
-              width={700}
-              height={700}
-              data-ai-hint={headerImage.imageHint}
-              className="mx-auto mb-6 w-72 md:w-auto"
-            />
-          )}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+            {headerImages.map((image, index) => (
+              image && (
+                <div key={index} className="rounded-lg overflow-hidden shadow-lg">
+                  <Image
+                    src={image.imageUrl}
+                    alt={image.description}
+                    width={400}
+                    height={400}
+                    data-ai-hint={image.imageHint}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              )
+            ))}
+          </div>
           <h2 className="font-headline text-3xl md:text-5xl font-bold text-brand-dark-blue mb-4">
             Apresentando os <span className="text-brand-turquoise">QUADROS DE ROTINA POSITIVA 👍</span>
           </h2>
