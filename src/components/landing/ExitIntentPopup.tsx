@@ -55,7 +55,7 @@ const ExitIntentPopup = ({ defaultOpen = false }: { defaultOpen?: boolean }) => 
               <p className="font-headline font-bold text-brand-dark-blue text-base sm:text-lg uppercase">Kit Completo + Bônus por um preço que não vai se repetir!</p>
               <div className="flex justify-center items-center gap-2 sm:gap-4 my-1 sm:my-2">
                   <p className="font-headline text-lg sm:text-2xl font-bold text-gray-400 line-through">R$37,00</p>
-                  <p className="font-headline text-3xl sm:text-5xl font-extrabold text-brand-turquoise">R$27</p>
+                  <p className="font-headline text-3xl sm:text-5xl font-extrabold text-brand-turquoise">R$27,90</p>
               </div>
               <p className="font-body text-gray-500 text-xs sm:text-sm">Pagamento único, acesso vitalício.</p>
             </div>
@@ -67,7 +67,7 @@ const ExitIntentPopup = ({ defaultOpen = false }: { defaultOpen?: boolean }) => 
                 <Button className="font-headline bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-4 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300 w-full h-auto animate-glow">
                     <div className="flex flex-col items-center leading-tight">
                         <span className="text-sm sm:text-base uppercase font-bold">SIM, EU QUERO O DESCONTO!</span>
-                        <span className="text-xs sm:text-sm font-normal">Garantir acesso por apenas R$27</span>
+                        <span className="text-xs sm:text-sm font-normal">Garantir acesso por apenas R$27,90</span>
                     </div>
                 </Button>
             </a>
