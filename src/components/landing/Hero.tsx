@@ -17,7 +17,6 @@ const Hero = () => {
 
   return (
     <>
-      {/* Wistia Player Scripts */}
       <Script src="https://fast.wistia.com/player.js" strategy="lazyOnload" />
       <Script src="https://fast.wistia.com/embed/c3m3h47fz2.js" strategy="lazyOnload" type="module" />
       
@@ -88,29 +87,18 @@ const Hero = () => {
             {/* Coluna do Vídeo */}
             <div className="relative mt-8 lg:mt-0 flex justify-center items-center order-1 lg:order-2 w-full">
               <div className="w-full max-w-sm mx-auto p-2 rounded-2xl bg-brand-gold shadow-2xl animate-glow">
-                  <div className="wistia_responsive_padding" style={{padding: "177.78% 0 0 0", position: "relative"}}>
-                      <div className="wistia_responsive_wrapper" style={{height: "100%", left: 0, position: "absolute", top: 0, width: "100%"}}>
-                          <div 
-                              className="wistia_embed wistia_async_c3m3h47fz2 videoFoam=true" 
-                              style={{height:"100%", position:"relative", width:"100%"}}
-                          >
-                            <div 
-                                className="wistia_swatch" 
-                                style={{height:"100%",left:0,opacity:0,overflow:"hidden",position:"absolute",top:0,transition:"opacity 200ms",width:"100%"}}
-                            >
-                                <img 
-                                    src="https://fast.wistia.com/embed/medias/c3m3h47fz2/swatch" 
-                                    style={{filter:"blur(5px)",height:"100%",objectFit:"contain",width:"100%"}} 
-                                    alt="" 
-                                    aria-hidden="true" 
-                                    onLoad={(e) => {
-                                        if (e.currentTarget.parentElement) {
-                                            e.currentTarget.parentElement.style.opacity = '1';
-                                        }
-                                    }}
-                                />
-                            </div>
-                          </div>
+                  <div 
+                    className="wistia_embed wistia_async_c3m3h47fz2 videoFoam=true" 
+                    style={{
+                      height:"100%", 
+                      position:"relative", 
+                      width:"100%",
+                      paddingTop: "177.78%",
+                      background: "center / contain no-repeat url('https://fast.wistia.com/embed/medias/c3m3h47fz2/swatch')",
+                    }}
+                  >
+                     <div className="wistia_swatch" style={{height:"100%",left:0,opacity:0,overflow:"hidden",position:"absolute",top:0,transition:"opacity 200ms",width:"100%"}}>
+                          <img src="https://fast.wistia.com/embed/medias/c3m3h47fz2/swatch" style={{filter:"blur(5px)",height:"100%",objectFit:"contain",width:"100%"}} alt="" aria-hidden="true" onLoad={(e) => { e.currentTarget.parentElement!.style.opacity = '1';}} />
                       </div>
                   </div>
               </div>
