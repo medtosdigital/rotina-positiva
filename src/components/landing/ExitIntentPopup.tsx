@@ -18,7 +18,7 @@ const ExitIntentPopup = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const showPopup = useCallback(() => {
-    if (sessionStorage.getItem('exitPopupShown')) {
+    if (sessionStorage.getItem('exitPopupShown') === 'true') {
       return;
     }
     setIsOpen(true);
@@ -29,35 +29,31 @@ const ExitIntentPopup = () => {
     setIsOpen(false);
   };
   
-  // Handles both desktop mouse-leave and mobile/desktop back button
   useEffect(() => {
     // --- 1. Desktop Mouse-leave Intent ---
     const handleMouseLeave = (e: MouseEvent) => {
       // Only trigger if mouse leaves the top of the viewport
-      if (e.clientY <= 0 || e.relatedTarget === null) {
+      if (e.clientY <= 0) {
         showPopup();
       }
     };
     document.addEventListener('mouseleave', handleMouseLeave);
 
     // --- 2. Mobile & Desktop Back Button Intent ---
-    // Push a new state to the history stack when the component mounts
-    history.pushState(null, '');
-    
-    const handlePopstate = () => {
-      // This event is triggered by the back button.
-      // We show the popup and then push the state again to "re-arm" the listener,
-      // so the user has to press back again to actually leave.
+    const handleBackButton = () => {
       showPopup();
-      history.pushState(null, '');
+      // Re-push the state to re-arm the listener, so the user has to press back again to leave.
+      window.history.pushState(null, '');
     };
 
-    window.addEventListener('popstate', handlePopstate);
+    // We push an initial state so we can detect the first back button press.
+    window.history.pushState(null, '');
+    window.addEventListener('popstate', handleBackButton);
 
     // --- Cleanup function ---
     return () => {
       document.removeEventListener('mouseleave', handleMouseLeave);
-      window.removeEventListener('popstate', handlePopstate);
+      window.removeEventListener('popstate', handleBackButton);
     };
   }, [showPopup]);
 
