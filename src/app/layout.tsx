@@ -36,7 +36,8 @@ export default function RootLayout({
         />
         <script
           src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-          data-utmify-prevent-subids=""
+          data-utmify-prevent-xcod-sck
+          data-utmify-prevent-subids
           async
           defer
         ></script>
