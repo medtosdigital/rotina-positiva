@@ -16,57 +16,57 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 
 const ExitIntentPopup = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isFirstMount, setIsFirstMount] = useState(true);
 
-  const showPopup = useCallback(() => {
-    if (!isOpen) {
-      setIsOpen(true);
-      history.pushState({ popup: 'open' }, ''); // Push a state when popup opens
-    }
+  const handleShowPopup = useCallback(() => {
+    // Prevent popup from opening if it's already open
+    if (isOpen) return;
+
+    // Push a new state to the history to "catch" the back button
+    history.pushState({ popupOpen: true }, '');
+    setIsOpen(true);
   }, [isOpen]);
 
-  const handleClose = () => {
-    setIsOpen(false);
-    // If the user closes the popup, we can go back to the state before it was opened
-    if (history.state && history.state.popup === 'open') {
+  const handleClosePopup = useCallback(() => {
+    // Only go back if the popup was the last thing added to history
+    if (history.state?.popupOpen) {
       history.back();
     }
-  };
+    setIsOpen(false);
+  }, []);
 
   useEffect(() => {
-    // --- Desktop: Mouse leave ---
-    const handleMouseLeave = (event: MouseEvent) => {
-      // Trigger if mouse leaves the top part of the viewport
-      if (event.clientY <= 0) {
-        showPopup();
-      }
-    };
-    document.addEventListener('mouseleave', handleMouseLeave);
-    
-    // --- Mobile & Desktop: Back button / History navigation ---
+    // --- Logic to handle back button and history changes ---
     const handlePopState = (event: PopStateEvent) => {
-      // When the user navigates back and the popup is not open, show it.
-      if (!isOpen) {
-        showPopup();
-      } else if (isOpen) {
-        // If the popup is open and they navigate back, it means they are trying to bypass it. Close it.
+      // If the state being popped is our popup state, it means the user closed it
+      // (either via our close button or by navigating back). So we just ensure it's closed.
+      if (event.state?.popupOpen) {
         setIsOpen(false);
+      } 
+      // If the state is something else, and the popup isn't open, it means the user
+      // is trying to navigate away. This is our chance to show the popup.
+      else if (!isOpen) {
+        handleShowPopup();
       }
     };
-
-    // On first mount, push a "base" state.
-    if(isFirstMount) {
-        history.pushState(null, '');
-        setIsFirstMount(false);
-    }
     
     window.addEventListener('popstate', handlePopState);
 
-    return () => {
-      document.removeEventListener('mouseleave', handleMouseLeave);
-      window.removeEventListener('popstate', handlePopState);
+    // --- Logic for desktop mouse-leave intent ---
+    const handleMouseLeave = (e: MouseEvent) => {
+      // Trigger if mouse leaves the top part of the viewport
+      if (e.clientY <= 0) {
+        handleShowPopup();
+      }
     };
-  }, [isOpen, showPopup, isFirstMount]);
+    document.addEventListener('mouseleave', handleMouseLeave);
+
+    // Cleanup listeners
+    return () => {
+      window.removeEventListener('popstate', handlePopState);
+      document.removeEventListener('mouseleave', handleMouseLeave);
+    };
+  }, [isOpen, handleShowPopup]);
+
 
   const afterImages = [
     PlaceHolderImages.find(img => img.id === 'after-routine-1'),
@@ -125,7 +125,7 @@ const ExitIntentPopup = () => {
                     </div>
                 </Button>
             </a>
-            <Button variant="link" onClick={handleClose} className="text-gray-500 text-xs sm:text-sm h-auto p-1">
+            <Button variant="link" onClick={handleClosePopup} className="text-gray-500 text-xs sm:text-sm h-auto p-1">
                  Não, obrigado. Quero perder a oferta.
             </Button>
         </AlertDialogFooter>
