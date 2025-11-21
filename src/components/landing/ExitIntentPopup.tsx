@@ -18,11 +18,10 @@ const ExitIntentPopup = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const showPopup = useCallback(() => {
-    if (sessionStorage.getItem('exitPopupShown') === 'true') {
-      return;
+    if (sessionStorage.getItem('exitPopupShown') !== 'true') {
+      setIsOpen(true);
+      sessionStorage.setItem('exitPopupShown', 'true');
     }
-    setIsOpen(true);
-    sessionStorage.setItem('exitPopupShown', 'true');
   }, []);
 
   const handleClose = () => {
@@ -30,30 +29,26 @@ const ExitIntentPopup = () => {
   };
   
   useEffect(() => {
-    // --- 1. Desktop Mouse-leave Intent ---
+    // --- Gatilho de Saída para Desktop (Mouse) ---
     const handleMouseLeave = (e: MouseEvent) => {
-      // Only trigger if mouse leaves the top of the viewport
-      if (e.clientY <= 0) {
+      if (e.clientY <= 0 || e.clientX <= 0 || (e.clientX >= window.innerWidth || e.clientY >= window.innerHeight)) {
         showPopup();
       }
     };
     document.addEventListener('mouseleave', handleMouseLeave);
 
-    // --- 2. Mobile & Desktop Back Button Intent ---
-    const handleBackButton = () => {
-      showPopup();
-      // Re-push the state to re-arm the listener, so the user has to press back again to leave.
-      window.history.pushState(null, '');
+    // --- Gatilho de Saída para Mobile (Mudança de Visibilidade) ---
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === 'hidden') {
+        showPopup();
+      }
     };
+    document.addEventListener('visibilitychange', handleVisibilityChange);
 
-    // We push an initial state so we can detect the first back button press.
-    window.history.pushState(null, '');
-    window.addEventListener('popstate', handleBackButton);
-
-    // --- Cleanup function ---
+    // --- Limpeza dos eventos ---
     return () => {
       document.removeEventListener('mouseleave', handleMouseLeave);
-      window.removeEventListener('popstate', handleBackButton);
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
     };
   }, [showPopup]);
 
