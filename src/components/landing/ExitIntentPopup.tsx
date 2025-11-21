@@ -29,39 +29,34 @@ const ExitIntentPopup = () => {
     setIsOpen(false);
   };
   
-  // Desktop: Mouse-leave intent
+  // Handles both desktop mouse-leave and mobile/desktop back button
   useEffect(() => {
+    // --- 1. Desktop Mouse-leave Intent ---
     const handleMouseLeave = (e: MouseEvent) => {
-      if (e.clientY <= 0) {
+      // Only trigger if mouse leaves the top of the viewport
+      if (e.clientY <= 0 || e.relatedTarget === null) {
         showPopup();
       }
     };
-    
     document.addEventListener('mouseleave', handleMouseLeave);
-    
-    return () => {
-      document.removeEventListener('mouseleave', handleMouseLeave);
-    };
-  }, [showPopup]);
 
-  // Mobile: Back button intent
-  useEffect(() => {
-    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-    if (!isTouchDevice) return;
-
-    // Push a "blocker" state into the history
+    // --- 2. Mobile & Desktop Back Button Intent ---
+    // Push a new state to the history stack when the component mounts
     history.pushState(null, '');
-
+    
     const handlePopstate = () => {
-      // If we are here, the user tried to go back.
-      // We show the popup and push the state again to "re-arm" the block.
+      // This event is triggered by the back button.
+      // We show the popup and then push the state again to "re-arm" the listener,
+      // so the user has to press back again to actually leave.
       showPopup();
       history.pushState(null, '');
     };
 
     window.addEventListener('popstate', handlePopstate);
 
+    // --- Cleanup function ---
     return () => {
+      document.removeEventListener('mouseleave', handleMouseLeave);
       window.removeEventListener('popstate', handlePopstate);
     };
   }, [showPopup]);
