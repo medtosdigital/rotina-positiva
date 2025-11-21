@@ -27,7 +27,7 @@ const Hero = () => {
             {/* Coluna de Texto */}
             <div className="text-brand-dark-blue text-center lg:text-center max-w-4xl">
               <h1 className="font-headline text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tighter">
-                Faça seu filho{' '}
+                Faça seu filho(a){' '}
                 <span className="inline-block bg-primary text-white px-4 rounded-lg -rotate-1">
                     OBEDECER
                 </span>{' '}
@@ -55,7 +55,7 @@ const Hero = () => {
                     }}
                   >
                      <div className="wistia_swatch" style={{height:"100%",left:0,opacity:0,overflow:"hidden",position:"absolute",top:0,transition:"opacity 200ms",width:"100%"}}>
-                          <img src="https://fast.wistia.com/embed/medias/c3m3h47fz2/swatch" style={{filter:"blur(5px)",height:"100%",objectFit:"contain",width:"100%"}} alt="" aria-hidden="true" onLoad={(e) => { e.currentTarget.parentElement!.style.opacity = '1';}} />
+                          <img src="https://fast.wistia.com/embed/medias/c3m3h47fz2/swatch" style={{filter:"blur(5px)",height:"100%",objectFit:"contain",width:"100%"}} alt="" aria-hidden="true" onLoad={(e) => { (e.currentTarget.parentElement as HTMLElement).style.opacity = '1';}} />
                       </div>
                   </div>
               </div>
