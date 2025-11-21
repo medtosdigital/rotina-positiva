@@ -45,19 +45,13 @@ const Hero = () => {
             <div className="relative mt-0 flex justify-center items-center w-full max-w-sm">
               <div className="w-full mx-auto p-2 rounded-2xl bg-brand-gold shadow-2xl animate-glow">
                   <div 
-                    className="wistia_embed wistia_async_c3m3h47fz2 videoFoam=true" 
+                    className="wistia_embed wistia_async_c3m3h47fz2 videoFoam=true rounded-xl overflow-hidden" 
                     style={{
                       height:"100%", 
                       position:"relative", 
-                      width:"100%",
-                      paddingTop: "177.78%",
-                      background: "center / contain no-repeat url('https://fast.wistia.com/embed/medias/c3m3h47fz2/swatch')",
+                      width:"100%"
                     }}
-                  >
-                     <div className="wistia_swatch" style={{height:"100%",left:0,opacity:0,overflow:"hidden",position:"absolute",top:0,transition:"opacity 200ms",width:"100%"}}>
-                          <img src="https://fast.wistia.com/embed/medias/c3m3h47fz2/swatch" style={{filter:"blur(5px)",height:"100%",objectFit:"contain",width:"100%"}} alt="" aria-hidden="true" onLoad={(e) => { (e.currentTarget.parentElement as HTMLElement).style.opacity = '1';}} />
-                      </div>
-                  </div>
+                  >&nbsp;</div>
               </div>
             </div>
 
