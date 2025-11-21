@@ -15,47 +15,57 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const ExitIntentPopup = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isFirstMount, setIsFirstMount] = useState(true);
 
   const showPopup = useCallback(() => {
-    // Only show if not already shown to prevent loops.
-    // The isOpen state handles this.
     if (!isOpen) {
       setIsOpen(true);
+      history.pushState({ popup: 'open' }, ''); // Push a state when popup opens
     }
   }, [isOpen]);
+
+  const handleClose = () => {
+    setIsOpen(false);
+    // If the user closes the popup, we can go back to the state before it was opened
+    if (history.state && history.state.popup === 'open') {
+      history.back();
+    }
+  };
 
   useEffect(() => {
     // --- Desktop: Mouse leave ---
     const handleMouseLeave = (event: MouseEvent) => {
-      if (event.clientY <= 0 || event.clientX <= 0 || (event.clientX >= window.innerWidth || event.clientY >= window.innerHeight)) {
+      // Trigger if mouse leaves the top part of the viewport
+      if (event.clientY <= 0) {
         showPopup();
       }
     };
     document.addEventListener('mouseleave', handleMouseLeave);
     
     // --- Mobile & Desktop: Back button / History navigation ---
-    // Push a new state to the history when the component mounts.
-    history.pushState(null, '');
-
     const handlePopState = (event: PopStateEvent) => {
-      // When the user clicks "back", this event is fired.
-      // We show the popup instead of letting them go back.
-      showPopup();
-      // We push the state again so if they try to go back *again*, it's captured.
-      history.pushState(null, '');
+      // When the user navigates back and the popup is not open, show it.
+      if (!isOpen) {
+        showPopup();
+      } else if (isOpen) {
+        // If the popup is open and they navigate back, it means they are trying to bypass it. Close it.
+        setIsOpen(false);
+      }
     };
 
+    // On first mount, push a "base" state.
+    if(isFirstMount) {
+        history.pushState(null, '');
+        setIsFirstMount(false);
+    }
+    
     window.addEventListener('popstate', handlePopState);
 
     return () => {
       document.removeEventListener('mouseleave', handleMouseLeave);
       window.removeEventListener('popstate', handlePopState);
     };
-  }, [showPopup]);
-
-  const handleClose = () => {
-    setIsOpen(false);
-  }
+  }, [isOpen, showPopup, isFirstMount]);
 
   const exitImage = PlaceHolderImages.find(img => img.id === 'exit-popup-real-kids');
 
