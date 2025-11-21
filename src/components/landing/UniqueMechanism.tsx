@@ -26,9 +26,10 @@ const UniqueMechanism = () => {
             </span>{' '}
             o que precisam fazer.
           </h2>
-          <p className="font-body text-lg md:text-xl text-white/90">
-            É por isso que os <b className="font-bold">Quadros de Rotina Positiva</b> funcionam. Eles transformam regras e tarefas abstratas em um jogo visual, claro e divertido que seu filho entende e adora seguir.
-          </p>
+          <div className="font-body text-lg md:text-xl text-white/90 space-y-4">
+            <p>É por isso que os <b className="font-bold">Quadros de Rotina Positiva</b> funcionam.</p>
+            <p>Eles transformam regras e tarefas abstratas em um jogo visual, claro e divertido que seu filho entende e adora seguir.</p>
+          </div>
         </div>
 
         <div className="flex justify-center">
