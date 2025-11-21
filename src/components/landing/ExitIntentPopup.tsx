@@ -41,7 +41,7 @@ const ExitIntentPopup = () => {
     <AlertDialog open={isOpen} onOpenChange={setIsOpen}>
       <AlertDialogContent className="bg-white p-6 sm:p-8 rounded-2xl shadow-2xl max-w-lg border-4 border-brand-orange">
         <AlertDialogHeader className="text-center">
-          <AlertDialogTitle className="font-headline text-3xl md:text-4xl font-bold text-brand-dark-blue mb-2">
+          <AlertDialogTitle className="font-headline text-2xl sm:text-3xl md:text-4xl font-bold text-brand-dark-blue mb-2">
             Espere! Antes de ir...
           </AlertDialogTitle>
           <AlertDialogDescription className="font-body text-base md:text-lg text-brand-dark-blue/80">
@@ -49,8 +49,8 @@ const ExitIntentPopup = () => {
           </AlertDialogDescription>
         </AlertDialogHeader>
 
-        <div className="my-6">
-          <div className="grid grid-cols-2 gap-4 mb-6">
+        <div className="my-4 sm:my-6">
+          <div className="grid grid-cols-2 gap-2 sm:gap-4 mb-4 sm:mb-6">
             {exitImages.map((image, index) => (
                 image && (
                     <Image
@@ -66,26 +66,26 @@ const ExitIntentPopup = () => {
             ))}
           </div>
 
-          <div className="bg-gray-50 rounded-2xl p-6 text-center border">
-            <p className="font-headline font-bold text-brand-dark-blue text-lg uppercase">Kit Completo + Bônus por um preço que não vai se repetir!</p>
-            <div className="flex justify-center items-center gap-4 my-2">
-                <p className="font-headline text-2xl font-bold text-gray-400 line-through">R$37,00</p>
-                <p className="font-headline text-5xl font-extrabold text-brand-turquoise">R$27</p>
+          <div className="bg-gray-50 rounded-2xl p-4 sm:p-6 text-center border">
+            <p className="font-headline font-bold text-brand-dark-blue text-base sm:text-lg uppercase">Kit Completo + Bônus por um preço que não vai se repetir!</p>
+            <div className="flex justify-center items-center gap-2 sm:gap-4 my-2">
+                <p className="font-headline text-xl sm:text-2xl font-bold text-gray-400 line-through">R$37,00</p>
+                <p className="font-headline text-4xl sm:text-5xl font-extrabold text-brand-turquoise">R$27</p>
             </div>
-            <p className="font-body text-gray-500 text-sm">Pagamento único, acesso vitalício.</p>
+            <p className="font-body text-gray-500 text-xs sm:text-sm">Pagamento único, acesso vitalício.</p>
           </div>
         </div>
 
         <AlertDialogFooter className="flex-col sm:flex-col sm:space-x-0 gap-2">
             <a href="https://pay.kiwify.com.br/KbApxZm" className="w-full">
-                <Button className="font-headline bg-green-500 hover:bg-green-600 text-white font-bold py-6 px-6 sm:py-7 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 w-full h-auto animate-glow">
+                <Button className="font-headline bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-4 sm:py-6 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 w-full h-auto animate-glow">
                     <div className="flex flex-col items-center">
-                    <span className="text-lg sm:text-xl md:text-2xl uppercase">SIM, EU QUERO O DESCONTO!</span>
+                    <span className="text-base sm:text-lg md:text-xl uppercase">SIM, EU QUERO O DESCONTO!</span>
                     <span className="text-xs sm:text-sm font-normal">Garantir acesso por apenas R$27</span>
                     </div>
                 </Button>
             </a>
-            <Button variant="link" onClick={() => setIsOpen(false)} className="text-gray-500">
+            <Button variant="link" onClick={() => setIsOpen(false)} className="text-gray-500 text-sm">
                  Não, obrigado. Quero perder a oferta.
             </Button>
         </AlertDialogFooter>
