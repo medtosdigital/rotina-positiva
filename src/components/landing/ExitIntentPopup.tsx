@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import Image from 'next/image';
 import {
   AlertDialog,
@@ -16,18 +16,16 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 
 const ExitIntentPopup = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const ignorePopstate = useRef(false);
 
   const handleShowPopup = useCallback(() => {
-    // Prevent popup from opening if it's already open
-    if (isOpen) return;
-
-    // Push a new state to the history to "catch" the back button
+    if (isOpen || sessionStorage.getItem('exitPopupShown')) return;
     history.pushState({ popupOpen: true }, '');
     setIsOpen(true);
+    sessionStorage.setItem('exitPopupShown', 'true');
   }, [isOpen]);
 
   const handleClosePopup = useCallback(() => {
-    // Only go back if the popup was the last thing added to history
     if (history.state?.popupOpen) {
       history.back();
     }
@@ -35,37 +33,56 @@ const ExitIntentPopup = () => {
   }, []);
 
   useEffect(() => {
-    // --- Logic to handle back button and history changes ---
-    const handlePopState = (event: PopStateEvent) => {
-      // If the state being popped is our popup state, it means the user closed it
-      // (either via our close button or by navigating back). So we just ensure it's closed.
-      if (event.state?.popupOpen) {
-        setIsOpen(false);
-      } 
-      // If the state is something else, and the popup isn't open, it means the user
-      // is trying to navigate away. This is our chance to show the popup.
-      else if (!isOpen) {
-        handleShowPopup();
-      }
-    };
-    
-    window.addEventListener('popstate', handlePopState);
-
-    // --- Logic for desktop mouse-leave intent ---
     const handleMouseLeave = (e: MouseEvent) => {
-      // Trigger if mouse leaves the top part of the viewport
       if (e.clientY <= 0) {
         handleShowPopup();
       }
     };
-    document.addEventListener('mouseleave', handleMouseLeave);
 
-    // Cleanup listeners
+    const handlePopState = () => {
+      if (ignorePopstate.current) {
+        ignorePopstate.current = false;
+        return;
+      }
+      
+      if (isOpen) {
+        setIsOpen(false);
+      } else {
+        handleShowPopup();
+      }
+    };
+    
+    const handleAnchorClick = (e: MouseEvent) => {
+        const target = e.target as HTMLElement;
+        const anchor = target.closest('a');
+        if (anchor && anchor.hash) {
+            ignorePopstate.current = true;
+        }
+    };
+
+    document.addEventListener('mouseleave', handleMouseLeave);
+    window.addEventListener('popstate', handlePopState);
+    document.addEventListener('mousedown', handleAnchorClick);
+    
+    // Attempt to show popup on initial back navigation
+    setTimeout(() => {
+        if(window.history.state === null) {
+            window.history.replaceState({ initial: true }, '');
+        }
+    }, 500);
+
+
     return () => {
-      window.removeEventListener('popstate', handlePopState);
       document.removeEventListener('mouseleave', handleMouseLeave);
+      window.removeEventListener('popstate', handlePopState);
+      document.removeEventListener('mousedown', handleAnchorClick);
     };
   }, [isOpen, handleShowPopup]);
+  
+  // Clear session storage on page load so popup can be shown again on next visit
+  useEffect(() => {
+    sessionStorage.removeItem('exitPopupShown');
+  }, []);
 
 
   const afterImages = [
@@ -99,7 +116,7 @@ const ExitIntentPopup = () => {
                         width={200} 
                         height={200} 
                         data-ai-hint={image.imageHint} 
-                        className="rounded-md shadow-md w-full h-24 sm:h-auto object-cover" 
+                        className="rounded-md shadow-md w-full h-20 sm:h-24 object-cover" 
                       />
                     )
                   ))}
