@@ -21,7 +21,11 @@ const afterItems = [
 
 const BeforeAfter = () => {
   const beforeChaosImg = PlaceHolderImages.find(img => img.id === 'before-chaos');
-  const afterRoutineImg = PlaceHolderImages.find(img => img.id === 'after-routine');
+  const afterImages = [
+    PlaceHolderImages.find(img => img.id === 'after-routine-1'),
+    PlaceHolderImages.find(img => img.id === 'after-routine-2'),
+    PlaceHolderImages.find(img => img.id === 'after-routine-3'),
+  ].filter(Boolean);
 
   return (
     <section className="py-12 lg:py-20 bg-white">
@@ -59,8 +63,20 @@ const BeforeAfter = () => {
               <CardTitle className="font-headline text-3xl md:text-4xl font-bold text-green-600 text-center">DEPOIS</CardTitle>
             </CardHeader>
             <CardContent className="p-0">
-              <div className="mb-6">
-                {afterRoutineImg && <Image src={afterRoutineImg.imageUrl} alt={afterRoutineImg.description} width={800} height={500} data-ai-hint={afterRoutineImg.imageHint} className="rounded-xl shadow-md w-full h-auto object-contain" />}
+              <div className="mb-6 grid grid-cols-3 gap-2">
+                {afterImages.map((image, index) => (
+                  image && (
+                    <Image 
+                      key={index}
+                      src={image.imageUrl} 
+                      alt={image.description} 
+                      width={400} 
+                      height={400} 
+                      data-ai-hint={image.imageHint} 
+                      className="rounded-xl shadow-md w-full h-auto object-cover" 
+                    />
+                  )
+                ))}
               </div>
               <ul className="space-y-3">
                 {afterItems.map(item => (
@@ -79,3 +95,5 @@ const BeforeAfter = () => {
 };
 
 export default BeforeAfter;
+
+    

@@ -91,10 +91,22 @@
       "imageHint": "toddler tantrum"
     },
     {
-      "id": "after-routine",
-      "description": "A happy child focused on completing a task on their routine chart.",
-      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/Screenshot_2025-11-15_154233-removebg-preview.png",
-      "imageHint": "happy child routine"
+      "id": "after-routine-1",
+      "description": "Child with mom using routine chart.",
+      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/2.2.png",
+      "imageHint": "child routine"
+    },
+    {
+      "id": "after-routine-2",
+      "description": "Girl with morning routine chart.",
+      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/2.3.png",
+      "imageHint": "girl routine"
+    },
+    {
+      "id": "after-routine-3",
+      "description": "Child pointing to routine chart.",
+      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/2.1.png",
+      "imageHint": "child chart"
     },
     {
       "id": "testimonial-1",
