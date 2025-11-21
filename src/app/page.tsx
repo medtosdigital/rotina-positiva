@@ -12,6 +12,7 @@ import Guarantee from '@/components/landing/Guarantee';
 import Faq from '@/components/landing/Faq';
 import FinalCta from '@/components/landing/FinalCta';
 import PromoBanner from '@/components/landing/PromoBanner';
+import ExitIntentPopup from '@/components/landing/ExitIntentPopup';
 
 export default function Home() {
   return (
@@ -32,6 +33,7 @@ export default function Home() {
         <Faq />
         <FinalCta />
       </main>
+      <ExitIntentPopup />
     </div>
   );
 }

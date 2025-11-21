@@ -147,7 +147,7 @@
     {
       "id": "testimonial-6",
       "description": "Portrait of a happy Brazilian mother.",
-      "imageUrl": "https://images.unsplash.com/photo-1500336624523-d727130c3328?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxicmF6aWxpYW4lMjB3b21hbnxlbnwwfHx8fDE3NjMyMzMwNDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1500336624523-d727130c3328?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxicmF6aWxpYW4lMjB3b21hbnxlbnwwfHx8fDE3NjMyMzMwNDh8MA&ixlibrb-4.1.0&q=80&w=1080",
       "imageHint": "brazilian woman"
     },
     {
@@ -159,7 +159,7 @@
     {
       "id": "testimonial-8",
       "description": "Portrait of a happy Brazilian mother.",
-      "imageUrl": "https://images.unsplash.com/photo-1519419691348-3b3433c4c20e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxicmF6aWxpYW4lMjB3b21hbnxlbnwwfHx8fDE3NjMyMzMwNDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1519419691348-3b3433c4c20e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxicmF6aWxpYW4lMjB3b21hbnxlbnwwfHx8fDE3NjMyMzMwNDh8MA&ixlibrb-4.1.0&q=80&w=1080",
       "imageHint": "brazilian woman"
     },
     {
@@ -171,7 +171,7 @@
     {
       "id": "testimonial-10",
       "description": "Portrait of a happy Brazilian mother.",
-      "imageUrl": "https://images.unsplash.com/photo-1527692013692-dd97db1f9a2f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxicmF6aWxpYW4lMjB3b21hbnxlbnwwfHx8fDE3NjMyMzMwNDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1527692013692-dd97db1f9a2f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxicmF6aWxpYW4lMjB3b21hbnxlbnwwfHx8fDE3NjMyMzMwNDh8MA&ixlibrb-4.1.0&q=80&w=1080",
       "imageHint": "brazilian woman"
     },
     {
@@ -245,6 +245,18 @@
       "description": "Child happily showing the positive routine chart.",
       "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/1.1.png",
       "imageHint": "child happy chart"
+    },
+    {
+      "id": "exit-popup-1",
+      "description": "Mockup of the bonus product 'Jogo da Cooperação'.",
+      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/ChatGPT-Image-15-de-nov.-de-2025-21_15_39.png",
+      "imageHint": "bonus product"
+    },
+    {
+      "id": "exit-popup-2",
+      "description": "Mockup of the main product charts.",
+      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/mockup.png",
+      "imageHint": "product charts"
     }
   ]
 }
