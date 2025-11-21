@@ -65,17 +65,17 @@ const ProductShowcase = () => {
     <section id="product-showcase" className="pt-20 lg:pt-32 pb-12 lg:pb-12 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
-          <div className="grid grid-cols-3 gap-2 sm:gap-4 mb-8">
+          <div className="grid grid-cols-1 gap-2 sm:gap-4 mb-8">
             {headerImages.map((image, index) => (
               image && (
-                <div key={index} className="rounded-lg overflow-hidden shadow-lg aspect-square">
+                <div key={index} className="rounded-lg overflow-hidden shadow-lg w-full">
                   <Image
                     src={image.imageUrl}
                     alt={image.description}
                     width={400}
                     height={400}
                     data-ai-hint={image.imageHint}
-                    className="w-full h-full object-cover"
+                    className="w-full h-auto object-cover"
                   />
                 </div>
               )
