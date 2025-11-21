@@ -75,7 +75,7 @@ const PainPoints = () => {
                 </CardContent>
             </Card>
             <div className="mt-12 text-center">
-                <a href="#product-showcase">
+                <a href="#unique-mechanism">
                     <Button
                         size="lg"
                         className="font-headline bg-brand-turquoise hover:bg-brand-turquoise/90 text-white font-bold py-6 px-6 sm:py-8 sm:px-10 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 h-auto animate-pulse-slow w-full max-w-md"
