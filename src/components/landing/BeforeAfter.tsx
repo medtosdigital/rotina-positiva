@@ -4,7 +4,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { XCircle, CheckCircle2 } from 'lucide-react';
 
 const beforeItems = [
-  "Manhãs caóticas",
+  "Dias caóticos",
   "Birras e choros",
   "Estresse e gritos",
   "Casa bagunçada",
@@ -12,7 +12,7 @@ const beforeItems = [
 ];
 
 const afterItems = [
-  "Manhãs em paz",
+  "Dias em paz",
   "Cooperação e sorrisos",
   "Paciência e conexão",
   "Criança organizada",
