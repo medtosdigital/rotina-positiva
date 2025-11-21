@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useCallback, useRef } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
 import {
   AlertDialog,
@@ -16,82 +16,55 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 
 const ExitIntentPopup = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const isLeavingRef = useRef(false); // Ref to track if the popup was shown due to exit intent
 
-  // Function to show the popup if conditions are met
   const showPopup = useCallback(() => {
-    if (isOpen || sessionStorage.getItem('exitPopupShown')) {
+    if (sessionStorage.getItem('exitPopupShown')) {
       return;
     }
     setIsOpen(true);
     sessionStorage.setItem('exitPopupShown', 'true');
-  }, [isOpen]);
-
-  // Main effect for handling exit intents
-  useEffect(() => {
-    // 1. Desktop: Mouse-leave intent
-    const handleMouseLeave = (e: MouseEvent) => {
-      // If mouse is near the top of the viewport, assume exit intent
-      if (e.clientY <= 0) {
-        isLeavingRef.current = true;
-        showPopup();
-      }
-    };
-    document.addEventListener('mouseleave', handleMouseLeave);
-
-    // 2. Mobile & Desktop: Back button intent
-    const handleBeforeUnload = (e: BeforeUnloadEvent) => {
-        // This is a last resort for some browsers, but often blocked
-        if (isLeavingRef.current) return;
-        e.preventDefault(); // This is often ignored by modern browsers
-        e.returnValue = ''; // For older browsers
-        showPopup();
-    };
-    window.addEventListener('beforeunload', handleBeforeUnload);
-
-    // Clean up listeners
-    return () => {
-      document.removeEventListener('mouseleave', handleMouseLeave);
-      window.removeEventListener('beforeunload', handleBeforeUnload);
-    };
-  }, [showPopup]);
-
-
-  // Effect to handle back button on mobile more reliably
-  useEffect(() => {
-    // On mount, push a state to indicate we are on the page
-    window.history.pushState({ onPage: true }, '');
-
-    const handlePopstate = () => {
-        // When the user clicks back, this will fire.
-        // We show the popup and then push the state again
-        // to "re-arm" the back button.
-        if (!isOpen) {
-            showPopup();
-            window.history.pushState({ onPage: true }, '');
-        }
-    };
-    
-    // We only want this logic on touch devices
-    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-    if (isTouchDevice) {
-        window.addEventListener('popstate', handlePopstate);
-    }
-    
-    return () => {
-        if (isTouchDevice) {
-            window.addEventListener('popstate', handlePopstate);
-        }
-    }
-  }, [isOpen, showPopup]);
-
+  }, []);
 
   const handleClose = () => {
     setIsOpen(false);
-    // If the user closes the popup, let them go back freely next time
-    // You might want to allow them to go back to the previous page
-    // window.history.back(); // Uncomment if you want to navigate back after closing
-  }
+  };
+  
+  // Desktop: Mouse-leave intent
+  useEffect(() => {
+    const handleMouseLeave = (e: MouseEvent) => {
+      if (e.clientY <= 0) {
+        showPopup();
+      }
+    };
+    
+    document.addEventListener('mouseleave', handleMouseLeave);
+    
+    return () => {
+      document.removeEventListener('mouseleave', handleMouseLeave);
+    };
+  }, [showPopup]);
+
+  // Mobile: Back button intent
+  useEffect(() => {
+    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+    if (!isTouchDevice) return;
+
+    // Push a "blocker" state into the history
+    history.pushState(null, '');
+
+    const handlePopstate = () => {
+      // If we are here, the user tried to go back.
+      // We show the popup and push the state again to "re-arm" the block.
+      showPopup();
+      history.pushState(null, '');
+    };
+
+    window.addEventListener('popstate', handlePopstate);
+
+    return () => {
+      window.removeEventListener('popstate', handlePopstate);
+    };
+  }, [showPopup]);
 
 
   const afterImages = [
