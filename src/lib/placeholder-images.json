@@ -85,10 +85,16 @@
       "imageHint": "responsibilities chart"
     },
     {
-      "id": "before-chaos",
-      "description": "A child having a tantrum in a messy room.",
-      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/Screenshot-2025-11-15-154743.png",
-      "imageHint": "toddler tantrum"
+      "id": "before-chaos-1",
+      "description": "A sad boy in a messy room.",
+      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/0SD1.png",
+      "imageHint": "child messy room"
+    },
+    {
+      "id": "before-chaos-2",
+      "description": "A grumpy girl in a messy room.",
+      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/0SD.png",
+      "imageHint": "child tantrum"
     },
     {
       "id": "after-routine-1",
