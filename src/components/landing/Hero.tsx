@@ -1,29 +1,10 @@
 "use client";
 
 import Image from 'next/image';
-import { Button } from '@/components/ui/button';
+import Script from 'next/script';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { HeartHandshake, Puzzle, ShieldCheck, Trophy, Star, Award, BrainCircuit, Users } from 'lucide-react';
+import { Award, BrainCircuit, Users, Star } from 'lucide-react';
 import { BuyButton } from './BuyButton';
-
-const benefitCards = [
-    {
-        icon: <ShieldCheck className="w-8 h-8 text-brand-orange" />,
-        title: "Rotina Clara, Criança Segura",
-    },
-    {
-        icon: <HeartHandshake className="w-8 h-8 text-brand-orange" />,
-        title: "Cooperação sem Conflito",
-    },
-    {
-        icon: <Trophy className="w-8 h-8 text-brand-orange" />,
-        title: "Autonomia e Responsabilidade",
-    },
-    {
-        icon: <Puzzle className="w-8 h-8 text-brand-orange" />,
-        title: "Menos Estresse para os Pais",
-    }
-]
 
 const authorityItems = [
     { icon: <Award className="w-6 h-6 text-brand-dark-blue/80" />, text: "Recomendado por Psicólogos" },
@@ -32,23 +13,22 @@ const authorityItems = [
 ]
 
 const Hero = () => {
-  const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-main');
   const testimonial = PlaceHolderImages.find(img => img.id === 'final-cta-testimonial');
 
   return (
-    <section className="relative w-full bg-brand-green-water overflow-hidden">
-      <div
-        className="absolute inset-x-0 top-0 h-full bg-brand-gold"
-        style={{
-          clipPath: 'polygon(0 0, 100% 0, 100% 85%, 0 100%)',
-        }}
-      ></div>
-
-      <div className="relative container mx-auto px-6 pt-12 pb-12">
-        <div className="grid lg:grid-cols-2 items-center gap-8 md:gap-12 w-full">
-            <div className="text-brand-dark-blue z-10 text-center lg:text-left order-2 lg:order-1">
+    <>
+      {/* Wistia Player Scripts */}
+      <Script src="https://fast.wistia.com/player.js" async />
+      <Script src="https://fast.wistia.com/embed/c3m3h47fz2.js" async type="module" />
+      
+      <section className="relative w-full bg-white">
+        <div className="relative container mx-auto px-6 pt-12 pb-20">
+          <div className="grid lg:grid-cols-2 items-center gap-12 md:gap-16 w-full">
+            
+            {/* Coluna de Texto */}
+            <div className="text-brand-dark-blue text-center lg:text-left order-2 lg:order-1">
               <div className="mb-6 flex justify-center lg:justify-start">
-                <div className="bg-white/30 backdrop-blur-sm border border-white/50 rounded-xl p-4 flex items-center gap-4 max-w-sm md:max-w-md shadow-lg text-white">
+                <div className="bg-gray-100/80 backdrop-blur-sm border border-gray-200/50 rounded-xl p-4 flex items-center gap-4 max-w-sm md:max-w-md shadow-lg">
                    {testimonial && (
                        <Image
                            src={testimonial.imageUrl}
@@ -66,7 +46,7 @@ const Hero = () => {
                        </div>
                    </div>
                 </div>
-             </div>
+              </div>
 
               <h1 className="font-headline text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tighter">
                 Faça seu filho{' '}
@@ -81,21 +61,19 @@ const Hero = () => {
               <p className="font-body text-lg md:text-xl mt-6 mb-8 text-brand-dark-blue/90 max-w-xl mx-auto lg:mx-0">
                 Com o sistema visual que transforma disciplina em um jogo divertido.
               </p>
+              
+              <div className="flex flex-col items-center lg:items-start gap-6">
+                <BuyButton
+                    className="font-headline bg-brand-turquoise hover:bg-brand-turquoise/90 text-white font-bold py-6 px-6 sm:py-8 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 w-full max-w-md h-auto animate-pulse-slow"
+                >
+                    <div className="flex flex-col items-center">
+                        <span className="text-lg sm:text-xl md:text-2xl">QUERO TRANSFORMAR MINHA CASA</span>
+                        <span className="text-xs sm:text-sm font-normal">Garantir meu kit com desconto</span>
+                    </div>
+                </BuyButton>
 
-              <div className="grid grid-cols-2 gap-4 max-w-md mx-auto lg:mx-0 mb-8">
-                  {benefitCards.map((card) => (
-                      <div key={card.title} className="bg-white/30 backdrop-blur-sm border-2 border-white/50 rounded-2xl shadow-lg text-center p-4 flex flex-col items-center justify-center transform hover:scale-110 transition-transform duration-300">
-                          <div className="mb-3">
-                              {card.icon}
-                          </div>
-                          <h3 className="font-subtitle text-sm font-bold text-brand-dark-blue leading-tight">{card.title}</h3>
-                      </div>
-                  ))}
-              </div>
-
-              <div className="my-8">
-                <div className="bg-white/80 backdrop-blur border border-white/60 rounded-xl p-4 shadow-lg max-w-md mx-auto lg:mx-0">
-                  <div className="flex flex-col gap-4">
+                <div className="bg-gray-50/80 backdrop-blur border border-gray-200/60 rounded-xl p-4 shadow-lg max-w-md w-full">
+                  <div className="flex flex-col gap-3">
                     {authorityItems.map((item, index) => (
                       <div key={index} className="flex items-center gap-3">
                         {item.icon}
@@ -105,26 +83,39 @@ const Hero = () => {
                   </div>
                 </div>
               </div>
+            </div>
 
+            {/* Coluna do Vídeo */}
+            <div className="relative mt-8 lg:mt-0 flex justify-center items-center order-1 lg:order-2 w-full">
+              <div className="w-full max-w-sm mx-auto p-2 rounded-2xl bg-brand-gold shadow-2xl animate-glow">
+                  <div className="wistia_responsive_padding" style={{padding: "177.78% 0 0 0", position: "relative"}}>
+                      <div className="wistia_responsive_wrapper" style={{height: "100%", left: 0, position: "absolute", top: 0, width: "100%"}}>
+                          <div 
+                              className="wistia_embed wistia_async_c3m3h47fz2 videoFoam=true" 
+                              style={{height:"100%", position:"relative", width:"100%"}}
+                          >
+                            <div 
+                                className="wistia_swatch" 
+                                style={{height:"100%",left:0,opacity:0,overflow:"hidden",position:"absolute",top:0,transition:"opacity 200ms",width:"100%"}}
+                            >
+                                <img 
+                                    src="https://fast.wistia.com/embed/medias/c3m3h47fz2/swatch" 
+                                    style={{filter:"blur(5px)",height:"100%",objectFit:"contain",width:"100%"}} 
+                                    alt="" 
+                                    aria-hidden="true" 
+                                    //@ts-ignore
+                                    onload="this.parentNode.style.opacity=1;" 
+                                />
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
             </div>
-            <div className="relative mt-8 lg:mt-0 h-auto flex flex-col items-center order-1 lg:order-2 lg:col-span-1 w-full max-w-3xl mx-auto">
-              {heroImage && (
-                <div className="animate-bounce-subtle">
-                  <Image
-                    src={heroImage.imageUrl}
-                    alt={heroImage.description}
-                    width={1200}
-                    height={900}
-                    data-ai-hint={heroImage.imageHint}
-                    className="object-contain w-full h-full"
-                    priority
-                  />
-                </div>
-              )}
-            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 
