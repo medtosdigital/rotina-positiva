@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import Image from 'next/image';
 import {
   AlertDialog,
@@ -16,50 +16,81 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 
 const ExitIntentPopup = () => {
   const [isOpen, setIsOpen] = useState(false);
-  
+  const isLeavingRef = useRef(false); // Ref to track if the popup was shown due to exit intent
+
+  // Function to show the popup if conditions are met
   const showPopup = useCallback(() => {
-    if (!isOpen && !sessionStorage.getItem('exitPopupShown')) {
-      setIsOpen(true);
-      sessionStorage.setItem('exitPopupShown', 'true');
+    if (isOpen || sessionStorage.getItem('exitPopupShown')) {
+      return;
     }
+    setIsOpen(true);
+    sessionStorage.setItem('exitPopupShown', 'true');
   }, [isOpen]);
 
+  // Main effect for handling exit intents
   useEffect(() => {
-    // Show on mouse leave (for desktop)
+    // 1. Desktop: Mouse-leave intent
     const handleMouseLeave = (e: MouseEvent) => {
-      if (e.clientY <= 0 || e.relatedTarget == null) {
+      // If mouse is near the top of the viewport, assume exit intent
+      if (e.clientY <= 0) {
+        isLeavingRef.current = true;
         showPopup();
       }
     };
     document.addEventListener('mouseleave', handleMouseLeave);
 
-    // Show on back button (mobile and desktop)
-    // 1. Push a new state to history
-    window.history.pushState({ popup: true }, '');
-
-    // 2. Listen for popstate
-    const handlePopstate = (event: PopStateEvent) => {
-      // If the user navigates back, and the popup isn't already open, show it.
-      // This prevents the user from leaving the page.
-      if (!isOpen) {
+    // 2. Mobile & Desktop: Back button intent
+    const handleBeforeUnload = (e: BeforeUnloadEvent) => {
+        // This is a last resort for some browsers, but often blocked
+        if (isLeavingRef.current) return;
+        e.preventDefault(); // This is often ignored by modern browsers
+        e.returnValue = ''; // For older browsers
         showPopup();
-        // Re-push the state so the next back button press also gets caught
-        // This makes it so the user has to close the popup to leave.
-        window.history.pushState({ popup: true }, '');
-      }
     };
-    window.addEventListener('popstate', handlePopstate);
-    
+    window.addEventListener('beforeunload', handleBeforeUnload);
+
+    // Clean up listeners
     return () => {
       document.removeEventListener('mouseleave', handleMouseLeave);
-      window.removeEventListener('popstate', handlePopstate);
+      window.removeEventListener('beforeunload', handleBeforeUnload);
     };
-  }, [showPopup, isOpen]);
+  }, [showPopup]);
+
+
+  // Effect to handle back button on mobile more reliably
+  useEffect(() => {
+    // On mount, push a state to indicate we are on the page
+    window.history.pushState({ onPage: true }, '');
+
+    const handlePopstate = () => {
+        // When the user clicks back, this will fire.
+        // We show the popup and then push the state again
+        // to "re-arm" the back button.
+        if (!isOpen) {
+            showPopup();
+            window.history.pushState({ onPage: true }, '');
+        }
+    };
+    
+    // We only want this logic on touch devices
+    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+    if (isTouchDevice) {
+        window.addEventListener('popstate', handlePopstate);
+    }
+    
+    return () => {
+        if (isTouchDevice) {
+            window.addEventListener('popstate', handlePopstate);
+        }
+    }
+  }, [isOpen, showPopup]);
+
 
   const handleClose = () => {
     setIsOpen(false);
-    // Go back one more time to actually leave the page
-    window.history.back();
+    // If the user closes the popup, let them go back freely next time
+    // You might want to allow them to go back to the previous page
+    // window.history.back(); // Uncomment if you want to navigate back after closing
   }
 
 
@@ -94,7 +125,7 @@ const ExitIntentPopup = () => {
                         width={200} 
                         height={120} 
                         data-ai-hint={image.imageHint} 
-                        className="rounded-md shadow-md w-full h-16 sm:h-24 object-cover" 
+                        className="rounded-md shadow-md w-full h-16 sm:h-20 object-cover" 
                       />
                     )
                   ))}
