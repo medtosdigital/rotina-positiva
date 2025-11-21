@@ -38,7 +38,7 @@ const ProductShowcase = () => {
     <section id="product-showcase" className="pt-20 lg:pt-32 pb-12 lg:pb-12 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+          <div className="grid grid-cols-3 gap-4 mb-8">
             {headerImages.map((image, index) => (
               image && (
                 <div key={index} className="rounded-lg overflow-hidden shadow-lg">
