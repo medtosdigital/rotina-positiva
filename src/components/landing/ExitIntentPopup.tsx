@@ -18,6 +18,7 @@ const ExitIntentPopup = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const showPopup = useCallback(() => {
+    // Apenas mostra o pop-up se ele ainda não foi exibido nesta sessão.
     if (sessionStorage.getItem('exitPopupShown') !== 'true') {
       setIsOpen(true);
       sessionStorage.setItem('exitPopupShown', 'true');
@@ -31,7 +32,8 @@ const ExitIntentPopup = () => {
   useEffect(() => {
     // --- Gatilho de Saída para Desktop (Mouse) ---
     const handleMouseLeave = (e: MouseEvent) => {
-      if (e.clientY <= 0 || e.clientX <= 0 || (e.clientX >= window.innerWidth || e.clientY >= window.innerHeight)) {
+      // Se o mouse sair pela parte de cima da janela, aciona o popup.
+      if (e.clientY <= 0) {
         showPopup();
       }
     };
@@ -39,6 +41,7 @@ const ExitIntentPopup = () => {
 
     // --- Gatilho de Saída para Mobile (Mudança de Visibilidade) ---
     const handleVisibilityChange = () => {
+      // Se a página ficar oculta (usuário trocou de aba ou clicou em voltar), aciona o popup.
       if (document.visibilityState === 'hidden') {
         showPopup();
       }
