@@ -12,13 +12,11 @@ import Guarantee from '@/components/landing/Guarantee';
 import Faq from '@/components/landing/Faq';
 import FinalCta from '@/components/landing/FinalCta';
 import PromoBanner from '@/components/landing/PromoBanner';
-import ExitIntentPopup from '@/components/landing/ExitIntentPopup';
 
 export default function Home() {
   return (
     <div className="bg-white overflow-x-hidden">
       <main>
-        <ExitIntentPopup />
         <PromoBanner />
         <Hero />
         <PainPoints />

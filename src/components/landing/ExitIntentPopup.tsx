@@ -1,56 +1,25 @@
 'use client';
 
-import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import {
-  AlertDialog,
-  AlertDialogContent,
-  AlertDialogHeader,
-  AlertDialogTitle,
-  AlertDialogDescription,
-  AlertDialogFooter,
-} from '@/components/ui/alert-dialog';
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { ScrollArea } from '@/components/ui/scroll-area';
-import { useSearchParams } from 'next/navigation';
 
-const ExitIntentPopup = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const searchParams = useSearchParams();
-
-  useEffect(() => {
-    if (searchParams.get('popup') === 'true') {
-      setIsOpen(true);
-    }
-  }, [searchParams]);
-
-  useEffect(() => {
-    const handleMouseLeave = (e: MouseEvent) => {
-      if (e.clientY <= 0) {
-        setIsOpen(true);
-      }
-    };
-
-    document.addEventListener('mouseleave', handleMouseLeave);
-    return () => document.removeEventListener('mouseleave', handleMouseLeave);
-  }, []);
-
+const OfferPageContent = () => {
   const afterImages = PlaceHolderImages.filter(img => 
     ['after-routine-1', 'after-routine-2', 'after-routine-3'].includes(img.id)
   );
 
   return (
-    <AlertDialog open={isOpen} onOpenChange={setIsOpen}>
-      <AlertDialogContent className="bg-white p-0 rounded-2xl shadow-2xl max-w-lg w-[90vw] border-4 border-brand-orange grid grid-rows-[auto_1fr_auto] max-h-[90vh]">
-        <AlertDialogHeader className="text-center p-4 sm:p-6 pb-2">
-          <AlertDialogTitle className="font-headline text-xl sm:text-3xl md:text-4xl font-bold text-brand-dark-blue mb-1">
+    <div className="bg-white p-0 rounded-2xl shadow-2xl max-w-lg w-[95vw] sm:w-full mx-auto border-4 border-brand-orange grid grid-rows-[auto_1fr_auto] max-h-[90vh]">
+        <div className="text-center p-4 sm:p-6 pb-2">
+          <h1 className="font-headline text-xl sm:text-3xl md:text-4xl font-bold text-brand-dark-blue mb-1">
             Espere! Antes de ir...
-          </AlertDialogTitle>
-          <AlertDialogDescription className="font-body text-sm sm:text-base md:text-lg text-brand-dark-blue/80">
+          </h1>
+          <p className="font-body text-sm sm:text-base md:text-lg text-brand-dark-blue/80">
             Percebi que você está de saída. Que tal uma <span className="font-bold text-brand-orange">OFERTA EXCLUSIVA</span> para transformar a rotina do seu filho?
-          </AlertDialogDescription>
-        </AlertDialogHeader>
+          </p>
+        </div>
         
         <ScrollArea className="overflow-y-auto px-4 sm:px-6">
           <div className="my-4">
@@ -81,7 +50,7 @@ const ExitIntentPopup = () => {
           </div>
         </ScrollArea>
 
-        <AlertDialogFooter className="flex-col sm:flex-col sm:space-x-0 gap-2 p-4 sm:p-6 pt-2 border-t bg-white">
+        <div className="flex-col sm:flex-col sm:space-x-0 gap-2 p-4 sm:p-6 pt-2 border-t bg-white">
             <a href="https://pay.kiwify.com.br/KbApxZm" className="w-full">
                 <Button className="font-headline bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-4 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300 w-full h-auto animate-glow">
                     <div className="flex flex-col items-center leading-tight">
@@ -93,10 +62,9 @@ const ExitIntentPopup = () => {
             <a href="https://pay.kiwify.com.br/KSInQjA" className="text-gray-500 text-xs sm:text-sm h-auto p-1 text-center hover:underline">
                  Não, obrigado. Quero perder a oferta e pagar mais caro.
             </a>
-        </AlertDialogFooter>
-      </AlertDialogContent>
-    </AlertDialog>
+        </div>
+    </div>
   );
 };
 
-export default ExitIntentPopup;
+export default OfferPageContent;
