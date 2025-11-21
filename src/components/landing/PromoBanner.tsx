@@ -6,8 +6,15 @@ const PromoBanner = () => {
   const [words, setWords] = useState<string[]>([]);
   const [currentWord, setCurrentWord] = useState('');
   const [index, setIndex] = useState(0);
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  useEffect(() => {
+    if (!isClient) return;
+
     const today = new Date();
     const formattedDate = today.toLocaleDateString('pt-BR', {
       day: '2-digit',
@@ -18,7 +25,7 @@ const PromoBanner = () => {
     const initialWords = [`HOJE ${formattedDate}`, "NESSA PÁGINA"];
     setWords(initialWords);
     setCurrentWord(initialWords[0]);
-  }, []);
+  }, [isClient]);
   
   useEffect(() => {
     if (words.length === 0) return;
@@ -36,7 +43,7 @@ const PromoBanner = () => {
     }
   }, [index, words]);
 
-  if (!currentWord) {
+  if (!isClient || !currentWord) {
     return (
         <div className="bg-white text-center py-3 z-20 relative h-[44px]">
         </div>

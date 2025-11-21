@@ -61,8 +61,15 @@ const getIcon = (type: string) => {
 const SalesNotification = () => {
   const [currentNotification, setCurrentNotification] = useState<Notification | null>(null);
   const [isVisible, setIsVisible] = useState(false);
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  useEffect(() => {
+    if (!isClient) return;
+
     let timeoutId: NodeJS.Timeout;
 
     const showRandomNotification = () => {
@@ -93,9 +100,9 @@ const SalesNotification = () => {
       clearTimeout(startTimeout);
       clearTimeout(timeoutId);
     };
-  }, []);
+  }, [isClient]);
 
-  if (!currentNotification) {
+  if (!currentNotification || !isClient) {
     return null;
   }
 
