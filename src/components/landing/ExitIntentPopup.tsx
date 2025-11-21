@@ -14,7 +14,7 @@ const OfferPageContent = () => {
     <div className="bg-white p-0 rounded-2xl shadow-2xl max-w-lg w-[95vw] sm:w-full mx-auto border-4 border-brand-orange grid grid-rows-[auto_1fr_auto] max-h-[90vh]">
         <div className="text-center p-4 sm:p-6 pb-2">
           <h1 className="font-headline text-xl sm:text-3xl md:text-4xl font-bold text-brand-dark-blue mb-2">
-            Você está <span className="text-red-500 underline">desistindo</span> do futuro do seu filho.
+            Você está <span className="text-red-500 underline">desistindo</span> do futuro do seu filho(a).
           </h1>
           <p className="font-body text-sm sm:text-base md:text-lg text-brand-dark-blue/80 break-words overflow-hidden">
             A birra de hoje é a semente para um <b className="text-red-600">adulto perdido, sem foco e sem sucesso</b> amanhã. Vai deixar isso acontecer por <b className="text-brand-turquoise">R$27,90</b>?
@@ -46,7 +46,7 @@ const OfferPageContent = () => {
                   <p className="font-headline text-lg sm:text-2xl font-bold text-gray-400 line-through">R$37,00</p>
                   <p className="font-headline text-3xl sm:text-5xl font-extrabold text-brand-turquoise">R$27,90</p>
               </div>
-              <p className="font-body text-gray-500 text-xs sm:text-sm">Invista no comportamento, foco e responsabilidade dele. <b className="uppercase">AGORA</b>.</p>
+              <p className="font-body text-gray-500 text-xs sm:text-sm">Invista no comportamento, foco e responsabilidade dele(a). <b className="uppercase">AGORA</b>.</p>
             </div>
           </div>
         </ScrollArea>
@@ -61,7 +61,7 @@ const OfferPageContent = () => {
                 </Button>
             </a>
             <a href="https://pay.kiwify.com.br/KSInQjA" className="text-gray-500 text-xs sm:text-sm h-auto p-1 text-center hover:underline">
-                 Não, eu desisto. Deixo o futuro dele para depois.
+                 Não, eu desisto. Deixo o futuro dele(a) para depois.
             </a>
         </div>
     </div>
