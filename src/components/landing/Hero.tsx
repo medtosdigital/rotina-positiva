@@ -26,17 +26,10 @@ const Hero = () => {
             
             <div className="text-brand-dark-blue text-center max-w-4xl">
               <h1 className="font-headline text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tighter !leading-tight">
-                Seu filho(a) te obedece hoje. Ou se torna um{' '}
-                <span className="inline-block bg-primary text-white px-4 rounded-lg -rotate-1">
-                    adulto fracassado
-                </span>{' '}
-                amanhã. A escolha é sua —{' '}
-                <span className="inline-block bg-primary text-white px-4 rounded-lg rotate-1">
-                    a decisão é agora.
-                </span>
+                Faça seu filho <span className="inline-block bg-primary text-white px-4 rounded-lg -rotate-1">OBEDECER</span> sem brigar, sem gritar e sem ameaças — <span className="inline-block bg-primary text-white px-4 rounded-lg rotate-1">com Rotina e Disciplina.</span>
               </h1>
               <p className="font-body text-lg md:text-xl mt-6 mb-8 text-brand-dark-blue/90 max-w-3xl mx-auto">
-                A ferramenta validada por especialistas que instala as <b className="font-bold">3 habilidades de adultos bem-sucedidos</b> no cérebro do seu filho: Foco, Disciplina e Responsabilidade.
+                O sistema visual que transforma disciplina em um jogo que a criança AMA. Adequado para crianças de 2 a 12 anos.
               </p>
             </div>
 
@@ -80,8 +73,8 @@ const Hero = () => {
                     className="font-headline bg-brand-turquoise hover:bg-brand-turquoise/90 text-white font-bold py-6 px-6 sm:py-8 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 w-full max-w-md h-auto animate-pulse-slow"
                 >
                     <div className="flex flex-col items-center">
-                        <span className="text-lg sm:text-xl md:text-2xl">QUERO CONSTRUIR UM FUTURO BRILHANTE</span>
-                        <span className="text-xs sm:text-sm font-normal">Garantir meu kit e o futuro do meu filho</span>
+                        <span className="text-lg sm:text-xl md:text-2xl">QUERO MEU FILHO OBEDIENTE AGORA</span>
+                        <span className="text-xs sm:text-sm font-normal">Garantir meu kit e a paz na minha casa</span>
                     </div>
                 </BuyButton>
 

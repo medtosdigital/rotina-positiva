@@ -38,11 +38,11 @@ const mainShowcaseItems = [
 
 const otherShowcaseItems = [
   { id: 'whats-inside-rewards', title: 'Módulo de Metas e Ambição', benefit: 'Conecta esforço à recompensa, o princípio básico de qualquer carreira de sucesso. A criança aprende a visualizar um prêmio e traçar o caminho para conquistá-lo.' },
-  { id: 'whats-inside-study', title: 'Módulo de Hiperfoco', benefit: 'Transforma a obrigação de estudar em um desafio com começo, meio e fim. Essencial para criar um adulto que sabe aprender e se adaptar.' },
+  { id: 'whats-inside-study', title: 'Módulo de Hiperfoco', benefit: 'Transforma a obrigação de estudar em um desafio com começo, meio e fim. Essencial para criar um adulto que sabe aprender и se adaptar.' },
   { id: 'whats-inside-reading', title: 'Módulo de Leitura Estratégica', benefit: 'Incentiva o hábito que diferencia os bem-sucedidos. A leitura diária vira um superpoder para expandir o conhecimento e a criatividade.' },
   { id: 'whats-inside-responsibilities', title: 'Módulo de Dono', benefit: 'Desenvolve o senso de responsabilidade e pertencimento. Tarefas como arrumar a cama se tornam o primeiro treino para uma mentalidade de dono.' },
   { id: 'whats-inside-cards', title: '+200 Comandos Visuais', benefit: 'São mais de 200 "comandos" para o cérebro da criança. Um arsenal completo para personalizar a programação mental para o sucesso.' },
-  { id: 'whats-inside-coins', title: "Sistema de Conquista", benefit: "Gamifica o sucesso. Estrelas e moedas funcionam como o 'salário' pelo esforço, ensinando o valor do trabalho duro de forma divertida." },
+  { id: 'whats-inside-coins', title: 'Sistema de Conquista', benefit: "Gamifica o sucesso. Estrelas e moedas funcionam como o 'salário' pelo esforço, ensinando o valor do trabalho duro de forma divertida." },
 ];
 
 declare global {
