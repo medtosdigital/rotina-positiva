@@ -43,7 +43,7 @@ const PromoBanner = () => {
     }
   }, [index, words]);
 
-  if (!isClient || !currentWord) {
+  if (!isClient) {
     return (
         <div className="bg-white text-center py-3 z-20 relative h-[44px]">
         </div>
