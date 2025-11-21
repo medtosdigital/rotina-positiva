@@ -17,8 +17,9 @@ const Hero = () => {
 
   return (
     <>
+      {/* Wistia Scripts */}
       <Script src="https://fast.wistia.com/player.js" strategy="lazyOnload" />
-      <Script src="https://fast.wistia.com/embed/c3m3h47fz2.js" strategy="lazyOnload" type="module" />
+      <Script src="https://fast.wistia.com/embed/c3m3h47fz2.js" strategy="lazyOnload" />
       
       <section className="relative w-full bg-white">
         <div className="relative container mx-auto px-6 pt-12 pb-20">
@@ -47,9 +48,11 @@ const Hero = () => {
                   <div 
                     className="wistia_embed wistia_async_c3m3h47fz2 videoFoam=true rounded-xl overflow-hidden" 
                     style={{
-                      height:"100%", 
-                      position:"relative", 
-                      width:"100%"
+                      paddingTop: "177.78%",
+                      position:"relative",
+                      width:"100%",
+                      background: "center / contain no-repeat url('https://fast.wistia.com/embed/medias/c3m3h47fz2/swatch')",
+                      filter: "blur(5px)",
                     }}
                   >&nbsp;</div>
               </div>
