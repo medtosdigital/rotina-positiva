@@ -50,7 +50,7 @@ const Offer = () => {
               >
                 <div className="flex flex-col items-center text-center">
                   <span className="text-xs sm:text-sm font-normal uppercase">Comprar agora com desconto</span>
-                  <span className="text-base sm:text-xl md:text-2xl uppercase">QUERO MEU FILHO OBEDECENDO!</span>
+                  <span className="text-base sm:text-lg md:text-xl uppercase">QUERO MEU FILHO OBEDECENDO!</span>
                   <span className="text-xs sm:text-sm font-normal">Acesso vitalício e risco zero</span>
                 </div>
             </BuyButton>
