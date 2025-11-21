@@ -15,7 +15,16 @@ type Notification = {
 const notifications: Notification[] = data.notifications;
 
 const InstagramIcon = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="url(#instagram-gradient)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <defs>
+            <radialGradient id="instagram-gradient" cx="0.3" cy="1" r="1">
+                <stop offset="0" stopColor="#FFDC80" />
+                <stop offset="0.1" stopColor="#FCAF45" />
+                <stop offset="0.5" stopColor="#F77737" />
+                <stop offset="0.7" stopColor="#F56040" />
+                <stop offset="1" stopColor="#FD1D1D" />
+            </radialGradient>
+        </defs>
         <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
         <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
         <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
@@ -23,7 +32,7 @@ const InstagramIcon = () => (
 );
 
 const FacebookIcon = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+    <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-[#1877F2]" viewBox="0 0 24 24" fill="currentColor">
         <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
     </svg>
 );
@@ -96,7 +105,7 @@ const SalesNotification = () => {
         isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-full'
       }`}
     >
-      <Card className="p-3 shadow-lg max-w-sm w-full">
+      <Card className="p-3 shadow-xl max-w-sm w-full">
         <div className="flex items-center gap-3">
           <div className="flex-shrink-0 bg-gray-100 rounded-full p-2">
             {getIcon(currentNotification.type)}
@@ -111,7 +120,7 @@ const SalesNotification = () => {
               </>
             ) : (
               <>
-                <p className="font-bold text-gray-800">@{currentNotification.name}</p>
+                <p className="font-bold text-gray-800">{currentNotification.name}</p>
                 <p className="text-gray-600 italic">"{currentNotification.comment}"</p>
               </>
             )}
