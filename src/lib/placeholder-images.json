@@ -247,16 +247,10 @@
       "imageHint": "child happy chart"
     },
     {
-      "id": "exit-popup-1",
-      "description": "Mockup of the bonus product 'Jogo da Cooperação'.",
-      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/ChatGPT-Image-15-de-nov.-de-2025-21_15_39.png",
-      "imageHint": "bonus product"
-    },
-    {
-      "id": "exit-popup-2",
-      "description": "Mockup of the main product charts.",
-      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/mockup.png",
-      "imageHint": "product charts"
+      "id": "exit-popup-real-kids",
+      "description": "Happy children using the routine chart.",
+      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/2.2.png",
+      "imageHint": "children routine chart"
     }
   ]
 }

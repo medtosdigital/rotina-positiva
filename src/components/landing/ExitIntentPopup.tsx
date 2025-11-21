@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
 import {
   AlertDialog,
@@ -16,30 +16,52 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 const ExitIntentPopup = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const showPopup = useCallback(() => {
+    // Only show if not already shown to prevent loops.
+    // The isOpen state handles this.
+    if (!isOpen) {
+      setIsOpen(true);
+    }
+  }, [isOpen]);
+
   useEffect(() => {
+    // --- Desktop: Mouse leave ---
     const handleMouseLeave = (event: MouseEvent) => {
-      // Check if mouse is leaving the top of the viewport
-      if (event.clientY <= 0 && !sessionStorage.getItem('exitIntentShown')) {
-        setIsOpen(true);
-        sessionStorage.setItem('exitIntentShown', 'true');
+      if (event.clientY <= 0 || event.clientX <= 0 || (event.clientX >= window.innerWidth || event.clientY >= window.innerHeight)) {
+        showPopup();
       }
     };
-
     document.addEventListener('mouseleave', handleMouseLeave);
+    
+    // --- Mobile & Desktop: Back button / History navigation ---
+    // Push a new state to the history when the component mounts.
+    history.pushState(null, '');
+
+    const handlePopState = (event: PopStateEvent) => {
+      // When the user clicks "back", this event is fired.
+      // We show the popup instead of letting them go back.
+      showPopup();
+      // We push the state again so if they try to go back *again*, it's captured.
+      history.pushState(null, '');
+    };
+
+    window.addEventListener('popstate', handlePopState);
 
     return () => {
       document.removeEventListener('mouseleave', handleMouseLeave);
+      window.removeEventListener('popstate', handlePopState);
     };
-  }, []);
+  }, [showPopup]);
 
-  const exitImages = [
-    PlaceHolderImages.find(img => img.id === 'exit-popup-1'),
-    PlaceHolderImages.find(img => img.id === 'exit-popup-2'),
-  ].filter(Boolean);
+  const handleClose = () => {
+    setIsOpen(false);
+  }
+
+  const exitImage = PlaceHolderImages.find(img => img.id === 'exit-popup-real-kids');
 
   return (
     <AlertDialog open={isOpen} onOpenChange={setIsOpen}>
-      <AlertDialogContent className="bg-white p-6 sm:p-8 rounded-2xl shadow-2xl max-w-lg border-4 border-brand-orange">
+      <AlertDialogContent className="bg-white p-4 sm:p-8 rounded-2xl shadow-2xl max-w-lg border-4 border-brand-orange">
         <AlertDialogHeader className="text-center">
           <AlertDialogTitle className="font-headline text-2xl sm:text-3xl md:text-4xl font-bold text-brand-dark-blue mb-2">
             Espere! Antes de ir...
@@ -50,20 +72,17 @@ const ExitIntentPopup = () => {
         </AlertDialogHeader>
 
         <div className="my-4 sm:my-6">
-          <div className="grid grid-cols-2 gap-2 sm:gap-4 mb-4 sm:mb-6">
-            {exitImages.map((image, index) => (
-                image && (
-                    <Image
-                        key={index}
-                        src={image.imageUrl}
-                        alt={image.description}
-                        width={300}
-                        height={300}
-                        data-ai-hint={image.imageHint}
-                        className="rounded-xl shadow-md w-full h-auto object-cover"
-                    />
-                )
-            ))}
+          <div className="mb-4 sm:mb-6">
+            {exitImage && (
+                <Image
+                    src={exitImage.imageUrl}
+                    alt={exitImage.description}
+                    width={400}
+                    height={300}
+                    data-ai-hint={exitImage.imageHint}
+                    className="rounded-xl shadow-md w-full h-auto object-cover"
+                />
+            )}
           </div>
 
           <div className="bg-gray-50 rounded-2xl p-4 sm:p-6 text-center border">
@@ -78,14 +97,14 @@ const ExitIntentPopup = () => {
 
         <AlertDialogFooter className="flex-col sm:flex-col sm:space-x-0 gap-2">
             <a href="https://pay.kiwify.com.br/KbApxZm" className="w-full">
-                <Button className="font-headline bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-4 sm:py-6 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 w-full h-auto animate-glow">
-                    <div className="flex flex-col items-center">
-                    <span className="text-base sm:text-lg md:text-xl uppercase">SIM, EU QUERO O DESCONTO!</span>
-                    <span className="text-xs sm:text-sm font-normal">Garantir acesso por apenas R$27</span>
+                <Button className="font-headline bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-4 sm:py-4 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300 w-full h-auto animate-glow">
+                    <div className="flex flex-col items-center leading-tight">
+                        <span className="text-sm sm:text-base md:text-lg uppercase font-bold">SIM, EU QUERO O DESCONTO!</span>
+                        <span className="text-xs sm:text-sm font-normal">Garantir acesso por apenas R$27</span>
                     </div>
                 </Button>
             </a>
-            <Button variant="link" onClick={() => setIsOpen(false)} className="text-gray-500 text-sm">
+            <Button variant="link" onClick={handleClose} className="text-gray-500 text-sm">
                  Não, obrigado. Quero perder a oferta.
             </Button>
         </AlertDialogFooter>
