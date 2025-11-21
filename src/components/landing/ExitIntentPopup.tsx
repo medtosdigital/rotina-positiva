@@ -67,7 +67,12 @@ const ExitIntentPopup = () => {
     };
   }, [isOpen, showPopup, isFirstMount]);
 
-  const exitImage = PlaceHolderImages.find(img => img.id === 'exit-popup-real-kids');
+  const afterImages = [
+    PlaceHolderImages.find(img => img.id === 'after-routine-1'),
+    PlaceHolderImages.find(img => img.id === 'after-routine-2'),
+    PlaceHolderImages.find(img => img.id === 'after-routine-3'),
+  ].filter(Boolean);
+
 
   return (
     <AlertDialog open={isOpen} onOpenChange={setIsOpen}>
@@ -82,17 +87,20 @@ const ExitIntentPopup = () => {
         </AlertDialogHeader>
 
         <div className="my-4 sm:my-6">
-          <div className="mb-4 sm:mb-6">
-            {exitImage && (
-                <Image
-                    src={exitImage.imageUrl}
-                    alt={exitImage.description}
-                    width={400}
-                    height={300}
-                    data-ai-hint={exitImage.imageHint}
-                    className="rounded-xl shadow-md w-full h-auto object-cover"
-                />
-            )}
+          <div className="mb-4 sm:mb-6 grid grid-cols-3 gap-2">
+             {afterImages.map((image, index) => (
+                  image && (
+                    <Image 
+                      key={index}
+                      src={image.imageUrl} 
+                      alt={image.description} 
+                      width={200} 
+                      height={200} 
+                      data-ai-hint={image.imageHint} 
+                      className="rounded-md shadow-md w-full h-auto object-cover" 
+                    />
+                  )
+                ))}
           </div>
 
           <div className="bg-gray-50 rounded-2xl p-4 sm:p-6 text-center border">
