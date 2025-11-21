@@ -16,58 +16,51 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 
 const ExitIntentPopup = () => {
   const [isOpen, setIsOpen] = useState(false);
-
-  const openPopup = useCallback(() => {
-    // Only open if it's not already open and not shown this session
-    if (sessionStorage.getItem('exitPopupShown')) return;
-
-    setIsOpen(true);
-    sessionStorage.setItem('exitPopupShown', 'true');
-    // Push a state to history so the back button can be "caught"
-    window.history.pushState({ popupOpen: true }, '');
-  }, []);
-
-  const closePopup = useCallback(() => {
-    setIsOpen(false);
-  }, []);
   
-  // Effect for desktop mouse leave
+  const showPopup = useCallback(() => {
+    if (!isOpen && !sessionStorage.getItem('exitPopupShown')) {
+      setIsOpen(true);
+      sessionStorage.setItem('exitPopupShown', 'true');
+    }
+  }, [isOpen]);
+
   useEffect(() => {
+    // Show on mouse leave (for desktop)
     const handleMouseLeave = (e: MouseEvent) => {
-      // Trigger if mouse is at the top of the viewport
-      if (e.clientY <= 0) {
-        openPopup();
+      if (e.clientY <= 0 || e.relatedTarget == null) {
+        showPopup();
       }
     };
-    
     document.addEventListener('mouseleave', handleMouseLeave);
-    return () => document.removeEventListener('mouseleave', handleMouseLeave);
-  }, [openPopup]);
 
-  // Effect for handling the back button (mobile and desktop)
-  useEffect(() => {
+    // Show on back button (mobile and desktop)
+    // 1. Push a new state to history
+    window.history.pushState({ popup: true }, '');
+
+    // 2. Listen for popstate
     const handlePopstate = (event: PopStateEvent) => {
-      // When user clicks back button, if popup is open, close it.
-      if (isOpen) {
-        closePopup();
-        // The popstate event has been handled, so we stop here.
-        return;
-      }
-      
-      // If the popstate event is from our pushed state and the popup is not open, it means the user
-      // is trying to navigate back to leave the site. Let's show the popup.
-      // We specifically check to make sure it's not an anchor link navigation.
-      if (event.state?.popupOpen !== true && !window.location.hash) {
-         openPopup();
+      // If the user navigates back, and the popup isn't already open, show it.
+      // This prevents the user from leaving the page.
+      if (!isOpen) {
+        showPopup();
+        // Re-push the state so the next back button press also gets caught
+        // This makes it so the user has to close the popup to leave.
+        window.history.pushState({ popup: true }, '');
       }
     };
-
     window.addEventListener('popstate', handlePopstate);
-
+    
     return () => {
+      document.removeEventListener('mouseleave', handleMouseLeave);
       window.removeEventListener('popstate', handlePopstate);
     };
-  }, [isOpen, openPopup, closePopup]);
+  }, [showPopup, isOpen]);
+
+  const handleClose = () => {
+    setIsOpen(false);
+    // Go back one more time to actually leave the page
+    window.history.back();
+  }
 
 
   const afterImages = [
@@ -127,7 +120,7 @@ const ExitIntentPopup = () => {
                     </div>
                 </Button>
             </a>
-            <Button variant="link" onClick={() => setIsOpen(false)} className="text-gray-500 text-xs sm:text-sm h-auto p-1">
+            <Button variant="link" onClick={handleClose} className="text-gray-500 text-xs sm:text-sm h-auto p-1">
                  Não, obrigado. Quero perder a oferta.
             </Button>
         </AlertDialogFooter>
