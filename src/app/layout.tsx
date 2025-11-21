@@ -71,12 +71,12 @@ export default function RootLayout({
           id="back-redirect-script"
           dangerouslySetInnerHTML={{
             __html: `
-              const link = '/desconto';
+              const link = '/?popup=true';
 
               function setBackRedirect(url) {
                 let urlBackRedirect = url;
                 urlBackRedirect = urlBackRedirect.trim() +
-                  (urlBackRedirect.indexOf('?') > 0 ? '&' : '?') +
+                  (urlBackRedirect.indexOf('?') > 0 ? '&' : '') +
                   document.location.search.replace('?', '').toString();
 
                 history.pushState({}, '', location.href);

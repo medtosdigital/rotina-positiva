@@ -13,9 +13,28 @@ import {
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { ScrollArea } from '@/components/ui/scroll-area';
+import { useSearchParams } from 'next/navigation';
 
-const ExitIntentPopup = ({ defaultOpen = false }: { defaultOpen?: boolean }) => {
-  const [isOpen, setIsOpen] = useState(defaultOpen);
+const ExitIntentPopup = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const searchParams = useSearchParams();
+
+  useEffect(() => {
+    if (searchParams.get('popup') === 'true') {
+      setIsOpen(true);
+    }
+  }, [searchParams]);
+
+  useEffect(() => {
+    const handleMouseLeave = (e: MouseEvent) => {
+      if (e.clientY <= 0) {
+        setIsOpen(true);
+      }
+    };
+
+    document.addEventListener('mouseleave', handleMouseLeave);
+    return () => document.removeEventListener('mouseleave', handleMouseLeave);
+  }, []);
 
   const afterImages = PlaceHolderImages.filter(img => 
     ['after-routine-1', 'after-routine-2', 'after-routine-3'].includes(img.id)
