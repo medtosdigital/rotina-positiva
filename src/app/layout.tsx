@@ -68,7 +68,7 @@ export default function RootLayout({
         </noscript>
         {/* End Meta Pixel Code */}
         <script
-          id="back-redirect-script"
+          id="back-redirect-and-scroll"
           dangerouslySetInnerHTML={{
             __html: `
               const link = '/desconto';
@@ -92,6 +92,13 @@ export default function RootLayout({
 
               if (window.location.pathname !== '/desconto') {
                 setBackRedirect(link);
+              }
+
+              window.scrollToTarget = function(targetId) {
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                  targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
               }
             `,
           }}

@@ -45,6 +45,12 @@ const otherShowcaseItems = [
   { id: 'whats-inside-coins', title: "Moedas e Estrelas", benefit: "Sistemas de pontos que transformam a rotina em um jogo. A criança junta estrelas e moedas para trocar por recompensas que vocês definem." },
 ];
 
+declare global {
+  interface Window {
+    scrollToTarget: (targetId: string) => void;
+  }
+}
+
 const ProductShowcase = () => {
   const imageMap = new Map(PlaceHolderImages.map(img => [img.id, img]));
   const headerImages = [
@@ -60,14 +66,6 @@ const ProductShowcase = () => {
     "Ensine responsabilidade e organização desde cedo.",
     "Ganhe mais tempo livre e paz de espírito para você."
   ];
-
-  const handleScroll = (e: React.MouseEvent<HTMLButtonElement>, targetId: string) => {
-    e.preventDefault();
-    const targetElement = document.getElementById(targetId);
-    if (targetElement) {
-        targetElement.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   return (
     <section id="product-showcase" className="pt-20 lg:pt-32 pb-12 lg:pb-12 bg-white">
@@ -179,7 +177,7 @@ const ProductShowcase = () => {
 
         <div className="mt-16 text-center">
             <Button
-                onClick={(e) => handleScroll(e, 'offer')}
+                onClick={() => window.scrollToTarget('offer')}
                 size="lg"
                 className="font-headline bg-brand-turquoise hover:bg-brand-turquoise/90 text-white font-bold py-6 px-6 sm:py-8 sm:px-10 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 h-auto animate-pulse-slow w-full max-w-md"
             >

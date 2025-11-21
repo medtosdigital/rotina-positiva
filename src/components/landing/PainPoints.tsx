@@ -31,14 +31,13 @@ const painPoints = [
   },
 ];
 
+declare global {
+  interface Window {
+    scrollToTarget: (targetId: string) => void;
+  }
+}
+
 const PainPoints = () => {
-    const handleScroll = (e: React.MouseEvent<HTMLButtonElement>, targetId: string) => {
-        e.preventDefault();
-        const targetElement = document.getElementById(targetId);
-        if (targetElement) {
-            targetElement.scrollIntoView({ behavior: 'smooth' });
-        }
-    };
 
   return (
     <section className="py-20 lg:py-32 bg-brand-gold">
@@ -84,7 +83,7 @@ const PainPoints = () => {
             </Card>
             <div className="mt-12 text-center">
                 <Button
-                    onClick={(e) => handleScroll(e, 'product-showcase')}
+                    onClick={() => window.scrollToTarget('product-showcase')}
                     size="lg"
                     className="font-headline bg-brand-turquoise hover:bg-brand-turquoise/90 text-white font-bold py-6 px-6 sm:py-8 sm:px-10 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 h-auto animate-pulse-slow w-full max-w-md"
                 >
