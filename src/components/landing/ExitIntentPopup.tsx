@@ -99,7 +99,7 @@ const ExitIntentPopup = () => {
                         width={200} 
                         height={200} 
                         data-ai-hint={image.imageHint} 
-                        className="rounded-md shadow-md w-full h-auto object-cover" 
+                        className="rounded-md shadow-md w-full h-24 sm:h-auto object-cover" 
                       />
                     )
                   ))}
