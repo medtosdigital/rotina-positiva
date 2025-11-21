@@ -87,6 +87,17 @@ const ExitIntentPopup = () => {
       window.removeEventListener('popstate', handlePopState);
     };
   }, [isOpen, handleShowPopup]);
+  
+  // Ignore hash changes for internal navigation
+  useEffect(() => {
+    const handleHashChange = () => {
+      if (isNavigatingBack.current) {
+        isNavigatingBack.current = false;
+      }
+    };
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
 
   // Clear session storage on initial page load, so the popup can show on the next visit.
   useEffect(() => {
