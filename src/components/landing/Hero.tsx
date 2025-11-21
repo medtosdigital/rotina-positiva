@@ -103,8 +103,7 @@ const Hero = () => {
                                     style={{filter:"blur(5px)",height:"100%",objectFit:"contain",width:"100%"}} 
                                     alt="" 
                                     aria-hidden="true" 
-                                    //@ts-ignore
-                                    onload="this.parentNode.style.opacity=1;" 
+                                    onLoad={(e) => (e.currentTarget.parentElement!.style.opacity = '1')} 
                                 />
                             </div>
                           </div>
