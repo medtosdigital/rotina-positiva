@@ -17,22 +17,20 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 const ExitIntentPopup = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  // --- Main Logic ---
-
   const openPopup = useCallback(() => {
     // Only open if it's not already open and not shown this session
-    if (!isOpen && !sessionStorage.getItem('exitPopupShown')) {
-      setIsOpen(true);
-      sessionStorage.setItem('exitPopupShown', 'true');
-      // Push a state to history so the back button can be "caught"
-      history.pushState({ popupOpen: true }, '');
-    }
-  }, [isOpen]);
+    if (sessionStorage.getItem('exitPopupShown')) return;
+
+    setIsOpen(true);
+    sessionStorage.setItem('exitPopupShown', 'true');
+    // Push a state to history so the back button can be "caught"
+    window.history.pushState({ popupOpen: true }, '');
+  }, []);
 
   const closePopup = useCallback(() => {
     setIsOpen(false);
   }, []);
-
+  
   // Effect for desktop mouse leave
   useEffect(() => {
     const handleMouseLeave = (e: MouseEvent) => {
@@ -46,18 +44,21 @@ const ExitIntentPopup = () => {
     return () => document.removeEventListener('mouseleave', handleMouseLeave);
   }, [openPopup]);
 
-  // Effect for handling the back button
+  // Effect for handling the back button (mobile and desktop)
   useEffect(() => {
     const handlePopstate = (event: PopStateEvent) => {
-      // If the popup is open, the back button press should close it.
+      // When user clicks back button, if popup is open, close it.
       if (isOpen) {
         closePopup();
-      } 
-      // If the popup is not open, and there is no specific state,
-      // it means the user is trying to navigate back to leave the site.
-      // So we show the popup. Anchor links will have a hash, so they are ignored.
-      else if (!window.location.hash) {
-        openPopup();
+        // The popstate event has been handled, so we stop here.
+        return;
+      }
+      
+      // If the popstate event is from our pushed state and the popup is not open, it means the user
+      // is trying to navigate back to leave the site. Let's show the popup.
+      // We specifically check to make sure it's not an anchor link navigation.
+      if (event.state?.popupOpen !== true && !window.location.hash) {
+         openPopup();
       }
     };
 
@@ -67,21 +68,6 @@ const ExitIntentPopup = () => {
       window.removeEventListener('popstate', handlePopstate);
     };
   }, [isOpen, openPopup, closePopup]);
-  
-  // Clean up session storage on component unmount
-  useEffect(() => {
-    // Reset the session storage when the page is first loaded
-    // in case the user reloads the page.
-    window.addEventListener('beforeunload', () => {
-        sessionStorage.removeItem('exitPopupShown');
-    });
-
-    return () => {
-        window.removeEventListener('beforeunload', () => {
-            sessionStorage.removeItem('exitPopupShown');
-        });
-    }
-  }, []);
 
 
   const afterImages = [
@@ -113,9 +99,9 @@ const ExitIntentPopup = () => {
                         src={image.imageUrl} 
                         alt={image.description} 
                         width={200} 
-                        height={200} 
+                        height={120} 
                         data-ai-hint={image.imageHint} 
-                        className="rounded-md shadow-md w-full h-20 sm:h-24 object-cover" 
+                        className="rounded-md shadow-md w-full h-16 sm:h-24 object-cover" 
                       />
                     )
                   ))}
