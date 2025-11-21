@@ -14,10 +14,10 @@ const OfferPageContent = () => {
     <div className="bg-white p-0 rounded-2xl shadow-2xl max-w-lg w-[95vw] sm:w-full mx-auto border-4 border-brand-orange grid grid-rows-[auto_1fr_auto] max-h-[90vh]">
         <div className="text-center p-4 sm:p-6 pb-2">
           <h1 className="font-headline text-xl sm:text-3xl md:text-4xl font-bold text-brand-dark-blue mb-1">
-            Você vai continuar no caos?
+            Tem certeza? Vai desistir da sua paz?
           </h1>
           <p className="font-body text-sm sm:text-base md:text-lg text-brand-dark-blue/80">
-            A paz que você busca para sua casa está a um clique de distância. <span className="font-bold text-brand-orange">Não desista agora.</span>
+            Você está a 1 clique de voltar para a rotina de <span className="font-bold text-red-500">gritos, choro e estresse</span>. A solução está aqui.
           </p>
         </div>
         
@@ -54,13 +54,13 @@ const OfferPageContent = () => {
             <a href="https://pay.kiwify.com.br/KbApxZm" className="w-full">
                 <Button className="font-headline bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-4 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300 w-full h-auto animate-glow">
                     <div className="flex flex-col items-center leading-tight">
-                        <span className="text-sm sm:text-base uppercase font-bold">SIM, EU QUERO PAZ EM CASA!</span>
-                        <span className="text-xs sm:text-sm font-normal">Garantir meu kit por apenas R$27,90</span>
+                        <span className="text-sm sm:text-base uppercase font-bold">SIM, EU QUERO O DESCONTO!</span>
+                        <span className="text-xs sm:text-sm font-normal">Garantir o fim do caos por R$27,90</span>
                     </div>
                 </Button>
             </a>
             <a href="https://pay.kiwify.com.br/KSInQjA" className="text-gray-500 text-xs sm:text-sm h-auto p-1 text-center hover:underline">
-                 Não, obrigado. Prefiro continuar na rotina de estresse.
+                 Não, obrigado. Quero perder a oferta e pagar mais caro.
             </a>
         </div>
     </div>
