@@ -18,8 +18,8 @@ const Hero = () => {
   return (
     <>
       {/* Wistia Player Scripts */}
-      <Script src="https://fast.wistia.com/player.js" async />
-      <Script src="https://fast.wistia.com/embed/c3m3h47fz2.js" async type="module" />
+      <Script src="https://fast.wistia.com/player.js" strategy="lazyOnload" />
+      <Script src="https://fast.wistia.com/embed/c3m3h47fz2.js" strategy="lazyOnload" type="module" />
       
       <section className="relative w-full bg-white">
         <div className="relative container mx-auto px-6 pt-12 pb-20">
@@ -103,7 +103,11 @@ const Hero = () => {
                                     style={{filter:"blur(5px)",height:"100%",objectFit:"contain",width:"100%"}} 
                                     alt="" 
                                     aria-hidden="true" 
-                                    onLoad={(e) => (e.currentTarget.parentElement!.style.opacity = '1')} 
+                                    onLoad={(e) => {
+                                        if (e.currentTarget.parentElement) {
+                                            e.currentTarget.parentElement.style.opacity = '1';
+                                        }
+                                    }}
                                 />
                             </div>
                           </div>
