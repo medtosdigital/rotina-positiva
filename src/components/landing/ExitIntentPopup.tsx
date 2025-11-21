@@ -16,93 +16,68 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 
 const ExitIntentPopup = () => {
   const [isOpen, setIsOpen] = useState(false);
-  
-  // This ref helps us distinguish between user-initiated back navigation and programmatic history changes.
-  const isNavigatingBack = useRef(false);
+  const isHandlingPopstate = useRef(false);
 
-  const handleShowPopup = useCallback(() => {
-    // Only show if it's not already open and hasn't been shown in this session
-    if (isOpen || sessionStorage.getItem('exitPopupShown')) {
-      return;
+  // Function to show the popup and push a state to history
+  const showPopup = useCallback(() => {
+    if (!isOpen && !sessionStorage.getItem('exitPopupShownThisSession')) {
+      setIsOpen(true);
+      history.pushState({ exitPopup: true }, '');
+      sessionStorage.setItem('exitPopupShownThisSession', 'true');
     }
-    // Push a new state to the history to "catch" the back button
-    history.pushState({ popupOpen: true }, '');
-    setIsOpen(true);
-    sessionStorage.setItem('exitPopupShown', 'true');
   }, [isOpen]);
 
-  const handleClosePopup = useCallback(() => {
-    // If the popup state is in the history, go back to remove it.
-    // This prevents the popup from re-appearing on a second back-press.
-    if (history.state?.popupOpen) {
-       isNavigatingBack.current = true; // Signal that we are programmatically going back
-       history.back();
-    }
+  // Function to close the popup
+  const closePopup = useCallback(() => {
     setIsOpen(false);
   }, []);
 
+  // Effect for desktop mouse leave
   useEffect(() => {
-    // This effect handles the desktop mouse-leave intent
     const handleMouseLeave = (e: MouseEvent) => {
-      // Only trigger if mouse goes to the top of the viewport
       if (e.clientY <= 0) {
-        handleShowPopup();
+        showPopup();
       }
     };
-    document.addEventListener('mouseleave', handleMouseLeave);
-    
-    // Cleanup on unmount
-    return () => {
-      document.removeEventListener('mouseleave', handleMouseLeave);
-    };
-  }, [handleShowPopup]);
+    document.addEventListener('mouseleave', handleMouseLeave, { once: true });
+    return () => document.removeEventListener('mouseleave', handleMouseLeave);
+  }, [showPopup]);
 
+  // Effect for handling back button
   useEffect(() => {
-    // This effect handles the back button press on all devices
-    const handlePopState = (event: PopStateEvent) => {
-        // If we programmatically triggered history.back(), just reset the flag and do nothing.
-        if (isNavigatingBack.current) {
-            isNavigatingBack.current = false;
-            return;
-        }
-
-        // If the popup is open and the state is not our popup state, it means the user navigated back. Close it.
-        if (isOpen && !event.state?.popupOpen) {
-            setIsOpen(false);
-        } 
-        // If the popup is not open, and the user presses back, show the popup.
-        else if (!isOpen) {
-             handleShowPopup();
-        }
+    const handlePopstate = () => {
+      // If the popup is open, a back navigation should close it.
+      if (isOpen) {
+        // This ref is to prevent the logic in the 'else' block from running immediately
+        isHandlingPopstate.current = true;
+        closePopup();
+      }
+      // If the popup is not open, the back navigation was likely an attempt to leave the page.
+      // So, we show the popup.
+      else if (!isHandlingPopstate.current) {
+        showPopup();
+      }
+      
+      // Reset the ref after handling
+      if (isHandlingPopstate.current) {
+          setTimeout(() => { isHandlingPopstate.current = false; }, 100);
+      }
     };
 
-    window.addEventListener('popstate', handlePopState);
+    window.addEventListener('popstate', handlePopstate);
 
-    // Initial setup: ensure we have a baseline state to compare against.
-    if (history.state === null) {
-      history.replaceState({ initial: true }, '');
-    }
-    
     return () => {
-      window.removeEventListener('popstate', handlePopState);
+      window.removeEventListener('popstate', handlePopstate);
     };
-  }, [isOpen, handleShowPopup]);
+  }, [isOpen, showPopup, closePopup]);
   
-  // Ignore hash changes for internal navigation
+  // Clean up session storage on component unmount (e.g., page refresh/close)
   useEffect(() => {
-    const handleHashChange = () => {
-      if (isNavigatingBack.current) {
-        isNavigatingBack.current = false;
-      }
+    return () => {
+      sessionStorage.removeItem('exitPopupShownThisSession');
     };
-    window.addEventListener('hashchange', handleHashChange);
-    return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
 
-  // Clear session storage on initial page load, so the popup can show on the next visit.
-  useEffect(() => {
-    sessionStorage.removeItem('exitPopupShown');
-  }, []);
 
   const afterImages = [
     PlaceHolderImages.find(img => img.id === 'after-routine-1'),
@@ -161,7 +136,7 @@ const ExitIntentPopup = () => {
                     </div>
                 </Button>
             </a>
-            <Button variant="link" onClick={handleClosePopup} className="text-gray-500 text-xs sm:text-sm h-auto p-1">
+            <Button variant="link" onClick={closePopup} className="text-gray-500 text-xs sm:text-sm h-auto p-1">
                  Não, obrigado. Quero perder a oferta.
             </Button>
         </AlertDialogFooter>
