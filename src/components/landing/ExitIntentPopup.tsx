@@ -16,74 +16,82 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 
 const ExitIntentPopup = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const ignorePopstate = useRef(false);
+  
+  // This ref helps us distinguish between user-initiated back navigation and programmatic history changes.
+  const isNavigatingBack = useRef(false);
 
   const handleShowPopup = useCallback(() => {
-    if (isOpen || sessionStorage.getItem('exitPopupShown')) return;
+    // Only show if it's not already open and hasn't been shown in this session
+    if (isOpen || sessionStorage.getItem('exitPopupShown')) {
+      return;
+    }
+    // Push a new state to the history to "catch" the back button
     history.pushState({ popupOpen: true }, '');
     setIsOpen(true);
     sessionStorage.setItem('exitPopupShown', 'true');
   }, [isOpen]);
 
   const handleClosePopup = useCallback(() => {
+    // If the popup state is in the history, go back to remove it.
+    // This prevents the popup from re-appearing on a second back-press.
     if (history.state?.popupOpen) {
-      history.back();
+       isNavigatingBack.current = true; // Signal that we are programmatically going back
+       history.back();
     }
     setIsOpen(false);
   }, []);
 
   useEffect(() => {
+    // This effect handles the desktop mouse-leave intent
     const handleMouseLeave = (e: MouseEvent) => {
+      // Only trigger if mouse goes to the top of the viewport
       if (e.clientY <= 0) {
         handleShowPopup();
       }
     };
-
-    const handlePopState = () => {
-      if (ignorePopstate.current) {
-        ignorePopstate.current = false;
-        return;
-      }
-      
-      if (isOpen) {
-        setIsOpen(false);
-      } else {
-        handleShowPopup();
-      }
-    };
-    
-    const handleAnchorClick = (e: MouseEvent) => {
-        const target = e.target as HTMLElement;
-        const anchor = target.closest('a');
-        if (anchor && anchor.hash) {
-            ignorePopstate.current = true;
-        }
-    };
-
     document.addEventListener('mouseleave', handleMouseLeave);
-    window.addEventListener('popstate', handlePopState);
-    document.addEventListener('mousedown', handleAnchorClick);
     
-    // Attempt to show popup on initial back navigation
-    setTimeout(() => {
-        if(window.history.state === null) {
-            window.history.replaceState({ initial: true }, '');
-        }
-    }, 500);
-
-
+    // Cleanup on unmount
     return () => {
       document.removeEventListener('mouseleave', handleMouseLeave);
+    };
+  }, [handleShowPopup]);
+
+  useEffect(() => {
+    // This effect handles the back button press on all devices
+    const handlePopState = (event: PopStateEvent) => {
+        // If we programmatically triggered history.back(), just reset the flag and do nothing.
+        if (isNavigatingBack.current) {
+            isNavigatingBack.current = false;
+            return;
+        }
+
+        // If the popup is open and the state is not our popup state, it means the user navigated back. Close it.
+        if (isOpen && !event.state?.popupOpen) {
+            setIsOpen(false);
+        } 
+        // If the popup is not open, and the user presses back, show the popup.
+        else if (!isOpen) {
+             handleShowPopup();
+        }
+    };
+
+    window.addEventListener('popstate', handlePopState);
+
+    // Initial setup: ensure we have a baseline state to compare against.
+    if (history.state === null) {
+      history.replaceState({ initial: true }, '');
+    }
+    
+    return () => {
       window.removeEventListener('popstate', handlePopState);
-      document.removeEventListener('mousedown', handleAnchorClick);
     };
   }, [isOpen, handleShowPopup]);
-  
-  // Clear session storage on page load so popup can be shown again on next visit
+
+  // Clear session storage on initial page load, so the popup can show on the next visit.
   useEffect(() => {
     sessionStorage.removeItem('exitPopupShown');
   }, []);
-
 
   const afterImages = [
     PlaceHolderImages.find(img => img.id === 'after-routine-1'),
