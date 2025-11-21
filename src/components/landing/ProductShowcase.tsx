@@ -132,18 +132,20 @@ const ProductShowcase = () => {
                 {otherShowcaseItems.map((item) => {
                   const image = imageMap.get(item.id);
                   return (
-                    <Card key={item.id} className="bg-gray-50 rounded-xl overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300 shadow-lg">
-                      {image && (
-                        <Image
-                          src={image.imageUrl}
-                          alt={item.title}
-                          width={400}
-                          height={300}
-                          data-ai-hint={image.imageHint}
-                          className="w-full h-40 object-cover"
-                        />
-                      )}
-                      <CardContent className="p-4">
+                    <Card key={item.id} className="bg-gray-50 rounded-xl overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300 shadow-lg flex flex-col">
+                      <div className="bg-gray-100 p-2 h-48 flex items-center justify-center">
+                        {image && (
+                          <Image
+                            src={image.imageUrl}
+                            alt={item.title}
+                            width={400}
+                            height={300}
+                            data-ai-hint={image.imageHint}
+                            className="w-full h-full object-contain"
+                          />
+                        )}
+                      </div>
+                      <CardContent className="p-4 flex-grow">
                         <h4 className="font-subtitle text-lg font-bold mb-1 text-brand-dark-blue">{item.title}</h4>
                         <p className="font-body text-gray-600 text-sm">{item.benefit}</p>
                       </CardContent>
