@@ -11,7 +11,7 @@ const BuyButton = (props: ButtonProps) => {
     }, []);
 
     if (!isClient) {
-        // Render a placeholder on the server to avoid layout shift
+        // Renderiza um placeholder no servidor para evitar mudança de layout
         return <div className="h-[96px] sm:h-[112px] w-full max-w-md mx-auto" />;
     }
 
