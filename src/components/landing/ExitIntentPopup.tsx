@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useCallback, useRef } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
 import {
   AlertDialog,
@@ -16,18 +16,19 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 
 const ExitIntentPopup = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const isHandlingPopstate = useRef(false);
 
-  // Function to show the popup and push a state to history
-  const showPopup = useCallback(() => {
-    if (!isOpen && !sessionStorage.getItem('exitPopupShownThisSession')) {
+  // --- Main Logic ---
+
+  const openPopup = useCallback(() => {
+    // Only open if it's not already open and not shown this session
+    if (!isOpen && !sessionStorage.getItem('exitPopupShown')) {
       setIsOpen(true);
-      history.pushState({ exitPopup: true }, '');
-      sessionStorage.setItem('exitPopupShownThisSession', 'true');
+      sessionStorage.setItem('exitPopupShown', 'true');
+      // Push a state to history so the back button can be "caught"
+      history.pushState({ popupOpen: true }, '');
     }
   }, [isOpen]);
 
-  // Function to close the popup
   const closePopup = useCallback(() => {
     setIsOpen(false);
   }, []);
@@ -35,32 +36,28 @@ const ExitIntentPopup = () => {
   // Effect for desktop mouse leave
   useEffect(() => {
     const handleMouseLeave = (e: MouseEvent) => {
+      // Trigger if mouse is at the top of the viewport
       if (e.clientY <= 0) {
-        showPopup();
+        openPopup();
       }
     };
-    document.addEventListener('mouseleave', handleMouseLeave, { once: true });
+    
+    document.addEventListener('mouseleave', handleMouseLeave);
     return () => document.removeEventListener('mouseleave', handleMouseLeave);
-  }, [showPopup]);
+  }, [openPopup]);
 
-  // Effect for handling back button
+  // Effect for handling the back button
   useEffect(() => {
-    const handlePopstate = () => {
-      // If the popup is open, a back navigation should close it.
+    const handlePopstate = (event: PopStateEvent) => {
+      // If the popup is open, the back button press should close it.
       if (isOpen) {
-        // This ref is to prevent the logic in the 'else' block from running immediately
-        isHandlingPopstate.current = true;
         closePopup();
-      }
-      // If the popup is not open, the back navigation was likely an attempt to leave the page.
-      // So, we show the popup.
-      else if (!isHandlingPopstate.current) {
-        showPopup();
-      }
-      
-      // Reset the ref after handling
-      if (isHandlingPopstate.current) {
-          setTimeout(() => { isHandlingPopstate.current = false; }, 100);
+      } 
+      // If the popup is not open, and there is no specific state,
+      // it means the user is trying to navigate back to leave the site.
+      // So we show the popup. Anchor links will have a hash, so they are ignored.
+      else if (!window.location.hash) {
+        openPopup();
       }
     };
 
@@ -69,13 +66,21 @@ const ExitIntentPopup = () => {
     return () => {
       window.removeEventListener('popstate', handlePopstate);
     };
-  }, [isOpen, showPopup, closePopup]);
+  }, [isOpen, openPopup, closePopup]);
   
-  // Clean up session storage on component unmount (e.g., page refresh/close)
+  // Clean up session storage on component unmount
   useEffect(() => {
+    // Reset the session storage when the page is first loaded
+    // in case the user reloads the page.
+    window.addEventListener('beforeunload', () => {
+        sessionStorage.removeItem('exitPopupShown');
+    });
+
     return () => {
-      sessionStorage.removeItem('exitPopupShownThisSession');
-    };
+        window.removeEventListener('beforeunload', () => {
+            sessionStorage.removeItem('exitPopupShown');
+        });
+    }
   }, []);
 
 
@@ -136,7 +141,7 @@ const ExitIntentPopup = () => {
                     </div>
                 </Button>
             </a>
-            <Button variant="link" onClick={closePopup} className="text-gray-500 text-xs sm:text-sm h-auto p-1">
+            <Button variant="link" onClick={() => setIsOpen(false)} className="text-gray-500 text-xs sm:text-sm h-auto p-1">
                  Não, obrigado. Quero perder a oferta.
             </Button>
         </AlertDialogFooter>
