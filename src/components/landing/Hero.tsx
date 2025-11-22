@@ -46,6 +46,10 @@ const Hero = () => {
                 Com o sistema visual que transforma disciplina em um jogo divertido. Adequado para crianças de 2 a 12 anos.
               </p>
             </div>
+            
+            <p className="font-body text-sm md:text-base text-center text-brand-dark-blue/90 -mt-6">
+              Assista ao vídeo abaixo e veja como funciona:
+            </p>
 
             <div className="relative mt-0 flex justify-center items-center w-full max-w-sm">
               <div className="w-full mx-auto p-2 rounded-2xl bg-brand-gold shadow-2xl animate-glow">
