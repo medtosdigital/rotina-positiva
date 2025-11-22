@@ -23,7 +23,7 @@ const BuyButton = ({ href, children, ...props }: BuyButtonProps) => {
     }
 
     return (
-        <a href={href} target="_blank" rel="noopener noreferrer" className="w-full flex justify-center">
+        <a href={href} target="_blank" rel="noopener noreferrer prefetch" className="w-full flex justify-center">
             <Button {...props}>
                 {children}
             </Button>
