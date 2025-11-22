@@ -4,11 +4,19 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { ScrollArea } from '@/components/ui/scroll-area';
+import { BuyButton } from './BuyButton';
+import { useState, useEffect } from 'react';
 
 const OfferPageContent = () => {
   const afterImages = PlaceHolderImages.filter(img => 
     ['after-routine-1', 'after-routine-2', 'after-routine-3'].includes(img.id)
   );
+
+  const [isClient, setIsClient] = useState(false);
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
 
   return (
     <div className="bg-white p-0 rounded-2xl shadow-2xl max-w-lg w-[95vw] sm:w-full mx-auto border-4 border-brand-orange grid grid-rows-[auto_1fr_auto] max-h-[90vh]">
@@ -52,17 +60,22 @@ const OfferPageContent = () => {
         </ScrollArea>
 
         <div className="flex flex-col gap-2 p-4 sm:p-6 pt-2 border-t bg-white">
-            <a href="https://pay.kiwify.com.br/KbApxZm" className="w-full">
-                <Button className="font-headline bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-4 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300 w-full h-auto animate-glow">
-                    <div className="flex flex-col items-center leading-tight">
-                        <span className="text-sm sm:text-base uppercase font-bold">SIM, EU QUERO A OFERTA AGORA!</span>
-                        <span className="text-xs sm:text-sm font-normal">Garantir o futuro por apenas R$27,90</span>
-                    </div>
-                </Button>
-            </a>
-            <a href="https://pay.kiwify.com.br/KSInQjA" className="text-gray-500 text-xs sm:text-sm h-auto p-1 text-center hover:underline">
-                 Não, eu desisto. Assumo o risco do futuro dele(a).
-            </a>
+            <BuyButton
+                href="https://pay.kiwify.com.br/KbApxZm"
+                className="font-headline bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-4 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300 w-full h-auto animate-glow"
+            >
+                <div className="flex flex-col items-center leading-tight">
+                    <span className="text-sm sm:text-base uppercase font-bold">SIM, EU QUERO A OFERTA AGORA!</span>
+                    <span className="text-xs sm:text-sm font-normal">Garantir o futuro por apenas R$27,90</span>
+                </div>
+            </BuyButton>
+            {isClient ? (
+              <a href="https://pay.kiwify.com.br/KSInQjA" className="text-gray-500 text-xs sm:text-sm h-auto p-1 text-center hover:underline">
+                   Não, eu desisto. Assumo o risco do futuro dele(a).
+              </a>
+            ) : (
+              <div className="h-6"></div>
+            )}
         </div>
     </div>
   );

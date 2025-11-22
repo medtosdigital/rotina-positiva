@@ -65,11 +65,12 @@ const Offer = () => {
             </div>
             
             <BuyButton
-              className="font-headline bg-[#2ECC71] hover:bg-[#2ECC71]/90 text-white font-bold py-4 px-4 sm:py-6 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 w-full h-auto animate-glow"
+              href="https://pay.kiwify.com.br/KSInQjA"
+              className="font-headline bg-[#2ECC71] hover:bg-[#2ECC71]/90 text-white font-bold py-4 px-4 sm:py-6 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 w-full max-w-lg h-auto animate-glow"
             >
               <div className="flex flex-col items-center text-center leading-tight">
                 <span className="text-xs font-semibold uppercase">Sim, eu me importo com o futuro dele(a)</span>
-                <span className="text-2xl sm:text-3xl uppercase font-extrabold">COMPRAR AGORA</span>
+                <span className="uppercase font-extrabold text-3xl sm:text-4xl">COMPRAR AGORA</span>
                 <span className="text-xs opacity-90 mt-1">Acesso imediato. Risco zero.</span>
               </div>
             </BuyButton>
