@@ -65,13 +65,13 @@ const Offer = () => {
             </div>
             
             <BuyButton
-                className="font-headline bg-[#2ECC71] hover:bg-[#2ECC71]/90 text-white font-bold py-4 px-4 sm:py-6 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 w-full h-auto animate-glow"
-              >
-                <div className="flex flex-col items-center text-center leading-tight">
-                  <span className="text-xs sm:text-sm font-semibold uppercase">Sim, eu me importo com o futuro dele(a)</span>
-                  <span className="text-base sm:text-lg md:text-xl uppercase font-extrabold">QUERO GARANTIR O FUTURO DO MEU FILHO(A)</span>
-                  <span className="text-xs sm:text-sm font-normal opacity-90 mt-1">Acesso imediato. Risco zero.</span>
-                </div>
+              className="font-headline bg-[#2ECC71] hover:bg-[#2ECC71]/90 text-white font-bold py-4 px-4 sm:py-6 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 w-full h-auto animate-glow"
+            >
+              <div className="flex flex-col items-center text-center leading-tight">
+                <span className="text-xs sm:text-sm font-semibold uppercase">Sim, eu me importo com o futuro dele(a)</span>
+                <span className="text-base sm:text-lg md:text-xl uppercase font-extrabold">QUERO GARANTIR O FUTURO DO MEU FILHO(A)</span>
+                <span className="text-xs sm:text-sm font-normal opacity-90 mt-1">Acesso imediato. Risco zero.</span>
+              </div>
             </BuyButton>
             
             <div className="flex items-center justify-center gap-3 mt-8 text-gray-600">
