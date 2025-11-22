@@ -21,7 +21,7 @@ const Hero = () => {
           <div className="flex flex-col items-center gap-10 w-full">
             
             <div className="text-brand-dark-blue text-center max-w-4xl">
-               <h1 className="font-headline text-2xl md:text-3xl font-extrabold tracking-tighter !leading-tight">
+               <h1 className="font-headline text-3xl md:text-4xl font-extrabold tracking-tighter !leading-tight">
                 Faça seu filho <span className="inline-block bg-primary text-white px-3 py-1 rounded-lg">OBEDECER</span> sem brigar, <br className="hidden sm:block" />sem gritar e sem ameaças — <br />
                 <span className="inline-block bg-primary text-white px-3 py-1 rounded-lg mt-2">com Rotina e Disciplina.</span>
               </h1>
@@ -36,13 +36,13 @@ const Hero = () => {
                     className="rounded-xl overflow-hidden aspect-[9/16] w-full"
                     style={{
                       position: 'relative',
-                      background: "center / contain no-repeat url('https://fast.wistia.com/embed/medias/c3m3h47fz2/swatch')",
+                      background: "center / contain no-repeat url('https://image.wistia.com/p/swatch/c3m3h47fz2/000000.jpg?image_crop_resized=640x1138')",
                     }}
                   >
                    <video 
-                      src="https://video.wixstatic.com/video/b601d3_76313364253347579c090333249d3f15/1080p/mp4/file.mp4"
+                      src="https://video.wixstatic.com/video/b601d3_76313364253347579c090333249d3f15/720p/mp4/file.mp4"
                       className="w-full h-full object-cover"
-                      poster="https://fast.wistia.com/embed/medias/c3m3h47fz2/swatch"
+                      poster="https://image.wixstatic.com/vi/b601d3_76313364253347579c090333249d3f15/b601d3_76313364253347579c090333249d3f15.jpg"
                       autoPlay 
                       muted 
                       loop
