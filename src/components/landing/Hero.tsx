@@ -1,6 +1,5 @@
 "use client";
 
-import Script from 'next/script';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Award, BrainCircuit, Users, Star } from 'lucide-react';
@@ -17,9 +16,6 @@ const Hero = () => {
 
   return (
     <>
-      <Script src="https://fast.wistia.com/player.js" strategy="lazyOnload" />
-      <Script src="https://fast.wistia.com/embed/c3m3h47fz2.js" strategy="lazyOnload" />
-      
       <section className="relative w-full bg-white">
         <div className="relative container mx-auto px-6 pt-12 pb-20">
           <div className="flex flex-col items-center gap-10 w-full">
@@ -37,15 +33,23 @@ const Hero = () => {
             <div className="relative mt-0 flex justify-center items-center w-full max-w-sm">
               <div className="w-full mx-auto p-2 rounded-2xl bg-brand-gold shadow-2xl animate-glow">
                   <div 
-                    className="wistia_embed wistia_async_c3m3h47fz2 videoFoam=true rounded-xl overflow-hidden" 
+                    className="rounded-xl overflow-hidden aspect-[9/16] w-full"
                     style={{
-                      height: '100%',
                       position: 'relative',
-                      width: '100%',
-                      paddingTop: "177.78%",
                       background: "center / contain no-repeat url('https://fast.wistia.com/embed/medias/c3m3h47fz2/swatch')",
                     }}
-                  >&nbsp;</div>
+                  >
+                   <video 
+                      src="https://video.wixstatic.com/video/b601d3_76313364253347579c090333249d3f15/1080p/mp4/file.mp4"
+                      className="w-full h-full object-cover"
+                      poster="https://fast.wistia.com/embed/medias/c3m3h47fz2/swatch"
+                      autoPlay 
+                      muted 
+                      loop
+                      playsInline
+                      controls
+                   />
+                  </div>
               </div>
             </div>
 
