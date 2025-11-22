@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Award, BrainCircuit, Users, Star } from 'lucide-react';
 import { BuyButton } from './BuyButton';
+import Script from 'next/script';
 
 const authorityItems = [
     { icon: <Award className="w-6 h-6 text-brand-dark-blue/80" />, text: "Recomendado por Psicólogos" },
@@ -16,6 +17,7 @@ const Hero = () => {
 
   return (
     <>
+      <Script src="https://fast.wistia.com/player.js" async />
       <section className="relative w-full bg-white">
         <div className="relative container mx-auto px-6 pt-12 pb-20">
           <div className="flex flex-col items-center gap-10 w-full">
@@ -33,22 +35,31 @@ const Hero = () => {
             <div className="relative mt-0 flex justify-center items-center w-full max-w-sm">
               <div className="w-full mx-auto p-2 rounded-2xl bg-brand-gold shadow-2xl animate-glow">
                   <div 
-                    className="rounded-xl overflow-hidden aspect-[9/16] w-full"
-                    style={{
-                      position: 'relative',
-                      background: "center / contain no-repeat url('https://image.wistia.com/p/swatch/c3m3h47fz2/000000.jpg?image_crop_resized=640x1138')",
-                    }}
+                    className="rounded-xl overflow-hidden aspect-video w-full"
                   >
-                   <video 
-                      src="https://video.wixstatic.com/video/b601d3_76313364253347579c090333249d3f15/720p/mp4/file.mp4"
-                      className="w-full h-full object-cover"
-                      poster="https://image.wixstatic.com/vi/b601d3_76313364253347579c090333249d3f15/b601d3_76313364253347579c090333249d3f15.jpg"
-                      autoPlay 
-                      muted 
-                      loop
-                      playsInline
-                      controls
-                   />
+                    <div 
+                      className="wistia_embed wistia_async_c3m3h47fz2 videoFoam=true" 
+                      style={{ height: '100%', position: 'relative', width: '100%' }}
+                    >
+                      <div 
+                        className="wistia_swatch" 
+                        style={{ height: '100%', left: 0, opacity: 0, overflow: 'hidden', position: 'absolute', top: 0, transition: 'opacity 200ms', width: '100%' }}
+                      >
+                        <img 
+                          src="https://fast.wistia.com/embed/medias/c3m3h47fz2/swatch" 
+                          style={{ filter: 'blur(5px)', height: '100%', objectFit: 'contain', width: '100%' }} 
+                          alt="" 
+                          aria-hidden="true" 
+                          
+                          onLoad={(e) => {
+                            const target = e.target as HTMLImageElement;
+                            if (target.parentElement) {
+                                target.parentElement.style.opacity = '1';
+                            }
+                          }}
+                        />
+                      </div>
+                    </div>
                   </div>
               </div>
             </div>
@@ -98,6 +109,7 @@ const Hero = () => {
           </div>
         </div>
       </section>
+      <Script src="https://fast.wistia.com/assets/external/E-v1.js" async />
     </>
   );
 };
