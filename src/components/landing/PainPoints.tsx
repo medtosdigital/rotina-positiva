@@ -85,11 +85,11 @@ const PainPoints = () => {
                 <Button
                     onClick={() => window.scrollToTarget('product-showcase')}
                     size="lg"
-                    className="font-headline bg-brand-turquoise hover:bg-brand-turquoise/90 text-white font-bold py-6 px-6 sm:py-8 sm:px-10 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 h-auto animate-pulse-slow w-full max-w-md"
+                    className="font-headline bg-brand-turquoise hover:bg-brand-turquoise/90 text-white font-bold py-4 px-6 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 h-auto animate-pulse-slow w-full max-w-md"
                 >
                     <div className="flex flex-col items-center">
-                        <span className="text-lg sm:text-xl md:text-2xl">QUERO A FERRAMENTA PARA O SUCESSO</span>
-                        <span className="text-xs sm:text-sm font-normal">Clique e veja como instalar o 'chip' do sucesso</span>
+                        <span className="text-base sm:text-lg">QUERO A FERRAMENTA PARA O SUCESSO</span>
+                        <span className="text-xs font-normal">Clique e veja como instalar o 'chip' do sucesso</span>
                     </div>
                 </Button>
             </div>
