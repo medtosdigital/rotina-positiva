@@ -186,8 +186,8 @@ const ProductShowcase = () => {
                 className="font-headline bg-brand-turquoise hover:bg-brand-turquoise/90 text-white font-bold py-4 px-6 sm:py-6 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 h-auto animate-pulse-slow w-full max-w-md"
             >
                 <div className="flex flex-col items-center">
-                    <span className="text-base sm:text-lg md:text-xl uppercase">QUERO INSTALAR O SISTEMA DO SUCESSO</span>
-                    <span className="text-xs sm:text-sm font-normal">Garantir o protocolo com desconto</span>
+                    <span className="text-base sm:text-lg md:text-xl uppercase">QUERO APROVEITAR A OFERTA</span>
+                    <span className="text-xs sm:text-sm font-normal">Garantir meu kit com desconto</span>
                 </div>
             </Button>
         </div>
