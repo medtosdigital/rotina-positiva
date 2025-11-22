@@ -99,7 +99,7 @@ const BeforeAfter = () => {
                 {afterItems.map(item => (
                   <li key={item} className="flex items-start">
                     <CheckCircle2 className="w-6 h-6 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                    <span className="font-body text-gray-700 text-lg md:text_2xl">{item}</span>
+                    <span className="font-body text-gray-700 text-lg md:text-xl">{item}</span>
                   </li>
                 ))}
               </ul>
