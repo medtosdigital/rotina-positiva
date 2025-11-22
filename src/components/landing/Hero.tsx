@@ -23,7 +23,7 @@ const Hero = () => {
           <div className="flex flex-col items-center gap-10 w-full">
             
             <div className="text-brand-dark-blue text-center max-w-4xl">
-               <h1 className="font-headline text-2xl md:text-4xl font-extrabold tracking-tighter !leading-tight">
+               <h1 className="font-headline text-2xl md:text-3xl font-extrabold tracking-tighter !leading-tight">
                 Faça seu filho <span className="inline-block bg-primary text-white px-3 py-1 rounded-lg">OBEDECER</span> sem brigar, <br className="hidden sm:block" />sem gritar e sem ameaças — <br />
                 <span className="inline-block bg-primary text-white px-3 py-1 rounded-lg mt-2">com Rotina e Disciplina.</span>
               </h1>
@@ -96,13 +96,19 @@ const Hero = () => {
                 </BuyButton>
 
                 <div className="bg-gray-50/80 backdrop-blur border border-gray-200/60 rounded-xl p-4 shadow-lg max-w-md w-full">
-                  <div className="flex flex-col gap-3">
-                    {authorityItems.map((item, index) => (
-                      <div key={index} className="flex items-center justify-center sm:justify-start gap-3">
-                        {item.icon}
-                        <span className="font-subtitle text-sm sm:text-base font-semibold text-brand-dark-blue/90">{item.text}</span>
-                      </div>
-                    ))}
+                  <div className="flex flex-col gap-4">
+                    <div className="flex items-center gap-3">
+                      <Award className="w-5 h-5 text-brand-dark-blue/80 flex-shrink-0" />
+                      <span className="font-subtitle text-sm sm:text-base font-semibold text-brand-dark-blue/90">Recomendado por Psicólogos</span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <BrainCircuit className="w-5 h-5 text-brand-dark-blue/80 flex-shrink-0" />
+                      <span className="font-subtitle text-sm sm:text-base font-semibold text-brand-dark-blue/90">Validado por Pedagogos</span>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <Users className="w-5 h-5 text-brand-dark-blue/80 flex-shrink-0 mt-1" />
+                      <span className="font-subtitle text-sm sm:text-base font-semibold text-brand-dark-blue/90">+42 mil pais já transformaram suas casas</span>
+                    </div>
                   </div>
                 </div>
               </div>
