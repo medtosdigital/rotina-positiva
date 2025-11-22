@@ -14,7 +14,7 @@ const FinalCta = () => {
           <div className="mb-10">
             <BuyButton className="font-headline bg-white hover:bg-gray-100 text-brand-orange font-bold py-5 px-6 sm:py-7 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 w-full max-w-lg h-auto animate-pulse-slow">
               <div className="flex flex-col items-center leading-tight">
-                <span className="text-base sm:text-lg md:text-xl">
+                <span className="text-sm sm:text-base md:text-lg">
                   SIM! EU QUERO TRANSFORMAR MINHA CASA!
                 </span>
                 <span className="text-xs sm:text-sm font-normal opacity-80 mt-1">
