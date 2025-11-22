@@ -2,7 +2,6 @@
 
 import { Card, CardContent } from '@/components/ui/card';
 import { CheckCircle2, XCircle } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 
 const painPoints = [
   {
@@ -40,7 +39,7 @@ declare global {
 const PainPoints = () => {
 
   return (
-    <section className="pt-16 bg-white pb-0">
+    <section className="pt-16 bg-white pb-16">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
           <h2 className="font-headline text-3xl md:text-5xl font-bold text-brand-dark-blue mb-4">
