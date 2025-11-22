@@ -82,7 +82,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: `
               (function() {
-                const link = '/quadro/desconto/';
+                const link = './desconto/';
 
                 function setBackRedirect(url) {
                   let urlBackRedirect = url.trim() + (url.indexOf('?') > 0 ? '&' : '?') + document.location.search.replace('?', '').toString();
@@ -98,7 +98,7 @@ export default function RootLayout({
                   }, false);
                 }
 
-                if (window.location.pathname !== '/desconto' && !window.location.pathname.endsWith('/desconto/')) {
+                if (window.location.pathname !== '/quadro/desconto' && !window.location.pathname.endsWith('/quadro/desconto/')) {
                   setBackRedirect(link);
                 }
 
