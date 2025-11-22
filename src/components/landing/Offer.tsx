@@ -1,4 +1,3 @@
-
 "use client";
 
 import { Button } from '@/components/ui/button';
@@ -10,8 +9,8 @@ const Offer = () => {
   return (
     <section id="offer" className="py-20 lg:py-24 bg-brand-gold">
       <div className="container mx-auto px-4 sm:px-6">
-        <Card className="max-w-xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden border-8 border-brand-gold">
-          <div className="bg-brand-turquoise text-white text-center py-3">
+        <Card className="max-w-xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden border-8 border-white">
+          <div className="bg-brand-turquoise text-white text-center py-3 rounded-t-xl">
             <p className="font-headline font-bold text-base sm:text-lg tracking-wide flex items-center justify-center gap-2 animate-pulse-slow">
               <Flame className="w-5 h-5" />
               <span>OFERTA DE URGÊNCIA</span>
