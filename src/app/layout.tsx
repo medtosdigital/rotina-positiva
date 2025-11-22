@@ -82,7 +82,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: `
               (function() {
-                const link = './desconto';
+                const link = '/quadro/desconto/';
 
                 function setBackRedirect(url) {
                   let urlBackRedirect = url.trim() + (url.indexOf('?') > 0 ? '&' : '?') + document.location.search.replace('?', '').toString();
