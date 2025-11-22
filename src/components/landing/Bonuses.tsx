@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -21,7 +22,7 @@ const Bonuses = () => {
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
           <h2 className="font-headline text-3xl md:text-5xl font-bold text-brand-dark-blue mb-4">
-            E de presente 🎁, você ainda leva <span className="text-brand-orange underline decoration-wavy">4 BÔNUS ESPECIAIS E GRÁTIS:</span>
+            E de presente 🎁, você ainda leva <span className="text-brand-orange underline decoration-wavy decoration-2 underline-offset-4">4 BÔNUS ESPECIAIS E GRÁTIS:</span>
           </h2>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 max-w-5xl mx-auto">
@@ -40,14 +41,14 @@ const Bonuses = () => {
                       className="w-full h-32 md:h-48 object-cover"
                     />
                   )}
-                   <div className="absolute top-2 right-2 bg-brand-gold text-brand-dark-blue text-xs font-bold px-3 py-1 rounded-full -rotate-12">RECEBA GRÁTIS</div>
+                   <div className="absolute top-2 right-2 bg-brand-gold text-brand-dark-blue text-xs font-bold px-3 py-1 rounded-full -rotate-12 shadow-lg">RECEBA GRÁTIS</div>
                 </CardHeader>
                 <CardContent className="p-4 md:p-6 text-center flex-grow flex flex-col justify-between">
                   <div>
                     <CardTitle className="font-subtitle text-lg md:text-xl font-bold text-brand-dark-blue">{bonus.title}</CardTitle>
-                    <p className="font-body text-gray-500 line-through">{bonus.price}</p>
+                    <p className="font-body text-gray-400 line-through mt-1">{bonus.price}</p>
                   </div>
-                  <p className="font-body text-gray-700 mt-2 text-sm">{bonus.description}</p>
+                  <p className="font-body text-gray-600 mt-2 text-sm flex-grow">{bonus.description}</p>
                 </CardContent>
               </Card>
             );
