@@ -5,19 +5,15 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { XCircle, CheckCircle2 } from 'lucide-react';
 
 const beforeItems = [
-  "Dias caóticos",
-  "Birras e choros",
-  "Estresse e gritos",
-  "Casa bagunçada",
-  "Cansaço extremo"
+  "Criança sem limites",
+  "Rotina de estresse e gritos",
+  "Adulto despreparado e frustrado",
 ];
 
 const afterItems = [
-  "Dias em paz",
-  "Cooperação e sorrisos",
-  "Paciência e conexão",
-  "Criança organizada",
-  "Mais tempo para você"
+  "Criança confiante e disciplinada",
+  "Rotina de paz e cooperação",
+  "Adulto focado e bem-sucedido"
 ];
 
 const BeforeAfter = () => {
@@ -45,7 +41,7 @@ const BeforeAfter = () => {
           {/* ANTES */}
           <Card className="bg-red-100/50 border-red-200 rounded-2xl shadow-lg p-4 md:p-6">
             <CardHeader className="p-0 mb-4">
-              <CardTitle className="font-headline text-3xl md:text-4xl font-bold text-red-600 text-center">ANTES</CardTitle>
+              <CardTitle className="font-headline text-3xl md:text-4xl font-bold text-red-600 text-center">A SEMENTE DO FRACASSO</CardTitle>
             </CardHeader>
             <CardContent className="p-0">
               <div className="mb-6 grid grid-cols-2 gap-2">
@@ -67,7 +63,7 @@ const BeforeAfter = () => {
                 {beforeItems.map(item => (
                   <li key={item} className="flex items-start">
                     <XCircle className="w-6 h-6 text-red-500 mr-3 mt-1 flex-shrink-0" />
-                    <span className="font-body text-gray-700 text-lg md:text-2xl">{item}</span>
+                    <span className="font-body text-gray-700 text-lg md:text-xl">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -77,7 +73,7 @@ const BeforeAfter = () => {
           {/* DEPOIS */}
           <Card className="bg-green-100/50 border-green-200 rounded-2xl shadow-lg p-4 md:p-6">
             <CardHeader className="p-0 mb-4">
-              <CardTitle className="font-headline text-3xl md:text-4xl font-bold text-green-600 text-center">DEPOIS</CardTitle>
+              <CardTitle className="font-headline text-3xl md:text-4xl font-bold text-green-600 text-center">O CAMINHO DO SUCESSO</CardTitle>
             </CardHeader>
             <CardContent className="p-0">
               <div className="mb-6 grid grid-cols-3 gap-2">
