@@ -1,11 +1,14 @@
 "use client";
 
-import { Button } from '@/components/ui/button';
+import Image from 'next/image';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { ShieldCheck, Flame, AlertTriangle } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { BuyButton } from './BuyButton';
 
 const Offer = () => {
+  const offerImage = PlaceHolderImages.find(img => img.id === 'hero-main');
+
   return (
     <section id="offer" className="py-20 lg:py-24 bg-brand-gold">
       <div className="container mx-auto px-4 sm:px-6">
@@ -30,6 +33,19 @@ const Offer = () => {
             <p className="font-body text-base md:text-lg text-brand-dark-blue/70 max-w-md mx-auto mb-8">
               Acesso vitalício e imediato ao Protocolo Rotina Positiva completo + todos os bônus para blindar o futuro dele(a).
             </p>
+
+            {offerImage && (
+                <div className="relative -mt-4 mb-8">
+                    <Image
+                        src={offerImage.imageUrl}
+                        alt={offerImage.description}
+                        width={600}
+                        height={400}
+                        data-ai-hint={offerImage.imageHint}
+                        className="rounded-lg shadow-lg w-full max-w-md mx-auto"
+                    />
+                </div>
+            )}
             
             <div className="bg-gray-50 rounded-2xl p-4 sm:p-6 mb-8 border">
                 <p className="font-body text-gray-500 text-xs sm:text-sm">Investimento normal</p>
@@ -53,7 +69,7 @@ const Offer = () => {
               >
                 <div className="flex flex-col items-center text-center leading-tight">
                   <span className="text-xs sm:text-sm font-semibold uppercase">Sim, eu me importo com o futuro dele(a)</span>
-                  <span className="text-base sm:text-lg md:text-xl uppercase font-extrabold">QUERO GARANTIR O FUTURO DO MEU FILHO</span>
+                  <span className="text-base sm:text-lg md:text-xl uppercase font-extrabold">QUERO GARANTIR O FUTURO DO MEU FILHO(A)</span>
                   <span className="text-xs sm:text-sm font-normal opacity-90 mt-1">Acesso imediato. Risco zero.</span>
                 </div>
             </BuyButton>
