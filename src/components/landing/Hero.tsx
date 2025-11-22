@@ -106,15 +106,15 @@ const Hero = () => {
                   <div className="flex flex-col gap-4">
                     <div className="flex items-center gap-3">
                       <Award className="w-5 h-5 text-brand-dark-blue/80 flex-shrink-0" />
-                      <span className="font-subtitle text-sm sm:text-base font-semibold text-brand-dark-blue/90">Recomendado por Psicólogos</span>
+                      <span className="font-subtitle text-sm sm:text-base font-semibold text-brand-dark-blue/90">Recomendado por Psicólogos e Terapeutas</span>
                     </div>
                     <div className="flex items-center gap-3">
                       <BrainCircuit className="w-5 h-5 text-brand-dark-blue/80 flex-shrink-0" />
-                      <span className="font-subtitle text-sm sm:text-base font-semibold text-brand-dark-blue/90">Validado por Pedagogos</span>
+                      <span className="font-subtitle text-sm sm:text-base font-semibold text-brand-dark-blue/90">Validado pelo Método Montessori</span>
                     </div>
                     <div className="flex items-start gap-3">
                       <Users className="w-5 h-5 text-brand-dark-blue/80 flex-shrink-0 mt-1" />
-                      <span className="font-subtitle text-sm sm:text-base font-semibold text-brand-dark-blue/90">+42 mil pais já transformaram suas casas</span>
+                      <span className="font-subtitle text-sm sm:text-base font-semibold text-brand-dark-blue/90">+ de 42 mil mães já aprovaram</span>
                     </div>
                   </div>
                 </div>
