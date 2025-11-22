@@ -24,7 +24,7 @@ const Offer = () => {
               <p className="font-headline font-bold text-sm sm:text-base">A JANELA DE OPORTUNIDADE ESTÁ FECHANDO</p>
             </div>
 
-            <h2 className="font-headline text-3xl md:text-5xl font-bold text-brand-dark-blue !leading-tight mb-3">
+            <h2 className="font-headline text-3xl sm:text-4xl md:text-5xl font-bold text-brand-dark-blue !leading-tight mb-3">
               Quanto vale o futuro do seu filho?
             </h2>
             <p className="font-body text-base md:text-lg text-brand-dark-blue/70 max-w-md mx-auto mb-8">
@@ -37,19 +37,19 @@ const Offer = () => {
                 
                 <p className="font-headline font-bold text-brand-turquoise text-base sm:text-lg uppercase">Sua decisão hoje</p>
                 
-                <div className="flex justify-center items-baseline font-headline font-bold text-brand-turquoise !leading-none gap-2">
-                    <span className="text-2xl sm:text-3xl">12x de</span>
+                <div className="flex justify-center items-baseline font-headline font-bold text-brand-turquoise !leading-none gap-1 sm:gap-2">
+                    <span className="text-xl sm:text-2xl md:text-3xl">12x de</span>
                     <div className="flex items-baseline">
-                        <span className="text-3xl sm:text-4xl font-extrabold">R$</span>
-                        <span className="text-5xl sm:text-7xl font-extrabold">3,60</span>
+                        <span className="text-2xl sm:text-3xl md:text-4xl font-extrabold">R$</span>
+                        <span className="text-4xl sm:text-6xl md:text-7xl font-extrabold">3,60</span>
                     </div>
                 </div>
 
-                <p className="font-body text-gray-500 text-xs sm:text-sm">ou R$37,00 à vista (menos que um lanche)</p>
+                <p className="font-body text-gray-500 text-xs sm:text-sm mt-1">ou R$37,00 à vista (menos que um lanche)</p>
             </div>
             
             <BuyButton
-                className="font-headline bg-[#2ECC71] hover:bg-[#2ECC71]/90 text-white font-bold py-4 px-4 sm:py-8 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 w-full h-auto animate-glow"
+                className="font-headline bg-[#2ECC71] hover:bg-[#2ECC71]/90 text-white font-bold py-4 px-4 sm:py-6 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 w-full h-auto animate-glow"
               >
                 <div className="flex flex-col items-center text-center leading-tight">
                   <span className="text-xs sm:text-sm font-normal uppercase">Sim, eu me importo com o futuro dele(a)</span>
