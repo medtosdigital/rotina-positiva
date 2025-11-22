@@ -4,7 +4,7 @@ import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 
 const FinalCta = () => {
   return (
-    <section className="py-20 lg:py-24 bg-brand-orange text-white">
+    <section className="py-20 lg:py-24 bg-brand-dark-blue text-white">
       <div className="container mx-auto px-6 text-center">
         <div className="max-w-3xl mx-auto">
           <h2 className="font-headline text-3xl md:text-5xl font-bold !leading-tight mb-8">
