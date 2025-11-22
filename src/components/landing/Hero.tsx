@@ -25,8 +25,9 @@ const Hero = () => {
           <div className="flex flex-col items-center gap-10 w-full">
             
             <div className="text-brand-dark-blue text-center max-w-4xl">
-              <h1 className="font-headline text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tighter !leading-tight">
-                Faça seu filho <span className="inline-block bg-primary text-white px-4 rounded-lg -rotate-1">OBEDECER</span> sem brigar, sem gritar e sem ameaças — <span className="inline-block bg-primary text-white px-4 rounded-lg rotate-1">com Rotina e Disciplina.</span>
+               <h1 className="font-headline text-3xl md:text-4xl font-extrabold tracking-tighter !leading-tight">
+                Faça seu filho <span className="inline-block bg-primary text-white px-3 py-1 rounded-lg">OBEDECER</span> sem brigar, <br className="hidden sm:block" />sem gritar e sem ameaças — <br />
+                <span className="inline-block bg-primary text-white px-3 py-1 rounded-lg mt-2">com Rotina e Disciplina.</span>
               </h1>
               <p className="font-body text-base md:text-lg mt-6 mb-8 text-brand-dark-blue/90 max-w-3xl mx-auto">
                 O sistema visual que transforma disciplina em um jogo que a criança AMA. Adequado para crianças de 2 a 12 anos.
@@ -71,11 +72,11 @@ const Hero = () => {
                 </div>
 
                 <BuyButton
-                    className="font-headline bg-brand-turquoise hover:bg-brand-turquoise/90 text-white font-bold py-6 px-6 sm:py-8 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 w-full max-w-md h-auto animate-pulse-slow"
+                    className="font-headline bg-brand-turquoise hover:bg-brand-turquoise/90 text-white font-bold py-6 px-6 sm:py-7 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 w-full max-w-md h-auto animate-pulse-slow"
                 >
                     <div className="flex flex-col items-center">
-                        <span className="text-lg sm:text-xl md:text-2xl">QUERO MEU FILHO OBEDIENTE AGORA</span>
-                        <span className="text-xs sm:text-sm font-normal">Garantir meu kit e a paz na minha casa</span>
+                        <span className="text-base sm:text-lg md:text-xl">QUERO MEU FILHO OBEDIENTE AGORA</span>
+                        <span className="text-xs font-normal">Garantir meu kit e a paz na minha casa</span>
                     </div>
                 </BuyButton>
 
