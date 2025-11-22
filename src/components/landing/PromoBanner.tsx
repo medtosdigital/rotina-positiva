@@ -45,13 +45,13 @@ const PromoBanner = () => {
 
   if (!isClient) {
     return (
-        <div className="bg-white text-center py-3 z-20 relative h-[44px]">
+        <div className="bg-brand-gold text-center py-3 z-20 relative h-[44px]">
         </div>
     );
   }
 
   return (
-    <div className="bg-white text-center py-3 z-20 relative">
+    <div className="bg-brand-gold text-center py-3 z-20 relative">
       <p className="font-headline text-brand-dark-blue font-bold text-lg md:text-xl flex justify-center items-center">
         <span>DESCONTO SÓ&nbsp;</span>
         <span className="inline-block relative">
