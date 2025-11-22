@@ -3,9 +3,8 @@ import type {Config} from 'tailwindcss';
 export default {
   darkMode: ['class'],
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     container: {
@@ -102,10 +101,44 @@ export default {
             height: '0',
           },
         },
+        'bounce-subtle': {
+          '0%, 100%': {
+            transform: 'translateY(-2%)',
+            animationTimingFunction: 'cubic-bezier(0.8, 0, 1, 1)',
+          },
+          '50%': {
+            transform: 'translateY(0)',
+            animationTimingFunction: 'cubic-bezier(0, 0, 0.2, 1)',
+          },
+        },
+        'wiggle': {
+          '0%, 100%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(3deg)' },
+        },
+        'pulse-slow': {
+          '0%, 100%': {
+            transform: 'scale(1)',
+          },
+          '50%': {
+            transform: 'scale(1.05)',
+          },
+        },
+        'glow': {
+          '0%, 100%': {
+            filter: 'drop-shadow(0 0 3px hsl(var(--brand-gold)))',
+          },
+          '50%': {
+            filter: 'drop-shadow(0 0 10px hsl(var(--brand-gold)))',
+          },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+        'bounce-subtle': 'bounce-subtle 1.5s infinite',
+        'wiggle': 'wiggle 1s ease-in-out infinite',
+        'pulse-slow': 'pulse-slow 2s infinite',
+        'glow': 'glow 2.5s infinite',
       },
     },
   },
