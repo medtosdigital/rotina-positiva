@@ -25,10 +25,10 @@ const Hero = () => {
           <div className="flex flex-col items-center gap-10 w-full">
             
             <div className="text-brand-dark-blue text-center max-w-4xl">
-              <h1 className="font-headline text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tighter !leading-tight">
+              <h1 className="font-headline text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tighter !leading-tight">
                 Faça seu filho <span className="inline-block bg-primary text-white px-4 rounded-lg -rotate-1">OBEDECER</span> sem brigar, sem gritar e sem ameaças — <span className="inline-block bg-primary text-white px-4 rounded-lg rotate-1">com Rotina e Disciplina.</span>
               </h1>
-              <p className="font-body text-lg md:text-xl mt-6 mb-8 text-brand-dark-blue/90 max-w-3xl mx-auto">
+              <p className="font-body text-base md:text-lg mt-6 mb-8 text-brand-dark-blue/90 max-w-3xl mx-auto">
                 O sistema visual que transforma disciplina em um jogo que a criança AMA. Adequado para crianças de 2 a 12 anos.
               </p>
             </div>
