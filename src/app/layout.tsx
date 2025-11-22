@@ -15,6 +15,40 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  const backRedirectAndScrollScript = `
+    (function() {
+      const basePath = '/quadro';
+      const currentPath = window.location.pathname;
+      const finalLink = basePath + '/desconto/';
+      
+      function setBackRedirect(url) {
+        let urlBackRedirect = url.trim() + (url.indexOf('?') > 0 ? '&' : '?') + document.location.search.replace('?', '').toString();
+
+        history.pushState(null, '', location.href);
+        history.pushState(null, '', location.href);
+        history.pushState(null, '', location.href);
+
+        window.addEventListener('popstate', function() {
+          setTimeout(function() {
+            location.href = urlBackRedirect;
+          }, 1);
+        }, false);
+      }
+      
+      if (currentPath === basePath || currentPath === basePath + '/') {
+          setBackRedirect(finalLink);
+      }
+
+      window.scrollToTarget = function(targetId) {
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    })();
+  `;
+
   return (
     <html lang="en" suppressHydrationWarning className="scroll-smooth">
       <head>
@@ -80,36 +114,7 @@ export default function RootLayout({
           id="back-redirect-and-scroll"
           strategy="lazyOnload"
           dangerouslySetInnerHTML={{
-            __html: `
-              (function() {
-                const link = './desconto/';
-
-                function setBackRedirect(url) {
-                  let urlBackRedirect = url.trim() + (url.indexOf('?') > 0 ? '&' : '?') + document.location.search.replace('?', '').toString();
-
-                  history.pushState(null, '', location.href);
-                  history.pushState(null, '', location.href);
-                  history.pushState(null, '', location.href);
-
-                  window.addEventListener('popstate', function() {
-                    setTimeout(function() {
-                      location.href = urlBackRedirect;
-                    }, 1);
-                  }, false);
-                }
-
-                if (window.location.pathname !== '/quadro/desconto' && !window.location.pathname.endsWith('/quadro/desconto/')) {
-                  setBackRedirect(link);
-                }
-
-                window.scrollToTarget = function(targetId) {
-                  const targetElement = document.getElementById(targetId);
-                  if (targetElement) {
-                    targetElement.scrollIntoView({ behavior: 'smooth' });
-                  }
-                }
-              })();
-            `,
+            __html: backRedirectAndScrollScript,
           }}
         />
       </body>
