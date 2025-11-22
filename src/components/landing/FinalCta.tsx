@@ -8,7 +8,7 @@ const FinalCta = () => {
       <div className="container mx-auto px-6 text-center">
         <div className="max-w-4xl mx-auto">
           <h2 className="font-headline text-3xl md:text-6xl font-bold !leading-tight mb-8 pt-12 md:pt-0">
-            Você está a 1 clique de transformar a rotina do seu filho.
+            Você está a 1 clique de transformar a rotina do seu filho(a).
           </h2>
 
           <BuyButton

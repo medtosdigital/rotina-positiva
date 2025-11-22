@@ -25,10 +25,10 @@ const Offer = () => {
             </div>
 
             <h2 className="font-headline text-3xl sm:text-4xl md:text-5xl font-bold text-brand-dark-blue !leading-tight mb-3">
-              Quanto vale o futuro do seu filho?
+              Quanto vale o futuro do seu filho(a)?
             </h2>
             <p className="font-body text-base md:text-lg text-brand-dark-blue/70 max-w-md mx-auto mb-8">
-              Acesso vitalício e imediato ao Protocolo Rotina Positiva completo + todos os bônus para blindar o futuro dele.
+              Acesso vitalício e imediato ao Protocolo Rotina Positiva completo + todos os bônus para blindar o futuro dele(a).
             </p>
             
             <div className="bg-gray-50 rounded-2xl p-4 sm:p-6 mb-8 border">
@@ -53,7 +53,7 @@ const Offer = () => {
               >
                 <div className="flex flex-col items-center text-center leading-tight">
                   <span className="text-xs sm:text-sm font-semibold uppercase">Sim, eu me importo com o futuro dele(a)</span>
-                  <span className="text-base sm:text-lg md:text-xl uppercase font-extrabold">QUERO GARANTIR O FUTURO DO MEU FILHO</span>
+                  <span className="text-base sm:text-lg md:text-xl uppercase font-extrabold">QUERO GARANTIR O FUTURO DO MEU FILHO(A)</span>
                   <span className="text-xs sm:text-sm font-normal opacity-90 mt-1">Acesso imediato. Risco zero.</span>
                 </div>
             </BuyButton>
