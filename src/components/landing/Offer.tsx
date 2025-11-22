@@ -16,7 +16,7 @@ const Offer = () => {
           <div className="bg-brand-turquoise text-white text-center py-3 rounded-t-xl">
             <p className="font-headline font-bold text-base sm:text-lg tracking-wide flex items-center justify-center gap-2 animate-pulse-slow">
               <Flame className="w-5 h-5" />
-              <span>OFERTA DE URGÊNCIA</span>
+              <span>SOMENTE HOJE</span>
               <Flame className="w-5 h-5" />
             </p>
           </div>
