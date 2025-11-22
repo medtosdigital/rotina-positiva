@@ -2,15 +2,15 @@ import { Card, CardContent } from '@/components/ui/card';
 import { ArrowRight, CheckCircle2, XCircle, ArrowDown } from 'lucide-react';
 
 const boringRules = [
-  "Causa estresse e briga",
-  "Gera procrastinação",
-  "Cria um adulto dependente",
+  "Arrume seu quarto!",
+  "Vá fazer o dever!",
+  "É hora de tomar banho!"
 ];
 
 const funRoutine = [
-  "Instala o 'chip' da autodisciplina",
-  "Cria prazer em fazer o certo",
-  "Forma um adulto proativo e de sucesso",
+  "Conquistar a 'Missão Quarto Arrumado'",
+  "Destravar a 'Fase do Saber'",
+  "Ativar o 'Poder do Super Banho'"
 ];
 
 
@@ -20,14 +20,11 @@ const UniqueMechanism = () => {
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="font-headline text-3xl md:text-5xl font-bold mb-6">
-            O cérebro do seu filho é um supercomputador. E ele só entende uma linguagem:{' '}
-            <span className="bg-brand-gold text-brand-dark-blue px-2 rounded-lg">
-              VISUAL
-            </span>.
+            Crianças só obedecem quando <span className="bg-brand-gold text-brand-dark-blue px-2 rounded-lg">enxergam</span> o que precisam fazer.
           </h2>
           <div className="font-body text-lg md:text-xl text-white/90 space-y-4">
-            <p>Gritos e ordens repetidas são apenas ruído. Para o cérebro dele, é como um programa incompatível que só gera erros e frustração.</p>
-            <p>O <b className="font-bold">Protocolo Rotina Positiva</b> é a programação certa. Ele traduz suas ordens para a única linguagem que a criança entende, transformando o 'dever' em um 'jogo' que ela se sente orgulhosa em vencer.</p>
+            <p>É por isso que os Quadros de Rotina Positiva funcionam.</p>
+            <p>Eles transformam regras e tarefas abstratas em um jogo visual, claro e divertido que seu filho entende e <b className="font-bold">adora seguir</b>.</p>
           </div>
         </div>
 
@@ -36,12 +33,12 @@ const UniqueMechanism = () => {
                 <CardContent className="p-8 md:p-12 grid md:grid-cols-[1fr_auto_1fr] items-center gap-6 md:gap-8">
                     {/* Coluna Regras Chatas */}
                     <div className="text-center md:text-left">
-                        <h3 className="font-headline text-xl md:text-2xl font-bold text-red-500 mb-4">O Método Antigo</h3>
+                        <h3 className="font-headline text-xl md:text-2xl font-bold text-red-500 mb-4">Regras Chatas</h3>
                         <ul className="space-y-3">
                             {boringRules.map((rule, index) => (
                                 <li key={index} className="flex items-start">
                                     <XCircle className="w-6 h-6 text-red-400 mr-3 mt-0.5 flex-shrink-0" />
-                                    <span className="font-body text-gray-600">{rule}</span>
+                                    <span className="font-body text-gray-600 italic">"{rule}"</span>
                                 </li>
                             ))}
                         </ul>
@@ -56,7 +53,7 @@ const UniqueMechanism = () => {
 
                     {/* Coluna Rotina Divertida */}
                     <div className="text-center md:text-left">
-                        <h3 className="font-headline text-xl md:text-2xl font-bold text-green-600 mb-4">O Novo Protocolo</h3>
+                        <h3 className="font-headline text-xl md:text-2xl font-bold text-green-600 mb-4">Rotina Divertida</h3>
                          <ul className="space-y-3">
                             {funRoutine.map((task, index) => (
                                 <li key={index} className="flex items-start">
