@@ -1,10 +1,12 @@
+
 "use client";
 
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Award, BrainCircuit, Users, Star } from 'lucide-react';
+import { Award, BrainCircuit, Users, Star, PlayCircle } from 'lucide-react';
 import Script from 'next/script';
 import { Button } from '@/components/ui/button';
+import { useState } from 'react';
 
 declare global {
   interface Window {
@@ -14,6 +16,8 @@ declare global {
 
 const Hero = () => {
   const testimonial = PlaceHolderImages.find(img => img.id === 'final-cta-testimonial');
+  const [loadVideo, setLoadVideo] = useState(false);
+  const videoId = "c3m3h47fz2";
 
   const handleScroll = () => {
     if (window.scrollToTarget) {
@@ -23,8 +27,12 @@ const Hero = () => {
 
   return (
     <>
-      <Script src="https://fast.wistia.com/player.js" strategy="afterInteractive" />
-      <Script src="https://fast.wistia.com/assets/external/E-v1.js" strategy="afterInteractive" />
+      {loadVideo && (
+        <>
+          <Script src="https://fast.wistia.com/player.js" strategy="afterInteractive" />
+          <Script src="https://fast.wistia.com/assets/external/E-v1.js" strategy="afterInteractive" />
+        </>
+      )}
       <section className="relative w-full bg-white">
         <div className="relative container mx-auto px-6 pt-12 pb-10">
           <div className="flex flex-col items-center gap-10 w-full">
@@ -42,10 +50,25 @@ const Hero = () => {
             <div className="relative mt-0 flex justify-center items-center w-full max-w-sm">
               <div className="w-full mx-auto p-2 rounded-2xl bg-brand-gold shadow-2xl animate-glow">
                 <div className="rounded-xl overflow-hidden w-full aspect-[9/16] relative">
-                  <div 
-                    className="wistia_embed wistia_async_c3m3h47fz2 videoFoam=true" 
-                    style={{ height: '100%', position: 'relative', width: '100%' }}
-                  >&nbsp;</div>
+                  {loadVideo ? (
+                    <div 
+                      className="wistia_embed wistia_async_c3m3h47fz2 videoFoam=true" 
+                      style={{ height: '100%', position: 'relative', width: '100%' }}
+                    >&nbsp;</div>
+                  ) : (
+                    <div className="relative w-full h-full cursor-pointer" onClick={() => setLoadVideo(true)}>
+                      <Image
+                        src={`https://fast.wistia.com/embed/medias/${videoId}/swatch`}
+                        alt="Video thumbnail"
+                        fill
+                        className="object-cover"
+                        unoptimized
+                      />
+                      <div className="absolute inset-0 flex items-center justify-center bg-black/30">
+                        <PlayCircle className="w-20 h-20 text-white/80" />
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
