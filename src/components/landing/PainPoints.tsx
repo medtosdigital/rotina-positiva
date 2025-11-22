@@ -81,18 +81,6 @@ const PainPoints = () => {
                     </div>
                 </CardContent>
             </Card>
-            <div className="mt-12 text-center w-full max-w-md mx-auto">
-                <Button
-                    onClick={() => window.scrollToTarget('unique-mechanism')}
-                    size="lg"
-                    className="font-headline bg-brand-turquoise hover:bg-brand-turquoise/90 text-white font-bold py-4 px-6 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 w-full h-auto animate-pulse-slow"
-                >
-                    <div className="flex flex-col items-center text-center leading-tight">
-                        <span className="text-sm sm:text-base uppercase">QUERO A FERRAMENTA PARA O SUCESSO</span>
-                        <span className="text-xs font-normal">Clique e veja como instalar o 'chip' do sucesso</span>
-                    </div>
-                </Button>
-            </div>
         </div>
       </div>
     </section>
