@@ -20,14 +20,14 @@ const UniqueMechanism = () => {
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="font-headline text-3xl md:text-5xl font-bold mb-6">
-            O cérebro do seu filho é um computador. E ele só entende uma linguagem:{' '}
+            O cérebro do seu filho é um supercomputador. E ele só entende uma linguagem:{' '}
             <span className="bg-brand-gold text-brand-dark-blue px-2 rounded-lg">
               VISUAL
             </span>.
           </h2>
           <div className="font-body text-lg md:text-xl text-white/90 space-y-4">
-            <p>Ordens, gritos e castigos são como um idioma que ele não entende. Eles geram um 'erro no sistema'.</p>
-            <p>Os <b className="font-bold">Quadros de Rotina Positiva</b> traduzem suas ordens para a única linguagem que a criança entende, transformando o 'dever' em um 'jogo' que ela AMA jogar.</p>
+            <p>Gritos e ordens repetidas são apenas ruído. Para o cérebro dele, é como um programa incompatível que só gera erros e frustração.</p>
+            <p>O <b className="font-bold">Protocolo Rotina Positiva</b> é a programação certa. Ele traduz suas ordens para a única linguagem que a criança entende, transformando o 'dever' em um 'jogo' que ela se sente orgulhosa em vencer.</p>
           </div>
         </div>
 
