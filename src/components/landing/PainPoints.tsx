@@ -40,7 +40,7 @@ declare global {
 const PainPoints = () => {
 
   return (
-    <section className="pt-16 bg-white">
+    <section className="pt-16 bg-white pb-0">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
           <h2 className="font-headline text-3xl md:text-5xl font-bold text-brand-dark-blue mb-4">
@@ -81,15 +81,15 @@ const PainPoints = () => {
                     </div>
                 </CardContent>
             </Card>
-            <div className="mt-12 text-center">
+            <div className="mt-12 text-center mb-0">
                 <Button
                     onClick={() => window.scrollToTarget('product-showcase')}
                     size="lg"
-                    className="font-headline bg-brand-turquoise hover:bg-brand-turquoise/90 text-white font-bold py-4 px-6 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 h-auto animate-pulse-slow w-full max-w-md"
+                    className="font-headline bg-brand-turquoise hover:bg-brand-turquoise/90 text-white font-bold py-4 px-6 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 w-full max-w-md h-auto animate-pulse-slow"
                 >
-                    <div className="flex flex-col items-center">
-                        <span className="text-base sm:text-lg">QUERO A FERRAMENTA PARA O SUCESSO</span>
-                        <span className="text-xs font-normal">Clique e veja como instalar o 'chip' do sucesso</span>
+                    <div className="flex flex-col items-center text-center leading-tight">
+                        <span className="text-base sm:text-lg uppercase">QUERO A FERRAMENTA PARA O SUCESSO</span>
+                        <span className="text-xs sm:text-sm font-normal">Clique e veja como instalar o 'chip' do sucesso</span>
                     </div>
                 </Button>
             </div>
