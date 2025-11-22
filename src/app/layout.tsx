@@ -21,28 +21,11 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Poppins:wght@600;700;800&family=Quicksand:wght@500&display=swap" rel="stylesheet" />
-        <script
-          id="utmify-pixel-script"
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.pixelId = "677b35a79d0a196ad04dc661";
-              var a = document.createElement("script");
-              a.setAttribute("async", "");
-              a.setAttribute("defer", "");
-              a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-              document.head.appendChild(a);
-            `,
-          }}
-        />
-        <script
-          src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-          data-utmify-prevent-xcod-sck
-          data-utmify-prevent-subids
-          async
-          defer
-        ></script>
+        
         {/* Meta Pixel Code */}
-        <script
+        <Script
+          id="fb-pixel"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               !function(f,b,e,v,n,t,s)
@@ -67,8 +50,35 @@ export default function RootLayout({
           />
         </noscript>
         {/* End Meta Pixel Code */}
-        <script
+      </head>
+      <body className="font-body antialiased">
+        <SalesNotification />
+        {children}
+        <Toaster />
+
+        <Script
+          id="utmify-pixel-script"
+          strategy="lazyOnload"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.pixelId = "677b35a79d0a196ad04dc661";
+              var a = document.createElement("script");
+              a.setAttribute("async", "");
+              a.setAttribute("defer", "");
+              a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+              document.head.appendChild(a);
+            `,
+          }}
+        />
+        <Script
+          src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+          data-utmify-prevent-xcod-sck
+          data-utmify-prevent-subids
+          strategy="lazyOnload"
+        ></Script>
+        <Script
           id="back-redirect-and-scroll"
+          strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `
               const link = '/desconto';
@@ -103,11 +113,6 @@ export default function RootLayout({
             `,
           }}
         />
-      </head>
-      <body className="font-body antialiased">
-        <SalesNotification />
-        {children}
-        <Toaster />
       </body>
     </html>
   );

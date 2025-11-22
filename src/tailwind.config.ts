@@ -124,10 +124,10 @@ export default {
         },
         'glow': {
           '0%, 100%': {
-            boxShadow: '0 0 5px hsl(var(--brand-gold)), 0 0 10px hsl(var(--brand-gold)), 0 0 15px hsl(var(--brand-gold))',
+            filter: 'drop-shadow(0 0 3px hsl(var(--brand-gold)))',
           },
           '50%': {
-            boxShadow: '0 0 20px hsl(var(--brand-gold)), 0 0 30px hsl(var(--brand-gold)), 0 0 40px hsl(var(--brand-gold))',
+            filter: 'drop-shadow(0 0 10px hsl(var(--brand-gold)))',
           },
         },
       },
