@@ -111,5 +111,3 @@ const BeforeAfter = () => {
 };
 
 export default BeforeAfter;
-
-    
