@@ -25,7 +25,7 @@ const Hero = () => {
           <div className="flex flex-col items-center gap-10 w-full">
             
             <div className="text-brand-dark-blue text-center max-w-4xl">
-               <h1 className="font-headline text-3xl md:text-4xl font-extrabold tracking-tighter !leading-tight">
+               <h1 className="font-headline text-2xl md:text-3xl font-extrabold tracking-tighter !leading-tight">
                 Faça seu filho <span className="inline-block bg-primary text-white px-3 py-1 rounded-lg">OBEDECER</span> sem brigar, <br className="hidden sm:block" />sem gritar e sem ameaças — <br />
                 <span className="inline-block bg-primary text-white px-3 py-1 rounded-lg mt-2">com Rotina e Disciplina.</span>
               </h1>
