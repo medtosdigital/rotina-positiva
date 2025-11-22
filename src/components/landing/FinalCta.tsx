@@ -1,37 +1,42 @@
-import { Button } from '@/components/ui/button';
 import { Star } from 'lucide-react';
 import { BuyButton } from './BuyButton';
+import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 
 const FinalCta = () => {
   return (
-    <section className="pt-20 pb-20 lg:pt-24 lg:pb-24 bg-brand-orange text-white">
+    <section className="py-20 lg:py-24 bg-brand-orange text-white">
       <div className="container mx-auto px-6 text-center">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="font-headline text-3xl md:text-6xl font-bold !leading-tight mb-8 pt-12 md:pt-0">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="font-headline text-3xl md:text-5xl font-bold !leading-tight mb-8">
             Você está a 1 clique de transformar a rotina do seu filho(a).
           </h2>
 
-          <BuyButton
-            className="font-headline bg-white hover:bg-gray-100 text-brand-orange font-bold py-6 px-6 sm:py-8 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 animate-pulse-slow w-full max-w-md h-auto"
-          >
-            <div className="flex flex-col items-center">
-              <span className="text-base sm:text-lg md:text-xl">
-                SIM! EU QUERO TRANSFORMAR MINHA CASA!
-              </span>
-              <span className="text-xs sm:text-sm font-normal opacity-80">
-                Comprar agora com desconto
-              </span>
-            </div>
-          </BuyButton>
+          <div className="mb-10">
+            <BuyButton className="font-headline bg-white hover:bg-gray-100 text-brand-orange font-bold py-5 px-6 sm:py-7 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 w-full max-w-lg h-auto animate-pulse-slow">
+              <div className="flex flex-col items-center leading-tight">
+                <span className="text-base sm:text-lg md:text-xl">
+                  SIM! EU QUERO TRANSFORMAR MINHA CASA!
+                </span>
+                <span className="text-xs sm:text-sm font-normal opacity-80 mt-1">
+                  Comprar agora com desconto
+                </span>
+              </div>
+            </BuyButton>
+          </div>
 
-          <div className="mt-12 flex justify-center items-center">
+          <div className="flex justify-center items-center mb-16">
             <div className="bg-white/20 rounded-xl p-4 flex items-center gap-4 max-w-sm md:max-w-md shadow-lg">
-              <div className="text-center font-body">
+              <Avatar>
+                <AvatarFallback className="bg-white text-brand-orange font-bold">
+                  N
+                </AvatarFallback>
+              </Avatar>
+              <div className="text-left font-body">
                 <p className="text-sm sm:text-base italic">
                   "Melhor investimento que fiz pela paz da minha família. Funcionou no primeiro
                   dia!" - <strong>Juliana S.</strong>
                 </p>
-                <div className="flex text-yellow-300 mt-1 justify-center">
+                <div className="flex text-yellow-300 mt-1">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="w-4 h-4 fill-current" />
                   ))}
@@ -39,15 +44,13 @@ const FinalCta = () => {
               </div>
             </div>
           </div>
-          <div className="mt-8 font-body text-sm">
+          
+          <div className="max-w-3xl mx-auto text-xs text-white/70 space-y-3 font-body">
             <p>
-              Suporte:{' '}
-              <a
-                href="mailto:contato@ditadinhokids.com"
-                className="underline hover:text-white/80"
-              >
-                contato@ditadinhokids.com
-              </a>
+              Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook. Depois que você sair do Facebook, a responsabilidade não é deles e sim do nosso site. Fazemos todos os esforços para indicar claramente e mostrar todas as provas do produto e usamos resultados reais.
+            </p>
+            <p>
+              Não reivindicamos ou declaramos que, ao usar o método, você ganhará dinheiro ou recuperará seu dinheiro. Os depoimentos mostrados são de pessoas reais e os resultados que elas alcançaram não são típicos. Seus resultados podem variar.
             </p>
           </div>
         </div>
