@@ -57,7 +57,7 @@ const PromoBanner = () => {
         <span className="inline-block relative">
           <span
             key={currentWord}
-            className="typing-animation text-brand-orange underline decoration-wavy"
+            className="typing-animation text-white underline decoration-wavy"
           >
             {currentWord}
           </span>
