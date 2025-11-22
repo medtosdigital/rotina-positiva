@@ -38,9 +38,10 @@ const Hero = () => {
                   <div 
                     className="wistia_embed wistia_async_c3m3h47fz2 videoFoam=true rounded-xl overflow-hidden" 
                     style={{
+                      height: '100%',
+                      position: 'relative',
+                      width: '100%',
                       paddingTop: "177.78%",
-                      position:"relative",
-                      width:"100%",
                       background: "center / contain no-repeat url('https://fast.wistia.com/embed/medias/c3m3h47fz2/swatch')",
                     }}
                   >&nbsp;</div>
