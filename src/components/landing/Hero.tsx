@@ -6,12 +6,6 @@ import { Award, BrainCircuit, Users, Star } from 'lucide-react';
 import { BuyButton } from './BuyButton';
 import Script from 'next/script';
 
-const authorityItems = [
-    { icon: <Award className="w-6 h-6 text-brand-dark-blue/80" />, text: "Recomendado por Psicólogos" },
-    { icon: <BrainCircuit className="w-6 h-6 text-brand-dark-blue/80" />, text: "Validado por Pedagogos" },
-    { icon: <Users className="w-6 h-6 text-brand-dark-blue/80" />, text: "+42 mil pais já transformaram suas casas" },
-]
-
 const Hero = () => {
   const testimonial = PlaceHolderImages.find(img => img.id === 'final-cta-testimonial');
 
@@ -19,7 +13,7 @@ const Hero = () => {
     <>
       <Script src="https://fast.wistia.com/player.js" async />
       <section className="relative w-full bg-white">
-        <div className="relative container mx-auto px-6 pt-12 pb-20">
+        <div className="relative container mx-auto px-6 pt-12 pb-10">
           <div className="flex flex-col items-center gap-10 w-full">
             
             <div className="text-brand-dark-blue text-center max-w-4xl">
