@@ -49,9 +49,6 @@ const FinalCta = () => {
             <p>
               Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook. Depois que você sair do Facebook, a responsabilidade não é deles e sim do nosso site. Fazemos todos os esforços para indicar claramente e mostrar todas as provas do produto e usamos resultados reais.
             </p>
-            <p>
-              Não reivindicamos ou declaramos que, ao usar o método, você ganhará dinheiro ou recuperará seu dinheiro. Os depoimentos mostrados são de pessoas reais e os resultados que elas alcançaram não são típicos. Seus resultados podem variar.
-            </p>
           </div>
         </div>
       </div>
