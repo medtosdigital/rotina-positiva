@@ -3,11 +3,23 @@
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Award, BrainCircuit, Users, Star } from 'lucide-react';
-import { BuyButton } from './BuyButton';
 import Script from 'next/script';
+import { Button } from '@/components/ui/button';
+
+declare global {
+  interface Window {
+    scrollToTarget: (targetId: string) => void;
+  }
+}
 
 const Hero = () => {
   const testimonial = PlaceHolderImages.find(img => img.id === 'final-cta-testimonial');
+
+  const handleScroll = () => {
+    if (window.scrollToTarget) {
+      window.scrollToTarget('product-showcase');
+    }
+  };
 
   return (
     <>
@@ -80,14 +92,15 @@ const Hero = () => {
                   </div>
                 </div>
 
-                <BuyButton
+                <Button
+                    onClick={handleScroll}
                     className="font-headline bg-brand-turquoise hover:bg-brand-turquoise/90 text-white font-bold py-6 px-6 sm:py-7 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 w-full max-w-md h-auto animate-pulse-slow"
                 >
                     <div className="flex flex-col items-center">
                         <span className="text-base sm:text-lg md:text-xl">QUERO MEU FILHO OBEDIENTE AGORA</span>
                         <span className="text-xs font-normal">Garantir meu kit e a paz na minha casa</span>
                     </div>
-                </BuyButton>
+                </Button>
 
                 <div className="bg-gray-50/80 backdrop-blur border border-gray-200/60 rounded-xl p-4 shadow-lg max-w-md w-full">
                   <div className="flex flex-col gap-4">
