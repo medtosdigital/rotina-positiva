@@ -53,7 +53,7 @@ const Offer = () => {
               >
                 <div className="flex flex-col items-center text-center leading-tight">
                   <span className="text-xs sm:text-sm font-semibold uppercase">Sim, eu me importo com o futuro dele(a)</span>
-                  <span className="text-base sm:text-lg md:text-xl uppercase font-extrabold">QUERO GARANTIR O FUTURO DO MEU FILHO(A)</span>
+                  <span className="text-base sm:text-lg md:text-xl uppercase font-extrabold">QUERO GARANTIR O FUTURO DO MEU FILHO</span>
                   <span className="text-xs sm:text-sm font-normal opacity-90 mt-1">Acesso imediato. Risco zero.</span>
                 </div>
             </BuyButton>
