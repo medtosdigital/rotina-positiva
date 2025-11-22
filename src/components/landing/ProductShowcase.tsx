@@ -67,7 +67,8 @@ const ProductShowcase = () => {
     "Instale o 'chip' da disciplina de forma natural.",
     "Transforme birra em cooperação e proatividade.",
     "Programe a mente do seu filho para o sucesso.",
-    "Conquiste a paz hoje, garanta o futuro dele amanhã."
+    "Conquiste a paz hoje, garanta o futuro dele amanhã.",
+    "Ensine responsabilidade e organização desde cedo."
   ];
 
   return (
