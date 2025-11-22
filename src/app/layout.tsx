@@ -81,35 +81,34 @@ export default function RootLayout({
           strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `
-              const link = '/desconto';
+              (function() {
+                const link = './desconto';
 
-              function setBackRedirect(url) {
-                let urlBackRedirect = url;
-                urlBackRedirect = urlBackRedirect.trim() +
-                  (urlBackRedirect.indexOf('?') > 0 ? '&' : '?') +
-                  document.location.search.replace('?', '').toString();
+                function setBackRedirect(url) {
+                  let urlBackRedirect = url.trim() + (url.indexOf('?') > 0 ? '&' : '?') + document.location.search.replace('?', '').toString();
 
-                history.pushState({}, '', location.href);
-                history.pushState({}, '', location.href);
-                history.pushState({}, '', location.href);
+                  history.pushState(null, '', location.href);
+                  history.pushState(null, '', location.href);
+                  history.pushState(null, '', location.href);
 
-                window.addEventListener('popstate', () => {
-                  setTimeout(() => {
-                    location.href = urlBackRedirect;
-                  }, 1);
-                });
-              }
-
-              if (window.location.pathname !== '/desconto') {
-                setBackRedirect(link);
-              }
-
-              window.scrollToTarget = function(targetId) {
-                const targetElement = document.getElementById(targetId);
-                if (targetElement) {
-                  targetElement.scrollIntoView({ behavior: 'smooth' });
+                  window.addEventListener('popstate', function() {
+                    setTimeout(function() {
+                      location.href = urlBackRedirect;
+                    }, 1);
+                  }, false);
                 }
-              }
+
+                if (window.location.pathname !== '/desconto' && !window.location.pathname.endsWith('/desconto/')) {
+                  setBackRedirect(link);
+                }
+
+                window.scrollToTarget = function(targetId) {
+                  const targetElement = document.getElementById(targetId);
+                  if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }
+              })();
             `,
           }}
         />
