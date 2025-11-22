@@ -23,8 +23,8 @@ const Hero = () => {
 
   return (
     <>
-      <Script src="https://fast.wistia.com/player.js" async />
-      <Script src="https://fast.wistia.com/assets/external/E-v1.js" async />
+      <Script src="https://fast.wistia.com/player.js" strategy="afterInteractive" />
+      <Script src="https://fast.wistia.com/assets/external/E-v1.js" strategy="afterInteractive" />
       <section className="relative w-full bg-white">
         <div className="relative container mx-auto px-6 pt-12 pb-10">
           <div className="flex flex-col items-center gap-10 w-full">
