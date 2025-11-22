@@ -177,13 +177,12 @@ const ProductShowcase = () => {
         </div>
 
         <div className="mt-16 text-center">
-            <Button
+             <Button
                 onClick={() => window.scrollToTarget('offer')}
-                size="lg"
-                className="font-headline bg-brand-turquoise hover:bg-brand-turquoise/90 text-white font-bold py-6 px-6 sm:py-8 sm:px-10 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 h-auto animate-pulse-slow w-full max-w-md"
+                className="font-headline bg-brand-turquoise hover:bg-brand-turquoise/90 text-white font-bold py-4 px-6 sm:py-6 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 h-auto animate-pulse-slow w-full max-w-md"
             >
                 <div className="flex flex-col items-center">
-                    <span className="text-lg sm:text-xl md:text-2xl">QUERO INSTALAR O SISTEMA DO SUCESSO</span>
+                    <span className="text-lg sm:text-2xl uppercase">QUERO INSTALAR O SISTEMA DO SUCESSO</span>
                     <span className="text-xs sm:text-sm font-normal">Garantir o protocolo com desconto</span>
                 </div>
             </Button>
