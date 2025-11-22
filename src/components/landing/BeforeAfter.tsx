@@ -58,7 +58,7 @@ const BeforeAfter = () => {
                         width={400} 
                         height={400} 
                         data-ai-hint={image.imageHint} 
-                        className="rounded-xl shadow-md w-full h-auto object-cover" 
+                        className="rounded-xl shadow-md w-full h-auto object-cover filter grayscale" 
                       />
                     )
                   ))}
