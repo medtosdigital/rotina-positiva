@@ -35,7 +35,7 @@ const Hero = () => {
             <div className="relative mt-0 flex justify-center items-center w-full max-w-sm">
               <div className="w-full mx-auto p-2 rounded-2xl bg-brand-gold shadow-2xl animate-glow">
                   <div 
-                    className="rounded-xl overflow-hidden aspect-video w-full"
+                    className="rounded-xl overflow-hidden w-full aspect-[9/16]"
                   >
                     <div 
                       className="wistia_embed wistia_async_c3m3h47fz2 videoFoam=true" 
