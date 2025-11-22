@@ -34,7 +34,7 @@ const Hero = () => {
                 <span className="inline-block bg-primary text-white px-3 py-1 rounded-lg mt-2">com Rotina e Disciplina.</span>
               </h1>
               <p className="font-body text-base md:text-lg mt-6 mb-8 text-brand-dark-blue/90 max-w-3xl mx-auto">
-                O sistema visual que transforma disciplina em um jogo que a criança AMA. Adequado para crianças de 2 a 12 anos.
+                Com o sistema visual que transforma disciplina em um jogo divertido. Adequado para crianças de 2 a 12 anos.
               </p>
             </div>
 
