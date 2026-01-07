@@ -3,7 +3,6 @@ import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
   /* config options here */
-  basePath: '/quadro',
   output: 'export',
   trailingSlash: true,
   typescript: {
