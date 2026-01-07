@@ -18,10 +18,10 @@ export default function RootLayout({
 
   const backRedirectAndScrollScript = `
     (function() {
-      const basePath = '/quadro';
+      const basePath = '';
       const currentPath = window.location.pathname;
       const finalLink = basePath + '/desconto/';
-      
+
       function setBackRedirect(url) {
         let urlBackRedirect = url.trim() + (url.indexOf('?') > 0 ? '&' : '?') + document.location.search.replace('?', '').toString();
 
@@ -35,8 +35,8 @@ export default function RootLayout({
           }, 1);
         }, false);
       }
-      
-      if (currentPath === basePath || currentPath === basePath + '/') {
+
+      if (currentPath === '/' || currentPath === '') {
           setBackRedirect(finalLink);
       }
 
