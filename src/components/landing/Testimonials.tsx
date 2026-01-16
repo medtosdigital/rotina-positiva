@@ -62,6 +62,12 @@ const testimonials = [
     username: '@sandrinha.gomes',
     text: 'Achei que era só mais um produto da internet, mas me surpreendi. A qualidade do material é ótima e a mudança de comportamento é real.',
   },
+  {
+    id: 'testimonial-9',
+    name: 'Ana Clara R.',
+    username: '@anaclara.mae',
+    text: 'O futuro da minha filha começa agora. Melhor investimento que fiz. Funcionou no primeiro dia!',
+  },
 ];
 
 const StarRating = () => (
