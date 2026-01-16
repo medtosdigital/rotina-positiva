@@ -1,255 +1,256 @@
+
 {
   "placeholderImages": [
     {
       "id": "hero-main",
       "description": "A collage of the different reward charts and planners available in the Rotina Positiva kit.",
-      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/mockup.png",
+      "imageUrl": "https://picsum.photos/seed/heromain/1200/800",
       "imageHint": "reward charts"
     },
     {
       "id": "product-mockup-full",
       "description": "Full mockup of the Rotina Positiva product suite on various devices.",
-      "imageUrl": "https://images.unsplash.com/photo-1657533038299-9dab584aadc1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwcm9kdWN0JTIwY29sbGVjdGlvbiUyMG1vY2t1cHxlbnwwfHx8fDE3NjMxNDQ2Mzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://picsum.photos/seed/productmockup/1080/800",
       "imageHint": "product collection mockup"
     },
     {
       "id": "carousel-planner",
       "description": "Image of a planner from the Rotina Positiva kit.",
-      "imageUrl": "https://images.unsplash.com/photo-1683291250454-433ea5fe3a07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxraWRzJTIwZGFpbHklMjBwbGFubmVyfGVufDB8fHx8MTc2MzE0NDYzOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://picsum.photos/seed/planner/600/400",
       "imageHint": "kids daily planner"
     },
     {
       "id": "carousel-board",
       "description": "Image of a routine board from the Rotina Positiva kit.",
-      "imageUrl": "https://picsum.photos/seed/board2/600/400",
+      "imageUrl": "https://picsum.photos/seed/board/600/400",
       "imageHint": "kids reward chart"
     },
     {
       "id": "carousel-cards",
       "description": "Image of task cards from the Rotina Positiva kit.",
-      "imageUrl": "https://images.unsplash.com/photo-1614673397128-6c4d301223e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhY3Rpdml0eSUyMGZsYXNoY2FyZHN8ZW58MHx8fHwxNzYzMTQ0NjM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://picsum.photos/seed/cards/600/400",
       "imageHint": "activity flashcards"
     },
     {
       "id": "whats-inside-morning",
       "description": "Organiza as tarefas matinais como acordar, escovar os dentes e se vestir, acabando com a correria e o estresse. A criança aprende a ter autonomia desde cedo, de forma leve e divertida.",
-      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/ChatGPT-Image-15-de-nov.-de-2025-13_23_33.png",
+      "imageUrl": "https://picsum.photos/seed/morning/600/400",
       "imageHint": "morning checklist"
     },
     {
       "id": "whats-inside-afternoon",
       "description": "Estrutura as atividades da tarde, incluindo a hora da lição de casa, lanches e momentos de diversão, sem precisar ficar repetindo as mesmas ordens.",
-      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/ChatGPT-Image-15-de-nov.-de-2025-13_11_17.png",
+      "imageUrl": "https://picsum.photos/seed/afternoon/600/400",
       "imageHint": "afternoon tasks"
     },
     {
       "id": "whats-inside-night",
       "description": "Cria um ritual relaxante e previsível para a hora de dormir. Inclui banho, pijama e história, garantindo noites tranquilas e sem choro.",
-      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/ChatGPT-Image-15-de-nov.-de-2025-13_21_06.png",
+      "imageUrl": "https://picsum.photos/seed/night/600/400",
       "imageHint": "bedtime routine"
     },
     {
       "id": "whats-inside-rewards",
       "description": "Permite que a criança visualize os prêmios que pode conquistar ao completar suas tarefas. A motivação que faltava para a cooperação.",
-      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/ChatGPT-Image-15-de-nov.-de-2025-13_31_44.png",
+      "imageUrl": "https://picsum.photos/seed/rewards/600/400",
       "imageHint": "rewards chart"
     },
     {
       "id": "whats-inside-study",
       "description": "Ajuda a criança a focar nas lições de casa e atividades escolares, tornando o aprendizado mais organizado e menos cansativo para todos.",
-      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/ChatGPT-Image-15-de-nov.-de-2025-13_34_58.png",
+      "imageUrl": "https://picsum.photos/seed/study/600/400",
       "imageHint": "homework planner"
     },
     {
       "id": "whats-inside-reading",
       "description": "Incentiva o hábito da leitura diária de forma prazerosa. Transforme a leitura em um momento mágico e esperado pela criança.",
-      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/ChatGPT-Image-15-de-nov.-de-2025-13_53_28.png",
+      "imageUrl": "https://picsum.photos/seed/reading/600/400",
       "imageHint": "reading log"
     },
     {
       "id": "whats-inside-cards",
       "description": "São mais de 200 cards para personalizar os quadros com todas as tarefas possíveis. Adapta-se 100% à rotina da sua família.",
-      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/ChatGPT-Image-15-de-nov.-de-2025-14_26_52.png",
+      "imageUrl": "https://picsum.photos/seed/taskcards/600/400",
       "imageHint": "routine cards"
     },
     {
       "id": "whats-inside-coins",
       "description": "Sistemas de pontos que transformam a rotina em um jogo. A criança junta estrelas e moedas para trocar por recompensas que vocês definem.",
-      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/ChatGPT-Image-15-de-nov.-de-2025-14_38_41.png",
+      "imageUrl": "https://picsum.photos/seed/coins/600/400",
       "imageHint": "gold stars"
     },
     {
       "id": "whats-inside-responsibilities",
       "description": "Ensina o valor de pequenas tarefas domésticas, como arrumar a cama ou guardar os brinquedos, desenvolvendo o senso de responsabilidade.",
-      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/ChatGPT-Image-15-de-nov.-de-2025-13_55_56.png",
+      "imageUrl": "https://picsum.photos/seed/responsibilities/600/400",
       "imageHint": "responsibilities chart"
     },
     {
       "id": "before-chaos-1",
       "description": "A sad boy in a messy room.",
-      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/0SD1.png",
+      "imageUrl": "https://picsum.photos/seed/chaos1/600/400",
       "imageHint": "child messy room"
     },
     {
       "id": "before-chaos-2",
       "description": "A grumpy girl in a messy room.",
-      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/0SD.png",
+      "imageUrl": "https://picsum.photos/seed/chaos2/600/400",
       "imageHint": "child tantrum"
     },
     {
       "id": "after-routine-1",
       "description": "Child with mom using routine chart.",
-      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/2.2.png",
+      "imageUrl": "https://picsum.photos/seed/routine1/600/400",
       "imageHint": "child routine"
     },
     {
       "id": "after-routine-2",
       "description": "Girl with morning routine chart.",
-      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/2.3.png",
+      "imageUrl": "https://picsum.photos/seed/routine2/600/400",
       "imageHint": "girl routine"
     },
     {
       "id": "after-routine-3",
       "description": "Child pointing to routine chart.",
-      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/2.1.png",
+      "imageUrl": "https://picsum.photos/seed/routine3/600/400",
       "imageHint": "child chart"
     },
     {
       "id": "testimonial-1",
       "description": "Portrait of a smiling Brazilian mother.",
-      "imageUrl": "https://images.unsplash.com/photo-1691211393551-5c4256e02f82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxicmF6aWxpYW4lMjBtb3RoZXJ8ZW58MHx8fHwxNzYzMjMzMDQ4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://picsum.photos/seed/testimonial1/200/200",
       "imageHint": "brazilian mother"
     },
     {
       "id": "testimonial-2",
       "description": "Portrait of a happy Brazilian mother.",
-      "imageUrl": "https://images.unsplash.com/photo-1527692013692-dd97db1f9a2f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxicmF6aWxpYW4lMjB3b21hbnxlbnwwfHx8fDE3NjMyMzMwNDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://picsum.photos/seed/testimonial2/200/200",
       "imageHint": "brazilian woman"
     },
     {
       "id": "testimonial-3",
       "description": "Portrait of a smiling Brazilian mother.",
-      "imageUrl": "https://images.unsplash.com/photo-1494451930944-8998635c2123?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxicmF6aWxpYW4lMjBtb3RoZXJ8ZW58MHx8fHwxNzYzMjMzMDQ4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://picsum.photos/seed/testimonial3/200/200",
       "imageHint": "brazilian mother"
     },
     {
       "id": "testimonial-4",
       "description": "Portrait of a happy Brazilian mother.",
-      "imageUrl": "https://images.unsplash.com/photo-1645242746626-b3d8f4734ca4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxicmF6aWxpYW4lMjB3b21hbnxlbnwwfHx8fDE3NjMyMzMwNDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://picsum.photos/seed/testimonial4/200/200",
       "imageHint": "brazilian woman"
     },
     {
       "id": "testimonial-5",
       "description": "Portrait of a smiling Brazilian mother.",
-      "imageUrl": "https://images.unsplash.com/photo-1653922708190-af35a1f83db7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YnJhemlsaWFuJTIwbW90aGVyfGVufDB8fHx8MTc2MzIzMzA0OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://picsum.photos/seed/testimonial5/200/200",
       "imageHint": "brazilian mother"
     },
     {
       "id": "testimonial-6",
       "description": "Portrait of a happy Brazilian mother.",
-      "imageUrl": "https://images.unsplash.com/photo-1500336624523-d727130c3328?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxicmF6aWxpYW4lMjB3b21hbnxlbnwwfHx8fDE3NjMyMzMwNDh8MA&ixlibrb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://picsum.photos/seed/testimonial6/200/200",
       "imageHint": "brazilian woman"
     },
     {
       "id": "testimonial-7",
       "description": "Portrait of a smiling Brazilian mother.",
-      "imageUrl": "https://images.unsplash.com/photo-1494451930944-8998635c2123?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxicmF6aWxpYW4lMjBtb3RoZXJ8ZW58MHx8fHwxNzYzMjMzMDQ4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://picsum.photos/seed/testimonial7/200/200",
       "imageHint": "brazilian mother"
     },
     {
       "id": "testimonial-8",
       "description": "Portrait of a happy Brazilian mother.",
-      "imageUrl": "https://images.unsplash.com/photo-1519419691348-3b3433c4c20e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxicmF6aWxpYW4lMjB3b21hbnxlbnwwfHx8fDE3NjMyMzMwNDh8MA&ixlibrb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://picsum.photos/seed/testimonial8/200/200",
       "imageHint": "brazilian woman"
     },
     {
       "id": "testimonial-9",
       "description": "Portrait of a smiling Brazilian mother.",
-      "imageUrl": "https://images.unsplash.com/photo-1694185766467-e2a104a79382?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxicmF6aWxpYW4lMjBtb3RoZXJ8ZW58MHx8fHwxNzYzMjMzMDQ4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://picsum.photos/seed/testimonial9/200/200",
       "imageHint": "brazilian mother"
     },
     {
       "id": "testimonial-10",
       "description": "Portrait of a happy Brazilian mother.",
-      "imageUrl": "https://images.unsplash.com/photo-1527692013692-dd97db1f9a2f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxicmF6aWxpYW4lMjB3b21hbnxlbnwwfHx8fDE3NjMyMzMwNDh8MA&ixlibrb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://picsum.photos/seed/testimonial10/200/200",
       "imageHint": "brazilian woman"
     },
     {
       "id": "bonus-cooperacao",
       "description": "Cover of the 'Jogo da Cooperação' bonus.",
-      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/ChatGPT-Image-15-de-nov.-de-2025-21_15_39.png",
+      "imageUrl": "https://picsum.photos/seed/bonus1/600/400",
       "imageHint": "board game"
     },
     {
       "id": "bonus-tdah",
       "description": "Cover of the 'Kit TDAH' bonus.",
-      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/ChatGPT-Image-15-de-nov.-de-2025-21_47_59.png",
+      "imageUrl": "https://picsum.photos/seed/bonus2/600/400",
       "imageHint": "guide mockup"
     },
     {
       "id": "bonus-emocoes",
       "description": "Cover of the 'Painel das Emoções' bonus.",
-      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/ChatGPT-Image-15-de-nov.-de-2025-22_11_10.png",
+      "imageUrl": "https://picsum.photos/seed/bonus3/600/400",
       "imageHint": "planner mockup"
     },
     {
       "id": "bonus-regras",
       "description": "Cover of the 'Cartazes Regras da Casa' bonus.",
-      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/ChatGPT-Image-15-de-nov.-de-2025-22_59_02.png",
+      "imageUrl": "https://picsum.photos/seed/bonus4/600/400",
       "imageHint": "product mockup"
     },
     {
       "id": "guarantee-mom",
       "description": "Image of a happy mother with her child.",
-      "imageUrl": "https://images.unsplash.com/photo-1589169011402-8b2cbd1ee593?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bW90aGVyJTIwY2hpbGR8ZW58MHx8fHwxNzYzMDU1ODY2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://picsum.photos/seed/guarantee/600/400",
       "imageHint": "mother child"
     },
     {
       "id": "creator-story-carla",
       "description": "Photo of Carla Alves, creator of Rotina Positiva, with her daughter.",
-      "imageUrl": "https://images.unsplash.com/photo-1589169011402-8b2cbd1ee593?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bW90aGVyJTIwY2hpbGR8ZW58MHx8fHwxNzYzMDU1ODY2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://picsum.photos/seed/creator/600/400",
       "imageHint": "mother daughter"
     },
     {
       "id": "final-cta-testimonial",
       "description": "Face of a woman for a mini testimonial.",
-      "imageUrl": "https://images.unsplash.com/photo-1589169011402-8b2cbd1ee593?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bW90aGVyJTIwY2hpbGR8ZW58MHx8fHwxNzYzMDU1ODY2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://picsum.photos/seed/ctatesimonial/200/200",
       "imageHint": "brazilian mother child"
     },
     {
       "id": "brain-image",
       "description": "Illustration of a colorful child's brain",
-      "imageUrl": "https://images.unsplash.com/photo-1669286081720-49743b35e882?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxiYmFpbiUyMGdlYXJzfGVufDB8fHx8MTc2MzA1MDI3NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://picsum.photos/seed/brain/600/400",
       "imageHint": "brain gears"
     },
     {
       "id": "product-showcase-header",
       "description": "A magical wand with sparkles.",
-      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/dasdsa.png",
+      "imageUrl": "https://picsum.photos/seed/magicwand/600/400",
       "imageHint": "magic wand"
     },
     {
       "id": "product-in-use-1",
       "description": "Child using the positive routine chart.",
-      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/1.png",
+      "imageUrl": "https://picsum.photos/seed/inuse1/400/400",
       "imageHint": "child routine chart"
     },
     {
       "id": "product-in-use-2",
       "description": "Child pointing at the positive routine chart.",
-      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/1.2.png",
+      "imageUrl": "https://picsum.photos/seed/inuse2/400/400",
       "imageHint": "child pointing chart"
     },
     {
       "id": "product-in-use-3",
       "description": "Child happily showing the positive routine chart.",
-      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/1.1.png",
+      "imageUrl": "https://picsum.photos/seed/inuse3/400/400",
       "imageHint": "child happy chart"
     },
     {
       "id": "exit-popup-real-kids",
       "description": "Happy children using the routine chart.",
-      "imageUrl": "http://medtosdigital.com/wp-content/uploads/2025/11/2.2.png",
+      "imageUrl": "https://picsum.photos/seed/exitpopup/600/400",
       "imageHint": "children routine chart"
     }
   ]

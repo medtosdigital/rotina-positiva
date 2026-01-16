@@ -28,20 +28,20 @@ const Hero = () => {
       <Script src="https://fast.wistia.com/player.js" strategy="afterInteractive" />
       <Script src="https://fast.wistia.com/assets/external/E-v1.js" strategy="afterInteractive" />
       <section className="relative w-full bg-white">
-        <div className="relative container mx-auto px-6 pt-12 pb-10">
-          <div className="flex flex-col items-center gap-10 w-full">
+        <div className="relative container mx-auto px-4 pt-10 pb-8 sm:pt-12 sm:pb-10">
+          <div className="flex flex-col items-center gap-6 w-full">
             
             <div className="text-brand-dark-blue text-center max-w-4xl">
-               <h1 className="font-headline text-2xl md:text-3xl font-extrabold tracking-tighter !leading-tight">
-                Faça seu filho <span className="inline-block bg-primary text-white px-3 py-1 rounded-lg">OBEDECER</span> sem brigar, <br className="hidden sm:block" />sem gritar e sem ameaças — <br />
-                <span className="inline-block bg-primary text-white px-3 py-1 rounded-lg mt-2">com Rotina e Disciplina.</span>
+               <h1 className="font-headline text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tighter !leading-tight">
+                Faça seu filho <span className="inline-block bg-primary text-white px-2 sm:px-3 py-1 rounded-lg">OBEDECER</span> sem brigar, <br className="hidden sm:block" />sem gritar e sem ameaças — <br />
+                <span className="inline-block bg-primary text-white px-2 sm:px-3 py-1 rounded-lg mt-2 text-2xl sm:text-3xl md:text-4xl">com Rotina e Disciplina.</span>
               </h1>
-              <p className="font-body text-base md:text-lg mt-6 mb-8 text-brand-dark-blue/90 max-w-3xl mx-auto">
+              <p className="font-body text-sm sm:text-base md:text-lg mt-4 mb-6 text-brand-dark-blue/90 max-w-3xl mx-auto">
                 Com o sistema visual que transforma disciplina em um jogo divertido. Adequado para crianças de 2 a 12 anos.
               </p>
             </div>
             
-            <p className="font-body text-sm md:text-base text-center text-brand-dark-blue/90 -mt-6">
+            <p className="font-body text-xs sm:text-sm text-center text-brand-dark-blue/90 -mt-2">
               Assista ao vídeo abaixo e veja como funciona:
             </p>
 
@@ -56,23 +56,23 @@ const Hero = () => {
               </div>
             </div>
 
-             <div className="flex flex-col items-center gap-6 mt-8">
-                <div className="mb-6 flex justify-center lg:justify-start">
-                  <div className="bg-gray-100/80 backdrop-blur-sm border border-gray-200/50 rounded-xl p-4 flex items-center gap-4 max-w-sm md:max-w-md shadow-lg">
+             <div className="flex flex-col items-center gap-4 mt-4 w-full">
+                <div className="mb-2 flex justify-center w-full">
+                  <div className="bg-gray-100/80 backdrop-blur-sm border border-gray-200/50 rounded-xl p-3 flex items-center gap-3 w-full max-w-sm shadow-lg">
                     {testimonial && (
                         <Image
                             src={testimonial.imageUrl}
                             alt={testimonial.description}
-                            width={80}
-                            height={80}
+                            width={60}
+                            height={60}
                             data-ai-hint={testimonial.imageHint}
-                            className="rounded-full object-cover border-2 border-white w-12 h-12"
+                            className="rounded-full object-cover border-2 border-white w-10 h-10 sm:w-12 sm:h-12"
                         />
                     )}
-                    <div className="text-left font-body">
-                        <p className="text-xs sm:text-sm italic text-brand-dark-blue">"O futuro da minha filha começa agora. Melhor investimento que fiz. Funcionou no primeiro dia!"</p>
+                    <div className="text-left font-body flex-1">
+                        <p className="text-[11px] sm:text-xs italic text-brand-dark-blue">"O futuro da minha filha começa agora. Melhor investimento que fiz. Funcionou no primeiro dia!"</p>
                         <div className="flex text-yellow-400 mt-1">
-                            {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-current" />)}
+                            {[...Array(5)].map((_, i) => <Star key={i} className="w-3 h-3 sm:w-4 sm:h-4 fill-current" />)}
                         </div>
                     </div>
                   </div>
@@ -80,27 +80,27 @@ const Hero = () => {
 
                 <Button
                     onClick={handleScroll}
-                    className="font-headline bg-brand-turquoise hover:bg-brand-turquoise/90 text-white font-bold py-6 px-6 sm:py-7 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 w-full max-w-md h-auto animate-pulse-slow"
+                    className="font-headline bg-brand-turquoise hover:bg-brand-turquoise/90 text-white font-bold py-4 px-4 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300 w-full max-w-md h-auto animate-pulse-slow"
                 >
-                    <div className="flex flex-col items-center">
-                        <span className="text-base sm:text-lg md:text-xl">QUERO MEU FILHO OBEDIENTE AGORA</span>
-                        <span className="text-xs font-normal">Garantir meu kit e a paz na minha casa</span>
+                    <div className="flex flex-col items-center leading-tight">
+                        <span className="text-base sm:text-lg">QUERO MEU FILHO OBEDIENTE AGORA</span>
+                        <span className="text-[10px] sm:text-xs font-normal opacity-90">Garantir meu kit e a paz na minha casa</span>
                     </div>
                 </Button>
 
-                <div className="bg-gray-50/80 backdrop-blur border border-gray-200/60 rounded-xl p-4 shadow-lg max-w-md w-full">
-                  <div className="flex flex-col gap-4">
+                <div className="bg-gray-50/80 backdrop-blur border border-gray-200/60 rounded-xl p-3 sm:p-4 shadow-lg max-w-md w-full">
+                  <div className="flex flex-col gap-2">
                     <div className="flex items-center gap-3">
                       <Award className="w-5 h-5 text-brand-dark-blue/80 flex-shrink-0" />
-                      <span className="font-subtitle text-sm sm:text-base font-semibold text-brand-dark-blue/90">Recomendado por Psicólogos e Terapeutas</span>
+                      <span className="font-subtitle text-xs sm:text-sm font-semibold text-brand-dark-blue/90">Recomendado por Psicólogos e Terapeutas</span>
                     </div>
                     <div className="flex items-center gap-3">
                       <BrainCircuit className="w-5 h-5 text-brand-dark-blue/80 flex-shrink-0" />
-                      <span className="font-subtitle text-sm sm:text-base font-semibold text-brand-dark-blue/90">Validado pelo Método Montessori</span>
+                      <span className="font-subtitle text-xs sm:text-sm font-semibold text-brand-dark-blue/90">Validado pelo Método Montessori</span>
                     </div>
                     <div className="flex items-start gap-3">
-                      <Users className="w-5 h-5 text-brand-dark-blue/80 flex-shrink-0 mt-1" />
-                      <span className="font-subtitle text-sm sm:text-base font-semibold text-brand-dark-blue/90">+ de 42 mil mães já aprovaram</span>
+                      <Users className="w-5 h-5 text-brand-dark-blue/80 flex-shrink-0 mt-0.5" />
+                      <span className="font-subtitle text-xs sm:text-sm font-semibold text-brand-dark-blue/90">+ de 42 mil mães já aprovaram</span>
                     </div>
                   </div>
                 </div>
