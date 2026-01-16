@@ -68,6 +68,24 @@ const testimonials = [
     username: '@anaclara.mae',
     text: 'O futuro da minha filha começa agora. Melhor investimento que fiz. Funcionou no primeiro dia!',
   },
+  {
+    id: 'testimonial-10',
+    name: 'Laura M.',
+    username: '@lauramae.aventureira',
+    text: 'O quadro de incentivo foi a virada de chave que precisávamos! As manhãs agora são tranquilas, sem choro nem birra. Meu filho se sente super orgulhoso de conquistar suas estrelinhas.',
+  },
+  {
+    id: 'testimonial-11',
+    name: 'Sofia C.',
+    username: '@sofiacostamae',
+    text: 'Minha psicóloga indicou e foi a melhor coisa! A ansiedade da minha filha diminuiu muito com a previsibilidade da rotina. Ela está mais segura e confiante.',
+  },
+  {
+    id: 'testimonial-12',
+    name: 'Beatriz L.',
+    username: '@bia.lima.rotina',
+    text: 'O material é lindo e super resistente. Meus filhos amaram os desenhos e participaram da montagem do quadro. Agora, eles mesmos me cobram para seguir a rotina!',
+  },
 ];
 
 const StarRating = () => (

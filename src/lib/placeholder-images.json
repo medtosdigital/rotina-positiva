@@ -4,253 +4,265 @@
     {
       "id": "hero-main",
       "description": "A collage of the different reward charts and planners available in the Rotina Positiva kit.",
-      "imageUrl": "https://picsum.photos/seed/heromain/1200/800",
+      "imageUrl": "https://images.unsplash.com/photo-1546484433-9119463ce25b?q=80&w=1200&h=800&fit=crop",
       "imageHint": "reward charts"
     },
     {
       "id": "product-mockup-full",
       "description": "Full mockup of the Rotina Positiva product suite on various devices.",
-      "imageUrl": "https://picsum.photos/seed/productmockup/1080/800",
+      "imageUrl": "https://images.unsplash.com/photo-1512295767273-b684ac69f887?q=80&w=1080&h=800&fit=crop",
       "imageHint": "product collection mockup"
     },
     {
       "id": "carousel-planner",
       "description": "Image of a planner from the Rotina Positiva kit.",
-      "imageUrl": "https://picsum.photos/seed/planner/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1519452635265-7b1fbfd1e4e5?q=80&w=600&h=400&fit=crop",
       "imageHint": "kids daily planner"
     },
     {
       "id": "carousel-board",
       "description": "Image of a routine board from the Rotina Positiva kit.",
-      "imageUrl": "https://picsum.photos/seed/board/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1558041319-329a8f443538?q=80&w=600&h=400&fit=crop",
       "imageHint": "kids reward chart"
     },
     {
       "id": "carousel-cards",
       "description": "Image of task cards from the Rotina Positiva kit.",
-      "imageUrl": "https://picsum.photos/seed/cards/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1600869158703-bc071a8561a3?q=80&w=600&h=400&fit=crop",
       "imageHint": "activity flashcards"
     },
     {
       "id": "whats-inside-morning",
       "description": "Organiza as tarefas matinais como acordar, escovar os dentes e se vestir, acabando com a correria e o estresse. A criança aprende a ter autonomia desde cedo, de forma leve e divertida.",
-      "imageUrl": "https://picsum.photos/seed/morning/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1527668822464-9a913d7b69d2?q=80&w=600&h=400&fit=crop",
       "imageHint": "morning checklist"
     },
     {
       "id": "whats-inside-afternoon",
       "description": "Estrutura as atividades da tarde, incluindo a hora da lição de casa, lanches e momentos de diversão, sem precisar ficar repetindo as mesmas ordens.",
-      "imageUrl": "https://picsum.photos/seed/afternoon/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1503944583220-79d8c838d16d?q=80&w=600&h=400&fit=crop",
       "imageHint": "afternoon tasks"
     },
     {
       "id": "whats-inside-night",
       "description": "Cria um ritual relaxante e previsível para a hora de dormir. Inclui banho, pijama e história, garantindo noites tranquilas e sem choro.",
-      "imageUrl": "https://picsum.photos/seed/night/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1500469171739-60135542f8e1?q=80&w=600&h=400&fit=crop",
       "imageHint": "bedtime routine"
     },
     {
       "id": "whats-inside-rewards",
       "description": "Permite que a criança visualize os prêmios que pode conquistar ao completar suas tarefas. A motivação que faltava para a cooperação.",
-      "imageUrl": "https://picsum.photos/seed/rewards/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1513360312651-485d562132b4?q=80&w=600&h=400&fit=crop",
       "imageHint": "rewards chart"
     },
     {
       "id": "whats-inside-study",
       "description": "Ajuda a criança a focar nas lições de casa e atividades escolares, tornando o aprendizado mais organizado e menos cansativo para todos.",
-      "imageUrl": "https://picsum.photos/seed/study/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=600&h=400&fit=crop",
       "imageHint": "homework planner"
     },
     {
       "id": "whats-inside-reading",
       "description": "Incentiva o hábito da leitura diária de forma prazerosa. Transforme a leitura em um momento mágico e esperado pela criança.",
-      "imageUrl": "https://picsum.photos/seed/reading/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1524995723338-7120a136940e?q=80&w=600&h=400&fit=crop",
       "imageHint": "reading log"
     },
     {
       "id": "whats-inside-cards",
       "description": "São mais de 200 cards para personalizar os quadros com todas as tarefas possíveis. Adapta-se 100% à rotina da sua família.",
-      "imageUrl": "https://picsum.photos/seed/taskcards/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1604390745588-693d395a1236?q=80&w=600&h=400&fit=crop",
       "imageHint": "routine cards"
     },
     {
       "id": "whats-inside-coins",
       "description": "Sistemas de pontos que transformam a rotina em um jogo. A criança junta estrelas e moedas para trocar por recompensas que vocês definem.",
-      "imageUrl": "https://picsum.photos/seed/coins/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1588693951226-fe843a870377?q=80&w=600&h=400&fit=crop",
       "imageHint": "gold stars"
     },
     {
       "id": "whats-inside-responsibilities",
       "description": "Ensina o valor de pequenas tarefas domésticas, como arrumar a cama ou guardar os brinquedos, desenvolvendo o senso de responsabilidade.",
-      "imageUrl": "https://picsum.photos/seed/responsibilities/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1516627142999-c045b5349b14?q=80&w=600&h=400&fit=crop",
       "imageHint": "responsibilities chart"
     },
     {
       "id": "before-chaos-1",
       "description": "A sad boy in a messy room.",
-      "imageUrl": "https://picsum.photos/seed/chaos1/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1529402633224-a2a3f915b136?q=80&w=600&h=400&fit=crop",
       "imageHint": "child messy room"
     },
     {
       "id": "before-chaos-2",
       "description": "A grumpy girl in a messy room.",
-      "imageUrl": "https://picsum.photos/seed/chaos2/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1503944583220-79d8c838d16d?q=80&w=600&h=400&fit=crop",
       "imageHint": "child tantrum"
     },
     {
       "id": "after-routine-1",
       "description": "Child with mom using routine chart.",
-      "imageUrl": "https://picsum.photos/seed/routine1/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1541687255143-294356f63462?q=80&w=600&h=400&fit=crop",
       "imageHint": "child routine"
     },
     {
       "id": "after-routine-2",
       "description": "Girl with morning routine chart.",
-      "imageUrl": "https://picsum.photos/seed/routine2/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1519452635265-7b1fbfd1e4e5?q=80&w=600&h=400&fit=crop",
       "imageHint": "girl routine"
     },
     {
       "id": "after-routine-3",
       "description": "Child pointing to routine chart.",
-      "imageUrl": "https://picsum.photos/seed/routine3/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1558041319-329a8f443538?q=80&w=600&h=400&fit=crop",
       "imageHint": "child chart"
     },
     {
       "id": "testimonial-1",
       "description": "Portrait of a smiling Brazilian mother.",
-      "imageUrl": "https://picsum.photos/seed/testimonial1/200/200",
-      "imageHint": "brazilian mother"
+      "imageUrl": "https://images.unsplash.com/photo-1542206395-9feb3edaa68d?q=80&w=200&h=200&fit=crop",
+      "imageHint": "real brazilian mother"
     },
     {
       "id": "testimonial-2",
       "description": "Portrait of a happy Brazilian mother.",
-      "imageUrl": "https://picsum.photos/seed/testimonial2/200/200",
-      "imageHint": "brazilian woman"
+      "imageUrl": "https://images.unsplash.com/photo-1557554589-328a67d4b41e?q=80&w=200&h=200&fit=crop",
+      "imageHint": "real brazilian mother"
     },
     {
       "id": "testimonial-3",
       "description": "Portrait of a smiling Brazilian mother.",
-      "imageUrl": "https://picsum.photos/seed/testimonial3/200/200",
-      "imageHint": "brazilian mother"
+      "imageUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&h=200&fit=crop",
+      "imageHint": "real brazilian mother"
     },
     {
       "id": "testimonial-4",
       "description": "Portrait of a happy Brazilian mother.",
-      "imageUrl": "https://picsum.photos/seed/testimonial4/200/200",
-      "imageHint": "brazilian woman"
+      "imageUrl": "https://images.unsplash.com/photo-1581094883584-99a38914f796?q=80&w=200&h=200&fit=crop",
+      "imageHint": "real brazilian mother"
     },
     {
       "id": "testimonial-5",
       "description": "Portrait of a smiling Brazilian mother.",
-      "imageUrl": "https://picsum.photos/seed/testimonial5/200/200",
-      "imageHint": "brazilian mother"
+      "imageUrl": "https://images.unsplash.com/photo-1610276198568-eb6d0ff53e48?q=80&w=200&h=200&fit=crop",
+      "imageHint": "real brazilian mother"
     },
     {
       "id": "testimonial-6",
-      "description": "Portrait of a happy Brazilian mother.",
-      "imageUrl": "https://picsum.photos/seed/testimonial6/200/200",
-      "imageHint": "brazilian woman"
+      "description": "Portrait of a happy Brazilian mother with her child.",
+      "imageUrl": "https://images.unsplash.com/photo-1609010454193-393717596568?q=80&w=200&h=200&fit=crop",
+      "imageHint": "real brazilian mother with child"
     },
     {
       "id": "testimonial-7",
       "description": "Portrait of a smiling Brazilian mother.",
-      "imageUrl": "https://picsum.photos/seed/testimonial7/200/200",
-      "imageHint": "brazilian mother"
+      "imageUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&h=200&fit=crop",
+      "imageHint": "real brazilian mother"
     },
     {
       "id": "testimonial-8",
-      "description": "Portrait of a happy Brazilian mother.",
-      "imageUrl": "https://picsum.photos/seed/testimonial8/200/200",
-      "imageHint": "brazilian woman"
+      "description": "Portrait of a happy Brazilian mother with her child.",
+      "imageUrl": "https://images.unsplash.com/photo-1594744801837-e5ee2b31f7b7?q=80&w=200&h=200&fit=crop",
+      "imageHint": "real brazilian mother with child"
     },
     {
       "id": "testimonial-9",
-      "description": "Portrait of a smiling Brazilian mother.",
-      "imageUrl": "https://picsum.photos/seed/testimonial9/200/200",
-      "imageHint": "brazilian mother"
+      "description": "Portrait of a smiling Brazilian mother with her child.",
+      "imageUrl": "https://images.unsplash.com/photo-1569466896881-8a9a4051a66e?q=80&w=200&h=200&fit=crop",
+      "imageHint": "real brazilian mother with child"
     },
     {
       "id": "testimonial-10",
       "description": "Portrait of a happy Brazilian mother.",
-      "imageUrl": "https://picsum.photos/seed/testimonial10/200/200",
-      "imageHint": "brazilian woman"
+      "imageUrl": "https://images.unsplash.com/photo-1541687255143-294356f63462?q=80&w=200&h=200&fit=crop",
+      "imageHint": "real brazilian mother"
+    },
+    {
+      "id": "testimonial-11",
+      "description": "Portrait of a smiling mother with her child.",
+      "imageUrl": "https://images.unsplash.com/photo-1606963428138-8c1103c8b251?q=80&w=200&h=200&fit=crop",
+      "imageHint": "real brazilian mother with child"
+    },
+    {
+      "id": "testimonial-12",
+      "description": "Portrait of a happy mother.",
+      "imageUrl": "https://images.unsplash.com/photo-1590691624467-35b894c25b34?q=80&w=200&h=200&fit=crop",
+      "imageHint": "real brazilian mother"
     },
     {
       "id": "bonus-cooperacao",
       "description": "Cover of the 'Jogo da Cooperação' bonus.",
-      "imageUrl": "https://picsum.photos/seed/bonus1/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1583592323385-23f2a89999be?q=80&w=600&h=400&fit=crop",
       "imageHint": "board game"
     },
     {
       "id": "bonus-tdah",
       "description": "Cover of the 'Kit TDAH' bonus.",
-      "imageUrl": "https://picsum.photos/seed/bonus2/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1529141434318-1004d4373a6c?q=80&w=600&h=400&fit=crop",
       "imageHint": "guide mockup"
     },
     {
       "id": "bonus-emocoes",
       "description": "Cover of the 'Painel das Emoções' bonus.",
-      "imageUrl": "https://picsum.photos/seed/bonus3/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1528732236962-f7292215c2a1?q=80&w=600&h=400&fit=crop",
       "imageHint": "planner mockup"
     },
     {
       "id": "bonus-regras",
       "description": "Cover of the 'Cartazes Regras da Casa' bonus.",
-      "imageUrl": "https://picsum.photos/seed/bonus4/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1512295767273-b684ac69f887?q=80&w=600&h=400&fit=crop",
       "imageHint": "product mockup"
     },
     {
       "id": "guarantee-mom",
       "description": "Image of a happy mother with her child.",
-      "imageUrl": "https://picsum.photos/seed/guarantee/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1541687255143-294356f63462?q=80&w=600&h=400&fit=crop",
       "imageHint": "mother child"
     },
     {
       "id": "creator-story-carla",
       "description": "Photo of Carla Alves, creator of Rotina Positiva, with her daughter.",
-      "imageUrl": "https://picsum.photos/seed/creator/600/400",
+      "imageUrl": "https://plus.unsplash.com/premium_photo-1664203067979-344d3623c28a?q=80&w=600&h=400&fit=crop",
       "imageHint": "mother daughter"
     },
     {
       "id": "final-cta-testimonial",
       "description": "Face of a woman for a mini testimonial.",
-      "imageUrl": "https://picsum.photos/seed/ctatesimonial/200/200",
+      "imageUrl": "https://images.unsplash.com/photo-1554151228-14d9def656e4?q=80&w=200&h=200&fit=crop",
       "imageHint": "brazilian mother child"
     },
     {
       "id": "brain-image",
       "description": "Illustration of a colorful child's brain",
-      "imageUrl": "https://picsum.photos/seed/brain/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1562404743-98a3f85b88ce?q=80&w=600&h=400&fit=crop",
       "imageHint": "brain gears"
     },
     {
       "id": "product-showcase-header",
       "description": "A magical wand with sparkles.",
-      "imageUrl": "https://picsum.photos/seed/magicwand/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1517058846283-a1c62f275a5b?q=80&w=600&h=400&fit=crop",
       "imageHint": "magic wand"
     },
     {
       "id": "product-in-use-1",
       "description": "Child using the positive routine chart.",
-      "imageUrl": "https://picsum.photos/seed/inuse1/400/400",
+      "imageUrl": "https://images.unsplash.com/photo-1558041319-329a8f443538?q=80&w=400&h=400&fit=crop",
       "imageHint": "child routine chart"
     },
     {
       "id": "product-in-use-2",
       "description": "Child pointing at the positive routine chart.",
-      "imageUrl": "https://picsum.photos/seed/inuse2/400/400",
+      "imageUrl": "https://images.unsplash.com/photo-1519452635265-7b1fbfd1e4e5?q=80&w=400&h=400&fit=crop",
       "imageHint": "child pointing chart"
     },
     {
       "id": "product-in-use-3",
       "description": "Child happily showing the positive routine chart.",
-      "imageUrl": "https://picsum.photos/seed/inuse3/400/400",
+      "imageUrl": "https://images.unsplash.com/photo-1541687255143-294356f63462?q=80&w=400&h=400&fit=crop",
       "imageHint": "child happy chart"
     },
     {
       "id": "exit-popup-real-kids",
       "description": "Happy children using the routine chart.",
-      "imageUrl": "https://picsum.photos/seed/exitpopup/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1503944583220-79d8c838d16d?q=80&w=600&h=400&fit=crop",
       "imageHint": "children routine chart"
     }
   ]

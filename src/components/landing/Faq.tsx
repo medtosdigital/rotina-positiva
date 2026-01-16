@@ -23,6 +23,18 @@ const faqItems = [
     answer: "O acesso é VITALÍCIO! Você paga uma única vez e pode acessar e baixar os materiais para sempre, incluindo todas as futuras atualizações que fizermos no sistema, sem custo adicional."
   },
   {
+    question: "Posso personalizar os quadros?",
+    answer: "Sim! O kit é 100% personalizável. Com mais de 200 cards de tarefas, você pode montar o quadro de acordo com a rotina e as necessidades específicas da sua família. Se faltar alguma tarefa, você pode usar os cards em branco para criar as suas."
+  },
+  {
+    question: "Tenho mais de um filho, preciso comprar dois?",
+    answer: "Não! Comprando uma vez, você pode imprimir quantos quadros e materiais precisar. Você pode criar um sistema para cada filho, personalizando as tarefas e recompensas para cada um deles, sem custo adicional."
+  },
+  {
+    question: "E se meu filho não se adaptar?",
+    answer: "A adaptação pode levar um tempo, o que é normal. O segredo é a consistência e o reforço positivo. Comece com poucas tarefas e vá aumentando gradualmente. Celebre cada conquista! Se mesmo assim tiver dificuldades, nosso suporte está à disposição para ajudar e você tem a garantia de 7 dias."
+  },
+  {
     question: "É seguro comprar?",
     answer: "Sim, 100% seguro. O pagamento é processado pela maior plataforma de produtos digitais do Brasil, utilizando criptografia de ponta. Seus dados estão completamente seguros."
   },
