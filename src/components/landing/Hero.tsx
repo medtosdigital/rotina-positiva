@@ -5,7 +5,7 @@ import Script from 'next/script';
 import { Button } from '@/components/ui/button';
 const Hero = () => {
   const handleScroll = () => {
-    window.scrollToTarget?.('product-showcase');
+    window.scrollToTarget?.('offer');
   };
   return (
     <>
