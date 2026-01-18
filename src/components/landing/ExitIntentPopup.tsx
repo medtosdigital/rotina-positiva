@@ -24,7 +24,7 @@ const OfferPageContent = ({ onDecline }: OfferPageContentProps) => {
         </h1>
         <p className="font-body text-sm sm:text-base md:text-lg text-brand-dark-blue/80 break-words overflow-hidden">
           R$50 reais <b className="text-red-600">adulto perdido, sem foco e sem sucesso</b>. Vai deixar isso acontecer por menos de{' '}
-          <b className="text-brand-turquoise">R$30</b>?
+          <b className="text-brand-turquoise">R$50</b>?
         </p>
       </div>
 
