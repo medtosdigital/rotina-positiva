@@ -1,17 +1,17 @@
-"use client"
+"use client";
 
-import Image from 'next/image';
-import { Card, CardContent } from '@/components/ui/card';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Star, MessageCircle } from 'lucide-react';
+import { Card, CardContent } from "@/components/ui/card";
+import { Star, MessageCircle } from "lucide-react";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel"
-import Autoplay from "embla-carousel-autoplay"
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+
+
 
 const testimonials = [
   {
@@ -94,24 +94,29 @@ const StarRating = () => (
     </div>
 );
 
-const TestimonialCard = ({ testimonial }: { testimonial: typeof testimonials[0] }) => {
-  const imageMap = new Map(PlaceHolderImages.map(img => [img.id, img]));
-  const image = imageMap.get(testimonial.id);
-  
+const TestimonialCard = ({
+  testimonial,
+}: {
+  testimonial: typeof testimonials[0];
+}) => {
+  const initials = testimonial.name
+    .split(" ")
+    .slice(0, 2)
+    .map((p) => p[0])
+    .join("");
+
   return (
     <Card className="bg-white rounded-2xl shadow-lg flex flex-col h-full">
       <CardContent className="p-6 flex-grow flex flex-col">
         <div className="flex items-center mb-4">
-          {image && (
-            <Image
-              src={image.imageUrl}
-              alt={testimonial.name}
-              width={100}
-              height={100}
-              data-ai-hint={image.imageHint}
-              className="w-14 h-14 rounded-full mr-4 object-cover border-2 border-brand-gold"
-            />
-          )}
+          <div
+            className="w-14 h-14 rounded-full mr-4 border-2 border-brand-gold bg-muted text-foreground/80 flex items-center justify-center font-subtitle font-bold"
+            aria-label={`Avatar - ${testimonial.name}`}
+            title={testimonial.name}
+          >
+            {initials}
+          </div>
+
           <div>
             <p className="font-subtitle font-bold text-lg text-gray-800">{testimonial.name}</p>
             <p className="font-body text-sm text-gray-400">{testimonial.username}</p>
@@ -121,9 +126,9 @@ const TestimonialCard = ({ testimonial }: { testimonial: typeof testimonials[0] 
           <MessageCircle className="absolute top-[-10px] left-4 w-6 h-6 text-gray-50 fill-current stroke-current" />
           <p>"{testimonial.text}"</p>
         </div>
-         <div className="mt-4">
-           <StarRating />
-         </div>
+        <div className="mt-4">
+          <StarRating />
+        </div>
       </CardContent>
     </Card>
   );
@@ -132,7 +137,7 @@ const TestimonialCard = ({ testimonial }: { testimonial: typeof testimonials[0] 
 
 const Testimonials = () => {
   return (
-    <section className="py-20 lg:py-32 bg-gray-50">
+    <section id="testimonials" className="py-20 lg:py-32 bg-gray-50">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
           <h2 className="font-headline text-3xl md:text-5xl font-bold text-brand-dark-blue mb-4">

@@ -12,7 +12,7 @@ type Notification = {
   comment: string;
 };
 
-const notifications: Notification[] = data.notifications;
+const notifications = data.notifications as Notification[];
 
 const InstagramIcon = () => (
     <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="url(#instagram-gradient)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -70,35 +70,35 @@ const SalesNotification = () => {
   useEffect(() => {
     if (!isClient) return;
 
-    let timeoutId: NodeJS.Timeout;
+    let timeoutId: number | undefined;
 
     const showRandomNotification = () => {
       // Hide current notification before showing the next one
       setIsVisible(false);
 
       // Wait for fade-out animation to complete
-      setTimeout(() => {
+      window.setTimeout(() => {
         const randomIndex = Math.floor(Math.random() * notifications.length);
         setCurrentNotification(notifications[randomIndex]);
         setIsVisible(true);
       }, 500);
 
       // Set timeout to hide the notification
-      setTimeout(() => {
+      window.setTimeout(() => {
         setIsVisible(false);
       }, 7000); // Display for 7 seconds
 
       // Schedule the next notification
       const randomInterval = Math.random() * (20000 - 10000) + 10000; // 10-20 seconds
-      timeoutId = setTimeout(showRandomNotification, randomInterval + 7500); // Add display and fade time
+      timeoutId = window.setTimeout(showRandomNotification, randomInterval + 7500); // Add display and fade time
     };
 
     // Start the loop
-    const startTimeout = setTimeout(showRandomNotification, 10000); // Initial delay
+    const startTimeout = window.setTimeout(showRandomNotification, 10000); // Initial delay
 
     return () => {
-      clearTimeout(startTimeout);
-      clearTimeout(timeoutId);
+      window.clearTimeout(startTimeout);
+      if (timeoutId) window.clearTimeout(timeoutId);
     };
   }, [isClient]);
 

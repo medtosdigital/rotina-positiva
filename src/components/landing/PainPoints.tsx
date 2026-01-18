@@ -30,11 +30,6 @@ const painPoints = [
   },
 ];
 
-declare global {
-  interface Window {
-    scrollToTarget: (targetId: string) => void;
-  }
-}
 
 const PainPoints = () => {
 

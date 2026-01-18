@@ -30,11 +30,11 @@ const PromoBanner = () => {
   useEffect(() => {
     if (words.length === 0) return;
     
-    const interval = setInterval(() => {
+    const interval = window.setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % words.length);
     }, 2000); // Change word every 2 seconds
 
-    return () => clearInterval(interval);
+    return () => window.clearInterval(interval);
   }, [words]);
 
   useEffect(() => {
